@@ -14,45 +14,45 @@ Name 1 in "WHO Consultation on Obesity, and World Health Organization." has a co
 while executing---line 1090 of file plain.bst
 Name 1 in "Ryan Lubke,Jennifer Ball, and Pierre Delisle" has a comma at the end for entry UEL
 while executing---line 1090 of file plain.bst
-You've used 38 entries,
+You've used 35 entries,
             2118 wiz_defined-function locations,
-            746 strings with 10130 characters,
-and the built_in function-call counts, 11176 in all, are:
-= -- 1066
-> -- 510
+            732 strings with 9683 characters,
+and the built_in function-call counts, 10464 in all, are:
+= -- 1004
+> -- 478
 < -- 6
-+ -- 201
-- -- 160
-* -- 678
-:= -- 1873
-add.period$ -- 123
-call.type$ -- 38
-change.case$ -- 182
++ -- 188
+- -- 150
+* -- 645
+:= -- 1747
+add.period$ -- 114
+call.type$ -- 35
+change.case$ -- 171
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 447
-empty$ -- 956
-format.name$ -- 160
-if$ -- 2375
+cite$ -- 37
+duplicate$ -- 411
+empty$ -- 890
+format.name$ -- 150
+if$ -- 2225
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 38
-newline$ -- 195
-num.names$ -- 84
-pop$ -- 278
+int.to.str$ -- 35
+missing$ -- 32
+newline$ -- 180
+num.names$ -- 78
+pop$ -- 252
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 140
 quote$ -- 0
-skip$ -- 305
+skip$ -- 287
 stack$ -- 0
-substring$ -- 497
-swap$ -- 79
+substring$ -- 482
+swap$ -- 76
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
+type$ -- 124
 warning$ -- 2
-while$ -- 105
-width$ -- 40
-write$ -- 412
+while$ -- 99
+width$ -- 37
+write$ -- 382
 (There were 4 error messages)

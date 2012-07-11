@@ -68,11 +68,10 @@
 \BOOKMARK [0][-]{chapter.10}{Test}{part.2}
 \BOOKMARK [1][-]{section.10.1}{Grundlagen}{chapter.10}
 \BOOKMARK [2][-]{subsection.10.1.1}{Grunds\344tzliche Einteilung von Tests}{section.10.1}
-\BOOKMARK [2][-]{subsection.10.1.2}{Testdaten}{section.10.1}
-\BOOKMARK [2][-]{subsection.10.1.3}{Testmetriken}{section.10.1}
 \BOOKMARK [1][-]{section.10.2}{Test der DSL}{chapter.10}
 \BOOKMARK [2][-]{subsection.10.2.1}{Testf\344lle}{section.10.2}
-\BOOKMARK [2][-]{subsection.10.2.2}{Testdriven Development}{section.10.2}
+\BOOKMARK [2][-]{subsection.10.2.2}{Testdaten}{section.10.2}
+\BOOKMARK [2][-]{subsection.10.2.3}{Testdriven Development}{section.10.2}
 \BOOKMARK [-1][-]{part.3}{III Integration in ein existierendes System}{}
 \BOOKMARK [0][-]{chapter.11}{Systembeschreibung}{part.3}
 \BOOKMARK [1][-]{section.11.1}{SPICS}{chapter.11}

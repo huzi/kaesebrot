@@ -92,12 +92,6 @@ B.~Langlois, C.~E. Jitia, and E.~Jouenne.
 \newblock In {\em Proceedings of the 7th OOPSLA Workshop on Domain-Specific
   Modeling}, 2007.
 
-\bibitem{SpLi06}
-T.~Linz, K.~Dussa-Zieger, and A.~Spillner.
-\newblock {\em Praxiswissen Softwaretest - Testmanagement: Aus- und
-  Weiterbildung zum certified Tester ; advanced Level nach ISTQB-Standard}.
-\newblock dpunkt, 2005.
-
 \bibitem{MeHe05}
 Marjan Mernik, Jan Heering, and Anthony~M. Sloane.
 \newblock When and how to develop domain-specific languages.
@@ -189,12 +183,6 @@ Arie van Deursen, Paul Klint, and Joost Visser.
 \newblock Domain-specific languages: an annotated bibliography.
 \newblock {\em SIGPLAN Not.}, 35:26--36, June 2000.
 
-\bibitem{Vige10}
-U.~Vigenschow.
-\newblock {\em Testen von Software und Embedded Systems: Professionelles
-  Vorgehen mit modellbasierten und objektorientierten Ans{\"a}tzen}.
-\newblock Dpunkt.Verlag GmbH, 2010.
-
 \bibitem{Vis08}
 Eelco Visser.
 \newblock {WebDSL}: {A} case study in domain-specific language engineering.
@@ -208,12 +196,6 @@ G.~Vossen and K.U. Witt.
   Einf{\"u}hrung f{\"u}r Studierende der Informatik, Wirtschaftsinformatik und
   Technischen Informatik.}
 \newblock Vieweg, 2002.
-
-\bibitem{JoWa09}
-J.~Watkins.
-\newblock {\em Agile testing: how to succeed in an extreme testing
-  environment}.
-\newblock Cambridge University Press, 2009.
 
 \bibitem{NiWi77}
 Niklaus Wirth.

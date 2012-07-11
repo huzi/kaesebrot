@@ -888,35 +888,6 @@ Weiters können Tests auch durch die Ausführung der Software unterschieden werd
 
 
 
-\subsection{Testdaten}
-
-Um sinvolle Tests zu erstellen, ist es notwendig gute Testdaten zu finden, mit denen die Tests ausgeführt werden. Es gibt verschiedene Verfahren, um Testdaten für Testfälle zu bestimen.
-
-Für System-, Integrations- und Abnahmetests eignen sich definierte Anwendungsfälle, die im Test in Hinsicht auf funktionale und nichtfunktionale Kriterien ausgeführt werden können.
-
-Auf Komponentenebene sind die klassischen Verfahren die Äquivalenzklassenbildung und Grenzwertanalyse. Die Äquivalenzklassenbildung versucht, Klassen von Testwerten zu bestimmen, die ein bestimmtes Verhalten hervorrufen. Mit Hilfe der Grenzwertanalyse werden Werte ermittelt, die die Fallunterscheidungen an den Grenzen der Äquivalenzklassen untersuchen sollen. Die Grenzwertanalyse kann also als Erweiterung der Äquivalenzklassenbildung gesehen werden.
-
-\subsection{Testmetriken}
-\label{design_test_metriken}
-
-Metriken sind Kennzahlen, die Vorgänge messbar machen sollen. Im Softwaretest eignen sich Metriken besonders, um den Fortschritt der Tests für das Testmanagement zu dokumentieren. Metriken können in unterschiedlicher Granularität (produkt-, prozess-, projektbezogen) gemessen werden. Wichtig ist, dass nur solche Metriken verwendet werden, die zuverlässig und einfach zu messen sind\footnote{Vgl. \cite{SpLi10}}. 
-
-Testmetriken basieren auf verschiedenen Artifakten des Test- und Entwicklungsprozesses\cite{SpLi06}:
-
-\begin{itemize}
-  \item Testfälle (Anzahl geplanter, erstellter, durchgeführter, fehlgeschlagener Tests etc.)
-  \item Testobjekt (Anzahl getesteter Funktionen, Masken, Testfälle im Bezug auf deren Gesamtzahl im Testobjekt)
-  \item Fehler (Fehlerdichte, Fehlerfindungs-/Fehlerbehebungsrate, Fehlerrate in Bezug auf neue Codezeilen)
-  \item Kosten und Aufwände
-\end{itemize}
-
-Eine beim Komponententest oft verwendete Kennzahl ist die Codeabdeckung (auch Überdeckung bzw. Coverage). Die Codeabdeckung kann auf verschiedene Arten gemessen werden. Die drei grundsätzlichen Arten sind die Anweisungs-, Zweig-, und Pfadüberdeckung. Gemessen wird, beispielsweise bei der Anweisungsüberdeckung, das Verhältnis der Anzahl der gesamten Anweisungen zur Anzahl der im Test ausgeführten Anweisungen. Eine Einführung in die verschiedenen Überdeckungsarten befindet sich in \cite{Vige10}.
-Dabei darf nicht übersehen werden, dass Metriken alleine nichts über die tatsächliche Qualität der Software aussagen. Wichtig ist die korrekte Interpretation derselben:
-
-\begin{myquote}
- However, just because you are generating code coverage metrics, do not be lulled into a false sense of secutity about your code quality; code coverage figures on their own do not improve quality - actions based on them can. \emph{Jon Tilt in} \cite[S. 199]{JoWa09}
-\end{myquote}
-
 
 \section{Test der DSL}
 
@@ -939,9 +910,49 @@ Das Erstellen von Testfällen für die FXL erweist sich als sehr umfangreich, we
  \item und Kombinationen der obigen mit Klammerausdrücken
 \end{itemize}
 
-abdecken. Zusätzlich muss beachtet werden, dass einige Operatoren überladen sind und daher mit verschiedenen Kombinationen von Datentypen getestet werden. Auch verschiedene Eigenschaften der Sprache wie Kommutativ- oder Assoziativgesetz sowie die Rangfolge der Operatoren werden getestet.
+abdecken. Zusätzlich muss beachtet werden, dass einige Operatoren überladen sind und daher mit verschiedenen Kombinationen von Datentypen getestet werden (siehe Beispiel in Listing \ref{listing_example_test_case}). Auch verschiedene Eigenschaften der Sprache wie Kommutativ- oder Assoziativgesetz sowie die Rangfolge der Operatoren werden getestet.
 
-Weiters müssen fehlerhafte Testfälle erstellt werden, um das korrekte Verhalten der Sprache, vor allem in Hinsicht auf Fehlermeldungen zu prüfen.
+Weiters müssen Testfälle mit fehlerhaften Statements erstellt werden, um das korrekte Verhalten der Sprache in Hinsicht auf Fehlermeldungen zu prüfen.
+
+\begin{lstlisting}[caption={Beispielhafter Testfall für den Multiplikations-Operator \texttt{*}. Zuerst wird ein Statement mit Ganzzahlen ausgeführt, dann eine Multiplikation mit 0, eine Multiplikation zweier Gleitkommazahlen und dann zwei Multiplikationen mit je einer Gleitkomma- bzw. Ganzzahl.},label=listing_example_test_case]
+@Test
+public void testSimpleMult() throws FXLException {
+
+	expr = "=1*1";
+	interpreter.setExpression(expr);
+	result = interpreter.evaluate();
+	assertEquals(new Long(1),((IntegerResult)result).getInteger());
+
+	expr = "=1*0";
+	interpreter.setExpression(expr);
+	result = interpreter.evaluate();
+	assertEquals(new Long(0), ((IntegerResult)result).getInteger());
+
+	expr = "=0.5*0.5";
+	interpreter.setExpression(expr);
+	result = interpreter.evaluate();
+	assertEquals(new BigDecimal(0.25).setScale(4), ((DecimalResult)result).getDecimal());
+
+	expr = "=0.5*50";
+	interpreter.setExpression(expr);
+	result = interpreter.evaluate();
+	assertEquals((new BigDecimal(25.0)).setScale(4), ((DecimalResult)result).getDecimal());
+
+	expr = "=50*0.5";
+	interpreter.setExpression(expr);
+	result = interpreter.evaluate();
+	assertEquals((new BigDecimal(25.0)).setScale(4), ((DecimalResult)result).getDecimal());
+	}
+\end{lstlisting}
+
+\subsection{Testdaten}
+
+Um sinvolle Tests zu erstellen, ist es notwendig gute Testdaten zu finden, mit denen die Tests ausgeführt werden. Es gibt verschiedene Verfahren, um Testdaten für Testfälle zu bestimen.
+
+Für System-, Integrations- und Abnahmetests eignen sich definierte Anwendungsfälle, die im Test in Hinsicht auf funktionale und nichtfunktionale Kriterien ausgeführt werden können.
+
+Auf Komponentenebene sind die klassischen Verfahren die Äquivalenzklassenbildung und Grenzwertanalyse. Die Äquivalenzklassenbildung versucht, Klassen von Testwerten zu bestimmen, die ein bestimmtes Verhalten hervorrufen. Mit Hilfe der Grenzwertanalyse werden Werte ermittelt, die die Fallunterscheidungen an den Grenzen der Äquivalenzklassen untersuchen sollen. Die Grenzwertanalyse kann also als Erweiterung der Äquivalenzklassenbildung gesehen werden.
+
 
 
 \subsection{Testdriven Development}
