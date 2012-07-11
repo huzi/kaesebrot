@@ -1,0 +1,137 @@
+\documentclass [11pt,smallheadings, a4paper]{report}
+\pagestyle{headings}
+
+\usepackage[ngerman]{babel}
+
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+
+\usepackage{capt-of} 
+%\usepackage[style=numeric-comp]{biblatex}
+
+%\usepackage{nomencl}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{listings}
+
+\usepackage{algorithm}
+%\usepackage{algorithmic} 
+\usepackage{program}
+
+\lstset{language=Java,                % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,   		% adds a frame around the code
+tabsize=2,  		% sets default tabsize to 2 spaces
+captionpos=b,   		% sets the caption-position to bottom
+breaklines=true,    	% sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+escapeinside={\%}{)}          % if you want to add a comment within your code
+}
+  \lstdefinelanguage{JavaScript}{
+     keywords={attributes, class, classend, do, empty, endif, endwhile, fail, function, functionend, if, implements, in, inherit, inout, not, of, operations, out, return, set, then, types, while, use},
+     ndkeywords={},
+     sensitive=false,
+     comment=[l]{//}
+  }
+
+
+\usepackage[pdftex,pdfborder={0 0 0}]{hyperref}
+
+%\usepackage[left=3.5cm,right=3.5cm,top=2cm,bottom=2cm,includeheadfoot]{geometry}
+%
+
+
+\begin{document}
+
+\newenvironment{myquote}%
+{\begin{quote}\small}%
+{\end{quote}}%
+
+\include{frontmatter}
+\noindent
+\emph{Samma felxibl.}
+\begin{flushright}
+Klaus Feichtinger
+\end{flushright}
+% *************** Table of contents ***************
+\pagenumbering{roman}
+\pagestyle{headings}
+\tableofcontents
+
+% *************** End of front matter ***************
+
+\pagestyle{headings}
+
+\pagenumbering{arabic}
+
+\parindent0em
+\parskip0.5em
+
+\renewcommand{\baselinestretch}{1.0}\normalsize
+
+\chapter*{Abstract}
+Put your abtract here.
+
+\chapter*{Zusammenfassung}
+Hier die deutsche Zusammenfassung einfgen
+
+
+
+
+% include chapters here
+
+\input{kapitel_einleitung}
+
+
+\part{Grundlagen}
+\label{part_grundlagen}
+\input{kapitel_grundlagen}
+
+\part{Entwicklung der Form Expression Language - FXL}
+\label{part_entwicklung}
+\input{kapitel_design}
+
+\part{Integration in ein existierendes System}
+\label{part_integration}
+\input{kapitel_implementierung}
+
+\part{Ergebnis}
+\label{part_ergebnis}
+\input{kapitel_ergebnis}
+
+
+
+%\chapter{Terms and abbreviations}
+%\input{glossary}
+
+
+
+\begin{flushleft}
+\bibliographystyle{plain}
+\bibliography{biblio}
+\end{flushleft}
+
+
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+\appendix
+% include appendexes here
+\include{appendix}
+
+
+\end{document}
+
+

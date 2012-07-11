@@ -1,0 +1,89 @@
+\chapter{Einleitung}
+
+Die voriegende Arbeit bewegt sich im Umfeld einer medizinischen Dokumentationssoftware, die zur Eingabe und
+Verwaltung von medizinischen Daten verwendet wird. Die Software ist eine Webanwendung, die
+Krankenhäusern, Ärzten und anderen Spezialisten den gemeinsamen Zugriff auf Daten für medizinische
+Studien ermöglicht. Dabei ist jedoch die Anonymität der Studienteilnehmer gesichert, da medizinische Daten
+nur pseudonymisiert und getrennt von Patientendaten abgelegt werden.
+
+Die Software bietet die Möglichkeit, für verschiedene medizinische Fachbereiche bzw. Anforderungen
+individuelle Eingabemasken zu erstellen. Dafür können aus unterschiedlichen Formularfeld-Typen flexibel
+benutzerdefinierte Formulare erstellt werden. Manche Felder unterliegen dabei Anforderungen, was den Typ
+der eingegebenen Daten bzw. den Datenbereich betrifft. In dieser Arbeit soll eine Domain Specific Language (DSL) entwickelt werden, 
+welche eine erweiterte Modellierung von Abhängigkeiten und Validierungen in den Eingabemasken ermöglicht.
+
+
+\section{Motivation}
+
+Die Notwendigkeit für eine generische Lösung zur Berechnung und Evaluierung von Formularelementen
+ist begründet durch das Bedürfnis der Benutzer nach Formularen, die automatisch Berechnungen über
+mehrere Formulare durchführen. Solche Formulare wurden bisher als eigenes Plugin realisiert, das statt dem Formular 
+angezeigt wird. Das Plugin ist somit genau auf den konkreten Anwendungsfall zugeschnitten. Der Nachteil dieser
+Lösung ist allerdings, dass für jede Änderung der Sourcecode des Plugins bearbeitet, und die Anwendung 
+neu deployed werden muss. Ein weiterer Nachteil ist, das für jeden weiteren Anwendungsfall mit anderen Berechnungen
+ein weiteres Plugin notwendig ist.
+
+Daraus ist die Anforderung nach einer allgemeineren und flexibleren Lösung zur individuellen Modellierung von 
+Berechnungen in Formularen entstanden.
+
+
+\section{Problemstellung}
+
+Grundsätzlich erscheint es erforderlich, eine flexible Einschränkung von Datenbereichen, insbesondere in
+Verbindung mit anderen Formularfeldern, zu ermöglichen. Weiters ist es notwendig, einzelne Felder
+automatisch durch arithmetische Operationen mit Werten aus anderen Feldern zu berechnen, wie dies aus diversen
+Tabellenkalkulationsprogrammen bekannt ist. Dazu sind zwei verschiedene Arten von Statements notwendig:
+Formeln, die einem Feld einen Wert zuweisen und Bedingungen, die den Wert eines Formularfeldes
+überprüfen. Die Eingabe der Statements soll direkt bei der Erstellung eines Formulars in der Webanwendung
+geschehen. So ist es beispielsweise zielführend, ein Feld für den Body Mass Index automatisch aus
+Körpergröße und Gewicht berechnen zu lassen, anstatt es manuell auszufüllen und bei jeder Änderung der
+Daten neu einzugeben.
+
+Ein weiterer wichtiger Teil der Problemstellung ist die Einbettung der Berechnungen und Constraints in das
+bestehende Softwaresystem. Da dieses System bereits in Verwendung ist, ist es eine besondere
+Herausforderung, die in der Arbeit vorgenommene Implementierung der DSL in das Studiensystem zu integrieren,
+ohne die bestehende Architektur oder das Datenmodell im Hinblick auf eine notwendige Migration
+maßgeblich zu verändern.
+
+
+\section{Zielsetzung}
+
+Das Ziel der Diplomarbeit ist, eine DSL zu entwickeln. Dazu ist es notwendig, zu definieren, was eine DSL
+ist und was in diesem konkreten Anwendungsfall die Domäne darstellt. Die DSL soll es ermöglichen,
+Beziehungen zwischen Formularfeldern herzustellen. Dabei ist darauf zu achten, dass die Syntax einfach
+und konsistent ist. Die DSL soll in ihrer Syntax der Schreibweise von bekannten Systemen (Taschenrechner,
+Tabellenkalkulation, …) ähnlich sein, so dass diese für erfahrene Computernutzer gut erlernbar und
+anwendbar ist.
+
+Der Kern der Arbeit ist der Entwurf und die Entwicklung einer do\-mä\-nen\-spe\-zi\-fi\-schen Sprache und deren
+Integration in das bestehende Studiensystem. Der Fokus liegt dabei auf der Funktionalität der
+domänenspezifischen Sprache. Nicht Teil der Arbeit sind formularübergreifende Referenzierungen, welche
+jedoch in Konzeption und Design berücksichtigt werden. 
+
+Ein Schwerpunkt der Arbeit ist die Integration der DSL in die bestehende Webanwendung. Dabei wird darauf
+geachtet, dass die Referenzierung der verschiedenen Formularfelder für Formeln, die Werte aus
+mehreren Feldern benötigen, für den Endbenutzer einfach und nachvollziehbar erfolgt. Weiters wird eine
+Möglichkeit geschaffen, die Statements der DSL direkt in der Webanwendung zu den
+entsprechenden Formularfeldern einzugeben. Schließlich wird die Ausführung der DSL in die Applikation
+integriert, das heißt, wenn Daten eingegeben werden, müssen die angegeben Formeln berechnet, bzw.
+Bedingungen überprüft werden. Inwieweit die Ausführung client- oder serverseitig geschieht, wird auch im
+Hinblick auf Usability und Antwortzeiten zu betrachtet.
+
+
+
+
+\section{Struktur}
+
+Die vorliegende Arbeit ist in vier Teile gegliedert.
+
+Der erste Teil, \emph{\nameref{part_grundlagen}}, beschäftigt sich mit den für das Verständnis der Arbeit notwendigen Grundlagen. Zuerst wird versucht, eine passende Definition des Begriffs `Domain Specific Languages' zu finden (Kapitel \ref{chapter_dsl} \nameref{chapter_dsl}). Kapitel \ref{chapter_theoretische_grundlagen} gibt eine Übersicht über die theoretischen Grundlagen, die zum Verständnis der Arbeit beitragen. In Kapitel \ref{chapter_tools} werden verschiedene Werkzeuge für die Entwicklung vorgestellt und insbesondere auf den Parsergenerator ANTLR eingegangen. Abschließend wird in Kapitel \ref{related_work} das wissenschaftliche Umfeld aufbereitet.
+
+Im zweiten Teil der Arbeit, \emph{\nameref{part_entwicklung}}, werden die Entwicklungsschritte der DSL beschrieben. Zuerst wird in Kapitel \ref{chapter_entscheidung} die Entscheidung für die Entwicklung einer eigenen Sprache begründet und die Alternativen besprochen. Danach werden in der Analyse die Anforderungen an die Sprache erhoben (Kapitel \ref{chapter_analyse}). In Kapitel \ref{chapter_entwurf} wird die DSL beschrieben. Datentypen, semantische Regeln und weitere Features werden genau spezifiziert. Kapitel \ref{chapter_implementierung} beschreibt die Implementierungsdetails der entwickelten Sprache. Kapitel \ref{chapter_test} widmet sich dem Testing in Hinsicht auf die DSL.
+
+Der dritte Teil widmet sich der \emph{\nameref{part_integration}}. In Kapitel \ref{chapter_systembeschreibung} wird das medizinische Studiensystem beschrieben, in das die DSL integriert wird. Dazu wird der Workflow erklärt, um dem Leser den Nutzen der DSL im Kontext des Zielsystems zu erläutern. Zusätzlich wird die Architektur sowie der verwendete Technologie-Stack beschrieben.
+
+Der vierte Teil, \emph{\nameref{part_ergebnis}}, widmet sich in Kapitel \ref{chapter_ausblick} einem Ausblick auf weitere Themen, die über den Umfang dieser Arbeit hinausgehen und Raum für weitere Arbeiten geben. Zuletzt wird die Arbeit in Kapitel \ref{chapter_zusammenfassung} zusammengefasst.
+
+
+
+

@@ -1,0 +1,137 @@
+\chapter{Grammatik}
+
+\begin{lstlisting}[caption={Descriptive Caption Text},label=DescriptiveLabel]
+grammar FXL;
+
+options {
+  language = Java;
+  output   = AST;
+}
+
+tokens {
+  OR  = 'OR';
+  AND = 'AND';
+  NOT = 'NOT';
+  GT  = '>'; //greater then
+  GE  = '>='; //greater then or equal
+  LT  = '<'; //lower then
+  LE  = '<='; //lower then or equal
+  EQ  = '=';
+  NEQ = '!='; //Not equal
+  PLUS = '+';
+  MINUS = '-';
+  MULTIPLY = '*';
+  DIVISION = '/';
+  CALL;
+}
+
+@header {
+package at.ac.tuwien.fxl;
+}
+
+@members {
+    public void displayRecognitionError(String[] tokenNames,
+                                        RecognitionException e) {
+        String hdr = getErrorHeader(e);
+        String msg = getErrorMessage(e, tokenNames);
+        throw new RuntimeException(+e.index+"");
+    }
+}
+
+
+@lexer::header {
+package at.ac.tuwien.fxl;
+}
+
+statement 
+  :  ('='|':')! expression 
+  ;
+
+expression
+	: booleanAndExpression ('OR'^ booleanAndExpression)*
+	;
+
+booleanAndExpression
+  :
+  booleanNotExpression ('AND'^ booleanNotExpression)*
+  ;
+
+booleanNotExpression
+  :
+  ('NOT'^)? booleanAtom
+  ;
+
+booleanAtom
+  :
+  | compareExpression
+  ;
+
+compareExpression
+  	:
+  	commonExpression (('<' | '>' | '=' | '<=' | '>=' | '!=' )^ commonExpression)?
+  	;
+
+commonExpression
+  :
+  multExpr (( '+'^ | '-'^ ) multExpr)*
+  ;
+
+multExpr
+  :
+  atom (('*'|'/')^ atom)*
+  | '-'^ atom
+  ;
+
+atom
+  :
+  INTEGER
+  | DECIMAL
+  | BOOLEAN
+  | DATE
+  | ID
+  | '(' expression ')' -> expression
+  | functionCall
+  ;
+
+functionCall
+  :
+  ID '(' arguments ')' -> ^(CALL ID arguments?)
+  ;
+  
+arguments
+  :
+  (expression) (','! expression)*
+  |  WS
+  ;
+
+BOOLEAN
+  :
+  'true'
+  | 'false'
+  ;
+
+ID
+  :
+  ('a'..'z' | 'A'..'Z')+ ('a'..'z' | 'A'..'Z' | '0'..'9')*
+  ;
+
+INTEGER
+  :
+  ('0'..'9')+ 
+  ;
+
+DECIMAL
+  :
+  ('0'..'9')+ ('.' ('0'..'9')*)
+  ;
+
+DATE
+  :
+  '!' '0'..'9' '0'..'9' '0'..'9' '0'..'9' '-' '0'..'9' '0'..'9' '-' '0'..'9' '0'..'9'( '-' '0'..'9' '0'..'9' ':''0'..'9' '0'..'9' (':''0'..'9' '0'..'9')?)?
+  ;
+
+WS
+  :  (' '|'\t' | '\n' | '\r' | '\f')+ { $channel = HIDDEN; };
+
+\end{lstlisting}
+

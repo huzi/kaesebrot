@@ -1,0 +1,1807 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  9 JUL 2012 17:16
+entering extended mode
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/ngermanb.ldf
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `ngerman'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@ngerman = a dialect from \language0
+\l@naustrian = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 92.
+)) (/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count89
+\uc@combtoks=\toks14
+\uc@combtoksb=\toks15
+\uc@temptokena=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/capt-of.sty)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box26
+\lst@token=\toks21
+\lst@length=\count92
+\lst@currlwidth=\dimen106
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen109
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box27
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks24
+\c@algorithm=\count100
+)
+(/usr/share/texmf-texlive/tex/latex/program/program.sty
+\@gtempa=\dimen110
+\@gtempa=\dimen111
+\@gtempa=\dimen112
+\@gtempa=\dimen113
+\@gtempa=\dimen114
+\@gtempa=\dimen115
+\@gtempa=\dimen116
+\@gtempa=\dimen117
+\@gtempa=\dimen118
+\@gtempa=\dimen119
+\@gtempa=\dimen120
+\@gtempa=\dimen121
+\@gtempa=\dimen122
+\@gtempa=\dimen123
+\@gtempa=\dimen124
+\@gtempa=\dimen125
+\@gtempa=\dimen126
+\@gtempa=\dimen127
+\@gtempa=\dimen128
+\@gtempa=\dimen129
+\@gtempa=\dimen130
+\@gtempa=\dimen131
+\@gtempa=\dimen132
+\@gtempa=\dimen133
+\@gtempa=\dimen134
+\@gtempa=\dimen135
+\@gtempa=\dimen136
+\@gtempa=\dimen137
+\@gtempa=\dimen138
+\@gtempa=\dimen139
+\@gtempa=\dimen140
+\@gtempa=\dimen141
+\@gtempa=\dimen142
+\@gtempa=\dimen143
+\@gtempa=\dimen144
+\@gtempa=\dimen145
+\@gtempa=\dimen146
+\@gtempa=\dimen147
+\@gtempa=\dimen148
+\@gtempa=\dimen149
+\@gtempa=\dimen150
+\@gtempa=\dimen151
+\@gtempa=\dimen152
+\@gtempa=\dimen153
+\@gtempa=\dimen154
+\@gtempa=\dimen155
+\@gtempa=\dimen156
+\@gtempa=\dimen157
+\@gtempa=\dimen158
+\@gtempa=\dimen159
+\c@programline=\count101
+\old@nxttabmar=\count102
+\symeulerletters=\mathgroup6
+\powersetbox=\box30
+LaTeX Font Info:    Try loading font information for U+msa on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+eur on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2009/06/22 v3.00 Euler Roman
+))
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen160
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count105
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
+\Field@toks=\toks25
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+)
+
+LaTeX Warning: Unused global option(s):
+    [smallheadings].
+
+(./thesis.aux (./frontmatter.aux) (./appendix.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+
+(/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+
+Package ucs Warning: ***************************
+(ucs)                You seem to have loaded inputencoding utf8
+(ucs)                (LaTeX kernel UTF-8) instead of utf8x (ucs.sty UTF-8).
+(ucs)                Probably you are compiling a document written for a
+(ucs)                pre-august-2004 ucs.sty.
+(ucs)                ***************************
+(ucs)                Please use \usepackage[utf8x]{inputenc} instead of
+(ucs)                \usepackage[utf8]{inputenc}.
+(ucs)                ***************************
+(ucs)                If you should really want to use ucs.sty and kernel's
+(ucs)                utf8.def together, use \usepackage[utf8x,utf8]{inputenc}
+(ucs)                to disable compatibility mode
+(ucs)                ***************************
+(ucs)                Activating compatibility mode.
+(ucs)                ***************************
+(ucs)                 on input line 55.
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen163
+\scratchbox=\box31
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen164
+\MPnumerator=\count114
+\everyMPtoPDFconversion=\toks27
+)
+\c@lstlisting=\count115
+Package hyperref Info: Link coloring OFF on input line 55.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write3
+\openout3 = `thesis.out'.
+
+\AtBeginShipoutBox=\box32
+\openout2 = `frontmatter.aux'.
+
+ (./frontmatter.tex
+<figures/inso-farbe.pdf, id=399, 260.4721pt x 260.47313pt>
+File: figures/inso-farbe.pdf Graphic file (type pdf)
+
+<use figures/inso-farbe.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/info-farbe.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.4> allowed
+<figures/info-farbe.pdf, id=401, 69.63516pt x 69.63516pt>
+File: figures/info-farbe.pdf Graphic file (type pdf)
+
+<use figures/info-farbe.pdf>
+<figures/tu-dt-teil-schw-pos.pdf, id=403, 68.3624pt x 68.37546pt>
+File: figures/tu-dt-teil-schw-pos.pdf Graphic file (type pdf)
+
+<use figures/tu-dt-teil-schw-pos.pdf> [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/inso-farbe.pdf> 
+<./figures/info-farbe.pdf> <./figures/tu-dt-teil-schw-pos.pdf>]) [1
+
+
+] (./thesis.toc [2
+
+] [3])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \chapter
+             *{Abstract} [1] [2
+
+] (./kapitel_einleitung.tex [3
+
+]
+Kapitel 1.
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+)
+Overfull \hbox (8.31581pt too wide) in paragraph at lines 18--25
+\OT1/cmr/m/n/10.95 Die Notwendigkeit f[]ur eine gener-ische L[]osung zur Berech
+-nung und Evaluierung
+ []
+
+[4
+
+]
+Overfull \hbox (13.88205pt too wide) in paragraph at lines 32--40
+\OT1/cmr/m/n/10.95 Wert zuweisen und Be-din-gun-gen, die den Wert eines For-mu-
+la-rfeldes []uberpr[]ufen.
+ []
+
+
+Overfull \hbox (3.50993pt too wide) in paragraph at lines 41--46
+[]\OT1/cmr/m/n/10.95 Ein weit-er-er wichtiger Teil der Prob-lem-stel-lung ist d
+ie Ein-bet-tung der Berech-
+ []
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+) [5]
+Overfull \hbox (15.46371pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/n/10.95 gen. In Kapi-tel []4[] wer-den ver-schiedene Werkzeuge f[]ur
+ die En-twick-lung vorgestellt
+ []
+
+
+Overfull \hbox (6.15504pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/n/10.95 und ins-beson-dere auf den Parser-gen-er-a-tor ANTLR einge-g
+an-gen. Ab-schlie^^Yend
+ []
+
+) [6] [7
+
+] (./kapitel_grundlagen.tex [8]
+Kapitel 2.
+
+Overfull \hbox (1.04622pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10.95 lun-gen l[]osen, die nicht auf eine Branche oder einen Ein-s
+atzbere-ich beschr[]ankt
+ []
+
+[9
+
+]
+Overfull \hbox (24.8613pt too wide) in paragraph at lines 42--46
+\OT1/cmr/m/n/10.95 Oft wird unter der Beze-ich-nung in-tern-er (bzw. em-bed-ded
+) DSL eine entsprechende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [10]
+Overfull \hbox (23.34047pt too wide) in paragraph at lines 63--66
+[]\OT1/cmr/m/n/10.95 In der Entschei-dungsphase beim De-sign der DSL zur Berech
+-nung und Evaluierung
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 71--71
+[][][]\OT1/cmr/m/n/9 Eine der bekan-ntesten Lan-guage Work-bench-es ist Jet-bra
+ins's MPS. Eine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\OT1/cmr/m/n/9 http://www.languageworkbenches.net/index.php?title=LWC2011[]Comp
+arison[]Matrix,
+ []
+
+[11]
+Overfull \hbox (3.02327pt too wide) in paragraph at lines 81--82
+[]\OT1/cmr/m/n/10.95 DSLs haben nicht nur Vorteile, son-dern auch Nachteile und
+ Ein-schr[]ankungen.
+ []
+
+
+Overfull \hbox (1.60655pt too wide) in paragraph at lines 85--86
+\OT1/cmr/m/n/10.95 er selb-st er-stell-ten DSL im Ver-gle-ich zu ein-er aus-ger
+eiften GPL darstellen[[]]. 
+ []
+
+
+Overfull \hbox (2.33905pt too wide) in paragraph at lines 95--96
+\OT1/cmr/m/n/10.95 Dat-en(banken)) und eine eingeschr[]ankte Syn-tax, die auf d
+ie von GPLs bekan-
+ []
+
+[12]
+Overfull \hbox (5.9422pt too wide) in paragraph at lines 109--110
+[]\OT1/cmr/m/n/10.95 Listing []2.2[] Beschreibt einen Flie^^Ykomma-Typ DEC-I-MA
+L mit Hil-fe der EBNF.
+ []
+
+[13]
+Kapitel 3.
+
+Overfull \hbox (13.12166pt too wide) in paragraph at lines 120--121
+\OT1/cmr/m/n/10.95 der Ar-beit notwendig sind auf-bere-it-et. Diese bein-hal-te
+n zun[]achst eine []Ubersicht
+ []
+
+
+Overfull \hbox (26.0184pt too wide) in paragraph at lines 120--121
+[]\OT1/cmr/m/n/10.95 uber die an-erkan-nten Meth-o-d-en des []Ubersetzerbaus. D
+anach fol-gt eine Einf[]uhrung
+ []
+
+
+Overfull \hbox (4.17917pt too wide) in paragraph at lines 126--127
+\OT1/cmr/m/n/10.95 gram-mier-sprache []ahnlich sind. F[]ur das Auswerten von de
+-r-art eingeschr[]ankten
+ []
+
+<figures/language_application_klassisch.png, id=703, 513.92pt x 426.59375pt>
+File: figures/language_application_klassisch.png Graphic file (type png)
+
+<use figures/language_application_klassisch.png> [14
+
+]
+Overfull \hbox (0.27072pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10.95 Regeln der zu-grun-deliegen-den Gram-matik un-terzuord-nen. 
+So kann []uberpr[]uft
+ []
+
+[15 <./figures/language_application_klassisch.png>]
+Overfull \hbox (0.49875pt too wide) in paragraph at lines 141--142
+[]\OT1/cmr/m/n/10.95 Das Ergeb-nis der Syn-tak-tis-chen Anal-yse kann in einem 
+Parse Tree dargestellt
+ []
+
+<figures/ast_vs_cst.png, id=726, 625.33624pt x 308.15125pt>
+File: figures/ast_vs_cst.png Graphic file (type png)
+
+<use figures/ast_vs_cst.png> [16 <./figures/ast_vs_cst.png>]
+Overfull \hbox (14.44485pt too wide) in paragraph at lines 158--159
+\OT1/cmr/m/n/10.95 Um die Syn-tax ein-er Sprache festzule-gen ist eine for-male
+ Gram-matik notwendig.
+ []
+
+
+Overfull \hbox (5.47195pt too wide) in paragraph at lines 160--161
+[]\OT1/cmr/m/n/10.95 Eine Gram-matik beschreibt die Menge aller syn-tak-tisch k
+o-r-rek-ten Pro-gramme
+ []
+
+
+Overfull \hbox (1.25908pt too wide) in paragraph at lines 160--161
+\OT1/cmr/m/n/10.95 ein-er Sprache. Di-verse Sprachen in un-ter-schiedlichen An-
+wen-dun-gen er-fordern
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
+[17]
+Overfull \hbox (5.83687pt too wide) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/10.95 Je nach Parsin-gal-go-rith-mus un-ter-liegen die Gram-mati
+ken bes-timmten Regeln,
+ []
+
+[18]
+Overfull \hbox (1.07669pt too wide) in paragraph at lines 210--211
+\OT1/cmr/m/n/10.95 dass Funk-tio-nen, die das gle-iche Re-sul-tat zur[]uckgeben
+, wieder-holt aufgerufen
+ []
+
+
+Overfull \hbox (4.5442pt too wide) in paragraph at lines 218--219
+\OT1/cmr/m/n/10.95 Typ-isierung ist, ist vor allem die Se-man-tis-che Anal-yse 
+f[]ur die Typ[]uberpr[]ufung
+ []
+
+[19] [20]
+Kapitel 4.
+[21
+
+]
+Overfull \hbox (38.8238pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/10.95 Die meis-ten Tools un-ter-st[]utzen Ac-tions, die bei der Au
+sf[]uhrung ein-er Ableitungsregel
+ []
+
+
+Overfull \hbox (2.35411pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/10.95 im Pars-er aus-gef[]uhrt wer-den. Diese M[]oglickeit hat all
+erd-ings einige Nachteile: 
+ []
+
+<figures/parser_generator_workflow.png, id=773, 657.45625pt x 307.1475pt>
+File: figures/parser_generator_workflow.png Graphic file (type png)
+
+<use figures/parser_generator_workflow.png>
+Overfull \hbox (34.47679pt too wide) in paragraph at lines 260--261
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (0.80289pt too wide) in paragraph at lines 270--272
+\OT1/cmr/m/n/10.95 vorhan-de-nen Ein-/Ausgabesprachen. Zus[]atzliche Fak-toren 
+sind die Werkzeu-
+ []
+
+
+Overfull \hbox (4.13364pt too wide) in paragraph at lines 270--272
+\OT1/cmr/m/n/10.95 gun-ter-st[]utzung (Gram-matiked-i-tor, Rule-Visualisierung,
+ (Con-crete/Ab-stract)
+ []
+
+
+Overfull \hbox (9.38048pt too wide) in paragraph at lines 270--272
+\OT1/cmr/m/n/10.95 Syn-tax Tree-Visualisierung), Doku-men-ta-tion und (Communit
+y-)Support sowie
+ []
+
+[22] [23 <./figures/parser_generator_workflow.png>]
+Overfull \hbox (24.07166pt too wide) in paragraph at lines 292--293
+\OT1/cmr/m/n/10.95 aus-re-ichend Beispiele f[]ur jede Sprach-Portierung zum Dow
+n-load bere-it. Zus[]atzlich
+ []
+
+[24]
+Underfull \hbox (badness 5331) in paragraph at lines 327--327
+[][][]\OT1/cmr/m/n/9 StringTemplate ist eine Tem-plate En-gine f[]ur ver-schied
+ene Ein-satzbere-iche.
+ []
+
+
+Overfull \hbox (8.71124pt too wide) in paragraph at lines 327--328
+[]\OT1/cmr/m/n/10.95 Ausgabeformat: Das For-mat, das vom Pars-er beim Parsen ei
+nes Eingabe-
+ []
+
+[25]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 350.
+
+ (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 350.
+
+Overfull \hbox (2.23169pt too wide) in paragraph at lines 355--356
+\OT1/cmtt/m/n/10.95 ... Childn) \OT1/cmr/m/n/10.95 angegeben wer-den, wobei Roo
+t den To-ken-typ des AST-Knotens
+ []
+
+[26] <figures/ast_beispiele.png, id=834, 778.91pt x 246.9225pt>
+File: figures/ast_beispiele.png Graphic file (type png)
+
+<use figures/ast_beispiele.png>
+Overfull \hbox (29.45406pt too wide) in paragraph at lines 368--369
+[][] 
+ []
+
+
+Overfull \hbox (11.14462pt too wide) in paragraph at lines 373--374
+\OT1/cmr/m/n/10.95 deren El-e-mente wer-den als Knoten vom Typ In-te-ger als Ki
+nd-knoten angeh[]angt.
+ []
+
+[27 <./figures/ast_beispiele.png>]
+<figures/antlrworks_syntax_diagram.png, id=849, 1019.81pt x 663.47874pt>
+File: figures/antlrworks_syntax_diagram.png Graphic file (type png)
+
+<use figures/antlrworks_syntax_diagram.png>
+<figures/antlrworks_interpreter.png, id=851, 1019.81pt x 663.47874pt>
+File: figures/antlrworks_interpreter.png Graphic file (type png)
+
+<use figures/antlrworks_interpreter.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./figures/antlrworks_syntax_diagram.png (PNG copy)>]
+<figures/antlrworks_debugger.png, id=859, 1132.23pt x 775.89874pt>
+File: figures/antlrworks_debugger.png Graphic file (type png)
+
+<use figures/antlrworks_debugger.png>
+Overfull \hbox (36.28644pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (14.97704pt too wide) in paragraph at lines 410--411
+[]\OT1/cmr/m/n/10.95 ANTLRWorks be-herrscht sog-ar das De-buggen von Parsern in
+ an-deren Sprachen.
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 417--417
+[][][]\OT1/cmr/m/n/9 Eine ak-tuelle []Ubersicht []uber die Plu-g-ins f[]ur di-v
+erse IDEs find-et sich unter
+ []
+
+
+Overfull \hbox (20.47163pt too wide) in paragraph at lines 417--417
+\OT1/cmr/m/n/9 http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Develo
+pment+Environments| 
+ []
+
+
+Overfull \hbox (2.08038pt too wide) in paragraph at lines 417--418
+\OT1/cmr/m/n/10.95 Mittlerweile ex-istieren di-verse Plu-g-ins f[]ur die wichti
+g-sten En-twick-lung-sumge-
+ []
+
+[29 <./figures/antlrworks_interpreter.png (PNG copy)>] [30 <./figures/antlrwork
+s_debugger.png (PNG copy)>]
+Overfull \hbox (4.94539pt too wide) in paragraph at lines 423--423
+[][][]\OT1/cmr/m/n/9 vgl. http://www.antlr.org/wiki/display/ANTLR3/How+to+use+a
+nt+with+ANTLR3
+ []
+
+[31]
+Kapitel 5.
+
+Overfull \hbox (2.13287pt too wide) in paragraph at lines 432--432
+[]\OT1/cmr/bx/n/14.4 Sprachen zur Berech-nung und Evaluierung von
+ []
+
+
+Overfull \hbox (11.23575pt too wide) in paragraph at lines 436--437
+[]\OT1/cmr/m/n/10.95 Eine weit-ere Sprache, die ein-fache Berech-nun-gen und Va
+-li-dierun-gen erm[]oglicht,
+ []
+
+
+Overfull \hbox (1.53172pt too wide) in paragraph at lines 436--437
+\OT1/cmr/m/n/10.95 Ex-pres-sion Lan-guages f[]ur JavaServ-er Pages(JSP) und Jav
+aServ-er Faces(JSF)
+ []
+
+
+Overfull \hbox (37.24089pt too wide) in paragraph at lines 436--437
+\OT1/cmr/m/n/10.95 ent-standen. Die UEL kann auf Java-Objekte zu-greifen, Werte
+ set-zen beziehungsweise
+ []
+
+[32
+
+]
+Overfull \hbox (1.107pt too wide) in paragraph at lines 445--446
+\OT1/cmr/m/n/10.95 We-ban-wen-dun-gen all-ge-mein und For-mu-la-re im Spezielle
+n se-man-tisch anzure-
+ []
+
+
+Overfull \hbox (1.9891pt too wide) in paragraph at lines 445--446
+\OT1/cmr/m/n/10.95 Schw[]achen auf. In diesem Ab-schnitt wird auf ver-schiedene
+ Ar-beit-en in diesem
+ []
+
+
+Overfull \hbox (0.5596pt too wide) in paragraph at lines 451--452
+\OT1/cmr/m/n/10.95 dy-namis-che Doku-mente, Se-cu-ri-ty, Daten-bankan-bindung u
+nd Va-li-dierung von
+ []
+
+[33]
+Overfull \hbox (29.51624pt too wide) in paragraph at lines 453--454
+[]\OT1/cmr/m/n/10.95 Ein weit-er-er Ansatz, der er-weit-erte Mod-el-lierun-gen 
+von Web-for-mu-la-ren erm[]oglicht,
+ []
+
+
+Overfull \hbox (24.37582pt too wide) in paragraph at lines 455--456
+\OT1/cmr/m/n/10.95 Web-for-mu-la-ren f[]ur Entity-Attribute-Value Daten-banken.
+ Meta-dat-en beschreiben,
+ []
+
+
+Overfull \hbox (9.16748pt too wide) in paragraph at lines 455--456
+\OT1/cmr/m/n/10.95 Feldern beschreiben. Die Berech-nun-gen im Brows-er er-fol-g
+en mit der JavaScript
+ []
+
+
+Overfull \hbox (2.01923pt too wide) in paragraph at lines 455--456
+\OT1/cmr/m/n/10.95 Funk-tion \OT1/cmtt/m/n/10.95 eval()\OT1/cmr/m/n/10.95 , die
+ Pro-gramm-code als Script ent-ge-gen-nimmt und ausf[]uhrt.
+ []
+
+[34]) [35] [36
+
+] (./kapitel_design.tex [37]
+Kapitel 6.
+
+Overfull \hbox (18.68782pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/n/10.95 mu-la-rele-menten ent-stand durch den Wun-sch der An-wen-der
+ nach einem speziellen
+ []
+
+
+Overfull \hbox (7.67702pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/n/10.95 For-mu-lar, welch-es au-toma-tisch Berech-nun-gen []uber meh
+rere Felder durchf[]uhrt.
+ []
+
+[38
+
+]
+Overfull \hbox (8.6809pt too wide) in paragraph at lines 27--28
+[]\OT1/cmr/m/n/10.95 Listing []6.1[] enth[]alt ein Beispiel f[]ur die Evaluieru
+ng eines JavaScript-Statements
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Overfull \hbox (4.392pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/n/10.95 Eigen-schaften, die ein-er-seits als Vorteile er-scheinen, k
+[]onnen auch als Nachteile
+ []
+
+[39]
+Overfull \hbox (10.96123pt too wide) in paragraph at lines 58--59
+\OT1/cmr/m/n/10.95 Dateisys-tem oder die Daten-bank zuge-grif-f-en wer-den, ode
+r []uber \OT1/cmtt/m/n/10.95 System.exit()
+ []
+
+
+Overfull \hbox (16.68042pt too wide) in paragraph at lines 60--61
+[]\OT1/cmr/m/n/10.95 Abgesehen von b[]osartigen An-grif-f-en k[]onnen auch un-a
+b-sichtliche Fehler aufteten,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Ver-schiedene Skript-Sprachen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/cmr/m/n/10.95 vorhan-den ( JavaScript, Groovy,
+ []
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2004/10/17 UCS: Unicode data U+2100..U+21FF
+)
+Underfull \hbox (badness 1383) in paragraph at lines 81--82
+[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Pro-gramme statt State-ments $\O
+MS/cmsy/m/n/10.95 !$
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 83--84
+[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Eingeschr[]ankte Fehler-be-hand-
+lung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Voller Zu-griff auf Ressourcen
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 85--86
+\OT1/cmr/m/n/10.95 (Dateisys-tem, Daten-bank, statis-che
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 64--95
+[][] 
+ []
+
+[40]
+Overfull \hbox (24.0pt too wide) in paragraph at lines 131--157
+[][] 
+ []
+
+
+Overfull \hbox (23.64589pt too wide) in paragraph at lines 160--161
+\OT1/cmr/m/n/10.95 k[]onnen State-ments auch ohne Ausf[]uhrung der-sel-ben []ub
+erpr[]uft wer-den. Zus[]atzlich
+ []
+
+[41] [42]
+Kapitel 7.
+
+Overfull \hbox (5.48715pt too wide) in paragraph at lines 173--174
+\OT1/cmr/m/n/10.95 struk-tur f[]ur einen tech-nis-chen En-twurf liefert, die al
+le An-forderun-
+ []
+
+
+Overfull \hbox (16.86293pt too wide) in paragraph at lines 176--177
+\OT1/cmr/m/n/10.95 forderun-gen umzuwan-deln. Zuerst wird evaluiert, welche An-
+forderun-gen vorhan-
+ []
+
+
+Overfull \hbox (6.85587pt too wide) in paragraph at lines 178--179
+\OT1/cmr/m/n/10.95 Abk[]urzungen und No-ta-tio-nen ver-wen-det wer-den, an-der-
+er-seits die An-forderun-
+ []
+
+[43
+
+]
+Overfull \hbox (33.89626pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10.95 dere die Schnittstellen, die eine In-te-gra-tion in un-ter-s
+chiedliche Sys-teme erm[]oglichen. 
+ []
+
+[44] [45]
+Overfull \hbox (12.92401pt too wide) in paragraph at lines 264--265
+[]\OT1/cmr/m/n/10.95 Die arith-metis-chen Op-er-a-toren (Tabelle []7.3[]) sind 
+die vi-er Grun-drech-nungsarten
+ []
+
+[46]
+Overfull \hbox (31.15874pt too wide) in paragraph at lines 312--313
+\OT1/cmr/m/n/10.95 R[]uckgabewerte, []Uberschreitung der Wert-gren-zen von Type
+n oder API-[]Anderungen
+ []
+
+[47]
+Kapitel 8.
+[48
+
+]
+Overfull \hbox (29.27078pt too wide) in paragraph at lines 346--347
+\OT1/cmtt/m/n/10.95 !YYYY-MM-DD\OT1/cmr/m/n/10.95 , wahlweise kann auch die Uhr
+zeit im For-mat \OT1/cmtt/m/n/10.95 !YYYY-MM-DD-hh:mm:ss
+ []
+
+
+Overfull \hbox (0.55917pt too wide) in paragraph at lines 353--354
+ \OT1/cmr/bx/n/10.95 Boolean \OT1/cmr/m/n/10.95 Boo-lesche Wahrheitswerte wer-d
+en vor allem in Con-straints einge-
+ []
+
+
+Overfull \hbox (9.01547pt too wide) in paragraph at lines 361--362
+\OT1/cmr/m/n/10.95 sind. Da die Sprache statisch typ-isiert ist, k[]onnen State
+-ments ohne Ausf[]uhrung
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 401--401
+[]\OT1/cmr/m/n/10.95 Tabelle 8.1: []Semantische Typregeln: Op-er-a-toren mit Da
+-ten-typen der
+ []
+
+
+Overfull \hbox (0.52916pt too wide) in paragraph at lines 405--406
+\OT1/cmr/m/n/10.95 die Pa-ram-e-ter ein-er Funk-tion, als auch den R[]uckgabewe
+rt, der fix vorgegeben
+ []
+
+[49] [50]
+Overfull \hbox (5.92888pt too wide) in paragraph at lines 413--414
+ \OT1/cmr/bx/n/10.95 Funk-tions-def-i-ni-tion[] \OT1/cmr/m/n/10.95 Funk-tio-nen
+ haben be-liebig viele Pa-ram-e-ter und einen
+ []
+
+
+Overfull \hbox (5.15134pt too wide) in paragraph at lines 415--416
+[]\OT1/cmr/m/n/10.95 In der FXL wer-den Funk-tio-nen als Meth-o-d-en von Contai
+ner-Klassen definiert,
+ []
+
+[51]
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 452--462
+ [] 
+ []
+
+[52]
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 474--500
+ [] 
+ []
+
+
+Overfull \hbox (5.97374pt too wide) in paragraph at lines 507--508
+\OT1/cmr/m/n/10.95 ter-preter ar-beit-et, muss auf ver-schiedene Fehler auch w[
+]ahrend der Ausf[]uhrung
+ []
+
+
+Overfull \hbox (2.20204pt too wide) in paragraph at lines 507--508
+\OT1/cmr/m/n/10.95 R[]ucksicht genom-men wer-den. So sind manche Fehler dop-pel
+t definiert, allerd-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
+[]\OT1/cmr/m/n/10.95 Allgemeiner/unbekannter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+[]\OT1/cmr/m/n/10.95 Der be-tr-e-f-fende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+[]\OT1/cmr/m/n/10.95 Der ung[]ultige
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]\OT1/cmr/m/n/10.95 Variable Provider nicht ge-fun-
+ []
+
+
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 510--532
+[][] 
+ []
+
+[53] [54]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 587
+.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 587.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 587.
+
+[55]
+Kapitel 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--632
+[]\OT1/cmr/m/n/10.95 Funktionsaufruf; An-zahl der Kinder
+ []
+
+
+Overfull \hbox (9.12532pt too wide) in paragraph at lines 611--635
+[][] 
+ []
+
+
+Overfull \hbox (16.95297pt too wide) in paragraph at lines 644--645
+\OT1/cmr/m/n/10.95 Da die DSL statisch typ-isiert ist, ist es m[]oglich, die Ty
+pe-checks ohne Ausf[]uhrung
+ []
+
+[56
+
+] <figures/uml_result_classes.png, id=1141, 469.755pt x 277.035pt>
+File: figures/uml_result_classes.png Graphic file (type png)
+
+<use figures/uml_result_classes.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[57]
+Overfull \hbox (2.8397pt too wide) in paragraph at lines 661--662
+\OT1/cmr/m/n/10.95 Der Typ[]uberpr[]ufer ar-beit-et den AST mit einem rekur-siv
+-en depth-first Ansatz
+ []
+
+
+Overfull \hbox (4.05516pt too wide) in paragraph at lines 663--664
+\OT1/cmr/m/n/10.95 Operan-den des Typs BOOLEAN ve-r-ar-beit-en(Funktion \OT1/cm
+tt/m/n/10.95 checkBinaryBoolean
+ []
+
+
+Overfull \hbox (0.55956pt too wide) in paragraph at lines 685--686
+[]\OT1/cmr/m/n/10.95 Normalerweise w[]are es von Vorteil, wenn der Typ[]uberpr[
+]ufer die []Uberpr[]ufung
+ []
+
+[58 <./figures/uml_result_classes.png (PNG copy)>]
+<figures/uml_dsl_overview.png, id=1160, 571.13374pt x 175.65625pt>
+File: figures/uml_dsl_overview.png Graphic file (type png)
+
+<use figures/uml_dsl_overview.png>
+Overfull \hbox (39.7909pt too wide) in paragraph at lines 693--694
+[][] 
+ []
+
+
+Overfull \hbox (4.33124pt too wide) in paragraph at lines 702--703
+\OT1/cmr/m/n/10.95 Der Vari-able Provider ist eine op-tionale Kom-po-nente, der
+ nur dann notwendig
+ []
+
+
+Overfull \hbox (9.98645pt too wide) in paragraph at lines 708--709
+[]\OT1/cmtt/m/n/10.95 ResultType lookupType(String name)\OT1/cmr/m/n/10.95 : Di
+ese Meth-ode wird vom Typ-
+ []
+
+[59 <./figures/uml_dsl_overview.png (PNG copy)>]
+Overfull \hbox (16.83255pt too wide) in paragraph at lines 718--719
+\OT1/cmr/m/n/10.95 in-te-gri-ert. Um Funk-tio-nen hinzuzuf[]ugen, k[]onnen Java
+-Klassen, die entsprechend
+ []
+
+
+Overfull \hbox (5.73045pt too wide) in paragraph at lines 718--719
+\OT1/cmr/m/n/10.95 an-notierte Meth-o-d-en en-thal-ten, er-stellt wer-den. Der 
+In-ter-preter enth[]alt Meth-
+ []
+
+[60]
+Overfull \hbox (0.80035pt too wide) in paragraph at lines 742--743
+\OT1/cmr/m/n/10.95 konkreten Ex-cep-tion-klassen \OT1/cmtt/m/n/10.95 FXLSyntaxE
+xception\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 FXLSemanticException\OT1/cmr/m
+/n/10.95 ,
+ []
+
+
+Overfull \hbox (8.25357pt too wide) in paragraph at lines 742--743
+\OT1/cmtt/m/n/10.95 lang.-Runtime-Exception\OT1/cmr/m/n/10.95 ) zu ver-hin-dern
+. Eine Ex-cep-tion enth[]alt einen Fehler-
+ []
+
+<figures/uml_exception_hierarchy.png, id=1196, 575.14874pt x 353.32pt>
+File: figures/uml_exception_hierarchy.png Graphic file (type png)
+
+<use figures/uml_exception_hierarchy.png>
+Overfull \hbox (42.60138pt too wide) in paragraph at lines 745--746
+[][] 
+ []
+
+[61] [62 <./figures/uml_exception_hierarchy.png (PNG copy)>]
+Kapitel 10.
+
+Overfull \hbox (2.32364pt too wide) in paragraph at lines 754--755
+\OT1/cmr/m/n/10.95 Auch wenn die Phase Test in dieser Ar-beit am Ende des En-tw
+ick-lungsprozess-
+ []
+
+
+Overfull \hbox (24.61176pt too wide) in paragraph at lines 765--766
+[]\OT1/cmr/m/n/10 Unter dem Test von Soft-ware ver-ste-hen wir die stich-probe-
+nar-tige Ausf[]uhrung
+ []
+
+[63
+
+]
+Overfull \hbox (32.04086pt too wide) in paragraph at lines 789--790
+\OT1/cmr/m/n/10.95 Softwaretests k[]onnen nach di-versen Kri-te-rien eingeteilt
+ wer-den. Eine grunds[]atzliche
+ []
+
+[64]
+Overfull \hbox (36.75546pt too wide) in paragraph at lines 803--804
+[]\OT1/cmr/m/n/10.95 Auf Kom-po-nen-tenebene sind die klas-sis-chen Ver-fahren 
+die []Aquivalenzklassenbildung
+ []
+
+
+Overfull \hbox (11.61606pt too wide) in paragraph at lines 808--809
+\OT1/cmr/m/n/10.95 er Gran-u-lar-it[]at (produkt-, prozess-, pro-jek-t-be-zo-ge
+n) gemessen wer-den. Wichtig
+ []
+
+
+Overfull \hbox (75.50627pt too wide) in paragraph at lines 810--811
+[]\OT1/cmr/m/n/10.95 Testmetriken basieren auf ver-schiede-nen Ar-ti-fak-ten de
+s Test- und Entwicklungsprozesses[[]]: 
+ []
+
+
+Overfull \hbox (23.31122pt too wide) in paragraph at lines 819--821
+\OT1/cmr/m/n/10.95 An-weisun-gen zur An-zahl der im Test aus-gef[]uhrten An-wei
+sun-gen. Eine Einf[]uhrung
+ []
+
+[65]
+Overfull \hbox (4.81787pt too wide) in paragraph at lines 848--849
+[]\OT1/cmr/m/n/10.95 abdecken. Zus[]atzlich muss beachtet wer-den, dass einige 
+Op-er-a-toren []uberladen
+ []
+
+[66]
+Overfull \hbox (4.29964pt too wide) in paragraph at lines 857--858
+[]\OT1/cmr/m/n/10.95 Die Auf-gaben-stel-lung der DSL eignet sich her-vor-ra-gen
+d f[]ur die Test-getriebene
+ []
+
+) [67] [68
+
+] (./kapitel_implementierung.tex [69]
+Kapitel 11.
+[70
+
+] [71]
+<figures/workflow_neues_formular.png, id=1272, 511.9125pt x 317.185pt>
+File: figures/workflow_neues_formular.png Graphic file (type png)
+
+<use figures/workflow_neues_formular.png> [72 <./figures/workflow_neues_formula
+r.png (PNG copy)>]
+Overfull \hbox (6.30835pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10.95 bere-its aus-gef[]ullten For-mu-la-re aufge-lis-tet. Soll ei
+n neues For-mu-lar hinzugef[]ugt
+ []
+
+<figures/workflow_formular_ausfuellen.png, id=1280, 885.3075pt x 357.335pt>
+File: figures/workflow_formular_ausfuellen.png Graphic file (type png)
+
+<use figures/workflow_formular_ausfuellen.png>
+Overfull \hbox (82.65266pt too wide) in paragraph at lines 75--76
+ [] 
+ []
+
+[73 <./figures/workflow_formular_ausfuellen.png (PNG copy)>]
+Overfull \hbox (4.02707pt too wide) in paragraph at lines 93--94
+\OT1/cmr/m/n/10.95 ch-er Be-nutze-r-ober-fl[]ache, Pro-gramm-logik und Daten-zu
+-griff-ss-chicht aus-gef[]uhrt
+ []
+
+
+Overfull \hbox (2.73317pt too wide) in paragraph at lines 95--96
+\OT1/cmr/m/n/10.95 der Logikschicht zu-greift. Un-ter-st[]utzt wird die GUI dur
+ch JavaScript-basierte
+ []
+
+<figures/spics_architektur.png, id=1293, 803.0pt x 957.5775pt>
+File: figures/spics_architektur.png Graphic file (type png)
+
+<use figures/spics_architektur.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (27.29582pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10.95 Pa-tien-ten-dat-en von den Be-hand-lungs-dat-en. Diese []ort
+liche Tren-nung ist notwendig,
+ []
+
+[74] [75 <./figures/spics_architektur.png (PNG copy)>]
+Kapitel 12.
+[76
+
+]
+Overfull \hbox (28.22368pt too wide) in paragraph at lines 169--170
+\OT1/cmr/m/n/10.95 G[]ultigkeit bzw. Sinnhaftigkeit der Eingabegr[]o^^Yen be-t-
+rifft. Sowohl die K[]orpergr[]o^^Ye,
+ []
+
+[77]
+Overfull \hbox (7.34242pt too wide) in paragraph at lines 173--174
+\OT1/cmr/m/n/10.95 zus[]atzlich muss diese Formel einen boo-leschen Wahrheitswe
+rt als R[]uckgabetyp
+ []
+
+
+Overfull \hbox (15.70589pt too wide) in paragraph at lines 186--187
+[]\OT1/cmr/m/n/10.95 Die State-ments der FXL wer-den bei der Mod-el-lierung des
+ For-mu-la-rs eingegeben.
+ []
+
+[78] <figures/uml_datenmodell.png, id=1333, 803.0pt x 849.1725pt>
+File: figures/uml_datenmodell.png Graphic file (type png)
+
+<use figures/uml_datenmodell.png>
+Overfull \hbox (6.03452pt too wide) in paragraph at lines 200--201
+[]\OT1/cmr/m/n/10.95 Jedes Formele-ment enth[]alt eine boo-lesche Vari-able na-
+mens dslEn-abled. Dieses
+ []
+
+
+Overfull \hbox (13.57787pt too wide) in paragraph at lines 204--205
+[]\OT1/cmr/m/n/10.95 Die zweite Vari-ante, die auch in der Im-ple-men-tierung v
+er-wen-det wird, ver[]andert
+ []
+
+[79 <./figures/uml_datenmodell.png (PNG copy)>]
+<figures/screenshot_spics_eingabe.png, id=1341, 676.5275pt x 664.4825pt>
+File: figures/screenshot_spics_eingabe.png Graphic file (type png)
+
+<use figures/screenshot_spics_eingabe.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (33.56183pt too wide) in paragraph at lines 242--243
+\OT1/cmr/m/n/10.95 geson-dert va-li-diert. Im Val-ida-tor find-et die Zyklen[]u
+berpr[]ufung und die []Uberpr[]ufung
+ []
+
+
+Overfull \hbox (13.60835pt too wide) in paragraph at lines 242--243
+\OT1/cmr/m/n/10.95 von Abh[]angigkeiten statt. Beim Spe-ich-ern eines For-mu-la
+-rele-ments sind mehrere
+ []
+
+[80] [81 <./figures/screenshot_spics_eingabe.png>]
+<figures/cycle_bmi_tree.png, id=1376, 480.79625pt x 328.22626pt>
+File: figures/cycle_bmi_tree.png Graphic file (type png)
+
+<use figures/cycle_bmi_tree.png> [82]
+Overfull \hbox (8.92424pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10.95 befind-et oder nicht. Im fol-gen-den wird der Al-go-rith-mus
+ zur Zyklen[]uberpr[]ufung
+ []
+
+
+Overfull \hbox (1.68501pt too wide) in paragraph at lines 283--284
+\OT1/cmr/m/n/10.95 wird, wird eine Ex-cep-tion gewor-fen. Ein Feld ist von eine
+m an-deren abh[]angig,
+ []
+
+
+Overfull \hbox (13.79077pt too wide) in paragraph at lines 283--284
+\OT1/cmr/m/n/10.95 wenn der Vari-ablenname des Feldes in der Formel des an-dere
+n Feldes vorkommt. 
+ []
+
+[83 <./figures/cycle_bmi_tree.png>] [84]
+Overfull \hbox (0.55954pt too wide) in paragraph at lines 328--329
+\OT1/cmr/m/n/10.95 straints belegt sind. En-twed-er wer-den die Con-straints be
+re-its beim Ausf[]ullen,
+ []
+
+
+Overfull \hbox (6.27791pt too wide) in paragraph at lines 333--334
+\OT1/cmr/m/n/10.95 Webanwendungen bi-eten heutzu-tage dank JavaScript die M[]og
+lichkeit, Berech-
+ []
+
+
+Overfull \hbox (12.6959pt too wide) in paragraph at lines 337--338
+\OT1/cmr/m/n/10.95 dem man die DSL-Statements in JavaScript []ubersetzt und im 
+Brows-er ausf[]uhrt.
+ []
+
+<figures/uml_seq_client.jpg, id=1407, 752.8125pt x 499.8675pt>
+File: figures/uml_seq_client.jpg Graphic file (type jpg)
+
+<use figures/uml_seq_client.jpg>
+Overfull \hbox (7.49332pt too wide) in paragraph at lines 346--347
+\OT1/cmr/m/n/10.95 eigens f[]ur den Brows-er en-twick-elte API notwendig, die a
+lle Funk-tio-nen enth[]alt,
+ []
+
+[85] <figures/uml_seq_client_hybrid.jpg, id=1416, 869.2475pt x 409.53pt>
+File: figures/uml_seq_client_hybrid.jpg Graphic file (type jpg)
+
+<use figures/uml_seq_client_hybrid.jpg>
+Overfull \hbox (74.62268pt too wide) in paragraph at lines 351--352
+[][] 
+ []
+
+[86 <./figures/uml_seq_client.jpg> <./figures/uml_seq_client_hybrid.jpg>]
+Overfull \hbox (7.73798pt too wide) in paragraph at lines 360--361
+\OT1/cmr/m/n/10.95 Die Al-ter-na-tive zur Evaluierung der State-ments im Brows-
+er ist die Ausf[]uhrung
+ []
+
+<figures/uml_seq_server.jpg, id=1425, 803.0pt x 375.4025pt>
+File: figures/uml_seq_server.jpg Graphic file (type jpg)
+
+<use figures/uml_seq_server.jpg>
+Overfull \hbox (41.49902pt too wide) in paragraph at lines 363--364
+[][] 
+ []
+
+[87 <./figures/uml_seq_server.jpg>]
+Overfull \hbox (0.16293pt too wide) in paragraph at lines 383--384
+\OT1/cmr/m/n/10.95 hal-ten. Schreibe alle Werte der Felder in die Map \OT1/cmtt
+/m/n/10.95 calculated<String,
+ []
+
+
+Overfull \hbox (5.06662pt too wide) in paragraph at lines 392--393
+\OT1/cmr/m/n/10.95 hat, schreibe diesen mit dem berech-neten Wert in \OT1/cmtt/
+m/n/10.95 calculated\OT1/cmr/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (29.3742pt too wide) in paragraph at lines 402--403
+\OT1/cmr/m/it/10.95 K[]orpergewicht \OT1/cmr/m/n/10.95 berech-net und aus der L
+iste ent-fer-nt. Beim n[]achsten Schleifendurch-
+ []
+
+[88]
+Overfull \hbox (2.26083pt too wide) in paragraph at lines 404--405
+\OT1/cmr/m/n/10.95 diesem Fall liefert die \OT1/cmtt/m/n/10.95 lookup()\OT1/cmr
+/m/n/10.95 -Methode des \OT1/cmtt/m/n/10.95 VariableProvider \OT1/cmr/m/n/10.95
+ ein \OT1/cmtt/m/n/10.95 Result\OT1/cmr/m/n/10.95 -
+ []
+
+
+Overfull \hbox (2.53668pt too wide) in paragraph at lines 413--414
+\OT1/cmr/m/n/10.95 richti-gen Stelle im Sys-tem abge-fan-gen wer-den, um einen 
+rei-bungslosen Ablauf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
+[]\OT1/cmr/m/n/10.95 Allgemeiner/unbekannter Im-ple-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+[]\OT1/cmr/m/n/10.95 Die Formel erzeugt zyk-lis-che
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 438--438
+[]\OT1/cmr/m/n/10.95 Die Formel enth[]alt un-bekan-nte
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 440--440
+[]\OT1/cmr/m/n/10.95 R[]uckgabetyp der Formel stimmt
+ []
+
+
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 421--447
+[][] 
+ []
+
+[89]) [90] [91] [92
+
+] (./kapitel_ergebnis.tex
+Kapitel 13.
+[93
+
+] [94]
+Kapitel 14.
+
+Overfull \hbox (1.38075pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 Textfelder f[]ur die nu-merischen Typen, sowie Check-box-en 
+f[]ur boo-lesche Werte
+ []
+
+
+Overfull \hbox (0.40744pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 und Datepick-er f[]ur Da-tum-swerte. F[]ur die Ver-wen-dung 
+von weit-eren Formele-
+ []
+
+) [95
+
+] (./thesis.bbl [96] [97
+
+] [98] [99]) [100] (./thesis.lot
+Overfull \hbox (14.97726pt too wide) in paragraph at lines 15--15
+ [][] [][]\OT1/cmr/m/n/10.95 Semantische Typregeln: Op-er-a-toren mit Da-ten-ty
+pen der Operan- 
+ []
+
+)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ [101
+
+] (./thesis.lof
+Overfull \hbox (9.56311pt too wide) in paragraph at lines 5--5
+ [][] [][]\OT1/cmr/m/n/10.95 Klassischer Auf-bau ein-er Lan-guage Ap-pli-ca-tio
+n: Com-pil-er (link- 
+ []
+
+
+Overfull \hbox (11.54007pt too wide) in paragraph at lines 6--6
+ [][] [][]\OT1/cmr/m/n/10.95 Vergleich der Parse Tree For-mate a) Con-crete Syn
+-tax Tree(CST) 
+ []
+
+
+Overfull \hbox (2.68779pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/m/n/10.95 und b) Ab-stract Syn-tax Tree(AST) f[]ur den Aus-druck x=(a
++b)*c[] [][]  
+ []
+
+)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [102
+
+] (./thesis.lol)
+\tf@lol=\write7
+\openout7 = `thesis.lol'.
+
+ [103
+
+]
+\openout2 = `appendix.aux'.
+
+ (./appendix.tex
+Anhang A.
+[104
+
+
+] [105]) [106] (./thesis.aux (./frontmatter.aux) (./appendix.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9564 strings out of 495061
+ 129858 string characters out of 1182621
+ 434908 words of memory out of 3000000
+ 11887 multiletter control sequences out of 15000+50000
+ 20416 words of font info for 77 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,11n,44p,1505b,1903s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb>
+Output written on thesis.pdf (110 pages, 3252930 bytes).
+PDF statistics:
+ 1923 PDF objects out of 2073 (max. 8388607)
+ 624 named destinations out of 1000 (max. 500000)
+ 921 words of extra memory for PDF output out of 10000 (max. 10000000)
+

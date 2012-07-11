@@ -1,0 +1,224 @@
+\begin{thebibliography}{10}
+
+\bibitem{AhSe86}
+Alfred~V. Aho, Ravi Sethi, and Jeffrey~D. Ullman.
+\newblock {\em Compilers: principles, techniques, and tools}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1986.
+
+\bibitem{AtBa99}
+D~Atkins, T~Ball, G~Bruns, and K~Cox.
+\newblock Mawl: A domain-specific language for form-based services.
+\newblock {\em IEEE Transactions on Software Engineering}, 25(3):334--346,
+  1999.
+
+\bibitem{Xfor09}
+John~M. Boyer.
+\newblock Xforms 1.1 w3c recommendation, October 2009.
+\newblock http://www.w3.org/TR/2009/REC-xforms-20091020/.
+
+\bibitem{BrMo00}
+Claus Brabrand, Anders Moller, Mikkel Ricky, and Michael~I Schwartzbach.
+\newblock Powerforms: Declarative client-side form field validation.
+\newblock {\em World Wide Web Journal}, 3(4):205--314, 2000.
+
+\bibitem{Chas07}
+Nicholas Chase.
+\newblock Xforms tip: Using calculations - a standard way to include
+  calculations in forms using xforms, Jänner 2007.
+\newblock
+  http://www.ibm.com/developerworks/xml/library/x-xformstipcalculations/index.%
+html.
+
+\bibitem{Chom59}
+Noam Chomsky.
+\newblock On certain formal properties of grammars.
+\newblock {\em Information and Control}, 2(2):137--167, 1959.
+
+\bibitem{wwwJodaTime}
+Stephen Colebourne.
+\newblock Joda time - java date and time api.
+\newblock http://joda-time.sourceforge.net/.
+
+\bibitem{Esco12}
+Eban Escott, Paul Strooper, Paul King, and Ian Hayes.
+\newblock Model-driven web form validation with uml and ocl.
+\newblock In Andreas Harth and Nora Koch, editors, {\em Current Trends in Web
+  Engineering}, volume 7059 of {\em Lecture Notes in Computer Science}, pages
+  223--235. Springer Berlin / Heidelberg, 2012.
+
+\bibitem{Fowl05}
+Martin Fowler.
+\newblock Language workbenches: The killer-app for domain specific languages?,
+  June 2005.
+\newblock http://martinfowler.com/articles/languageWorkbench.html.
+
+\bibitem{FoPa10}
+Martin Fowler and Rebecca Parsons.
+\newblock {\em {Domain-Specific Languages (Addison-Wesley Signature Series
+  (Fowler))}}.
+\newblock Addison-Wesley Longman, 1 edition, September 2010.
+
+\bibitem{GrVi09}
+Danny~M. Groenewegen and Eelco Visser.
+\newblock Integration of data validation and user interface concerns in a dsl
+  for web applications.
+\newblock In Mark van~den Brand and Jeff Gray, editors, {\em Software Language
+  Engineering, Second International Conference, SLE 2009, Denver, USA, October,
+  2009. Revised Selected Short Papers}, Lecture Notes in Computer Science.
+  Springer, 2009.
+
+\bibitem{JSR-223}
+Mike Grogan.
+\newblock Jsr-000223 scripting for the javatm platform (final release),
+  December 2006.
+\newblock http://jcp.org/aboutJava/communityprocess/final/jsr223/index.html.
+
+\bibitem{wwwSandboxRhino}
+Jani Hartikainen.
+\newblock Sandboxing rhino in java.
+\newblock http://codeutopia.net/blog/2009/01/02/sandboxing-rhino-in-java/.
+
+\bibitem{KlSt10}
+Paul Klint, Tijs van~der Storm, and Jurgen Vinju.
+\newblock On the impact of dsl tools on the maintainability of language
+  implementations.
+\newblock In {\em Proceedings of the Tenth Workshop on Language Descriptions,
+  Tools and Applications}, LDTA '10, pages 10:1--10:9, New York, NY, USA, 2010.
+  ACM.
+
+\bibitem{LaJi07}
+B.~Langlois, C.~E. Jitia, and E.~Jouenne.
+\newblock {DSL Classification}.
+\newblock In {\em Proceedings of the 7th OOPSLA Workshop on Domain-Specific
+  Modeling}, 2007.
+
+\bibitem{SpLi06}
+T.~Linz, K.~Dussa-Zieger, and A.~Spillner.
+\newblock {\em Praxiswissen Softwaretest - Testmanagement: Aus- und
+  Weiterbildung zum certified Tester ; advanced Level nach ISTQB-Standard}.
+\newblock dpunkt, 2005.
+
+\bibitem{MeHe05}
+Marjan Mernik, Jan Heering, and Anthony~M. Sloane.
+\newblock When and how to develop domain-specific languages.
+\newblock {\em ACM Comput. Surv.}, 37:316--344, December 2005.
+
+\bibitem{HaMo90}
+H.~Mossenbock.
+\newblock A generator for production quality compilers.
+\newblock Technical report, 1990.
+
+\bibitem{wwwRhino}
+{Mozilla Foundation}.
+\newblock Rhino: Javascript for java.
+\newblock http://www.mozilla.org/rhino/.
+\newblock zuletzt abgerufen am 25.08.2011.
+
+\bibitem{ISTQB1}
+Thomas M{\"u}ller, Armin Beer, Martin Klonk, and Rahul Verma.
+\newblock Certified tester - foundation level syllabus.
+\newblock March 2010.
+
+\bibitem{Moes11}
+Hanspeter Mössenböck.
+\newblock How to build abstract syntax trees with coco/r, September 2011.
+\newblock http://ssw.jku.at/coco/Doc/AST.pdf.
+
+\bibitem{NaPr00}
+Prakash~M Nadkarni, Cynthia~M Brandt, and Luis Marenco.
+\newblock Webeav: Automatic metadata-driven generation of web interfaces to
+  entity-attribute-value databases.
+\newblock {\em Journal of the American Medical Informatics Association},
+  7(4):343--356, 2000.
+
+\bibitem{Who00}
+WHO~Consultation on~Obesity and World~Health Organization.
+\newblock {\em Obesity : preventing and managing the global epidemic}.
+\newblock World Health Organization, Geneva :, 2000.
+
+\bibitem{Parr07}
+Terence Parr.
+\newblock {\em The Definitive ANTLR Reference: Building Domain-Specific
+  Languages}.
+\newblock Pragmatic Programmers. Pragmatic Bookshelf, first edition, May 2007.
+
+\bibitem{Parr10}
+Terence Parr.
+\newblock {\em {Language Implementation Patterns: Create Your Own
+  Domain-Specific and General Programming Languages}}.
+\newblock The Pragmatic Bookshelf, 2009.
+
+\bibitem{RiGo98}
+Mark Richters and Martin Gogolla.
+\newblock On formalizing the uml object constraint language ocl.
+\newblock In Tok-Wang Ling, Sudha Ram, and Mong Li~Lee, editors, {\em
+  Conceptual Modeling – ER ’98}, volume 1507 of {\em Lecture Notes in
+  Computer Science}, pages 449--464. Springer Berlin / Heidelberg, 1998.
+
+\bibitem{RuBa08}
+Alex Ruiz and Jeff Bay.
+\newblock An approach to internal domain-specific languages in java, February
+  2008.
+\newblock http://www.infoq.com/articles/internal-dsls-java.
+
+\bibitem{Schl08}
+Holger Schlingloff.
+\newblock Zyklensuche in graphen.
+\newblock In {\em Taschenbuch der Algorithmen}, eXamen.press, pages 83--93.
+  Springer Berlin Heidelberg, 2008.
+\newblock 10.1007/978-3-540-76394-9\_9.
+
+\bibitem{SpLi10}
+A.~Spillner and T.~Linz.
+\newblock {\em Basiswissen Softwaretest: Aus- und Weiterbildung zum Certified
+  Tester- Foundation Level nach ISTQB-Standard}.
+\newblock Dpunkt.Verlag GmbH, 2010.
+
+\bibitem{VaDe98}
+Arie van Deursen and Paul Klint.
+\newblock Little languages: little maintenance.
+\newblock {\em Journal of Software Maintenance}, 10:75--92, March 1998.
+
+\bibitem{VaDe00}
+Arie van Deursen, Paul Klint, and Joost Visser.
+\newblock Domain-specific languages: an annotated bibliography.
+\newblock {\em SIGPLAN Not.}, 35:26--36, June 2000.
+
+\bibitem{Vige10}
+U.~Vigenschow.
+\newblock {\em Testen von Software und Embedded Systems: Professionelles
+  Vorgehen mit modellbasierten und objektorientierten Ans{\"a}tzen}.
+\newblock Dpunkt.Verlag GmbH, 2010.
+
+\bibitem{Vis08}
+Eelco Visser.
+\newblock {WebDSL}: {A} case study in domain-specific language engineering.
+\newblock In R.~Lammel, J.~Saraiva, and J.~Visser, editors, {\em Generative and
+  Transformational Techniques in Software Engineering (GTTSE 2007)}, Lecture
+  Notes in Computer Science. Springer, 2008.
+
+\bibitem{VoWi02}
+G.~Vossen and K.U. Witt.
+\newblock {\em Grundlagen der Theoretischen Informatik mit Anwendungen.: Eine
+  Einf{\"u}hrung f{\"u}r Studierende der Informatik, Wirtschaftsinformatik und
+  Technischen Informatik.}
+\newblock Vieweg, 2002.
+
+\bibitem{JoWa09}
+J.~Watkins.
+\newblock {\em Agile testing: how to succeed in an extreme testing
+  environment}.
+\newblock Cambridge University Press, 2009.
+
+\bibitem{NiWi77}
+Niklaus Wirth.
+\newblock What can we do about the unnecessary diversity of notation for
+  syntactic definitions?
+\newblock {\em Commun. ACM}, 20(11):822--823, November 1977.
+
+\bibitem{ZuGr04}
+Wolfgang Zuser, Thomas Grechenig, and Monika K{\"o}hle.
+\newblock {\em Software Engineering. Mit UML und dem Unified Process}.
+\newblock Pearson Studium, auflage: 2., {\"u}berarb. a. edition, 2004.
+
+\end{thebibliography}
