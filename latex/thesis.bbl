@@ -11,6 +11,11 @@ D~Atkins, T~Ball, G~Bruns, and K~Cox.
 \newblock {\em IEEE Transactions on Software Engineering}, 25(3):334--346,
   1999.
 
+\bibitem{Beck03}
+K.~Beck.
+\newblock {\em Test-Driven Development: By Example}.
+\newblock The Addison-Wesley Signature Series. Addison-Wesley, 2003.
+
 \bibitem{Xfor09}
 John~M. Boyer.
 \newblock Xforms 1.1 w3c recommendation, October 2009.

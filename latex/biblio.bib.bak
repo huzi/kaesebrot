@@ -23,6 +23,17 @@
   url = {http://portal.acm.org/citation.cfm?id=316285}
 }
 
+@BOOK{Beck03,
+  title = {Test-Driven Development: By Example},
+  publisher = {Addison-Wesley},
+  year = {2003},
+  author = {Beck, K.},
+  series = {The Addison-Wesley Signature Series},
+  isbn = {9780321146533},
+  lccn = {2002028037},
+  url = {http://books.google.at/books?id=goE1TL0u0dUC}
+}
+
 @MISC{Xfor09,
   author = {John M. Boyer},
   title = {XForms 1.1 W3C Recommendation},
@@ -348,6 +359,15 @@
   month = feb,
   year = {2008},
   note = {http://www.infoq.com/articles/internal-dsls-java }
+}
+
+@MISC{UEL,
+  author = {Ryan Lubke,Jennifer Ball, and Pierre Delisle},
+  title = {Unified Expression Language},
+  month = aug,
+  year = {2005},
+  note = {http://java.sun.com/products/jsp/reference/techart/unifiedEL.html},
+  url = {http://java.sun.com/products/jsp/reference/techart/unifiedEL.html}
 }
 
 @INCOLLECTION{Schl08,

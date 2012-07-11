@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  11 JUL 2012 16:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  11 JUL 2012 16:59
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -1476,6 +1476,11 @@ Overfull \hbox (4.81787pt too wide) in paragraph at lines 913--914
 Op-er-a-toren []uberladen
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
+
+ []
+
 [68]
 Overfull \hbox (36.75546pt too wide) in paragraph at lines 954--955
 []\OT1/cmr/m/n/10.95 Auf Kom-po-nen-tenebene sind die klas-sis-chen Ver-fahren 
@@ -1495,7 +1500,7 @@ Kapitel 11.
 [73
 
 ] [74]
-<figures/workflow_neues_formular.png, id=1361, 511.9125pt x 317.185pt>
+<figures/workflow_neues_formular.png, id=1364, 511.9125pt x 317.185pt>
 File: figures/workflow_neues_formular.png Graphic file (type png)
 
 <use figures/workflow_neues_formular.png> [75 <./figures/workflow_neues_formula
@@ -1505,7 +1510,7 @@ Overfull \hbox (6.30835pt too wide) in paragraph at lines 69--70
 n neues For-mu-lar hinzugef[]ugt
  []
 
-<figures/workflow_formular_ausfuellen.png, id=1370, 885.3075pt x 357.335pt>
+<figures/workflow_formular_ausfuellen.png, id=1373, 885.3075pt x 357.335pt>
 File: figures/workflow_formular_ausfuellen.png Graphic file (type png)
 
 <use figures/workflow_formular_ausfuellen.png>
@@ -1525,7 +1530,7 @@ Overfull \hbox (2.73317pt too wide) in paragraph at lines 95--96
 ch JavaScript-basierte
  []
 
-<figures/spics_architektur.png, id=1383, 803.0pt x 957.5775pt>
+<figures/spics_architektur.png, id=1386, 803.0pt x 957.5775pt>
 File: figures/spics_architektur.png Graphic file (type png)
 
 <use figures/spics_architektur.png>
@@ -1560,7 +1565,7 @@ Overfull \hbox (15.70589pt too wide) in paragraph at lines 186--187
  For-mu-la-rs eingegeben.
  []
 
-[81] <figures/uml_datenmodell.png, id=1423, 803.0pt x 849.1725pt>
+[81] <figures/uml_datenmodell.png, id=1426, 803.0pt x 849.1725pt>
 File: figures/uml_datenmodell.png Graphic file (type png)
 
 <use figures/uml_datenmodell.png>
@@ -1576,7 +1581,7 @@ er-wen-det wird, ver[]andert
  []
 
 [82 <./figures/uml_datenmodell.png (PNG copy)>]
-<figures/screenshot_spics_eingabe.png, id=1431, 676.5275pt x 664.4825pt>
+<figures/screenshot_spics_eingabe.png, id=1434, 676.5275pt x 664.4825pt>
 File: figures/screenshot_spics_eingabe.png Graphic file (type png)
 
 <use figures/screenshot_spics_eingabe.png>
@@ -1596,7 +1601,7 @@ Overfull \hbox (13.60835pt too wide) in paragraph at lines 242--243
  []
 
 [83] [84 <./figures/screenshot_spics_eingabe.png>]
-<figures/cycle_bmi_tree.png, id=1465, 480.79625pt x 328.22626pt>
+<figures/cycle_bmi_tree.png, id=1468, 480.79625pt x 328.22626pt>
 File: figures/cycle_bmi_tree.png Graphic file (type png)
 
 <use figures/cycle_bmi_tree.png> [85]
@@ -1635,7 +1640,7 @@ Overfull \hbox (12.6959pt too wide) in paragraph at lines 338--339
 Brows-er ausf[]uhrt.
  []
 
-<figures/uml_seq_client.jpg, id=1497, 752.8125pt x 499.8675pt>
+<figures/uml_seq_client.jpg, id=1500, 752.8125pt x 499.8675pt>
 File: figures/uml_seq_client.jpg Graphic file (type jpg)
 
 <use figures/uml_seq_client.jpg>
@@ -1644,7 +1649,7 @@ Overfull \hbox (7.49332pt too wide) in paragraph at lines 347--348
 lle Funk-tio-nen enth[]alt,
  []
 
-[88] <figures/uml_seq_client_hybrid.jpg, id=1506, 869.2475pt x 409.53pt>
+[88] <figures/uml_seq_client_hybrid.jpg, id=1509, 869.2475pt x 409.53pt>
 File: figures/uml_seq_client_hybrid.jpg Graphic file (type jpg)
 
 <use figures/uml_seq_client_hybrid.jpg>
@@ -1658,7 +1663,7 @@ Overfull \hbox (7.73798pt too wide) in paragraph at lines 361--362
 er ist die Ausf[]uhrung
  []
 
-<figures/uml_seq_server.jpg, id=1515, 803.0pt x 375.4025pt>
+<figures/uml_seq_server.jpg, id=1518, 803.0pt x 375.4025pt>
 File: figures/uml_seq_server.jpg Graphic file (type jpg)
 
 <use figures/uml_seq_server.jpg>
@@ -1814,10 +1819,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9665 strings out of 495061
- 131483 string characters out of 1182621
- 436419 words of memory out of 3000000
- 11926 multiletter control sequences out of 15000+50000
+ 9667 strings out of 495061
+ 131502 string characters out of 1182621
+ 436448 words of memory out of 3000000
+ 11927 multiletter control sequences out of 15000+50000
  20070 words of font info for 76 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,11n,44p,1505b,1903s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1839,9 +1844,9 @@ onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on thesis.pdf (113 pages, 3283699 bytes).
+Output written on thesis.pdf (113 pages, 3285067 bytes).
 PDF statistics:
- 2034 PDF objects out of 2073 (max. 8388607)
- 686 named destinations out of 1000 (max. 500000)
+ 2037 PDF objects out of 2073 (max. 8388607)
+ 687 named destinations out of 1000 (max. 500000)
  937 words of extra memory for PDF output out of 10000 (max. 10000000)
 

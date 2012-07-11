@@ -912,7 +912,7 @@ Das Erstellen von Testfällen für die FXL erweist sich als sehr umfangreich, we
 
 abdecken. Zusätzlich muss beachtet werden, dass einige Operatoren überladen sind und daher mit verschiedenen Kombinationen von Datentypen getestet werden (siehe Beispiel in Listing \ref{listing_example_test_case}). Auch verschiedene Eigenschaften der Sprache wie Kommutativ- oder Assoziativgesetz sowie die Rangfolge der Operatoren werden getestet.
 
-Weiters müssen Testfälle mit fehlerhaften Statements erstellt werden, um das korrekte Verhalten der Sprache in Hinsicht auf Fehlermeldungen zu prüfen.
+Weiters müssen Testfälle mit fehlerhaften Statements erstellt werden, um das korrekte Verhalten der Sprache in Hinsicht auf Fehlermeldungen zu prüfen.\\
 
 \begin{lstlisting}[caption={Beispielhafter Testfall für den Multiplikations-Operator \texttt{*}. Zuerst wird ein Statement mit Ganzzahlen ausgeführt, dann eine Multiplikation mit 0, eine Multiplikation zweier Gleitkommazahlen und dann zwei Multiplikationen mit je einer Gleitkomma- bzw. Ganzzahl.},label=listing_example_test_case]
 @Test
@@ -953,11 +953,11 @@ Für System-, Integrations- und Abnahmetests eignen sich definierte Anwendungsf�
 
 Auf Komponentenebene sind die klassischen Verfahren die Äquivalenzklassenbildung und Grenzwertanalyse. Die Äquivalenzklassenbildung versucht, Klassen von Testwerten zu bestimmen, die ein bestimmtes Verhalten hervorrufen. Mit Hilfe der Grenzwertanalyse werden Werte ermittelt, die die Fallunterscheidungen an den Grenzen der Äquivalenzklassen untersuchen sollen. Die Grenzwertanalyse kann also als Erweiterung der Äquivalenzklassenbildung gesehen werden.
 
-
+Für den Test der FXL wurden diverse Statements erstellt, die die oben erwähnten Testfälle abdecken. Äquivalenzklassen sind in Listing \ref{listing_example_test_case} die verschiedenen Datentypen. Das Statement \texttt{=0.5*0.5} steht hierbei für die Multiplikation zweier Zahlen der Äquivalenzklasse ``Gleitkommazahlen''. Es wir getestet, ob der Multiplikations-Operator mit Gleitkommazahlen funktioniert. Grenzwerte -- im Sinne des Softwaretests -- für Gleitkommazahlen sind die positiven und negativen Wertgrenzen der Datentypen, Werte nahe Null bzw. Null, oder Werte mit einer gewissen Anzahl von Nachkommazahlen.
 
 \subsection{Testdriven Development}
 
-Die Technik des Testdriven Development (TDD) erfordert vom Entwickler, automatisierte Tests bereits vor der Implementierung zu erstellen. Dies führt dazu, dass manche Aspekte, die während der Programmierung unter Umständen nicht beachtet werden, bereits durch Testfälle abgedeckt werden. Ein weiterer Vorteil ist, dass die Software von vorn herein ein testbares Design erhält, das umständliche Änderungen für Tests im Nachhinein vermeidet.
+Die Technik des Testdriven Development (TDD) erfordert vom Entwickler, automatisierte Tests bereits vor der Implementierung zu erstellen\cite{Beck03}. Dies führt dazu, dass manche Aspekte, die während der Programmierung unter Umständen nicht beachtet werden, bereits durch Testfälle abgedeckt werden. Ein weiterer Vorteil ist, dass die Software von vorn herein ein testbares Design erhält, das umständliche Änderungen für Tests im Nachhinein vermeidet.
 
 Die Aufgabenstellung der DSL eignet sich hervorragend für die Testgetriebene Entwicklung durch Unit-Tests. Die Statements, die vom Interpreter verarbeitet werden sollen, liegen von vornhinein fest. Die Statements bestehen aus diversen Kombinationen von Operatoren mit Werten verschiedener Datentypen. Diese Kombinationen sollen teilweise durch Klammerung verändert werden und in ihrer Länge variieren.
 
