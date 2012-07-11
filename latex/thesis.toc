@@ -46,88 +46,91 @@
 \contentsline {section}{\numberline {6.2}Java Scripting}{39}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Vor- und Nachteile einer embedded Skriptsprache}{39}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Sandboxing}{40}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Eigene DSL}{41}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Vor- und Nachteile einer Eigenentwicklung}{41}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Ergebnis}{42}{section.6.4}
-\contentsline {chapter}{\numberline {7}Analyse}{43}{chapter.7}
-\contentsline {section}{\numberline {7.1}Definition der Dom\IeC {\"a}ne}{43}{section.7.1}
-\contentsline {section}{\numberline {7.2}Anforderungen}{44}{section.7.2}
-\contentsline {section}{\numberline {7.3}Operatoren}{45}{section.7.3}
-\contentsline {section}{\numberline {7.4}Referenzen}{46}{section.7.4}
-\contentsline {section}{\numberline {7.5}Funktionsaufrufe}{47}{section.7.5}
-\contentsline {section}{\numberline {7.6}Fehlerbehandlung}{47}{section.7.6}
-\contentsline {chapter}{\numberline {8}Entwurf}{48}{chapter.8}
-\contentsline {section}{\numberline {8.1}Datentypen}{48}{section.8.1}
-\contentsline {paragraph}{Integer}{48}{section*.28}
-\contentsline {paragraph}{Decimal}{48}{section*.29}
-\contentsline {section}{\numberline {8.2}Operatoren \& semantische Typregeln}{49}{section.8.2}
-\contentsline {section}{\numberline {8.3}Funktionen}{51}{section.8.3}
-\contentsline {paragraph}{Funktionsdefinition}{51}{section*.32}
-\contentsline {paragraph}{Implizite Typumwandlung}{51}{section*.33}
-\contentsline {paragraph}{Funktionsaufruf}{51}{section*.34}
-\contentsline {section}{\numberline {8.4}Fehlerbehandlung}{52}{section.8.4}
-\contentsline {paragraph}{Syntaxfehler}{52}{section*.35}
-\contentsline {paragraph}{Semantische Fehler}{53}{section*.36}
-\contentsline {paragraph}{Ausf\IeC {\"u}hrungsfehler}{53}{section*.37}
-\contentsline {paragraph}{Implementierungsfehler}{54}{section*.38}
-\contentsline {section}{\numberline {8.5}Grammatik}{54}{section.8.5}
-\contentsline {chapter}{\numberline {9}Implementierung}{56}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lexer \& Parser}{56}{section.9.1}
-\contentsline {section}{\numberline {9.2}Typ\IeC {\"u}berpr\IeC {\"u}fung}{57}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Typen im Interpreter}{57}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Aufbau}{58}{subsection.9.2.2}
-\contentsline {section}{\numberline {9.3}Variablen und Funktionen}{59}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Variable Provider}{59}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Functionmanager}{60}{subsection.9.3.2}
-\contentsline {subsubsection}{Typ\IeC {\"u}berpr\IeC {\"u}fung}{60}{section*.39}
-\contentsline {subsubsection}{Methodenaufruf}{60}{section*.40}
-\contentsline {section}{\numberline {9.4}Interpreter}{61}{section.9.4}
-\contentsline {section}{\numberline {9.5}Fehlerbehandlung}{61}{section.9.5}
-\contentsline {chapter}{\numberline {10}Test}{63}{chapter.10}
-\contentsline {section}{\numberline {10.1}Grundlagen}{63}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Grunds\IeC {\"a}tzliche Einteilung von Tests}{63}{subsection.10.1.1}
-\contentsline {subsubsection}{Granularit\IeC {\"a}t von Tests}{64}{section*.41}
-\contentsline {subsubsection}{Arten von Tests}{64}{section*.42}
-\contentsline {subsection}{\numberline {10.1.2}Testdaten}{65}{subsection.10.1.2}
-\contentsline {subsection}{\numberline {10.1.3}Testmetriken}{65}{subsection.10.1.3}
-\contentsline {section}{\numberline {10.2}Test der DSL}{66}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Testf\IeC {\"a}lle}{66}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Testdriven Development}{67}{subsection.10.2.2}
-\contentsline {part}{III\hspace {1em}Integration in ein existierendes System}{68}{part.3}
-\contentsline {chapter}{\numberline {11}Systembeschreibung}{70}{chapter.11}
-\contentsline {section}{\numberline {11.1}SPICS}{70}{section.11.1}
-\contentsline {section}{\numberline {11.2}Workflow}{70}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}Workflow anhand eines Beispiels}{71}{subsection.11.2.1}
-\contentsline {subsection}{\numberline {11.2.2}Use Cases}{71}{subsection.11.2.2}
-\contentsline {subsubsection}{Erstellen eines neuen Formulars}{71}{section*.43}
-\contentsline {subsubsection}{Editieren eines Formulars}{72}{section*.44}
-\contentsline {subsubsection}{Ausw\IeC {\"a}hlen eines Patienten}{73}{section*.45}
-\contentsline {subsubsection}{Ausf\IeC {\"u}llen eines Formulars}{73}{section*.46}
-\contentsline {section}{\numberline {11.3}Architektur \& Technologien}{74}{section.11.3}
-\contentsline {subsection}{\numberline {11.3.1}Architektur}{74}{subsection.11.3.1}
-\contentsline {subsection}{\numberline {11.3.2}Technology Mapping}{74}{subsection.11.3.2}
-\contentsline {chapter}{\numberline {12}Integration}{76}{chapter.12}
-\contentsline {section}{\numberline {12.1}Die FXL in SPICS}{76}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Anwendungsf\IeC {\"a}lle}{76}{subsection.12.1.1}
-\contentsline {paragraph}{Formeln}{77}{section*.47}
-\contentsline {paragraph}{Constraints}{77}{section*.48}
-\contentsline {subsection}{\numberline {12.1.2}Ankn\IeC {\"u}pfungspunkte}{78}{subsection.12.1.2}
-\contentsline {section}{\numberline {12.2}\IeC {\"A}nderungen im Datenmodell}{78}{section.12.2}
-\contentsline {section}{\numberline {12.3}DSL Eingabe}{80}{section.12.3}
-\contentsline {paragraph}{Variablenname}{81}{section*.49}
-\contentsline {paragraph}{Formel}{81}{section*.50}
-\contentsline {paragraph}{Constraint}{82}{section*.51}
-\contentsline {section}{\numberline {12.4}Zyklen\IeC {\"u}berpr\IeC {\"u}fung}{82}{section.12.4}
-\contentsline {section}{\numberline {12.5}Dateneingabe}{84}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Ausf\IeC {\"u}hrungszeitpunkt}{84}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Ausf\IeC {\"u}hrungsort}{85}{subsection.12.5.2}
-\contentsline {subsubsection}{Clientseitige Evaluierung}{85}{section*.52}
-\contentsline {subsubsection}{Serverseitige Evaluierung}{87}{section*.53}
-\contentsline {subsection}{\numberline {12.5.3}Ausf\IeC {\"u}hrungsreihenfolge}{88}{subsection.12.5.3}
-\contentsline {section}{\numberline {12.6}Fehlerbehandlung}{89}{section.12.6}
-\contentsline {subsection}{\numberline {12.6.1}Implementierungsfehler}{89}{subsection.12.6.1}
-\contentsline {subsection}{\numberline {12.6.2}Internationalisierung}{90}{subsection.12.6.2}
-\contentsline {part}{IV\hspace {1em}Ergebnis}{92}{part.4}
-\contentsline {chapter}{\numberline {13}Zusammenfassung}{93}{chapter.13}
-\contentsline {chapter}{\numberline {14}Ausblick}{95}{chapter.14}
-\contentsline {chapter}{\numberline {A}Grammatik}{104}{appendix.A}
+\contentsline {section}{\numberline {6.3}Java Unified Expression Language}{41}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}JUEL als offene UEL Implementierung}{41}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Vor- und Nachteile der UEL}{42}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Eigene DSL}{43}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Vor- und Nachteile einer Eigenentwicklung}{44}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Fazit}{44}{section.6.5}
+\contentsline {chapter}{\numberline {7}Analyse}{46}{chapter.7}
+\contentsline {section}{\numberline {7.1}Definition der Dom\IeC {\"a}ne}{46}{section.7.1}
+\contentsline {section}{\numberline {7.2}Anforderungen}{47}{section.7.2}
+\contentsline {section}{\numberline {7.3}Operatoren}{48}{section.7.3}
+\contentsline {section}{\numberline {7.4}Referenzen}{49}{section.7.4}
+\contentsline {section}{\numberline {7.5}Funktionsaufrufe}{50}{section.7.5}
+\contentsline {section}{\numberline {7.6}Fehlerbehandlung}{50}{section.7.6}
+\contentsline {chapter}{\numberline {8}Entwurf}{51}{chapter.8}
+\contentsline {section}{\numberline {8.1}Datentypen}{51}{section.8.1}
+\contentsline {paragraph}{Integer}{51}{section*.28}
+\contentsline {paragraph}{Decimal}{52}{section*.29}
+\contentsline {section}{\numberline {8.2}Operatoren \& semantische Typregeln}{52}{section.8.2}
+\contentsline {section}{\numberline {8.3}Funktionen}{54}{section.8.3}
+\contentsline {paragraph}{Funktionsdefinition}{54}{section*.32}
+\contentsline {paragraph}{Implizite Typumwandlung}{54}{section*.33}
+\contentsline {paragraph}{Funktionsaufruf}{55}{section*.34}
+\contentsline {section}{\numberline {8.4}Fehlerbehandlung}{55}{section.8.4}
+\contentsline {paragraph}{Syntaxfehler}{55}{section*.35}
+\contentsline {paragraph}{Semantische Fehler}{56}{section*.36}
+\contentsline {paragraph}{Ausf\IeC {\"u}hrungsfehler}{56}{section*.37}
+\contentsline {paragraph}{Implementierungsfehler}{57}{section*.38}
+\contentsline {section}{\numberline {8.5}Grammatik}{57}{section.8.5}
+\contentsline {chapter}{\numberline {9}Implementierung}{59}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lexer \& Parser}{59}{section.9.1}
+\contentsline {section}{\numberline {9.2}Typ\IeC {\"u}berpr\IeC {\"u}fung}{60}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Typen im Interpreter}{60}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Aufbau}{61}{subsection.9.2.2}
+\contentsline {section}{\numberline {9.3}Variablen und Funktionen}{62}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Variable Provider}{62}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Functionmanager}{63}{subsection.9.3.2}
+\contentsline {subsubsection}{Typ\IeC {\"u}berpr\IeC {\"u}fung}{63}{section*.39}
+\contentsline {subsubsection}{Methodenaufruf}{63}{section*.40}
+\contentsline {section}{\numberline {9.4}Interpreter}{64}{section.9.4}
+\contentsline {section}{\numberline {9.5}Fehlerbehandlung}{64}{section.9.5}
+\contentsline {chapter}{\numberline {10}Test}{66}{chapter.10}
+\contentsline {section}{\numberline {10.1}Grundlagen}{66}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Grunds\IeC {\"a}tzliche Einteilung von Tests}{66}{subsection.10.1.1}
+\contentsline {subsubsection}{Granularit\IeC {\"a}t von Tests}{67}{section*.41}
+\contentsline {subsubsection}{Arten von Tests}{67}{section*.42}
+\contentsline {subsection}{\numberline {10.1.2}Testdaten}{68}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Testmetriken}{68}{subsection.10.1.3}
+\contentsline {section}{\numberline {10.2}Test der DSL}{69}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Testf\IeC {\"a}lle}{69}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Testdriven Development}{70}{subsection.10.2.2}
+\contentsline {part}{III\hspace {1em}Integration in ein existierendes System}{71}{part.3}
+\contentsline {chapter}{\numberline {11}Systembeschreibung}{73}{chapter.11}
+\contentsline {section}{\numberline {11.1}SPICS}{73}{section.11.1}
+\contentsline {section}{\numberline {11.2}Workflow}{73}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Workflow anhand eines Beispiels}{74}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Use Cases}{74}{subsection.11.2.2}
+\contentsline {subsubsection}{Erstellen eines neuen Formulars}{74}{section*.43}
+\contentsline {subsubsection}{Editieren eines Formulars}{75}{section*.44}
+\contentsline {subsubsection}{Ausw\IeC {\"a}hlen eines Patienten}{76}{section*.45}
+\contentsline {subsubsection}{Ausf\IeC {\"u}llen eines Formulars}{76}{section*.46}
+\contentsline {section}{\numberline {11.3}Architektur \& Technologien}{77}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Architektur}{77}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Technology Mapping}{77}{subsection.11.3.2}
+\contentsline {chapter}{\numberline {12}Integration}{79}{chapter.12}
+\contentsline {section}{\numberline {12.1}Die FXL in SPICS}{79}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Anwendungsf\IeC {\"a}lle}{79}{subsection.12.1.1}
+\contentsline {paragraph}{Formeln}{80}{section*.47}
+\contentsline {paragraph}{Constraints}{80}{section*.48}
+\contentsline {subsection}{\numberline {12.1.2}Ankn\IeC {\"u}pfungspunkte}{81}{subsection.12.1.2}
+\contentsline {section}{\numberline {12.2}\IeC {\"A}nderungen im Datenmodell}{81}{section.12.2}
+\contentsline {section}{\numberline {12.3}DSL Eingabe}{83}{section.12.3}
+\contentsline {paragraph}{Variablenname}{84}{section*.49}
+\contentsline {paragraph}{Formel}{84}{section*.50}
+\contentsline {paragraph}{Constraint}{85}{section*.51}
+\contentsline {section}{\numberline {12.4}Zyklen\IeC {\"u}berpr\IeC {\"u}fung}{85}{section.12.4}
+\contentsline {section}{\numberline {12.5}Dateneingabe}{87}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Ausf\IeC {\"u}hrungszeitpunkt}{87}{subsection.12.5.1}
+\contentsline {subsection}{\numberline {12.5.2}Ausf\IeC {\"u}hrungsort}{88}{subsection.12.5.2}
+\contentsline {subsubsection}{Clientseitige Evaluierung}{88}{section*.52}
+\contentsline {subsubsection}{Serverseitige Evaluierung}{90}{section*.53}
+\contentsline {subsection}{\numberline {12.5.3}Ausf\IeC {\"u}hrungsreihenfolge}{91}{subsection.12.5.3}
+\contentsline {section}{\numberline {12.6}Fehlerbehandlung}{92}{section.12.6}
+\contentsline {subsection}{\numberline {12.6.1}Implementierungsfehler}{92}{subsection.12.6.1}
+\contentsline {subsection}{\numberline {12.6.2}Internationalisierung}{93}{subsection.12.6.2}
+\contentsline {part}{IV\hspace {1em}Ergebnis}{95}{part.4}
+\contentsline {chapter}{\numberline {13}Zusammenfassung}{96}{chapter.13}
+\contentsline {chapter}{\numberline {14}Ausblick}{98}{chapter.14}
+\contentsline {chapter}{\numberline {A}Grammatik}{107}{appendix.A}

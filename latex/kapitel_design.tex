@@ -51,7 +51,7 @@ System.out.println(engine.get("result"));
 
 Der größte Vorteil einer eigenen Scriptengine ist die volle Ausdrucksstärke einer "richtigen" Programmiersprache. Dadurch ist es möglich, durch bedingte Anweisungen und Schleifen eine hohe Flexibilität zu erreichen, welche noch durch eigene Funktionen erweitert werden kann. Weiters können Script\-en\-gi\-nes nicht nur auf Java-Objekte zugreifen, die der Engine explizit zu\-ge\-wie\-sen wurden, sondern auch auf alle Klassen der Java API. 
 
-Java Scripting birgt neben den Möglichkeiten und Vorteilen auch gewisse Risiken und Nachteile im Vergleich zu einer eigenen externen DSL. Viele Eigenschaften, die einerseits als Vorteile erscheinen, können auch als Nachteile angesehen werden. 
+Java Scripting birgt neben den Möglichkeiten und Vorteilen auch gewisse Risiken und Nachteile im Vergleich zu einer eigenen externen DSL (Tabelle \ref{tbl_vergleich_scriptengines}). Viele Eigenschaften, die einerseits als Vorteile erscheinen, können auch als Nachteile angesehen werden. 
 
 Mit der vollen Ausdrucksstärke einer GPL erhält man auch die volle syntaktische und semantische Komplexität. Das heißt, dass Programmierer, die in der Lage sind Skripte in der Programmiersprache zu erstellen, für die Erstellung der Formulare benötigt werden. Dazu kommt eine eingeschränkte Fehlerbehandlung, da die Korrektheit von Syntax und Semantik des Skripts nur durch Ausführung überprüft werden kann. Durch die dynamische Typisierung der Skriptsprache und die uneingeschränkte Komplexität der Statements ist eine statische Analyse nicht möglich.
 
@@ -70,7 +70,7 @@ Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler aufteten,
 		
 	$\bullet$ Eigene Funktionen definieren		 
 		 
-	$\bullet$ Voller Zugriff auf Java-Objekte 
+	$\bullet$ Voller Zugriff auf Java-Objekte und API
 		 
 	$\bullet$ Verschiedene Skript-Sprachen vorhanden ( JavaScript, Groovy, Ruby, ...)	
 
@@ -93,12 +93,100 @@ Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler aufteten,
 
 \end{tabular}
 \caption{Vor- und Nachteile von Scriptengines}
+\label{tbl_vergleich_scriptengines}
 \end{table}
 
 
 \subsection{Sandboxing}
 
 Eine Möglichkeit, die Scriptengine abzusichern, ist das sogenannte Sandboxing. Das bedeutet, dass man die Laufzeitumgebung, in der das Skript läuft, absichert, um die oben erwähnten Probleme zu vermeiden. Die Standardimplementierung des JSR-223 bietet, wie JavaScript Engine Rhino, verschiedene Möglichkeiten, um die Engine abzusichern. So kann man den Zugriff auf Klassen durch einen eigenen Classloader auf explizit erlaubte Klassen einschränken\cite{wwwSandboxRhino}, die Laufzeit einschränken um Endlosschleifen zu verhindern, etc.
+
+
+\section{Java Unified Expression Language}
+
+Eine weitere Alternative ist die Einbindung der bereits in Kapitel \ref{related_work} erwähnten Unified Expression Language(UEL)\cite{UEL}. Die UEL ist eine Ausdruckssprache, die vorwiegend für die View-Technologien der Java Enterprise Plattform verwendet wird. Durch die eingeschränkte Syntax kann die UEL selbst als domänenspezifische Sprache gesehen werden.
+
+Die UEL unterstützt die üblichen grundlegenden Operatoren sowie die Klammerung von Ausdrücken. Weiters werden die Verwendung von Variablen und Methoden in den Statements unterstützt. Ein weiteres Feature ist, dass die Sprache Java-Objekte direkt unterstützt und somit auf Attribute von Objekten direkt zugegriffen werden kann.
+
+\subsection{JUEL als offene UEL Implementierung}
+
+Die UEL ist eine Ausdruckssprache, die wie erwähnt vor allem in Applicationservern der Java Enterprise Plattform verwendet wird. Die Spezifikation der Sprache ist Teil der JSP 2.1 Spezifikation, die UEL ist jedoch unabhängig von der restlichen JSP Spezifikation. Die Implementierung ist nicht einheitlich und wird vom Hersteller des jeweiligen Applicationservers übernommen, der den Standard im Server zur Verfügung stellt.
+
+Eine offene Implementierung des Standards ist JUEL\footnote{vgl. http://juel.sourceforge.net/, 11.6.2012}. JUEL implementiert die Interfaces des \texttt{javax.el} Namespaces und die Sprachspezifikation des Standards.
+
+JUEL kann als Library in eigene Java-Applikationen eingebunden werden, um die Funktionalität auch außerhalb eines Servers zu verwenden.\\
+
+\begin{lstlisting}[caption={Descriptive Caption Text},label=listing_juel_example]
+ public class TestJuel {
+	public double calcuate() throws SecurityException,
+			NoSuchMethodException {
+
+		// Context, auf dem das Statement ausgefuehrt wird
+		SimpleContext context = new SimpleContext();
+
+		// ExpressionFactory
+		ExpressionFactory factory = new ExpressionFactoryImpl();
+
+		// Setzen von Funktionen und Variablen im Context
+		context.setFunction("prefix", "sqrt",
+				TestJuel.class.getMethod("sqrt", double.class));
+		context.setVariable("x", factory.createValueExpression("2", int.class));
+
+		// Erstellen der Expression
+		ValueExpression e = factory.createValueExpression(context,
+				"${(prefix:sqrt(9)+x)*2}", double.class);
+
+		return (Double) e.getValue(context);
+	}
+
+	public static double sqrt(double a) {
+		return Math.sqrt(a);
+	}
+}
+
+\end{lstlisting}
+
+Die zwei zentralen Elemente sind Expressions und der Expression Language Context (Listing \ref{listing_juel_example}). Expressions enthalten im Wesentlichen das Statement als String, sowie dessen Rückgabetyp. Der Context enthält die Variablen und Funktionen, mit denen das Statement evaluiert werden kann. Eine UEL Expression wird also immer in einem Context ausgeführt.
+
+Im Beispiel in Listing \ref{listing_juel_example} wird zuerst der Context und eine ExpressionFactory erstellt. Danach wird die externe Funktion sowie die vatiable \texttt{x} zum Context hinzugefügt. Die Variable selbst ist wiederum eine Expression, allerdings mit fixem Wert. Zuletzt wird die Expression für das eigentliche Statement erstellt und auf dem Context ausgeführt.
+
+\subsection{Vor- und Nachteile der UEL}
+
+
+Ein großer Vorteil, gegenüber der Einbindung einer Skriptsprache, ist die eingeschränkte Syntax, die verhindert, dass beliebige Programme im Applicationserver zur Ausführung kommen. Stattdessen werden nur definierte Statements evaluiert, was einige Bedenken bezüglich der Stabilität abschwächt. Funktionen der Java API müssen, wie im Beispiel ersichtlich, explizit zur Verfügung gestellt werden. 
+
+Weitere nachteilige Eigenschaften der eingebetteten Scriptengine bleiben jedoch bestehen (Tabelle \ref{tbl_vergleich_uel}). Eine statische Überprüfung ist nicht möglich, das heißt die Funktionsfähigkeit der Statements kann nicht ohne Ausführung überprüft werden. Ein weiterer Nachteil ist die Fehlerbehandlung, die nicht auf den Einsatzzweck zugeschnitten ist. Stattdessen müssten die Fehlermeldungen der Exceptions der UEL-Implementierung auf irgendeine Art geparst und für die Integration übersetzt werden\footnote{Wird z.B. die Variable \texttt{x} in Listing \ref{listing_juel_example} nicht gesetzt, wird eine \texttt{javax.el.PropertyNotFoundException} geworfen. Um herauszufinden, welche Variable fehlt, müsste die Message ``Cannot find property x'' geparst werden, da die Exception keine weiteren Attribute zur Verfügung stellt.}.
+
+
+\begin{table}
+\begin{tabular}{|p{0.5\textwidth} | p{0.5\textwidth} |}
+	\hline
+	Vorteile & Nachteile \\
+	\hline
+	
+		$\bullet$  Eingeschränkte Syntax (=leichter zu erlernen)
+		 
+		$\bullet$  Zugriff auf Java-Objekte
+		 
+		$\bullet$  Vorhandene Implementierung
+	&
+	
+		$\bullet$  Eigenwillige Syntax, die Detailwissen erfordert
+	
+		$\bullet$  Eingeschränkte Syntax (=geringere Ausdrucksstärke)
+		
+		$\bullet$  Neue Funktionen erst bei Redeploy
+		
+		$\bullet$  Dynamische Typisierung
+	
+	\\
+	\hline
+
+\end{tabular}
+\caption{Vor- und Nachteile der UEL}
+\label{tbl_vergleich_uel}
+\end{table}
+
 
 \section{Eigene DSL}
 
@@ -135,11 +223,9 @@ In diesem Beispiel wird der Wert des Feldes, welches das Geburtsdatum enthält, 
 	
 		$\bullet$  Eingeschränkte Syntax (=leichter zu erlernen)
 		
-		$\bullet$  Strenge Typisierung
-		
 		$\bullet$  Prüfen auf Korrektheit der Statements ohne Ausführung
 		
-		$\bullet$  Statische Typchecks
+		$\bullet$  Statische Typisierung (Typchecks)
 		
 		$\bullet$  Genaue Fehlermeldungen
 	
@@ -155,16 +241,19 @@ In diesem Beispiel wird der Wert des Feldes, welches das Geburtsdatum enthält, 
 
 \end{tabular}
 \caption{Vor- und Nachteile einer eigenen DSL}
+\label{tbl_vergleich_eigene_dsl}
 \end{table}
 
-Der große Vorteil der Eigenentwicklung ist die eingeschränkte Syntax, die genau auf den Anwendungsbereich zugeschnitten ist. Die individuelle Enwicklung des Interpreters bietet weiters einige Möglichkeiten, die der Stabilität der Anwendung entgegenkommen. Durch die statische Typisierung können Statements auch ohne Ausführung derselben überprüft werden. Zusätzlich können dem Benutzer anwendungsspezifische Fehlermeldungen geliefert werden, da die Sprache nicht vom Fehlerhandling einer existierenden Implementierung abhängig ist. Ein weiterer Vorteil ist die einfache Adressierung von Formularfeldern, da diese nicht einer eingebetteten Laufzeitumgebung zur Verfügung gestellt werden müssen, sondern individuell vom Interpreter aus dem Speicher geladen werden. 
+Der schwerwiegendste Nachteil einer eigenen DSL ist, dass nicht auf eine Vorhandene Implementierung zurückgegriffen wird, sondern die Sprache neu entworfen und entwickelt werden muss.
+
+Der große Vorteil der Eigenentwicklung ist, ähnlich der UEL, die eingeschränkte Syntax, die genau auf den Anwendungsbereich zugeschnitten ist (Tabelle \ref{tbl_vergleich_eigene_dsl}). Die individuelle Enwicklung des Interpreters bietet weiters einige Möglichkeiten, die der Stabilität der Anwendung entgegenkommen. Durch die statische Typisierung können Statements auch ohne Ausführung derselben überprüft werden. Zusätzlich können dem Benutzer anwendungsspezifische Fehlermeldungen geliefert werden, da die Sprache nicht vom Fehlerhandling einer existierenden Implementierung abhängig ist. Ein weiterer Vorteil ist die einfache Adressierung von Formularfeldern, da diese nicht einer eingebetteten Laufzeitumgebung zur Verfügung gestellt werden müssen, sondern individuell vom Interpreter aus dem Speicher geladen werden. 
 
 
-\section{Ergebnis}
+\section{Fazit}
 
-Bei der Ausdruckskraft der Sprache sind eingebettete Scriptengines einer eigenen Sprachimplementierung überlegen. Dem steht die ausführliche Fehlerbehandlung und der geringe Einarbeitungsaufwand bei einer Eigenentwicklung gegenüber.
+Bei der Ausdruckskraft der Sprache sind eingebettete Scriptengines einer eigenen Sprachimplementierung überlegen. Der große Vorteil bei Verwendung einer vorhandenen Ausdruckssprache, wie der UEL, ist die bereits existierende Implementierung. Dem steht die ausführliche Fehlerbehandlung und der geringe Einarbeitungsaufwand für Endbenutzer bei einer Eigenentwicklung gegenüber.
 
-Die Entscheidung für eine eigene DSL für die Aufgabenstellung begründet sich in der statischen Analyse, der einfachen Syntax und der guten Fehlerbehandlung. Gegen die Einbettung einer Script Engine spricht vor allem das Problem, das beliebiger Code in der Anwendung ausgeführt werden kann. Man kann zwar versuchen, die Schwächen durch Sandboxing zu minimieren, das Risiko von fehlerhaften Programmen bleibt trotzdem.
+Die Entscheidung für eine eigene DSL für die Aufgabenstellung begründet sich in der statischen Analyse, der einfachen Syntax und der guten Fehlerbehandlung. Gegen die Einbettung einer Script Engine spricht vor allem das Problem, das beliebiger Code in der Anwendung ausgeführt werden kann. Man kann zwar versuchen, die Schwächen durch Sandboxing zu minimieren, das Risiko von fehlerhaften Programmen bleibt trotzdem. Durch fehlende statische Analyse und Möglichkeiten zur individuellen Fehlerbehandlung, stellt auch die Einbindung einer UEL Implementierung keine gute Option dar.
 
 \chapter{Analyse}
 \label{chapter_analyse}
@@ -281,6 +370,8 @@ Die arithmetischen Operatoren (Tabelle \ref{tbl_arithmetische_operatoren}) sind 
 
 Wie in den Beispielen zu den verschiedenen Operatoren verdeutlicht wird, können die Operatoren auch überladen sein. Das heißt, dass ein Operator Operanden verschiedenen Typs verarbeiten kann, und der Rückgabetyp unter Umständen von den Operanden abhängt  (vgl. auch Tabelle \ref{tbl_semantische_typregeln} mit den semantischen Typregeln).
 
+Ergänzend soll --obwohl es sich nicht um Operatoren in eigentlichen Sinne handelt -- an dieser Stelle angemerkt werden, dass Ausdrücke durch Klammern zusammengefasst werden können. Dadurch kann die Rangfolge der Operatoren aufgehoben werden (siehe auch Abschnitt \ref{design_grammatik}).
+
 
 \section{Referenzen}
 
@@ -321,6 +412,8 @@ In diesem Kapitel werden die technischen Eigenschaften festgelegt, also die Synt
 Weiters wird auch das Typsystem der Sprache definiert. Wie in Abschnitt \ref{theorie_language_applications} erläutert, setzt sich das Typsystem zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren. Das Typsystem der FXL kann nicht durch die Syntax alleine spezifiziert werden, weshalb ein Typchecker, quasi als Implementierung des Typsystems, notwendig ist.
 
 \section{Datentypen}
+
+Die FXL ist statisch typisiert\footnote{Von statischer Typisierung (im Gegensatz zur dynamischen Typisierung) spricht man, wenn die Typüberprüfung bereits beim Übersetzen vorgenommen werden kann. Es kann also ohne Ausführung eines Programms entschieden werden, an welcher Stelle welcher Typ vorkommt.} und definiert vier verschiedene Datentypen:
 
 \paragraph{Integer}
 
@@ -551,6 +644,7 @@ Diese Fehler betreffen beispielsweise zyklische Abhängigkeiten, Fehler bei der 
 
 
 \section{Grammatik}
+\label{design_grammatik}
 
 Ein essentieller Bestandteil der Sprachdefinition ist die dahinterstehende Grammatik. Die Grammatik gibt die Struktur und Syntax der Sprache vor und bestimmt in weiterer Folge den Aufbau des AST, der vom Parser erstellt und vom Interpreter abgearbeitet wird.
 
@@ -735,7 +829,7 @@ Wenn der Methodenaufruf erfolgreich war, wird der Rückgabewert wieder in einen 
 
 Wie der Typüberprüfer muss der Interpreter den AST abarbeiten um Statements zu evaluieren. Dazu wird ein depth-first Ansatz gewählt, der rekursiv zuerst den jeweiligen Unterausdruck eines AST-Knotens auswertet.
 
-Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes Formularelement noch nicht ausgefüllt wurde. Wenn der Interpreter beim abarbeiten eines AST auf ein \texttt{Result}-Objekt mit Wert \texttt{null} trifft, wird das gesamte Statement mit \texttt{null} evaluiert.
+Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes Formularelement noch nicht ausgefüllt wurde. Wenn der Interpreter beim abarbeiten eines AST auf ein \texttt{Result}-Objekt mit Wert \texttt{null} trifft, wird das gesamte Statement mit \texttt{null} evaluiert. Eine detaillierte Erklärung über den Ablauf der Evaluierung im Zusammenhang mit Formularen wird in Abschnitt \ref{implementierung_daten_eingabe} gegeben.
 
 \section{Fehlerbehandlung}
 

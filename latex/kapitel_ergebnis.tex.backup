@@ -1,14 +1,4 @@
 
-\chapter{Ausblick}
-\label{chapter_ausblick}
-
-Im Verlauf der Arbeit haben sich einige Themen herauskristallisiert, die sich für weitere Arbeiten, über den Umfang dieser Diplomarbeit hinaus, anbieten. In der Implementierung wurde die Integration der Form Expression Language in SPICS nur für drei verschiedene Formelemente vorgenommen, die ausreichen um die vier unterstützten Datentypen zu repräsentieren: Textfelder für die numerischen Typen, sowie Checkboxen für boolesche Werte und Datepicker für Datumswerte. Für die Verwendung von weiteren Formelementen wie Listen, Drop-Downs und Radiobuttons können Überlegungen angestellt werden, wie Werte dieser Elemente mit der FXL verarbeitet werden können.
-
-Referenzierungen in den Formeln der FXL lassen sich momentan nur auf Formularfelder innerhalb eines Formulars vornehmen. Da für einen Patienten in SPICS unterschiedliche Formulare angelegt werden können, kann die Referenzierung von Feldern aus anderen Formularen eine weitere Anforderung darstellen. Dafür kann die Implementierung der Variable Provider dahingehend geändert werden, dass ein Lookup von Variablen auch Werte bereits persistierter Formulare berücksichtigt. Auch die Form Expression Language selbst lässt Raum für Erweiterungen in mancherlei Hinsicht. Für eine formularübergreifende Referenzierung könnte etwa die Syntax für Variablennamen modifiziert werden. Eine weitere mögliche Erweiterung stellt die Einführung eines Datentyps für Zeichenketten, mit entsprechen Auswirkungen auf die Syntax der Sprache sowie die Semantik der Operatoren, dar.
-
-Ein weiteres Thema sind die nichtfunktionalen Eigenschaften der Integration im Studiensystem. Vor allem in Hinsicht Usability kann die Implementierung einer Evaluierung unterzogen werden. Die Akzeptanz beim Endanwender kann durch User-Tests bestätigt oder widerlegt werden. Auch die Eingabe der Statements lässt Raum für Verbesserungen im User Interface. Eine Möglichkeit wäre beispielsweise Syntax Highlighting oder Code Completion anzubieten, um die Eingabe angenehmer zu gestalten und Fehler zu vermeiden. 
-
-
 
 
 \chapter{Zusammenfassung}
@@ -16,12 +6,25 @@ Ein weiteres Thema sind die nichtfunktionalen Eigenschaften der Integration im S
 
 Das Thema dieser Arbeit entstand aus der Anforderung, Formulare in einer Webanwendung semantisch dahingehend anzureichern, dass flexible Berechnungen und Validierungen formelementübergreifend vorgenommen werden können. Im Rahmen der Arbeit wurde eine einfache Ausdruckssprache entwickelt und in ein medizinisches Studiensystem integriert.
 
-In der Einleitung wurde auf die Motivation des Themas eingegangen und die Problemstellung dargelegt.
-
 Der erste Teil der Arbeit beschäftigt sich mit den technischen und theoretischen Grundlagen, die zum Verständnis des Textes notwendig sind. Zunächst wurde der Begriff der Domain Specific Language(DSL) diskutiert, eine Einteilung vorgenommen und Beispiele für bekannte DSLs vorgestellt. Danach wurden die theoretischen Grundlagen erarbeitet und eine Übersicht über Werkzeuge zum Entwurf von Sprachen geboten. Den Abschluss des ersten Teils bildet eine Übersicht über wissenschaftliche Arbeiten im Bereich der Modellierung von Webformularen.
 
 Im zweiten Teil wird der Entwicklungsprozess der Form Expression Language (FXL), der sich in die Phasen Entscheidung, Analyse, Entwurf, Implementierung und Test gliedert, beschrieben. Zuerst wurde eine Entscheidung für eine eigene externe DSL getroffen und begründet. Danach wurden die Anforderungen an die Sprache analysiert und das Design der Sprache in Hinsicht auf die notwendigen Features wie Datentypen, Operatoren, Funktionen und Fehlerbehandlung, sowie Syntax und Semantik entwickelt. Danach wurden die Implementierungsdetails der FXL dargelegt. Den Abschluss des Teils bildet eine Abhandlung über das Testen der erstellten Software.
 
-Der dritte Teil behandelt die Integration der Sprache in ein existierendes medizinisches Studiensystem. Zuerst wird das Studiensystem SPICS kurz vorgestellt und die Architektur sowie die verwendeten Technologien beschrieben. Danach werden die verschiedenen Aspekte der Integration der Sprache in SPICS veranschaulicht.
+Der dritte Teil behandelt die Integration der Sprache in ein existierendes medizinisches Studiensystem. Zuerst wurde das Studiensystem SPICS kurz vorgestellt und die Architektur sowie die verwendeten Technologien beschrieben. Danach wurden die verschiedenen Aspekte der Integration der Sprache in SPICS veranschaulicht.
 
 Der vierte Teil gibt einen Ausblick auf weitere Themen und Möglichkeiten, die im Zuge der Arbeit aufgetan haben und bietet eine zusammenfassende Übersicht über die Themen der Arbeit.
+
+Ein Schwerpunkt der Arbeit war die praktische Implementierung der FXL, sowie die Integration in das medizinische Studiensystem. Die Arbeitsschritte entsprechen im Grunde den in der Arbeit dargestellten Schritten, mit dem Unterschied, dass die praktische Umsetzung natürlich ein iterativer Prozess war. Zuerst wurden die Anforderungen und das Zielsystem analysiert und eine Übersicht über das wissenschaftliche Feld erstellt. Danach wurden diverse Tools und Möglichkeiten zur Umsetzung der Sprache evaluiert.
+
+
+
+\chapter{Ausblick}
+\label{chapter_ausblick}
+
+Im Verlauf der Arbeit haben sich einige Themen herauskristallisiert, die sich für weitere Arbeiten, über den Umfang dieser Diplomarbeit hinaus, anbieten. In der Implementierung wurde die Integration der Form Expression Language in SPICS nur für drei verschiedene Formelemente vorgenommen, die ausreichen um die vier unterstützten Datentypen zu repräsentieren: Textfelder für die numerischen Typen, sowie Checkboxen für boolesche Werte und Datepicker für Datumswerte. Für die Verwendung von weiteren Formelementen wie Listen, Drop-Downs und Radiobuttons können Überlegungen angestellt werden, wie Werte dieser Elemente mit der FXL verarbeitet werden können.
+
+Referenzierungen in den Formeln der FXL lassen sich momentan nur auf Formularfelder innerhalb eines Formulars vornehmen. Da für einen Patienten in SPICS unterschiedliche Formulare angelegt werden können, kann die Referenzierung von Feldern aus anderen Formularen eine weitere Anforderung darstellen. Dafür kann die Implementierung der Variable Provider dahingehend geändert werden, dass ein Lookup von Variablen auch Werte bereits persistierter Formulare berücksichtigt. 
+
+Auch die Form Expression Language selbst lässt Raum für Erweiterungen in mancherlei Hinsicht. Für eine formularübergreifende Referenzierung könnte etwa die Syntax für Variablennamen modifiziert werden. Eine weitere mögliche Erweiterung stellt die Einführung eines Datentyps für Zeichenketten, mit entsprechen Auswirkungen auf die Syntax der Sprache sowie die Semantik der Operatoren, dar. Eine zusätzliche Möglickeit stellt die Definition weiterer Operatoren dar. In der Implementierung dieser Arbeit kann der ganzzahlige Rest einer Division (Modulo) nur durch eine eigene Funktion berechnet werden. Für diese Berechnung könnte, wie in anderen Sprachen üblich, der Operater \texttt{\%} eingeführt werden. Auch eigene logische Operatoren für exklusives Oder und Implikation sind denkbar. Diese Logischen Operatoren müssen momentan durch die vorhandenen Grundoperatoren ausgedrückt werden.
+
+Ein weiteres Thema sind die nichtfunktionalen Eigenschaften der Integration im Studiensystem. Vor allem in Hinsicht Usability kann die Implementierung einer Evaluierung unterzogen werden. Die Akzeptanz beim Endanwender kann durch User-Tests bestätigt oder widerlegt werden. Auch die Eingabe der Statements lässt Raum für Verbesserungen im User Interface. Eine Möglichkeit wäre beispielsweise Syntax Highlighting oder Code Completion anzubieten, um die Eingabe angenehmer zu gestalten und Fehler zu vermeiden. Auch in Hinblick auf die Performance der Sprache, sowie die Integration in das Studiensystem, können Untersuchungen vorgenommen werden. Vor allem die Möglichkeiten einer teilweisen clientseitigen Berechnung, wie in Abschnitt \ref{integration_ausfuehrungsort} dargelegt, können Thema einer weiteren Untersuchung sein.

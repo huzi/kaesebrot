@@ -4,51 +4,55 @@ A level-1 auxiliary file: frontmatter.aux
 The style file: plain.bst
 A level-1 auxiliary file: appendix.aux
 Database file #1: biblio.bib
+Name 1 in "Ryan Lubke,Jennifer Ball, and Pierre Delisle" has a comma at the end for entry UEL
+while executing---line 1049 of file plain.bst
 Name 1 in "WHO Consultation on Obesity, and World Health Organization." has a comma at the end for entry Who00
 while executing---line 1049 of file plain.bst
 Warning--empty institution in HaMo90
 Warning--empty journal in ISTQB1
 Name 1 in "WHO Consultation on Obesity, and World Health Organization." has a comma at the end for entry Who00
 while executing---line 1090 of file plain.bst
-You've used 37 entries,
+Name 1 in "Ryan Lubke,Jennifer Ball, and Pierre Delisle" has a comma at the end for entry UEL
+while executing---line 1090 of file plain.bst
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            741 strings with 9988 characters,
-and the built_in function-call counts, 10932 in all, are:
-= -- 1044
-> -- 497
+            746 strings with 10130 characters,
+and the built_in function-call counts, 11176 in all, are:
+= -- 1066
+> -- 510
 < -- 6
-+ -- 196
-- -- 156
-* -- 666
-:= -- 1833
-add.period$ -- 120
-call.type$ -- 37
-change.case$ -- 177
++ -- 201
+- -- 160
+* -- 678
+:= -- 1873
+add.period$ -- 123
+call.type$ -- 38
+change.case$ -- 182
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 440
-empty$ -- 934
-format.name$ -- 156
-if$ -- 2323
+cite$ -- 40
+duplicate$ -- 447
+empty$ -- 956
+format.name$ -- 160
+if$ -- 2375
 int.to.chr$ -- 0
-int.to.str$ -- 37
+int.to.str$ -- 38
 missing$ -- 38
-newline$ -- 190
-num.names$ -- 82
-pop$ -- 268
+newline$ -- 195
+num.names$ -- 84
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 147
+purify$ -- 151
 quote$ -- 0
-skip$ -- 297
+skip$ -- 305
 stack$ -- 0
-substring$ -- 492
-swap$ -- 78
+substring$ -- 497
+swap$ -- 79
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 126
+type$ -- 130
 warning$ -- 2
-while$ -- 103
-width$ -- 39
-write$ -- 402
-(There were 2 error messages)
+while$ -- 105
+width$ -- 40
+write$ -- 412
+(There were 4 error messages)

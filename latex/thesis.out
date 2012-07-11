@@ -36,9 +36,12 @@
 \BOOKMARK [1][-]{section.6.2}{Java Scripting}{chapter.6}
 \BOOKMARK [2][-]{subsection.6.2.1}{Vor- und Nachteile einer embedded Skriptsprache}{section.6.2}
 \BOOKMARK [2][-]{subsection.6.2.2}{Sandboxing}{section.6.2}
-\BOOKMARK [1][-]{section.6.3}{Eigene DSL}{chapter.6}
-\BOOKMARK [2][-]{subsection.6.3.1}{Vor- und Nachteile einer Eigenentwicklung}{section.6.3}
-\BOOKMARK [1][-]{section.6.4}{Ergebnis}{chapter.6}
+\BOOKMARK [1][-]{section.6.3}{Java Unified Expression Language}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{JUEL als offene UEL Implementierung}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.2}{Vor- und Nachteile der UEL}{section.6.3}
+\BOOKMARK [1][-]{section.6.4}{Eigene DSL}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.4.1}{Vor- und Nachteile einer Eigenentwicklung}{section.6.4}
+\BOOKMARK [1][-]{section.6.5}{Fazit}{chapter.6}
 \BOOKMARK [0][-]{chapter.7}{Analyse}{part.2}
 \BOOKMARK [1][-]{section.7.1}{Definition der Dom\344ne}{chapter.7}
 \BOOKMARK [1][-]{section.7.2}{Anforderungen}{chapter.7}

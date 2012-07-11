@@ -161,6 +161,11 @@ Alex Ruiz and Jeff Bay.
   2008.
 \newblock http://www.infoq.com/articles/internal-dsls-java.
 
+\bibitem{UEL}
+Jennifer~Ball Ryan~Lubke and Pierre Delisle.
+\newblock Unified expression language, August 2005.
+\newblock http://java.sun.com/products/jsp/reference/techart/unifiedEL.html.
+
 \bibitem{Schl08}
 Holger Schlingloff.
 \newblock Zyklensuche in graphen.
