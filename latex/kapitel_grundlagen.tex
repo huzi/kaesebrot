@@ -78,7 +78,7 @@ Wie bereits erwähnt, können domänenspezifische Sprachen einen erheblichen Gew
 
 Ein weiterer großer Vorteil ist die Validierung und Optimierung der Sprache auf Domain-Level. Das bedeutet, dass dem Benutzer viel detaillierter Feedback über die eingegebenen Programme und eventuell auftretende Fehler gegeben werden kann, als es eine allgemeine Programmiersprache könnte\cite{VaDe00}.
 
-DSLs haben nicht nur Vorteile, sondern auch Nachteile und Einschränkungen. Ein Nachteil ist der not\-wen\-dige Entwicklungsaufwand, um die Sprache zu erstellen. Der Aufwand, der zuerst investiert werden muss, benötigt einen entsprechenden Zeitraum, um sich zu amortisieren.
+DSLs haben nicht nur Vorteile, sondern auch Nachteile und Einschränkungen. Ein Nachteil ist der not\-wen\-dige Entwicklungsaufwand, um die Sprache zu erstellen. Der Aufwand, der zuerst investiert werden muss, benötigt einen ent\-sprech\-enden Zeitraum, um sich zu amortisieren.
 
 Die domänenspezifische Notation kann sich auch als Nachteil erweisen, weil sie die Möglichkeiten dahingehend einschränkt, dass wirklich nur die dafür vorgesehenen Aufgaben erledigt werden können. Statt einer Erweiterung der Funktion wie in GPLs durch eigene Klassen und Funktionen ist bei einer DSL eine Änderung der Sprachdefinition und der Laufzeitumgebung not\-wen\-dig.
 
@@ -138,7 +138,7 @@ In der Lexikalischen Analyse wird das Programm eingelesen und in Tokens\footnote
 
 Beim Parsing (Syntaktische Analyse) wird versucht, die Tokenfolge den Regeln der zugrundeliegenden Grammatik unterzuordnen. So kann überprüft werden, ob die Eingabe der Syntax der Sprache entspricht. Verschiedene Strategien des Parsens werden in Abschnitt \ref{theorie_parsing_strategien} beschrieben. 
 
-Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den Formaten Concrete Syntax Tree(CST) und Abstract Syntax Tree(AST) unterschieden (Abbildung \ref{abb_ast_vs_cst}). Der CST gibt die der Syntax der Sprache entsprechende Hierarchie der Tokens, die bei der Lexikalischen Analyse identifiziert werden, wieder. Für die Darstellung des AST weren jene Tokens eleminiert, die durch die Struktur des Baumes ihre Bedeutung verlieren\footnote{Im Beispiel in der Abbildung werden etwa die Klammern vor und nach der Addition obsolet, da diese in einem eigenen Subtree dargestellt wird.}.  
+Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den Formaten Concrete Syntax Tree(CST) und Abstract Syntax Tree(AST) unterschieden (Abbildung \ref{abb_ast_vs_cst}). Der CST gibt die der Syntax der Sprache ent\-sprech\-ende Hierarchie der Tokens, die bei der Lexikalischen Analyse identifiziert werden, wieder. Für die Darstellung des AST weren jene Tokens eleminiert, die durch die Struktur des Baumes ihre Bedeutung verlieren\footnote{Im Beispiel in der Abbildung werden etwa die Klammern vor und nach der Addition obsolet, da diese in einem eigenen Subtree dargestellt wird.}.  
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth,scale=0.5]{figures/ast_vs_cst.png}
@@ -215,9 +215,9 @@ Memoization erfordert zwar einen höheren Speicheraufwand beim Parsen, beschleun
 
 Die meisten Programmiersprachen definieren verschiedene Datentypen, bzw. erlauben die Definition eigener Typen. Die Typisierung kann dabei statisch oder dynamisch erfolgen. Statische Typsysteme haben den Vorteil, dass sie bereits bei der Übersetzung überprüft werden können. Sie erhöhen somit die Wahrscheinlichkeit, dass das eingegebe Programm korrekt ist. Auch die Effizienz kann gesteigert werden, da eine Überprüfung zur Laufzeit nicht mehr not\-wen\-dig ist. Bei dynamischen Typsystemen erfolgt die Zuweisung von Typen zu Variablen und Funktionen, und somit auch deren Überprüfung, erst zur Laufzeit des Programmes.
 
-Da die Syntax einer Sprache im Großen und Ganzen unabhängig von der Typisierung ist, ist vor allem die Semantische Analyse für die Typ\-über\-prü\-fung zuständig. Lässt die Sprache die Deklaration von Variablen und Funktionen zu, muss deren (Rückgabe-) Typ in einer Symboltabelle abgespeichert werden. Wird die Variable oder Funktion in einem Statement des Programmes verwendet, muss der entsprechende Typ aus der Symboltabelle abgerufen werden.
+Da die Syntax einer Sprache im Großen und Ganzen unabhängig von der Typisierung ist, ist vor allem die Semantische Analyse für die Typ\-über\-prü\-fung zuständig. Lässt die Sprache die Deklaration von Variablen und Funktionen zu, muss deren (Rückgabe-) Typ in einer Symboltabelle abgespeichert werden. Wird die Variable oder Funktion in einem Statement des Programmes verwendet, muss der ent\-sprech\-ende Typ aus der Symboltabelle abgerufen werden.
 
-Ein Teil des Typsystemes, ist die Zuordnung von Typen zu Operatoren. Da die meisten Operatoren überladen sind, müssen die tatsächlichen Typen während der Typ\-über\-prü\-fung aus dem Kontext abgeleitet werden. Bei Funktionsaufrufen ist zusätzlich eine implizite Typumwandlung not\-wen\-dig. Das bedeutet, dass ein Typ in einen anderen umgewandelt werden kann, wenn dies keine semantische Änderungen zur Folge hat. Ein Beispiel ist eine Funktion mit einem Parameter vom Typ Gleitkommazahl. Ohne den Sinn der Funktion zu verändern, kann auch eine Ganzzahl an die Funktion übergeben werden, da die Menge der Ganzzahlen -- mathematisch gesehen -- eine Teilmenge der Gleitkommazahlen ist.
+Ein Teil des Typsystemes, ist die Zuordnung von Typen zu Operatoren. Da die meisten Operatoren überladen sind, müssen die tatsächlichen Typen während der Typ\-über\-prü\-fung aus dem Kontext abgeleitet werden. Bei Funktionsaufrufen ist zusätzlich eine implizite Typumwandlung not\-wen\-dig. Das bedeutet, dass ein Typ in einen anderen umgewandelt werden kann, wenn dies keine semantische Än\-der\-ung\-en zur Folge hat. Ein Beispiel ist eine Funktion mit einem Parameter vom Typ Gleitkommazahl. Ohne den Sinn der Funktion zu verändern, kann auch eine Ganzzahl an die Funktion übergeben werden, da die Menge der Ganzzahlen -- mathematisch gesehen -- eine Teilmenge der Gleitkommazahlen ist.
 
 
 \chapter{Werkzeugunterstützung}
@@ -241,15 +241,15 @@ Für die in dieser Arbeit zu entwickelnde DSL sind vor allem Parsergeneratoren, 
 
 \section{Über\-sicht}
 
-Bei allen Tools, die in diesem Abschnitt erwähnt werden, handelt es sich um Parsergeneratoren. Allen gemeinsam ist, dass sie die Grammatik einer Sprache in einem anwendungsabhängigen Format einlesen und verarbeiten. Das Produkt eines Parsergenerators ist ein lauffähiger  Parser (bzw. zusätzlich ein Scanner\footnote{Bei manchen Tools ist der Scanner im Parser integriert. Allerdings kann ein Scanner als eigene Komponente verwendet werden, um Informationen über ein Programm auszulesen, für die nur die Tokens benötigt werden. Der Scanner wird bei FXL z.B. verwendet um alle Variablen einer Formel zu erhalten, indem die Tokens vom Typ VAR aus der Tokenfolge ausgelesen werden. Siehe auch Abschnitt \ref{theorie_language_applications} bzw. der Algorithmus zur Bestimmung der Ausführungsreihenfolge in Abschnitt \ref{implementierung_integration_reihenfolge}.}), der ein Programm in der zu entwickelnden Sprache in einen AST verwandelt (Abbildung \ref{abb_parser_generator_workflow}). 
+Bei allen Tools, die in diesem Abschnitt erwähnt werden, handelt es sich um Parsergeneratoren. Allen gemeinsam ist, dass sie die Grammatik einer Sprache in einem anwendungsabhängigen Format einlesen und verarbeiten. Das Produkt eines Parsergenerators ist ein lauffähiger  Parser (bzw. zusätzlich ein Scanner\footnote{Bei manchen Tools ist der Scanner im Parser integriert. Allerdings kann ein Scanner als eigene Komponente verwendet werden, um Informationen über ein Programm auszulesen, für die nur die Tokens benötigt werden. Der Scanner wird bei FXL z.B. verwendet um alle Variablen einer Formel zu erhalten, indem die Tokens vom Typ VAR aus der Tokenfolge ausgelesen werden. Siehe auch Abschnitt \ref{theorie_language_applications} bzw. der Algorithmus zur Bestimmung der Aus\-führ\-ungsreihenfolge in Abschnitt \ref{implementierung_integration_reihenfolge}.}), der ein Programm in der zu entwickelnden Sprache in einen AST verwandelt (Abbildung \ref{abb_parser_generator_workflow}). 
 
-Eine weitere Möglichkeit ist, Ausdrücke bereits beim Parsen auszuwerten. Die meisten Tools unterstützen Actions, die bei der Ausführung einer Ab\-lei\-tungs\-re\-gel im Parser ausgeführt werden. Diese Möglickeit hat allerdings einige Nachteile:
+Eine weitere Möglichkeit ist, Ausdrücke bereits beim Parsen auszuwerten. Die meisten Tools unterstützen Actions, die bei der Aus\-führ\-ung einer Ab\-lei\-tungs\-re\-gel im Parser ausgeführt werden. Diese Möglickeit hat allerdings einige Nachteile:
 
 \begin{itemize}
   \item Die Actions werden direkt in die Grammatikdatei geschrieben und machen so die eigentliche Grammatik schlecht lesbar.
   \item Die Statements der Actions werden in der Zielsprache des Parsers eingegeben. Editoren für Grammatiken unterstützen allerdings nicht den Umfang eines Codeeditors einer IDE, was die Entwicklung fehleranfälliger und schwieriger macht.
   \item Verwendet der Parser Backtracking, kann es sein, dass einige Actions mehrfach ausgeführt werden.
-  \item Typechecks ohne Ausführung des Statements wären nur durch eine eigene Grammatik für diesen Zweck möglich, was zu Redundanz und erhöhter Fehleranfälligkeit führt.
+  \item Typechecks ohne Aus\-führ\-ung des Statements wären nur durch eine eigene Grammatik für diesen Zweck möglich, was zu Redundanz und erhöhter Fehleranfälligkeit führt.
 \end{itemize}
 
 Für diese Arbeit wurde entschieden, dem Prinzip der \emph{Separation of Concerns} zu folgen und den erzeugten AST in einem Typechecker bzw. Interpreter explizit abzuarbeiten.
@@ -270,7 +270,7 @@ Für diese Arbeit wurde entschieden, dem Prinzip der \emph{Separation of Concern
 Um eine Auswahl für die Implementierung des Interpreters zu treffen, ist es not\-wen\-dig, die verschiedenen Tools anhand verschiedener Eigenschaften zu vergleichen. Das betrifft vor allem das Format der Grammatik und die vorhandenen Ein-/Ausgabesprachen.
 Zu\-sätz\-liche Faktoren sind die Werkzeugunterstützung (Grammatikeditor, Rule-Visualisierung, (Concrete/Abstract) Syntax Tree-Visualisierung), Dokumentation und (Community-)Support sowie Tools für den Build-Prozess.
 
-In diesem Kapitel werden die Tools ANTLR, Coco/R und JavaCC verglichen. Diese sind alle für die Java-Plattform verfügbar und grundsätzlich für die in dieser Arbeit zu entwickelnde Sprache geeignet. Zu\-sätz\-lich können diese Produkte als ausgereift betrachtet werden und wurden erfolgreich in verschiedenen Projekten eingesetzt.
+In diesem Kapitel werden die Tools ANTLR, Coco/R und JavaCC verglichen. Diese sind alle für die Java-Plattform verfügbar und grund\-sätz\-lich für die in dieser Arbeit zu entwickelnde Sprache geeignet. Zu\-sätz\-lich können diese Produkte als ausgereift betrachtet werden und wurden erfolgreich in verschiedenen Projekten eingesetzt.
 
 
 \subsection{ANTLR}
@@ -306,7 +306,7 @@ Die Dokumentation ist recht ausführlich gestaltet. Für Support durch die Commu
 
 \section{ANTLR}
 \label{tools_antlr}
-Dieser Abschnitt setzt sich im Detail mit ANTLR, dem Werkzeug der Wahl für diese Arbeit, auseinander. Wie bereits in Abschnitt \ref{tools_vergleich} erwähnt, sind alle angeführten Tools grundsätzlich für die DSL geeignet. Die entgültige Entscheidung für Entwicklung die Form Expression Language (FXL) ANTLR einzusetzen, begründet sich durch die hervorragende Dokumentation, insbesondere dem Buch des Autors, dem guten IDE Support und der Integration in das Build-Tool Maven.
+Dieser Abschnitt setzt sich im Detail mit ANTLR, dem Werkzeug der Wahl für diese Arbeit, auseinander. Wie bereits in Abschnitt \ref{tools_vergleich} erwähnt, sind alle angeführten Tools grund\-sätz\-lich für die DSL geeignet. Die entgültige Entscheidung für Entwicklung die Form Expression Language (FXL) ANTLR einzusetzen, begründet sich durch die hervorragende Dokumentation, insbesondere dem Buch des Autors, dem guten IDE Support und der Integration in das Build-Tool Maven.
 
 
 \subsection{Grammatik}
@@ -414,7 +414,7 @@ ANTLRWorks ist ein mächtiges Werkzeug, das den Entwickler effektiv bei der Entw
  
 \subsubsection{IDE-Plugins}
 
-Mittlerweile existieren diverse Plugins für die wichtigsten Entwicklungsumgebungen\footnote{Eine aktuelle Über\-sicht über die Plugins für diverse IDEs findet sich unter http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Development+Environments}. Für IntelliJ IDEA existiert ein Plugin, das ANTLRWorks direkt in die IDE integriert. Der Funktionsumfang ist dementsprechend gleich umfangreich wie ANTLRWorks selbst.
+Mittlerweile existieren diverse Plugins für die wichtigsten Entwicklungsumgebungen\footnote{Eine aktuelle Über\-sicht über die Plugins für diverse IDEs findet sich unter http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Development+Environments}. Für IntelliJ IDEA existiert ein Plugin, das ANTLRWorks direkt in die IDE integriert. Der Funktionsumfang ist dement\-sprech\-end gleich umfangreich wie ANTLRWorks selbst.
 
 Für die weit verbreitete offene IDE Eclipse existieren zwei Plugins. AntlrDT stellt vor allem einen Code-Editor und die Integration in den Eclipse Buildprozess (automatisches Compilieren nach Clean bzw. Speichern) zur Verfügung. Zu\-sätz\-lich bietet das Plugin auch die Visualisierung von ASTs an, die allerdings, im Vergleich zu ANTLRWorks, nicht so ausgereift erscheint. Das zweite Eclipse-Plugin ist ANTLR IDE\footnote{http://antlrv3ide.sourceforge.net/, 23.3.2012}. Es ist sehr ausgereift und wurde auch für die Implementierung der Form Expression Language in der vorliegenden Arbeit verwendet. Es bietet einen Grammatikeditor, eine Ansicht für Syntaxbäume (im Plugin Railroad View genannt) und einen Interpreter, mit dem wie in ANTLRWorks Eingaben auf verschiedene Regeln angewendet werden können. Auch ein Debugger ist vorhanden, der allerdings im Gegensatz zu ANTLRWorks nur mit Java-Parsern arbeiten kann.
 
@@ -435,7 +435,7 @@ Eine Sprache, die sich in wissenschaftlichen Arbeiten oft wiederfindet, ist die 
 
 Eine weitere Sprache, die einfache Berechnungen und Validierungen er\-mög\-licht, ist die Unified Expression Language (UEL). Diese ist aus den sehr ähnlichen Expression Languages für JavaServer Pages(JSP) und JavaServer Faces(JSF) entstanden. Die UEL kann auf Java-Objekte zugreifen, Werte setzen be\-zieh\-ungs\-wei\-se abfragen und Methoden aufrufen. Eine freie Implementierung ist JUEL\footnote{http://juel.sourceforge.net/, 21.3.2012}. JUEL hat den Vorteil, dass sie außerhalb des Java Server Kontexts für beliebige Anwendungsgebiete verwendet werden kann.
 
-Auf der Java-Plattform entstanden verschiedene Implementierungen von Skriptsprachen, die innerhalb der Anwendung ausgeführt werden können. Zwei der bekanntesten Projekte sind Mozillas Java\-Script-Engine Rhino\cite{wwwRhino} und die Python und Ruby Portierungen Jython bzw. JRuby. Der Java Specification Request JSR-233 definiert eine standardisierte API \cite{JSR-223}, um Skripte in einer Java Anwendung auszuführen und Java-Objekte an die Engine zu binden\footnote{vgl. Abschnitt \ref{section_java_scripting}}.  Seit Java 1.6 stehen einige Scriptengines out-of-the-box zur Verfügung, u.a. Java\-Script, Groovy und Ruby. Programme in Form von Skripts können zur Runtime erstellt und verändert werden. Es können Variablen an die Engine übergeben und im ausführenden Skript verwendet werden. Zu\-sätz\-lich kann auf die gesamte Java API zugegriffen werden. Nach der Ausführung kann wiederum auf die Variablen zugegriffen werden. 
+Auf der Java-Plattform entstanden verschiedene Implementierungen von Skriptsprachen, die innerhalb der Anwendung ausgeführt werden können. Zwei der bekanntesten Projekte sind Mozillas Java\-Script-Engine Rhino\cite{wwwRhino} und die Python und Ruby Portierungen Jython bzw. JRuby. Der Java Specification Request JSR-233 definiert eine standardisierte API \cite{JSR-223}, um Skripte in einer Java Anwendung auszuführen und Java-Objekte an die Engine zu binden\footnote{vgl. Abschnitt \ref{section_java_scripting}}.  Seit Java 1.6 stehen einige Scriptengines out-of-the-box zur Verfügung, u.a. Java\-Script, Groovy und Ruby. Programme in Form von Skripts können zur Runtime erstellt und verändert werden. Es können Variablen an die Engine übergeben und im ausführenden Skript verwendet werden. Zu\-sätz\-lich kann auf die gesamte Java API zugegriffen werden. Nach der Aus\-führ\-ung kann wiederum auf die Variablen zugegriffen werden. 
 
 Zuletzt sollen noch die Formelsprachen von Tabellenkalkulationswerkzeugen wie Microsoft Excel oder LibreOffice Calc Erwähnung finden, da diese ein Vorbild für die Syntax der FXL sind.
 
