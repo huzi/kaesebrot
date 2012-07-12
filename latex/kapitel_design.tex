@@ -87,6 +87,8 @@ Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler auf\-tre\
 	$\bullet$ Endlosschleifen, z.B. while(true) { ; }
 	
 	$\bullet$ System.exit()
+	
+	$\bullet$ Eingeschränkte Fehlerbehandlung
 
 	\\
 	\hline
@@ -176,8 +178,8 @@ Weitere nachteilige Eigenschaften der eingebetteten Scriptengine bleiben jedoch 
 		$\bullet$  Eingeschränkte Syntax (=geringere Ausdrucksstärke)
 		
 		$\bullet$  Neue Funktionen erst bei Redeploy
-		
-		$\bullet$  Dynamische Typisierung
+	
+		$\bullet$ Eingeschränkte Fehlerbehandlung
 	
 	\\
 	\hline
@@ -742,8 +744,12 @@ Da die DSL statisch typisiert ist, ist es möglich, die Typechecks ohne Ausführ
 Intern arbeitet der Interpreter mit Wrapper-Objekten (Abbildung \ref{figure_result_wrapper}), die das Ergebnis einer Operation oder eines Ausdrucks beinhalten. Die Wrapper bestehen aus einem Typ und dem Wert des Ergebnisses. Der Typ ist als Java Aufzählungstyp \texttt{enum} definiert und enthält die Werte \texttt{DECIMAL}, \texttt{INTEGER}, \texttt{DATE} und \texttt{BOOLEAN}.
 
 \begin{figure}[h]
-\includegraphics[scale=0.7]{figures/uml_result_classes}
+\begin{center}
+\includegraphics[scale=0.5]{figures/uml_result_classes_neu}
+\end{center}
+
 \caption{Wrapping der Rückgabewerte}
+
 \label{figure_result_wrapper}
 \end{figure}
 
@@ -784,7 +790,12 @@ Normalerweise wäre es von Vorteil, wenn der Typüberprüfer die Überprüfung n
 Variablen und Funktionen sind in FXL Konzepte, die nicht innerhalb der Sprache definiert werden, sondern in eigenen Komponenten, auf die der Interpreter bzw. Typüberprüfer zugreifen kann (Abbildung \ref{figure_dsl_overview}). 
 
 \begin{figure}[h]
-\includegraphics[scale=0.7]{figures/uml_dsl_overview}
+\begin{center}
+ 
+\includegraphics[scale=0.5]{figures/uml_dsl_overview_neu}
+
+\end{center}
+
 \caption{Abhängigkeiten der DSL Implementierung}
 \label{figure_dsl_overview}
 \end{figure}
@@ -833,13 +844,18 @@ Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes For
 
 \section{Fehlerbehandlung}
 
-Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse FXLException definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
-
 \begin{figure}[ht]
-\includegraphics[scale=0.7]{figures/uml_exception_hierarchy}
+\begin{center}
+\includegraphics[scale=0.5]{figures/uml_exception_hierarchy_neu}
+\end{center}
+
 \caption{Exception Hierarchie}
 \label{abb_exception_hierarchie}
 \end{figure}
+
+Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse FXLException definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
+
+
 
 
 \chapter{Test}

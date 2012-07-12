@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  12 JUL 2012 09:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  12 JUL 2012 16:35
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -866,7 +866,7 @@ File: figures/antlrworks_interpreter.png Graphic file (type png)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28 <./figures/antlrworks_syntax_diagram.png (PNG copy)>]
-<figures/antlrworks_debugger.png, id=870, 1132.23pt x 775.89874pt>
+<figures/antlrworks_debugger.png, id=871, 1132.23pt x 775.89874pt>
 File: figures/antlrworks_debugger.png Graphic file (type png)
 
 <use figures/antlrworks_debugger.png>
@@ -987,65 +987,65 @@ Underfull \hbox (badness 2269) in paragraph at lines 85--86
  []
 
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 64--95
+Overfull \hbox (24.0pt too wide) in paragraph at lines 64--97
 [][] 
  []
 
 
-Overfull \hbox (3.44919pt too wide) in paragraph at lines 107--108
+Overfull \hbox (3.44919pt too wide) in paragraph at lines 109--110
 \OT1/cmr/m/n/10.95 Eine weit-ere Al-ter-na-tive ist die Ein-bindung der bere-it
 s in Kapi-tel []5[] erw[]ahnten
  []
 
 [40]
-Overfull \hbox (0.83215pt too wide) in paragraph at lines 109--110
+Overfull \hbox (0.83215pt too wide) in paragraph at lines 111--112
 []\OT1/cmr/m/n/10.95 Die UEL un-ter-st[]utzt die []ublichen grundle-gen-den Op-
 er-a-toren sowie die Klam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 [][][]\OT1/cmr/m/n/9 Wird z.B. die Vari-able \OT1/cmtt/m/n/9 x \OT1/cmr/m/n/9 i
 n List-ing []6.2[] nicht geset-zt, wird eine
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 158--158
+Underfull \hbox (badness 2376) in paragraph at lines 160--160
 \OT1/cmtt/m/n/9 javax.el.PropertyNotFoundException \OT1/cmr/m/n/9 gewor-fen. Um
  her-auszufind-en, welche Vari-
  []
 
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 162--186
+Overfull \hbox (24.0pt too wide) in paragraph at lines 164--188
 [][] 
  []
 
 [42] [43]
-Overfull \hbox (24.0pt too wide) in paragraph at lines 219--243
+Overfull \hbox (24.0pt too wide) in paragraph at lines 221--245
 [][] 
  []
 
 [44] [45]
 Kapitel 7.
 
-Overfull \hbox (5.48715pt too wide) in paragraph at lines 262--263
+Overfull \hbox (5.48715pt too wide) in paragraph at lines 264--265
 \OT1/cmr/m/n/10.95 struk-tur f[]ur einen tech-nis-chen En-twurf liefert, die al
 le An-forderun-
  []
 
 
-Overfull \hbox (16.86293pt too wide) in paragraph at lines 265--266
+Overfull \hbox (16.86293pt too wide) in paragraph at lines 267--268
 \OT1/cmr/m/n/10.95 forderun-gen umzuwan-deln. Zuerst wird evaluiert, welche An-
 forderun-gen vorhan-
  []
 
 
-Overfull \hbox (6.85587pt too wide) in paragraph at lines 267--268
+Overfull \hbox (6.85587pt too wide) in paragraph at lines 269--270
 \OT1/cmr/m/n/10.95 Abk[]urzungen und No-ta-tio-nen ver-wen-det wer-den, an-der-
 er-seits die An-forderun-
  []
@@ -1053,19 +1053,19 @@ er-seits die An-forderun-
 [46
 
 ]
-Overfull \hbox (33.89626pt too wide) in paragraph at lines 279--280
+Overfull \hbox (33.89626pt too wide) in paragraph at lines 281--282
 \OT1/cmr/m/n/10.95 dere die Schnittstellen, die eine In-te-gra-tion in un-ter-s
 chiedliche Sys-teme erm[]oglichen. 
  []
 
 [47] [48]
-Overfull \hbox (12.92401pt too wide) in paragraph at lines 353--354
+Overfull \hbox (12.92401pt too wide) in paragraph at lines 355--356
 []\OT1/cmr/m/n/10.95 Die arith-metis-chen Op-er-a-toren (Tabelle []7.3[]) sind 
 die vi-er Grun-drech-nungsarten
  []
 
 [49]
-Overfull \hbox (31.15874pt too wide) in paragraph at lines 403--404
+Overfull \hbox (31.15874pt too wide) in paragraph at lines 405--406
 \OT1/cmr/m/n/10.95 R[]uckgabewerte, []Uberschreitung der Wert-gren-zen von Type
 n oder API-[]Anderungen
  []
@@ -1075,213 +1075,209 @@ Kapitel 8.
 [51
 
 ]
-Overfull \hbox (29.27078pt too wide) in paragraph at lines 439--440
+Overfull \hbox (29.27078pt too wide) in paragraph at lines 441--442
 \OT1/cmtt/m/n/10.95 !YYYY-MM-DD\OT1/cmr/m/n/10.95 , wahlweise kann auch die Uhr
 zeit im For-mat \OT1/cmtt/m/n/10.95 !YYYY-MM-DD-hh:mm:ss
  []
 
 
-Overfull \hbox (0.55917pt too wide) in paragraph at lines 446--447
+Overfull \hbox (0.55917pt too wide) in paragraph at lines 448--449
  \OT1/cmr/bx/n/10.95 Boolean \OT1/cmr/m/n/10.95 Boo-lesche Wahrheitswerte wer-d
 en vor allem in Con-straints einge-
  []
 
 
-Overfull \hbox (9.01547pt too wide) in paragraph at lines 454--455
+Overfull \hbox (9.01547pt too wide) in paragraph at lines 456--457
 \OT1/cmr/m/n/10.95 sind. Da die Sprache statisch typ-isiert ist, k[]onnen State
 -ments ohne Ausf[]uhrung
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 494--494
+Underfull \hbox (badness 1448) in paragraph at lines 496--496
 []\OT1/cmr/m/n/10.95 Tabelle 8.1: []Semantische Typregeln: Op-er-a-toren mit Da
 -ten-typen der
  []
 
 
-Overfull \hbox (0.52916pt too wide) in paragraph at lines 498--499
+Overfull \hbox (0.52916pt too wide) in paragraph at lines 500--501
 \OT1/cmr/m/n/10.95 die Pa-ram-e-ter ein-er Funk-tion, als auch den R[]uckgabewe
 rt, der fix vorgegeben
  []
 
 [52] [53]
-Overfull \hbox (5.92888pt too wide) in paragraph at lines 506--507
+Overfull \hbox (5.92888pt too wide) in paragraph at lines 508--509
  \OT1/cmr/bx/n/10.95 Funk-tions-def-i-ni-tion[] \OT1/cmr/m/n/10.95 Funk-tio-nen
  haben be-liebig viele Pa-ram-e-ter und einen
  []
 
 
-Overfull \hbox (5.15134pt too wide) in paragraph at lines 508--509
+Overfull \hbox (5.15134pt too wide) in paragraph at lines 510--511
 []\OT1/cmr/m/n/10.95 In der FXL wer-den Funk-tio-nen als Meth-o-d-en von Contai
 ner-Klassen definiert,
  []
 
 [54]
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 545--555
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 547--557
  [] 
  []
 
 [55]
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 567--593
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 569--595
  [] 
  []
 
 
-Overfull \hbox (5.97374pt too wide) in paragraph at lines 600--601
+Overfull \hbox (5.97374pt too wide) in paragraph at lines 602--603
 \OT1/cmr/m/n/10.95 ter-preter ar-beit-et, muss auf ver-schiedene Fehler auch w[
 ]ahrend der Ausf[]uhrung
  []
 
 
-Overfull \hbox (2.20204pt too wide) in paragraph at lines 600--601
+Overfull \hbox (2.20204pt too wide) in paragraph at lines 602--603
 \OT1/cmr/m/n/10.95 R[]ucksicht genom-men wer-den. So sind manche Fehler dop-pel
 t definiert, allerd-
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 610--610
+Underfull \hbox (badness 10000) in paragraph at lines 612--612
 []\OT1/cmr/m/n/10.95 Allgemeiner/unbekannter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 []\OT1/cmr/m/n/10.95 Der be-tr-e-f-fende
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
 []\OT1/cmr/m/n/10.95 Der ung[]ultige
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 []\OT1/cmr/m/n/10.95 Variable Provider nicht ge-fun-
  []
 
 
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 603--625
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 605--627
 [][] 
  []
 
 [57]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 681
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 683
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 681.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 683.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 681.
+(Font)              for symbol `textbackslash' on input line 683.
 
 [58]
 Kapitel 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 726--726
+Underfull \hbox (badness 10000) in paragraph at lines 728--728
 []\OT1/cmr/m/n/10.95 Funktionsaufruf; An-zahl der Kinder
  []
 
 
-Overfull \hbox (9.12532pt too wide) in paragraph at lines 705--729
+Overfull \hbox (9.12532pt too wide) in paragraph at lines 707--731
 [][] 
  []
 
 
-Overfull \hbox (16.95297pt too wide) in paragraph at lines 738--739
+Overfull \hbox (16.95297pt too wide) in paragraph at lines 740--741
 \OT1/cmr/m/n/10.95 Da die DSL statisch typ-isiert ist, ist es m[]oglich, die Ty
 pe-checks ohne Ausf[]uhrung
  []
 
 [59
 
-] <figures/uml_result_classes.png, id=1209, 469.755pt x 277.035pt>
-File: figures/uml_result_classes.png Graphic file (type png)
+] <figures/uml_result_classes_neu.png, id=1210, 647.41875pt x 286.06876pt>
+File: figures/uml_result_classes_neu.png Graphic file (type png)
 
-<use figures/uml_result_classes.png>
+<use figures/uml_result_classes_neu.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [60]
-Overfull \hbox (2.8397pt too wide) in paragraph at lines 755--756
+Overfull \hbox (2.8397pt too wide) in paragraph at lines 761--762
 \OT1/cmr/m/n/10.95 Der Typ[]uberpr[]ufer ar-beit-et den AST mit einem rekur-siv
 -en depth-first Ansatz
  []
 
 
-Overfull \hbox (4.05516pt too wide) in paragraph at lines 757--758
+Overfull \hbox (4.05516pt too wide) in paragraph at lines 763--764
 \OT1/cmr/m/n/10.95 Operan-den des Typs BOOLEAN ve-r-ar-beit-en(Funktion \OT1/cm
 tt/m/n/10.95 checkBinaryBoolean
  []
 
 
-Overfull \hbox (0.55956pt too wide) in paragraph at lines 779--780
+Overfull \hbox (0.55956pt too wide) in paragraph at lines 785--786
 []\OT1/cmr/m/n/10.95 Normalerweise w[]are es von Vorteil, wenn der Typ[]uberpr[
 ]ufer die []Uberpr[]ufung
  []
 
-[61 <./figures/uml_result_classes.png (PNG copy)>]
-<figures/uml_dsl_overview.png, id=1227, 571.13374pt x 175.65625pt>
-File: figures/uml_dsl_overview.png Graphic file (type png)
+[61 <./figures/uml_result_classes_neu.png (PNG copy)>]
+<figures/uml_dsl_overview_neu.png, id=1228, 547.04375pt x 175.65625pt>
+File: figures/uml_dsl_overview_neu.png Graphic file (type png)
 
-<use figures/uml_dsl_overview.png>
-Overfull \hbox (39.7909pt too wide) in paragraph at lines 787--788
-[][] 
- []
-
-
-Overfull \hbox (4.33124pt too wide) in paragraph at lines 796--797
+<use figures/uml_dsl_overview_neu.png>
+Overfull \hbox (4.33124pt too wide) in paragraph at lines 807--808
 \OT1/cmr/m/n/10.95 Der Vari-able Provider ist eine op-tionale Kom-po-nente, der
  nur dann notwendig
  []
 
 
-Overfull \hbox (9.98645pt too wide) in paragraph at lines 802--803
+Overfull \hbox (9.98645pt too wide) in paragraph at lines 813--814
 []\OT1/cmtt/m/n/10.95 ResultType lookupType(String name)\OT1/cmr/m/n/10.95 : Di
 ese Meth-ode wird vom Typ-
  []
 
-[62 <./figures/uml_dsl_overview.png (PNG copy)>]
-Overfull \hbox (16.83255pt too wide) in paragraph at lines 812--813
+[62 <./figures/uml_dsl_overview_neu.png (PNG copy)>]
+Overfull \hbox (16.83255pt too wide) in paragraph at lines 823--824
 \OT1/cmr/m/n/10.95 in-te-gri-ert. Um Funk-tio-nen hinzuzuf[]ugen, k[]onnen Java
 -Klassen, die entsprechend
  []
 
 
-Overfull \hbox (5.73045pt too wide) in paragraph at lines 812--813
+Overfull \hbox (5.73045pt too wide) in paragraph at lines 823--824
 \OT1/cmr/m/n/10.95 an-notierte Meth-o-d-en en-thal-ten, er-stellt wer-den. Der 
 In-ter-preter enth[]alt Meth-
  []
 
 [63]
-Overfull \hbox (0.80035pt too wide) in paragraph at lines 836--837
+<figures/uml_exception_hierarchy_neu.png, id=1264, 808.01875pt x 276.03125pt>
+File: figures/uml_exception_hierarchy_neu.png Graphic file (type png)
+
+<use figures/uml_exception_hierarchy_neu.png>
+Overfull \hbox (44.00839pt too wide) in paragraph at lines 849--850
+ [] 
+ []
+
+
+Overfull \hbox (0.80035pt too wide) in paragraph at lines 856--857
 \OT1/cmr/m/n/10.95 konkreten Ex-cep-tion-klassen \OT1/cmtt/m/n/10.95 FXLSyntaxE
 xception\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 FXLSemanticException\OT1/cmr/m
 /n/10.95 ,
  []
 
 
-Overfull \hbox (8.25357pt too wide) in paragraph at lines 836--837
+Overfull \hbox (8.25357pt too wide) in paragraph at lines 856--857
 \OT1/cmtt/m/n/10.95 lang.-Runtime-Exception\OT1/cmr/m/n/10.95 ) zu ver-hin-dern
 . Eine Ex-cep-tion enth[]alt einen Fehler-
  []
 
-<figures/uml_exception_hierarchy.png, id=1265, 575.14874pt x 353.32pt>
-File: figures/uml_exception_hierarchy.png Graphic file (type png)
-
-<use figures/uml_exception_hierarchy.png>
-Overfull \hbox (42.60138pt too wide) in paragraph at lines 839--840
-[][] 
- []
-
-[64] [65 <./figures/uml_exception_hierarchy.png (PNG copy)>]
+[64 <./figures/uml_exception_hierarchy_neu.png (PNG copy)>] [65]
 Kapitel 10.
 
-Overfull \hbox (2.32364pt too wide) in paragraph at lines 848--849
+Overfull \hbox (2.32364pt too wide) in paragraph at lines 864--865
 \OT1/cmr/m/n/10.95 Auch wenn die Phase Test in dieser Ar-beit am Ende des En-tw
 ick-lungsprozess-
  []
 
 
-Overfull \hbox (24.61176pt too wide) in paragraph at lines 859--860
+Overfull \hbox (24.61176pt too wide) in paragraph at lines 875--876
 []\OT1/cmr/m/n/10 Unter dem Test von Soft-ware ver-ste-hen wir die stich-probe-
 nar-tige Ausf[]uhrung
  []
@@ -1289,30 +1285,30 @@ nar-tige Ausf[]uhrung
 [66
 
 ]
-Overfull \hbox (32.04086pt too wide) in paragraph at lines 883--884
+Overfull \hbox (32.04086pt too wide) in paragraph at lines 899--900
 \OT1/cmr/m/n/10.95 Softwaretests k[]onnen nach di-versen Kri-te-rien eingeteilt
  wer-den. Eine grunds[]atzliche
  []
 
 [67]
-Overfull \hbox (4.81787pt too wide) in paragraph at lines 913--914
+Overfull \hbox (4.81787pt too wide) in paragraph at lines 929--930
 []\OT1/cmr/m/n/10.95 abdecken. Zu-s[]atz-lich muss beachtet wer-den, dass einig
 e Op-er-a-toren []uberladen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--916
+Underfull \hbox (badness 10000) in paragraph at lines 931--932
 
  []
 
 [68]
-Overfull \hbox (36.75546pt too wide) in paragraph at lines 954--955
+Overfull \hbox (36.75546pt too wide) in paragraph at lines 970--971
 []\OT1/cmr/m/n/10.95 Auf Kom-po-nen-tenebene sind die klas-sis-chen Ver-fahren 
 die []Aquivalenzklassenbildung
  []
 
 [69]
-Overfull \hbox (4.29964pt too wide) in paragraph at lines 962--963
+Overfull \hbox (4.29964pt too wide) in paragraph at lines 978--979
 []\OT1/cmr/m/n/10.95 Die Auf-gaben-stel-lung der DSL eignet sich her-vor-ra-gen
 d f[]ur die Test-getriebene
  []
@@ -1324,7 +1320,7 @@ Kapitel 11.
 [73
 
 ] [74]
-<figures/workflow_neues_formular.png, id=1364, 511.9125pt x 317.185pt>
+<figures/workflow_neues_formular.png, id=1365, 511.9125pt x 317.185pt>
 File: figures/workflow_neues_formular.png Graphic file (type png)
 
 <use figures/workflow_neues_formular.png> [75 <./figures/workflow_neues_formula
@@ -1334,7 +1330,7 @@ Overfull \hbox (6.30835pt too wide) in paragraph at lines 69--70
 n neues For-mu-lar hinzugef[]ugt
  []
 
-<figures/workflow_formular_ausfuellen.png, id=1373, 885.3075pt x 357.335pt>
+<figures/workflow_formular_ausfuellen.png, id=1374, 885.3075pt x 357.335pt>
 File: figures/workflow_formular_ausfuellen.png Graphic file (type png)
 
 <use figures/workflow_formular_ausfuellen.png>
@@ -1348,199 +1344,199 @@ Overfull \hbox (4.02707pt too wide) in paragraph at lines 93--94
 -griff-ss-chicht aus-gef[]uhrt
  []
 
+<figures/spics_architektur_neu.png, id=1387, 958.58125pt x 739.76375pt>
+File: figures/spics_architektur_neu.png Graphic file (type png)
 
-Overfull \hbox (2.73317pt too wide) in paragraph at lines 95--96
+<use figures/spics_architektur_neu.png>
+Overfull \hbox (23.4257pt too wide) in paragraph at lines 97--98
+ [] 
+ []
+
+
+Overfull \hbox (2.73317pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10.95 der Logikschicht zu-greift. Un-ter-st[]utzt wird die GUI dur
 ch Java-Script-basierte
  []
 
-<figures/spics_architektur.png, id=1386, 803.0pt x 957.5775pt>
-File: figures/spics_architektur.png Graphic file (type png)
-
-<use figures/spics_architektur.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[77] [78 <./figures/spics_architektur.png (PNG copy)>]
+[77 <./figures/spics_architektur_neu.png>] [78]
 Kapitel 12.
 [79
 
 ]
-Overfull \hbox (28.22368pt too wide) in paragraph at lines 169--170
+Overfull \hbox (28.22368pt too wide) in paragraph at lines 171--172
 \OT1/cmr/m/n/10.95 G[]ultigkeit bzw. Sinnhaftigkeit der Eingabegr[]o^^Yen be-t-
 rifft. Sowohl die K[]orpergr[]o^^Ye,
  []
 
 [80]
-Overfull \hbox (7.34242pt too wide) in paragraph at lines 173--174
+Overfull \hbox (7.34242pt too wide) in paragraph at lines 175--176
 \OT1/cmr/m/n/10.95 zus[]atzlich muss diese Formel einen boo-leschen Wahrheitswe
 rt als R[]uckgabetyp
  []
 
 
-Overfull \hbox (15.70589pt too wide) in paragraph at lines 186--187
+Overfull \hbox (15.70589pt too wide) in paragraph at lines 188--189
 []\OT1/cmr/m/n/10.95 Die State-ments der FXL wer-den bei der Mod-el-lierung des
  For-mu-la-rs eingegeben.
  []
 
-[81] <figures/uml_datenmodell.png, id=1426, 803.0pt x 849.1725pt>
-File: figures/uml_datenmodell.png Graphic file (type png)
+[81] <figures/uml_datenmodell_neu.png, id=1428, 436.63126pt x 366.36874pt>
+File: figures/uml_datenmodell_neu.png Graphic file (type png)
 
-<use figures/uml_datenmodell.png>
-Overfull \hbox (6.03452pt too wide) in paragraph at lines 200--201
+<use figures/uml_datenmodell_neu.png>
+Overfull \hbox (6.03452pt too wide) in paragraph at lines 206--207
 []\OT1/cmr/m/n/10.95 Jedes Formele-ment enth[]alt eine boo-lesche Vari-able na-
 mens dslEn-abled. Dieses
  []
 
 
-Overfull \hbox (13.57787pt too wide) in paragraph at lines 204--205
+Overfull \hbox (13.57787pt too wide) in paragraph at lines 210--211
 []\OT1/cmr/m/n/10.95 Die zweite Vari-ante, die auch in der Im-ple-men-tierung v
 er-wen-det wird, ver[]andert
  []
 
-[82 <./figures/uml_datenmodell.png (PNG copy)>]
-<figures/screenshot_spics_eingabe.png, id=1434, 676.5275pt x 664.4825pt>
-File: figures/screenshot_spics_eingabe.png Graphic file (type png)
+[82 <./figures/uml_datenmodell_neu.png (PNG copy)>]
+<figures/screenshot_spics_eingabe_neu.png, id=1436, 676.5275pt x 664.4825pt>
+File: figures/screenshot_spics_eingabe_neu.png Graphic file (type png)
 
-<use figures/screenshot_spics_eingabe.png>
+<use figures/screenshot_spics_eingabe_neu.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (33.56183pt too wide) in paragraph at lines 242--243
+[83]
+Overfull \hbox (33.56183pt too wide) in paragraph at lines 250--251
 \OT1/cmr/m/n/10.95 geson-dert va-li-diert. Im Val-ida-tor find-et die Zyklen[]u
 berpr[]ufung und die []Uberpr[]ufung
  []
 
 
-Overfull \hbox (13.60835pt too wide) in paragraph at lines 242--243
+Overfull \hbox (13.60835pt too wide) in paragraph at lines 250--251
 \OT1/cmr/m/n/10.95 von Abh[]angigkeiten statt. Beim Spe-ich-ern eines For-mu-la
 -rele-ments sind mehrere
  []
 
-[83] [84 <./figures/screenshot_spics_eingabe.png>]
-<figures/cycle_bmi_tree.png, id=1468, 480.79625pt x 328.22626pt>
+[84 <./figures/screenshot_spics_eingabe_neu.png>]
+<figures/cycle_bmi_tree.png, id=1469, 480.79625pt x 328.22626pt>
 File: figures/cycle_bmi_tree.png Graphic file (type png)
 
 <use figures/cycle_bmi_tree.png> [85]
-Overfull \hbox (8.92424pt too wide) in paragraph at lines 281--282
+Overfull \hbox (8.92424pt too wide) in paragraph at lines 291--292
 \OT1/cmr/m/n/10.95 befind-et oder nicht. Im fol-gen-den wird der Al-go-rith-mus
  zur Zyklen[]uberpr[]ufung
  []
 
 
-Overfull \hbox (1.68501pt too wide) in paragraph at lines 283--284
+Overfull \hbox (1.68501pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10.95 wird, wird eine Ex-cep-tion gewor-fen. Ein Feld ist von eine
 m an-deren abh[]angig,
  []
 
 
-Overfull \hbox (13.79077pt too wide) in paragraph at lines 283--284
+Overfull \hbox (13.79077pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10.95 wenn der Vari-ablenname des Feldes in der Formel des an-dere
 n Feldes vorkommt. 
  []
 
 [86 <./figures/cycle_bmi_tree.png>] [87]
-Overfull \hbox (0.55954pt too wide) in paragraph at lines 328--329
+Overfull \hbox (0.55954pt too wide) in paragraph at lines 338--339
 \OT1/cmr/m/n/10.95 straints belegt sind. En-twed-er wer-den die Con-straints be
 re-its beim Ausf[]ullen,
  []
 
 
-Overfull \hbox (6.27791pt too wide) in paragraph at lines 334--335
+Overfull \hbox (6.27791pt too wide) in paragraph at lines 344--345
 \OT1/cmr/m/n/10.95 Webanwendungen bi-eten heutzu-tage dank Java-Script die M[]o
 glichkeit, Berech-
  []
 
 
-Overfull \hbox (12.6959pt too wide) in paragraph at lines 338--339
+Overfull \hbox (12.6959pt too wide) in paragraph at lines 348--349
 \OT1/cmr/m/n/10.95 dem man die DSL-Statements in Java-Script []ubersetzt und im
  Brows-er ausf[]uhrt.
  []
 
-<figures/uml_seq_client.jpg, id=1500, 752.8125pt x 499.8675pt>
-File: figures/uml_seq_client.jpg Graphic file (type jpg)
+<figures/uml_seq_client_neu.png, id=1502, 593.21625pt x 352.31625pt>
+File: figures/uml_seq_client_neu.png Graphic file (type png)
 
-<use figures/uml_seq_client.jpg> [88]
-<figures/uml_seq_client_hybrid.jpg, id=1509, 869.2475pt x 409.53pt>
-File: figures/uml_seq_client_hybrid.jpg Graphic file (type jpg)
+<use figures/uml_seq_client_neu.png> [88]
+<figures/uml_seq_client_hybrid_neu.png, id=1511, 673.51625pt x 433.62pt>
+File: figures/uml_seq_client_hybrid_neu.png Graphic file (type png)
 
-<use figures/uml_seq_client_hybrid.jpg>
-Overfull \hbox (74.62268pt too wide) in paragraph at lines 352--353
-[][] 
+<use figures/uml_seq_client_hybrid_neu.png>
+Overfull \hbox (10.43507pt too wide) in paragraph at lines 366--367
+ [] 
  []
 
-[89 <./figures/uml_seq_client.jpg> <./figures/uml_seq_client_hybrid.jpg>]
-Overfull \hbox (7.73798pt too wide) in paragraph at lines 361--362
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (7.73798pt too wide) in paragraph at lines 377--378
 \OT1/cmr/m/n/10.95 Die Al-ter-na-tive zur Evaluierung der State-ments im Brows-
 er ist die Ausf[]uhrung
  []
 
-<figures/uml_seq_server.jpg, id=1518, 803.0pt x 375.4025pt>
-File: figures/uml_seq_server.jpg Graphic file (type jpg)
+<figures/uml_seq_server_neu.png, id=1514, 654.445pt x 368.37625pt>
+File: figures/uml_seq_server_neu.png Graphic file (type png)
 
-<use figures/uml_seq_server.jpg>
-Overfull \hbox (41.49902pt too wide) in paragraph at lines 364--365
-[][] 
- []
-
-[90 <./figures/uml_seq_server.jpg>]
-Overfull \hbox (0.16293pt too wide) in paragraph at lines 384--385
+<use figures/uml_seq_server_neu.png> [89 <./figures/uml_seq_client_neu.png>]
+[90 <./figures/uml_seq_client_hybrid_neu.png>]
+Overfull \hbox (0.16293pt too wide) in paragraph at lines 400--401
 \OT1/cmr/m/n/10.95 hal-ten. Schreibe alle Werte der Felder in die Map \OT1/cmtt
 /m/n/10.95 calculated<String,
  []
 
 
-Overfull \hbox (5.06662pt too wide) in paragraph at lines 393--394
+Overfull \hbox (5.06662pt too wide) in paragraph at lines 409--410
 \OT1/cmr/m/n/10.95 hat, schreibe diesen mit dem berech-neten Wert in \OT1/cmtt/
 m/n/10.95 calculated\OT1/cmr/m/n/10.95 . 
  []
 
-
-Overfull \hbox (29.3742pt too wide) in paragraph at lines 403--404
+[91 <./figures/uml_seq_server_neu.png>]
+Overfull \hbox (29.3742pt too wide) in paragraph at lines 419--420
 \OT1/cmr/m/it/10.95 K[]orpergewicht \OT1/cmr/m/n/10.95 berech-net und aus der L
 iste ent-fer-nt. Beim n[]achsten Schleifendurch-
  []
 
-[91]
-Overfull \hbox (2.26083pt too wide) in paragraph at lines 405--406
+
+Overfull \hbox (2.26083pt too wide) in paragraph at lines 421--422
 \OT1/cmr/m/n/10.95 diesem Fall liefert die \OT1/cmtt/m/n/10.95 lookup()\OT1/cmr
 /m/n/10.95 -Methode des \OT1/cmtt/m/n/10.95 VariableProvider \OT1/cmr/m/n/10.95
  ein \OT1/cmtt/m/n/10.95 Result\OT1/cmr/m/n/10.95 -
  []
 
 
-Overfull \hbox (2.53668pt too wide) in paragraph at lines 414--415
+Overfull \hbox (2.53668pt too wide) in paragraph at lines 430--431
 \OT1/cmr/m/n/10.95 richti-gen Stelle im Sys-tem abge-fan-gen wer-den, um einen 
 rei-bungslosen Ablauf
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 429--429
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 445--445
 []\OT1/cmr/m/n/10.95 Allgemeiner/unbekannter Im-ple-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []\OT1/cmr/m/n/10.95 Die Formel erzeugt zyk-lis-che
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 439--439
+Underfull \hbox (badness 6428) in paragraph at lines 455--455
 []\OT1/cmr/m/n/10.95 Die Formel enth[]alt un-bekan-nte
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 441--441
+Underfull \hbox (badness 2119) in paragraph at lines 457--457
 []\OT1/cmr/m/n/10.95 R[]uckgabetyp der Formel stimmt
  []
 
 
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 422--448
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 438--464
 [][] 
  []
 
-[92]) [93] [94] [95
+[93]) [94] [95
 
 ] (./kapitel_ergebnis.tex
 Kapitel 13.
@@ -1632,9 +1628,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9667 strings out of 495061
- 131502 string characters out of 1182621
- 436452 words of memory out of 3000000
+ 9666 strings out of 495061
+ 131678 string characters out of 1182621
+ 436458 words of memory out of 3000000
  11927 multiletter control sequences out of 15000+50000
  20070 words of font info for 76 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -1657,9 +1653,9 @@ onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on thesis.pdf (113 pages, 3286879 bytes).
+Output written on thesis.pdf (113 pages, 1260987 bytes).
 PDF statistics:
- 2037 PDF objects out of 2073 (max. 8388607)
+ 2042 PDF objects out of 2073 (max. 8388607)
  687 named destinations out of 1000 (max. 500000)
  937 words of extra memory for PDF output out of 10000 (max. 10000000)
 

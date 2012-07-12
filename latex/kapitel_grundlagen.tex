@@ -16,7 +16,7 @@ Dieser Abschnitt beschreibt, was eine DSL ist, vergleicht die Vor-, Nachteile un
 
 \section{Definitionen}
 
-Dem Begriff Domain Specific Language steht der der General Purpose Language gegenüber. Mit GPLs lassen sich viele unterschiedliche Problemstellungen lösen, die nicht auf eine Branche oder einen Einsatzbereich beschränkt sind. Bekannte Programmiersprachen, die der Kategorie der GPLs zugerechnet werden, sind beispielsweise Java, C/++/\#, Python etc. Mit Domäne, oder auch Anwendungsdomäne wird ein abgegrenzter Einsatzbereich bezeichnet, der für diesen charakteristische, bzw. eben domänenspezifische, Anforderungen an ein System stellt.
+Dem Begriff Domain Specific Language steht der der General Purpose Language gegenüber. Mit GPLs lassen sich viele unterschiedliche Problemstellungen lösen, die nicht auf eine Branche oder einen Einsatzbereich beschränkt sind. Bekannte Programmiersprachen, die der Kategorie der GPLs zugerechnet werden, sind beispielsweise Java, C/++/\#, Python etc. GPLs sind also allgemeine Programmiersprachen, die nicht auf eine bestimmte Domäne beschränkt sind. Mit Domäne, oder auch Anwendungsdomäne wird ein abgegrenzter Einsatzbereich bezeichnet, der für diesen charakteristische, bzw. eben domänenspezifische, Anforderungen an ein System stellt.
 
 Eine genaue Definition für den Begriff DSL zu finden ist nicht einfach, da die Bezeichnung in der wissenschaftlichen Community im Moment sehr inflationär gebraucht wird\footnote{Bevor sich der Begriff DSL etablierte, wurden domänenspezifische Sprachen oft als ``little languages'' bezeichnet., \cite{VaDe00}}. Eine kompakte Definition einer DSL gibt Martin Fowler in \cite{Fowl05}:
 
@@ -396,7 +396,7 @@ Ein weiteres Feature ist die Darstellung der Regeln in Syntaxdiagrammen (Abbildu
 \label{abb_antlrworks_interpreter}
 \end{figure}
 
-ANTLRWorks kann auch beliebige Eingabestrings parsen und gegen die verschiedenen Ab\-lei\-tungs\-re\-geln testen. Der resultierende Parsebaum wird graphisch dargestellt. Tritt ein Fehler auf, so wird das Parsen unterbrochen und die Stelle im Parsebaum, an der der Parser nicht fortsetzen kann, markiert. Auf diese Art können nicht nur Statements die von der Startregel ausgehen getestet werden, sondern auch Eingaben für beliebige Unterregeln.
+ANTLRWorks kann auch beliebige Eingabestrings parsen und gegen die verschiedenen Ab\-lei\-tungs\-re\-geln testen. Der resultierende Parsebaum wird graphisch dargestellt (Abbildung \ref{abb_antlrworks_interpreter}. Tritt ein Fehler auf, so wird das Parsen unterbrochen und die Stelle im Parsebaum, an der der Parser nicht fortsetzen kann, markiert. Auf diese Art können nicht nur Statements die von der Startregel ausgehen getestet werden, sondern auch Eingaben für beliebige Unterregeln.
 
 
 \begin{figure}[h]

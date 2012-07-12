@@ -92,20 +92,22 @@ Dieser Abschnitt enthält einen Überblick über die Softwarearchitektur und die
 
 Die Architektur von SPICS ist als klassische 3-Tier Applikation mit graphischer Benutzeroberfläche, Programmlogik und Datenzugriffsschicht ausgeführt (Abbildung \ref{abb_spics_architektur}). 
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{figures/spics_architektur_neu}
+\caption{Übersicht über die 3-Tier Architektur}
+
+\label{abb_spics_architektur}
+\end{center}
+\end{figure}
+
 Die Benutzerschnittstelle ist eine Webapplikation, die auf die Backing Beans der Logikschicht zugreift. Unterstützt wird die GUI durch Java\-Script-basierte Widgets wie z.B. Date Picker. Wo möglich bzw. sinnvoll werden AJAX-Calls verwendet, um den Workflow flüssiger zu gestalten.
 
 Der Kern der Software besteht aus Komponenten, die die Programmlogik enthalten. Diese sind einerseits Backing Beans, deren Attribute an die Benutzerschnittstelle gebunden werden, andererseits Action Beans, in denen Daten verarbeitet werden. Zu\-sätz\-lich bietet die Software auch noch eine Webservice-Schnittstelle und Komponenten zum Import und Export von Formularen und medizinischen Daten.
 
 Die Komponenten der Logik-Schicht greifen auf die darunter liegende Datenbank über Data Access Objects (DAOs). Das Datenmodell des Systems wird über objektrelationales Mapping auf die Tabellen der relationalen Datenbank abgebildet.
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.3]{figures/spics_architektur}
-\caption{Eingabe der DSL im Formulareditor}
 
-\label{abb_spics_architektur}
-\end{center}
-\end{figure}
 
 Eine zusätzliche Besonderheit von SPICS ist die Trennung der persönlichen Patientendaten von den Behandlungsdaten. Diese örtliche Trennung ist not\-wen\-dig, um den Datenschutz der Patienten zu gewährleisten. Das Zusammenführen der perönlichen Daten mit den medizinischen Daten erfolgt erst im Browser des Benutzers. Auf diese Eigenschaft wird hier nicht weiter eingegangen, da sie für die Aufgabenstellung nicht relevant ist. Sie soll aber trotzdem erwähnt werden, da dies ein Key-Feature von SPICS darstellt.
 
@@ -192,7 +194,11 @@ Die Statements der FXL werden bei der Modellierung des Formulars eingegeben. Hie
 Die individuell zusammengestllten Formulare werden durch drei Klassen abgebildet, die per JPA in der Datenbank persistiert werden. Wie in Abbildung \ref{abb_uml_datenmodell} ersichtlich, besteht ein Formular aus einer oder mehreren Gruppen von Formelementen. Eine Gruppe wiederum besteht aus den Klassen der einzelnen Formelemente (Textfield, Checkbox etc.). Da die Variablen, Formeln und Constraints für die einzelnen Formularelemente ebenfalls gespeichert werden müssen, wurde eine neue Klasse \texttt{DslAttribute} hinzugefügt.
 
 \begin{figure}[ht]
-\includegraphics[scale=0.3]{figures/uml_datenmodell}
+\begin{center}
+ 
+\includegraphics[scale=0.7]{figures/uml_datenmodell_neu}
+\end{center}
+
 \caption{Datenmodell der Formulare}
 \label{abb_uml_datenmodell}
 \end{figure}
@@ -232,7 +238,9 @@ Die Eingabe des Variablennamens, der Formel und des Constraints erfolgt in der E
 
 
 \begin{figure}[h]
-\includegraphics[scale=0.5]{figures/screenshot_spics_eingabe}
+\begin{center}
+ \includegraphics[scale=0.5]{figures/screenshot_spics_eingabe_neu}
+\end{center}
 \caption{Eingabe der DSL im Formulareditor}
 \label{abb_screenshot_spics_eingabe}
 \end{figure}
@@ -269,7 +277,9 @@ Beim Speichern wird ein Validator aufgerufen, der jedes der drei Felder gesonder
 Ein essentieller Bestandteil der Validierung ist die Überprüfung auf zyklische Abhängigkeiten innerhalb eines Formulars. Diese Abhängigkeiten können als gerichteter Graph interpretiert werden: Enthält ein Formelement eine Formel mit Variablen, so sind alle Formelemente, die durch diese Variablen repräsentiert werden Nachfolger des Formularelements. Ist umgekehrt ein Formelement durch einen Variablennamen markiert, sind alle Formelemente, die eine Formel mit diesem Variablennamen enthalten, Vorgänger des Formelements. Abbildung \ref{abb_cycle_bmi_tree} zeigt den Graphen für das Beispielformular zur BMI-Berechnung.
 
 \begin{figure}[ht]
-\includegraphics[scale=0.5]{figures/cycle_bmi_tree}
+\begin{center}
+ \includegraphics[scale=0.5]{figures/cycle_bmi_tree}
+\end{center}
 \caption{Baum der Abhängigkeiten im BMI-Formular}
 \label{abb_cycle_bmi_tree}
 \end{figure}
@@ -338,7 +348,10 @@ Webanwendungen bieten heutzutage dank Java\-Script die Möglichkeit, Berechnunge
 Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem man die DSL-Statements in Java\-Script übersetzt und im Browser ausführt. Die Übersetzung von FXL in Java\-Script ist möglich, da Java\-Script alle Sprachkonzepte, die FXL verwendet unterstützt\footnote{Tatsächlich das gleiche Verhalten wie Java\-Script zu erzeugen ist nicht ganz so einfach, da Java\-Script bei manchen Operatoren ein anderes Verhalten an den Tag legt.}. Wenn eine Formel den Wert eines Feldes verändert, so wird dieser neue Wert im entsprechenden Formularfeld gesetzt. Erst beim Speichern eines Formulars werden die berechneten und eingegebenen Werte an den Server gesendet, wo diese validiert und persistiert werden (Abbildung \ref{abb_uml_seq_client}).
 
 \begin{figure}[th]
-\includegraphics[scale=0.3]{figures/uml_seq_client}
+\begin{center}
+\includegraphics[scale=0.55]{figures/uml_seq_client_neu}
+\end{center}
+
 \caption{Clientseitige Lösung}
 \label{abb_uml_seq_client}
 \end{figure}
@@ -349,7 +362,10 @@ Ein Schwachpunkt dieser Lösung ist, dass die in Java programmierten Funktionen,
 Eine Möglichkeit, den Overhead einer zusätzlichen clientseitigen Implementierung der Funktionen zu beseitigen, wäre die Weiterleitung der Funktionsaufrufe an den Server per Ajax-Call (Abbildung \ref{abb_uml_seq_client_hybrid}). Ein Bean am Applicationserver ruft die Methode in der Java-Implementierung auf und sendet den Rückgabewert zurück an den Browser. Der Nachteil ist, dass der Performance-Vorteil der clientseitigen Implementierung bei mehreren Funktionsaufrufen verloren geht.
 
 \begin{figure}[h]
-\includegraphics[scale=0.5]{figures/uml_seq_client_hybrid}
+\begin{center}
+\includegraphics[scale=0.55]{figures/uml_seq_client_hybrid_neu}
+\end{center}
+
 \caption{Client- und serverseitige Hybridlösung}
 \label{abb_uml_seq_client_hybrid}
 \end{figure}
@@ -361,7 +377,7 @@ Ein weiterer Schwachpunkt der clientseitigen Lösung ist die Manipulierbarkeit v
 Die Alternative zur Evaluierung der Statements im Browser ist die Ausführung am Server (Abbildung \ref{abb_uml_seq_server}).
 
 \begin{figure}[ht]
-\includegraphics[scale=0.5]{figures/uml_seq_server}
+\includegraphics[scale=0.55]{figures/uml_seq_server_neu}
 \caption{Ausführung am Server}
 \label{abb_uml_seq_server}
 \end{figure}
