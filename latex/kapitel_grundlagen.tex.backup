@@ -125,7 +125,7 @@ In diesem Kapitel werden die theoretischen Grundlagen, die zum Verständnis der 
 
 Terence Parr definiert Language Applications nicht nur als Implementierung einer Sprache, sondern ``any program that processes, analyzes, or translates an input file''\cite{Parr10}. Diese allgemeine Definition ist vor allem für DSLs interessant, da diese of mehr  einer Konfigurationssprache als einer richtigen Programmiersprache ähnlich sind. Für das Auswerten von derart eingeschränkten Sprachen ist somit auch nicht unbedingt der volle Umfang eines Parsers, Interpreters oder Übersetzers im klassischen Sinne notwendig. Im Kontext dieser Arbeit wird nur ein Teil dieser Definition betrachtet, nämlich die Interpretation (im Sinne von Auswertung) von Ausdrücken, in Hinsicht auf erweiterte Konzepte von allgemeinen Language Applications. Darunter fallen in erster Hinsicht Variablen, Funktionen und Datentypen, die in der DSL verwendet werden sollen.
 
-Der klassische Aufbau einer Language Application, wie er auch in diversen Lehrbüchern und Skripten zum Thema Compilerbau beschrieben ist, besteht aus den 4 Phasen lexikalische Analyse, syntaktische Analyse, semantische Analyse, Codeerzeugung, wobei im Falle einer interpretierten Sprache an Stelle der Codeerzeugung ein Laufzeitsystem tritt(Abbildung \ref{abb_language_application_klassisch})\footnote{Auch bei manchen Interpretierten Sprachen wird zuerst Zwischencode erzeugt, der dann vom Interpreter abgearbeitet wird. Auch der AST kann als Zwischencode betrachtet werden.}.
+Der klassische Aufbau einer Language Application, wie er auch in diversen Lehrbüchern und Skripten zum Thema Compilerbau beschrieben ist, besteht aus den 4 Phasen lexikalische Analyse, syntaktische Analyse, semantische Analyse, Codeerzeugung, wobei im Falle einer interpretierten Sprache an Stelle der Codeerzeugung ein Laufzeitsystem tritt(Abbildung \ref{abb_language_application_klassisch})\footnote{Bei manchen interpretierten Sprachen wird zuerst Zwischencode erzeugt, der dann vom Interpreter abgearbeitet wird. Auch der AST (Abbildung \ref{abb_ast_vs_cst}) kann als Zwischencode betrachtet werden.}.
 
 
 \begin{figure}[h]
@@ -136,7 +136,9 @@ Der klassische Aufbau einer Language Application, wie er auch in diversen Lehrb�
 
 In der Lexikalischen Analyse wird das Programm eingelesen und in Tokens\footnote{Oft wird in der deutschsprachigen Literatur das Wort Symbol synonym verwendet.} aufgeteilt. Ein Token ist ein Paar bestehend aus einem Bezeichner oder Typ und einem optionalen Wert\cite[S. 111ff]{AhSe86}. Tokens können Keywords und Operatoren einer Sprache, Bezeichner von Funktionen und Variablen oder Literale sein. Im Zuge der lexikalischen Analyse können auch Zeichen wie Tabulatoren oder Leerzeichen, sofern diese für die Weiterverarbeitung nicht interessant sind, verworfen werden. Die Ausgabe nach dieser Phase ist eine Folge von Tokens, die von der syntaktischen Analyse für das Parsing verwendet wird.
 
-Beim Parsing (Syntaktische Analyse) wird versucht, die Tokenfolge den Regeln der zugrundeliegenden Grammatik unterzuordnen. So kann überprüft werden, ob die Eingabe der Syntax der Sprache entspricht. Verschiedene Strategien des Parsens werden im folgenden Abschnitt beschrieben. Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den
+Beim Parsing (Syntaktische Analyse) wird versucht, die Tokenfolge den Regeln der zugrundeliegenden Grammatik unterzuordnen. So kann überprüft werden, ob die Eingabe der Syntax der Sprache entspricht. Verschiedene Strategien des Parsens werden in Abschnitt \ref{theorie_parsing_strategien} beschrieben. 
+
+Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den Formaten Concrete Syntax Tree(CST) und Abstract Syntax Tree(AST) unterschieden (Abbildung \ref{abb_ast_vs_cst}). Der CST gibt die der Syntax der Sprache entsprechende Hierarchie der Tokens, die bei der Lexikalischen Analyse identifiziert werden, wieder. Für die Darstellung des AST weren jene Tokens eleminiert, die durch die Struktur des Baumes ihre Bedeutung verlieren\footnote{Im Beispiel in der Abbildung werden etwa die Klammern vor und nach der Addition obsolet, da diese in einem eigenen Subtree dargestellt wird.}.  
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth,scale=0.5]{figures/ast_vs_cst.png}
@@ -144,9 +146,9 @@ Beim Parsing (Syntaktische Analyse) wird versucht, die Tokenfolge den Regeln der
 \label{abb_ast_vs_cst}
 \end{figure}
 
-Die Semantische Analyse überprüft Anforderungen an das Programm, die nicht durch die Syntax abgedeckt werden können. Das betrifft vor allem die Überprüfung, ob ein Programm dem Typsystem entspricht. Das Typsystem setzt sich zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren (vgl. \cite[S. 426]{AhSe86}). In vielen Programmiersprachen sind einige Operatoren überladen, d.h. sie können mit verschiedenen Datentypen verwendet werden. In der Phase der semantischen Analyse werden die Rückgabetypen aus dem Kontext abgeleitet. Die Typen von Variablen und Funktionen können aus der Symboltabelle ausgelesen werden, in der Deklarationen derselben gesammelt werden.
+Die Semantische Analyse überprüft Anforderungen an das Programm, die nicht durch die Syntax abgedeckt werden können. Das betrifft vor allem die Überprüfung, ob ein Programm dem Typsystem entspricht. Das Typsystem setzt sich zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren (vgl. \cite[S. 426]{AhSe86}). In vielen Programmiersprachen sind einige Operatoren überladen, d.h. sie können mit verschiedenen Datentypen verwendet werden. In der Phase der semantischen Analyse werden die Rückgabetypen aus dem Kontext abgeleitet. Die Typen von Variablen und Funktionen können aus einer Symboltabelle ausgelesen werden, in der Deklarationen derselben gesammelt werden.
 
-Je nach Einsatztzweck wird die Eingabe dann in Maschinencode übersetzt oder in einer Laufzeitumbebung ausgeführt. Beim Compiler ist zu beachten dass die Codeerzeugungsphase in die Phasen Zwischencodeerzeugung, Codeoptimierung und Codeerzeugung aufgeteilt werden kann. 
+Je nach Einsatzzweck wird die Eingabe dann in Maschinencode übersetzt oder in einer Laufzeitumbebung ausgeführt. Beim Compiler ist zu beachten dass die Codeerzeugungsphase in die Phasen Zwischencodeerzeugung, Codeoptimierung und Codeerzeugung aufgeteilt werden kann. 
 
 Um den Rahmen der Arbeit nicht zu sprengen möchte ich hier zum tieferen Verständnis der einzelnen Phasen auf das Standardwerk \emph{Compilers: principles, techniques and tools} \cite{AhSe86} verweisen.
 
@@ -158,7 +160,7 @@ Um die Syntax einer Sprache festzulegen ist eine formale Grammatik notwendig. Ei
 Eine Grammatik beschreibt die Menge aller syntaktisch korrekten Programme einer Sprache. Diverse Sprachen in unterschiedlichen Anwendungen erfordern unterschiedliche Typen von Grammatiken. Eine beliebte Einteilung wurde von Noam Chomsky in der sogenannten Chomsky-Hierarchie vorgenommen:
 
 \begin{myquote}DEFINITION 6. For i = 1, 2, 3, a type i grammar is one meeting restriction i, and a type i language is one with a type i grammar. A type 0 grammar (language) is one that is unrestricted. 
-Type 0 grammars are essentially Turing machines; type 3 grammars, finite automata. Type 1 and 2 grammars can be interpreted as systems of phrase structure description.\cite{Chom59}
+Type 0 grammars are essentially Turing machines; type 3 grammars, finite automata. Type 1 and 2 grammars can be interpreted as systems of phrase structure description. \cite{Chom59}
 \end{myquote}
 
 Chomsky definiert also 4 Typen von Grammatiken, die unterschiedlich restriktive Ableitungsregeln haben:
@@ -166,11 +168,11 @@ Chomsky definiert also 4 Typen von Grammatiken, die unterschiedlich restriktive 
 \begin{itemize}
   \item Typ-0 Grammatiken: Dieser Typ repräsentiert die Menge aller formalen Grammatiken.
   \item Typ-1 Grammatiken: Grammatiken vom Typ 1 werden kontextsensitive Grammatiken genannt.
-  \item Typ-2 Grammatiken: Dieser Typ representiert die kontextfreien Grammatiken. Die Syntax der meisten Programmiersprachen kann durch eine kontextfreie Grammatik beschrieben werden.
-  \item Typ-3 Grammatiken: Typ-3 Grammatiken sind jene Grammatiken, die durch reguläre Ausfrücke beschrieben werden können.
+  \item Typ-2 Grammatiken: Dieser Typ definiert die kontextfreien Grammatiken. Die Syntax der meisten Programmiersprachen kann durch eine kontextfreie Grammatik beschrieben werden.
+  \item Typ-3 Grammatiken: Diese sind jene Grammatiken, die durch reguläre Ausfrücke beschrieben werden können.
 \end{itemize}
 
-Der für Programmiersprachen relevante Typ ist also die Typ-2 oder kontextfreie Grammatik. Diese zeichnen sich dadurch aus, dass auf der linken Seite jeder Produktionsregel genau ein Nichtterminalsymbol steht (also ``frei von Kontext''). Auf der rechten Seite kann jede mögliche Folge von Terminal- bzw. Nichtterminalsymbolen stehen.
+Der für Programmiersprachen relevante Typ ist also die Typ-2 bzw. kontextfreie Grammatik. Diese zeichnen sich dadurch aus, dass auf der linken Seite jeder Produktionsregel genau ein Nichtterminalsymbol steht (also ``frei von Kontext''). Auf der rechten Seite kann jede mögliche Folge von Terminal- bzw. Nichtterminalsymbolen stehen.
 
 
 
@@ -180,12 +182,13 @@ Je nach Parsingalgorithmus unterliegen die Grammatiken bestimmten Regeln, um vom
 
 
 \section{Parsing Strategien}
+\label{theorie_parsing_strategien}
 
-Ein Parser ist, allgemein gesprochen, ein Programm oder eine Softwarekomponente, die eine Eingabe in ein weiter verarbeitbares Format umwandelt\footnote{vgl. http://de.wikipedia.org/wiki/Parser, 30.12.2011}. Es gibt verschiedene Ansätze, wie diese Aufgabe erfüllt werden kann. Grund\-sätz\-lich ist es möglich, eine Eingabe Top-Down oder Bottom-Up zu verarbeiten.
+Ein Parser ist, allgemein gesprochen, ein Programm oder eine Softwarekomponente, die eine Eingabe in ein weiter verarbeitbares Format umwandelt. Es gibt verschiedene Ansätze, wie diese Aufgabe erfüllt werden kann. Grund\-sätz\-lich ist es möglich, eine Eingabe Top-Down oder Bottom-Up zu verarbeiten.
 
 \subsection{Top-Down Analyse}
 
-Bei der Top-Down Analyse wird versucht, ausgehend vom Startsymbol Ab\-lei\-tun\-gen zu finden, mit denen das gegebene Wort eingelesen werden kann. Dazu muss eine Tabelle erstellt werden, die jedem Eingabesymbol die ent\-sprech\-en\-de Produktionsregel zuordnet. Die Eingabe wird dann von links nach rechts mittels Linksableitungen abgearbeitet. Die Mende der Grammatiken, die mit dieser Methode verarbeitet werden können, werden LL(k) Grammatiken genannt. Das \emph{k} steht für den Lookahead, der notwedig ist, wenn einem Eingabesymbol mehrere Regeln in der Tabelle zugeordnet werden.
+Bei der Top-Down Analyse wird versucht, ausgehend vom Startsymbol Ab\-lei\-tun\-gen zu finden, mit denen das gegebene Wort eingelesen werden kann. Dazu muss eine Tabelle erstellt werden, die jedem Eingabesymbol die ent\-sprech\-en\-de Produktionsregel zuordnet. Die Eingabe wird dann von links nach rechts mittels Linksableitungen abgearbeitet. Die Menge der Grammatiken, die mit dieser Methode verarbeitet werden können, werden LL(k) Grammatiken genannt. Das \emph{k} steht für den Lookahead, der notwedig ist, wenn einem Eingabesymbol mehrere Regeln in der Tabelle zugeordnet werden.
 
 
 \subsection{Bottom-Up Analyse}
@@ -204,17 +207,17 @@ Zu beachten ist, dass unter Umständen Actions im Parser wiederholt oder umsonst
 
 \subsubsection{Memoization}
 
-Memoization ist eine allgemeine Optimierungstechnik, um zu verweiden, dass Funktionen, die das gleiche Resultat zurückgeben,  wiederholt aufgerufen werden. Im Kontext des Parsing bedeutet dies, dass das Resultat von Ab\-lei\-tungs\-re\-geln zwischengespeichert wird. Wenn eine Regel aufgerufen wird, kann zuerst in der Tabelle nachgeschaut werden, ob bereits ein Resultat vorliegt. Wenn dies der Fall ist, muss die Regel nicht nocheinmal ausgeführt werden.
+Memoization ist eine allgemeine Optimierungstechnik, um zu verweiden, dass Funktionen, die das gleiche Resultat zurückgeben,  wiederholt aufgerufen werden. Im Kontext des Parsing bedeutet dies, dass das Resultat von Ab\-lei\-tungs\-re\-geln zwischengespeichert wird. Wenn eine Regel aufgerufen wird, kann zuerst in der Tabelle nachgesehen werden, ob bereits ein Resultat vorliegt. Wenn dies der Fall ist, muss die Regel nicht nocheinmal ausgeführt werden.
 
 Memoization erfordert zwar einen höheren Speicheraufwand beim Parsen, beschleunigt aber das Verfahren, da der Lookup wesentlich effizienter ist, als das wiederholte Parsen von Teilausdrücken.
 
 \section{Typisierung}
 
-Die meisten Programmiersprachen definieren verschiedene Datentypen, bzw. erlauben die Definition eigener Typen. Die Typisierung kann dabei statisch oder dynamisch erfolgen. Statische Typsysteme haben den Vorteil, dass sie bereits bei der Übersetzung überprüft werden können. Sie erhöhen somit die Wahrscheinlichkeit, dass das eingegeben Programm korrekt ist. Auch die Effizienz kann gesteigert werden, da eine Überprüfung zur Laufzeit nicht mehr notwendig ist. Bei dynamischen Typsystemen erfolgt die Zuweisung von Typen zu Variablen und Funktionen, und somit auch deren Überprüfung, erst zur Laufzeit des Programmes.
+Die meisten Programmiersprachen definieren verschiedene Datentypen, bzw. erlauben die Definition eigener Typen. Die Typisierung kann dabei statisch oder dynamisch erfolgen. Statische Typsysteme haben den Vorteil, dass sie bereits bei der Übersetzung überprüft werden können. Sie erhöhen somit die Wahrscheinlichkeit, dass das eingegebe Programm korrekt ist. Auch die Effizienz kann gesteigert werden, da eine Überprüfung zur Laufzeit nicht mehr notwendig ist. Bei dynamischen Typsystemen erfolgt die Zuweisung von Typen zu Variablen und Funktionen, und somit auch deren Überprüfung, erst zur Laufzeit des Programmes.
 
-Da die Syntax einer Sprache im Großen und Ganzen unabhängig von der Typisierung ist, ist vor allem die Semantische Analyse für die Typechecks zuständig. Lässt die Sprache die Deklaration von Variablen und Funktionen zu, muss deren (Rückgabe-)Typ in der Symboltabelle abgespeichert werden. Wird die Variable oder Funktion in einem Statement des Programmes verwendet, muss der entsprechende Typ aus der Symboltabelle abgerufen werden.
+Da die Syntax einer Sprache im Großen und Ganzen unabhängig von der Typisierung ist, ist vor allem die Semantische Analyse für die Typüberprüfung zuständig. Lässt die Sprache die Deklaration von Variablen und Funktionen zu, muss deren (Rückgabe-) Typ in einer Symboltabelle abgespeichert werden. Wird die Variable oder Funktion in einem Statement des Programmes verwendet, muss der entsprechende Typ aus der Symboltabelle abgerufen werden.
 
-Ein Teil des Typsystemes, ist die Zuordnung von Typen zu Operatoren. Da die meisten Operatoren überladen sind, müssen die tatsächlichen Typen während der Typüberprüfung aus dem Kontext abgeleitet werden. Bei Funktionsaufrufen ist zusätzlich eine implizite Typumwandlung notwendig. Das bedeutet, dass ein Typ in einen anderen umgewandelt werden kann, wenn dies keine semantische Änderungen zur Folge hat. Ein Beispiel ist eine Funktion mit einem Parameter vom Typ Gleitkommazahl. Ohne den Sinn der Funktion zu verändern, kann auch eine Ganzzahl an die Funktion übergeben werden, da die Menge der Ganzzahlen eine Teilmenge der Gleitkommazahlen ist.
+Ein Teil des Typsystemes, ist die Zuordnung von Typen zu Operatoren. Da die meisten Operatoren überladen sind, müssen die tatsächlichen Typen während der Typüberprüfung aus dem Kontext abgeleitet werden. Bei Funktionsaufrufen ist zusätzlich eine implizite Typumwandlung notwendig. Das bedeutet, dass ein Typ in einen anderen umgewandelt werden kann, wenn dies keine semantische Änderungen zur Folge hat. Ein Beispiel ist eine Funktion mit einem Parameter vom Typ Gleitkommazahl. Ohne den Sinn der Funktion zu verändern, kann auch eine Ganzzahl an die Funktion übergeben werden, da die Menge der Ganzzahlen -- mathematisch gesehen -- eine Teilmenge der Gleitkommazahlen ist.
 
 
 \chapter{Werkzeugunterstützung}
@@ -303,7 +306,7 @@ Die Dokumentation ist recht ausführlich gestaltet. Für Support durch die Commu
 
 \section{ANTLR}
 \label{tools_antlr}
-Dieser Abschnitt setzt sich im Detail mit ANTLR, dem Werkzeug der Wahl für diese Arbeit, auseinander. Die Entscheifung für die Form Expression Language (FXL) ANTLR einzusetzten, begründet sich durch die hervorragende Dokumentation, insbesondere dem Buch des Autors, dem guten IDE Sopport und der integration in das Build-Tool Maven.
+Dieser Abschnitt setzt sich im Detail mit ANTLR, dem Werkzeug der Wahl für diese Arbeit, auseinander. Wie bereits in Abschnitt \ref{tools_vergleich} erwähnt, sind alle angeführten Tools grundsätzlich für die DSL geeignet. Die entgültige Entscheidung für Entwicklung die Form Expression Language (FXL) ANTLR einzusetzen, begründet sich durch die hervorragende Dokumentation, insbesondere dem Buch des Autors, dem guten IDE Support und der Integration in das Build-Tool Maven.
 
 
 \subsection{Grammatik}
@@ -336,7 +339,7 @@ Weiters können auch Tokens erstellt werden, die in den Ableitungsregeln gar nic
 
 \subsubsection{Modellierung des Abstract Syntax Trees}
 
-Würde man zur Weiterverarbeitung nach dem Parsen den CST verwenden, würden die zahlreichen Knoten einen erheblichen Mehraufwand bedeuten. Deshalb ist es wichtig, wie der AST, der dann im Interpreter verwendet wird, aufgebaut sein soll. Dazu bietet ANTLR die Möglichkeit, in der Grammatik zu spezifizieren, wie der Baum aussehen soll. Das kann auf zwei Arten geschehen: inline oder explizit als Rewrite-Regel.
+Würde man zur Weiterverarbeitung nach dem Parsen den Concrete Syntax Tree (CST) verwenden, würden die zahlreichen Knoten einen erheblichen Mehraufwand bedeuten. Deshalb ist es wichtig, wie der AST, der dann im Interpreter verwendet wird, aufgebaut sein soll. Dazu bietet ANTLR die Möglichkeit, in der Grammatik zu spezifizieren, wie der Baum aussehen soll. Das kann auf zwei Arten geschehen: inline oder explizit als Rewrite-Regel.
 
 Bei der Inline-Angabe (Listing \ref{listing_grammar_tree_compare}) wird nur jenes Element (Literal, Terminal, oder Nonterminalsymbol) ausgewählt, welches als Wurzelelement des AST-Knotens gewählt wird. Die übrigen Elemente werden in der Reihenfolge ihres Auftretens als Kindelemente angehängt. Elemente, die im AST ignoriert werden sollen, weil sie in der Baumdarstellung ihre Relevanz verlieren (z.B. Klammern, Trennzeichen etc.), werden mit einem Rufzeichen markiert und nicht als Kindelement zum Knoten hinzugefügt.
 
@@ -359,7 +362,7 @@ functionCall
   ;
 \end{lstlisting}
 
-Im Beispiel in Listing \ref{listing_grammar_tree_function} wird der Tokentyp \texttt{CALL} als Typ des Knotens festgelegt. Dazu muss dieser Token allerdings zuerst im Token-Abschnitt des Grammarfiles festgelegt werden (siehe oben). Als erstes Kindelement wird ein Knoten vom Typ \texttt{ID} erstellt, der den Namen der Funktion enthält. Die weiteren Kindknoten sind die optionalen Argumente, wobei diese wiederum komplexe Ausdrücke enthalten können (siehe Anhang).
+Im Beispiel in Listing \ref{listing_grammar_tree_function} wird der Tokentyp \texttt{CALL} als Typ des Knotens festgelegt. Dazu muss dieser Token allerdings zuerst im Token-Abschnitt des Grammarfiles festgelegt werden (siehe oben). Als erstes Kindelement wird ein Knoten vom Typ \texttt{ID} erstellt, der den Namen der Funktion enthält. Die weiteren Kindknoten sind die optionalen Argumente, wobei diese wiederum komplexe Ausdrücke in Form von Subtrees enthalten können (siehe FXL-Grammatik im Anhang).
 
 \begin{figure}[h]
 \includegraphics[scale=0.5]{figures/ast_beispiele}
@@ -367,7 +370,7 @@ Im Beispiel in Listing \ref{listing_grammar_tree_function} wird der Tokentyp \te
 \label{abb_ast_beispiele}
 \end{figure}
 
-Abbildung \ref{abb_ast_beispiele} Zeigt jeweils ein Beispiel für die zwei Tree-Building Methoden. Die Knoten enthalten jeweils den Tokentyp und den Text des Knotens. In Beispiel a) wird das Kleiner-Zeichen als Wurzelelement verwendet, die Anderen Elemente werden als Knoten vom Typ Integer werden als Kinder angehängt. Beispiel b) zeigt den Sonderfall des künstlichen Tokens \texttt{CALL} aus Listing \ref{listing_grammar_tree_function}, der nur zum Umformen des Baumes verwendet wird.
+Abbildung \ref{abb_ast_beispiele} Zeigt jeweils ein Beispiel für die zwei Tree-Building Methoden. Die Knoten enthalten jeweils den Tokentyp und den Text des Knotens. In Beispiel a) wird das Kleiner-Zeichen als Wurzelelement verwendet, die anderen Elemente werden als Knoten vom Typ Integer als Kindknoten angehängt. Beispiel b) zeigt den Sonderfall des künstlichen Tokens \texttt{CALL} aus Listing \ref{listing_grammar_tree_function}, der nur zum Umformen des Baumes verwendet wird.
 
 
 \subsection{Tools}
@@ -385,7 +388,7 @@ ANTLRWorks \footnote{vgl. http://www.antlr.org/works/index.html, 23.3.2012} ist 
 \label{abb_antlrworks_syntax_diagram}
 \end{figure}
 
-Ein weiteres Feature ist die Darstellung der Regeln in Syntaxdiagrammen (Abbildung \ref{abb_antlrworks_syntax_diagram}). Syntaxdiagramme werden dazu benützt, Grammatiken graphisch darzustellen. Insbesondere können einzelne Regeln, die textuell durch Verzweigungen und Wiederholungen recht schnell komplex werden, mit Hilfe von Syntaxdiagrammen recht einfach nachvollzogen werden.
+Ein weiteres Feature ist die Darstellung der Regeln in Syntaxdiagrammen (Abbildung \ref{abb_antlrworks_syntax_diagram}). Syntaxdiagramme werden dazu verwendet, Grammatiken graphisch darzustellen. Insbesondere können einzelne Regeln, die textuell durch Verzweigungen und Wiederholungen recht schnell komplex werden, mit Hilfe von Syntaxdiagrammen recht einfach nachvollzogen werden.
 
 \begin{figure}[h]
 \includegraphics[scale=0.35]{figures/antlrworks_interpreter}
@@ -413,26 +416,26 @@ ANTLRWorks ist ein mächtiges Werkzeug, das den Entwickler effektiv bei der Entw
 
 Mittlerweile existieren diverse Plugins für die wichtigsten Entwicklungsumgebungen\footnote{Eine aktuelle Übersicht über die Plugins für diverse IDEs findet sich unter http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Development+Environments}. Für IntelliJ IDEA existiert ein Plugin, das ANTLRWorks direkt in die IDE integriert. Der Funktionsumfang ist dementsprechend gleich umfangreich wie ANTLRWorks selbst.
 
-Für die weit verbreitete offene IDE Eclipse existieren zwei Plugins. AntlrDT stellt vor allem einen Code-Editor und die Integration in den Eclipse Buildprozess (automatisches Compilieren nach Clean bzw. Speichern) zur Verfügung. Zusätzlich bietet das Plugin auch einen Visualisierung von ASTs an, die allerdings nicht so ausgereift erscheint. Das zweite Eclipse-Plugin ist ANTLR IDE\footnote{http://antlrv3ide.sourceforge.net/, 23.3.2012}. Es ist sehr ausgereift und wurde auch für die Implementierung der Form Expression Language in der vorliegenden Arbeit verwendet. Es bietet einen Grammatikeditor, eine Ansicht für Syntaxbäume (im Plugin Railroad View genannt) und einen Interpreter, mit dem wie in ANTLRWorks Eingaben auf verschiedene Regeln angewendet werden können. Auch ein Debugger ist vorhanden, der allerdings im Gegensatz zu ANTLRWorks nur mit Java-Parsern arbeiten kann.
+Für die weit verbreitete offene IDE Eclipse existieren zwei Plugins. AntlrDT stellt vor allem einen Code-Editor und die Integration in den Eclipse Buildprozess (automatisches Compilieren nach Clean bzw. Speichern) zur Verfügung. Zusätzlich bietet das Plugin auch die Visualisierung von ASTs an, die allerdings, im Vergleich zu ANTLRWorks, nicht so ausgereift erscheint. Das zweite Eclipse-Plugin ist ANTLR IDE\footnote{http://antlrv3ide.sourceforge.net/, 23.3.2012}. Es ist sehr ausgereift und wurde auch für die Implementierung der Form Expression Language in der vorliegenden Arbeit verwendet. Es bietet einen Grammatikeditor, eine Ansicht für Syntaxbäume (im Plugin Railroad View genannt) und einen Interpreter, mit dem wie in ANTLRWorks Eingaben auf verschiedene Regeln angewendet werden können. Auch ein Debugger ist vorhanden, der allerdings im Gegensatz zu ANTLRWorks nur mit Java-Parsern arbeiten kann.
 
 \subsubsection{Build Tools} 
 
-Alle oben genannten Plugins integrieren ANTLR in den Buildprozess der Entwicklungsumgebung. Für ANTLR bedeutet dies, dass Lexer und Parser automatisch beim Build der Software aus der Grammatik generiert wird. Oft wird allerdings ein externes Tool zum Build bzw. zur Auslieferung von Software verwendet. Für die zwei verbreitetsten Buildtools auf der Java-Plattform, Apache Ant und Apache Maven, existieren Erweiterungen, die die Codegenerierung übernehmen\footnote{vgl. http://www.antlr.org/wiki/display/ANTLR3/How+to+use+ant+with+ANTLR3}\footnote{vgl. http://www.antlr.org/antlr3-maven-plugin/index.html}.
+Alle oben genannten Plugins integrieren ANTLR in den Buildprozess der Entwicklungsumgebung. Für ANTLR bedeutet dies, dass Lexer und Parser automatisch beim Build der Software aus der Grammatik generiert wird. Oft wird allerdings ein externes Tool zum Build bzw. zur Auslieferung von Software verwendet. Für die zwei verbreitetsten Buildtools auf der Java-Plattform, Apache Ant und Apache Maven, existieren Erweiterungen, die die Codegenerierung übernehmen\footnote{vgl. http://www.antlr.org/wiki/display/ANTLR3/How+to+use+ant+with+ANTLR3 bzw. http://www.antlr.org/antlr3-maven-plugin/index.html}.
 
 
 
 \chapter{Related Work}
 \label{related_work}
 
-In diesem Kapitel wird eine Übersicht über das wissenschaftliche Umfeld dieser Arbeit geboten. Einige der vorgestellten Ansätze und Projekte gaben Anregungen für die Form Expression Language, die in dieser Arbeit entwickelt wurde. Es lassen sich zwei Bereiche identifizieren, die dem Umfeld der Arbeit entsprechen. Einerseits verschiedene Sprachen zur Berechnung und Evaluierung von Werten sowie DSLs zur Modellierung von Webformularen. Die Themen Domain Specific Languages und Parser Generatoren wurde bereits weiter oben behandelt.
+In diesem Kapitel wird eine Übersicht über das wissenschaftliche Umfeld dieser Arbeit geboten. Einige der vorgestellten Ansätze und Projekte gaben Anregungen für die Form Expression Language, die in dieser Arbeit entwickelt wurde. Es lassen sich zwei Bereiche identifizieren, die dem Umfeld der Arbeit entsprechen. Einerseits verschiedene Sprachen zur Berechnung und Evaluierung von Werten sowie DSLs zur Modellierung von Webformularen. Die Themen Domain Specific Languages und Parser Generatoren wurden bereits weiter oben behandelt.
 
-\section{(Constraint-)Languages zur Berechnung und Evaluierung von Werten}
+\section{Sprachen zur Berechnung und Evaluierung von Werten}
 
-Eine Sprache, die sich in wissenschaftlichen Arbeiten oft wiederfindet ist die Object Constraint Language (OCL)\cite{RiGo98}.Die Object Constraint Language (OCL) ist ein Teil der UML - Spezifikation und wurde ursprünglich für die Modellierung von Klassen- und Sequenzdiagrammen angedacht. Ein weiterer Einsatzort ist die Modellgetriebene Entwicklung. Dort wird OCL etwa im Bereich Transformation von (Meta)Modellen und Modelchecking verwendet\footnote{vgl. http://www.eclipse.org/modeling/mdt/?project=ocl, 21.3.2012}. Escott et al.\cite{Esco12} setzen die OCL zur Validierung von Webformlaren ein (siehe unten).
+Eine Sprache, die sich in wissenschaftlichen Arbeiten oft wiederfindet, ist die Object Constraint Language (OCL)\cite{RiGo98}.Die Object Constraint Language (OCL) ist ein Teil der UML - Spezifikation und wurde ursprünglich für die Modellierung von Klassen- und Sequenzdiagrammen angedacht. Ein weiterer Einsatzort ist die Modellgetriebene Entwicklung. Dort wird OCL etwa im Bereich Transformation von (Meta-) Modellen und Modelchecking verwendet\footnote{vgl. http://www.eclipse.org/modeling/mdt/?project=ocl, 21.3.2012}. Escott et al.\cite{Esco12} setzen die OCL zur Validierung von Webformlaren ein (siehe unten).
 
 Eine weitere Sprache, die einfache Berechnungen und Validierungen ermöglicht, ist die Unified Expression Language (UEL). Diese ist aus den sehr ähnlichen Expression Languages für JavaServer Pages(JSP) und JavaServer Faces(JSF) entstanden. Die UEL kann auf Java-Objekte zugreifen, Werte setzen beziehungsweise abfragen und Methoden aufrufen. Eine freie Implementierung ist JUEL\footnote{http://juel.sourceforge.net/, 21.3.2012}. JUEL hat den Vorteil, dass sie außerhalb des Java Server Kontexts für beliebige Anwendungsgebiete verwendet werden kann.
 
-Auf der Java-Plattform entstanden verschiedene Implementierungen von Skriptsprachen, die innerhalb der Anwendung ausgeführt werden können. Zwei der bekanntesten Projekte sind Mozillas JavaScript-Engine Rhino\cite{wwwRhino} und die Python und Ruby Portierungen Jython bzw JRuby. Der Java Specification Request JSR-233 definiert eine standardisierte API \cite{JSR-223}, um Skripte in einer Java Anwendung auszuführen und Java-Objekte an die Engine zu binden\footnote{vgl. Abschnitt \ref{section_java_scripting}}.  Seit Java 1.6 stehen einige Scriptengines out of the box zur Verfügung, u.a. JavaScript, Groovy und Ruby. Programme in Form von Skripts können zur Runtime erstellt und verändert werden. Es können Variablen an die Engine übergeben und im ausführenden Skript verwendet werden. Zusätzlich kann auf die gesamte Java API zugegriffen werden. Nach der Ausführung kann wiederum auf die Variablen zugegriffen werden. 
+Auf der Java-Plattform entstanden verschiedene Implementierungen von Skriptsprachen, die innerhalb der Anwendung ausgeführt werden können. Zwei der bekanntesten Projekte sind Mozillas JavaScript-Engine Rhino\cite{wwwRhino} und die Python und Ruby Portierungen Jython bzw. JRuby. Der Java Specification Request JSR-233 definiert eine standardisierte API \cite{JSR-223}, um Skripte in einer Java Anwendung auszuführen und Java-Objekte an die Engine zu binden\footnote{vgl. Abschnitt \ref{section_java_scripting}}.  Seit Java 1.6 stehen einige Scriptengines out-of-the-box zur Verfügung, u.a. JavaScript, Groovy und Ruby. Programme in Form von Skripts können zur Runtime erstellt und verändert werden. Es können Variablen an die Engine übergeben und im ausführenden Skript verwendet werden. Zusätzlich kann auf die gesamte Java API zugegriffen werden. Nach der Ausführung kann wiederum auf die Variablen zugegriffen werden. 
 
 Zuletzt sollen noch die Formelsprachen von Tabellenkalkulationswerkzeugen wie Microsoft Excel oder LibreOffice Calc Erwähnung finden, da diese ein Vorbild für die Syntax der FXL sind.
 
@@ -441,11 +444,11 @@ Zuletzt sollen noch die Formelsprachen von Tabellenkalkulationswerkzeugen wie Mi
 
 Der Wunsch nach erweiterten Möglichkeiten zur Modellierung von Web Formularen ist nicht neu. Dieser Wunsch äußert sich in verschiedenen Ansätzen, Webanwendungen allgemein und Formulare im Speziellen semantisch anzureichern. Die verschiedenen Ansätze weisen unterschiedlichen Stärken und Schwächen auf. In diesem Abschnitt wird auf verschiedene Arbeiten in diesem Gebiet eingegangen.
 
-Eine Schwierigkeit besteht darin, dass Web-Applikationen in eine Client- und eine Serverseite aufgeteilt sind, wobei der Client meistens nicht vertrauenswürdig ist. Anwendungen der Clientseite (vor allem mit HTML und JavaScript) können durch die offene Natur leicht manipuliert werden. Berechnungen und Validierungen im Client können also nicht als sicher angesehen werden, eine zusätzliche Überprüfung auf dem Server ist also notwendig. 
+Eine Schwierigkeit besteht darin, dass Web-Applikationen in eine Client- und eine Serverseite aufgeteilt sind, wobei der Client meistens nicht vertrauenswürdig ist. Anwendungen der Clientseite (vor allem mit HTML und JavaScript) können durch deren offene Natur leicht manipuliert werden. Berechnungen und Validierungen im Client können also nicht als sicher angesehen werden, eine zusätzliche Überprüfung auf dem Server ist also notwendig. 
 
 Zwei Ansätze, die auf Kosten der Offenheit versuchen, die Manipulierbarkeit von Anwendungen in den Griff zu bekommen, sind Adobe Flash (bzw. Flex und Air) und Java Applets (bzw. JavaFX). Diese setzen allerdings, im Gegensatz zu den gängigen Technologien HTML und JavaScript, die mit verschiedenen Clients funktionieren, mehr oder weniger proprietäre Laufzeitumgebungen für die Applikationen vorraus.
 
-Ein Ansatz ist das Projekt Mawl der Bell Laboratories\cite{AtBa99}. Mawl ist eine DSL für ``Form-based services''mit der aus HTML-Templates und der Programmlogik in der DSL Webanwendungen entwickelt werden können. Die Applikation wird zu Skripts für die CGI Schnittstelle kompiliert. Der Nachfolger (Eigendefinition) von Mawl ist das Projekt Bigwig\footnote{http://www.brics.dk/bigwig/, 15.3.2012}, ein Framework zur ``Entwicklung von interaktiven Web Services''. Bigwig-Programme werden zu in C-Code, HTML und JavaScript umgewandelt. Es bietet Komponenten für verschiedene Apekte wie dynamische Dokumente, Security, Datenbankanbindung und Validierung von Eingaben, PowerForms genannt. Der Ansatz von Powerforms\cite{BrMo00} ist eine deklarative DSL im XML-Format, um HTML-Formulare durch Constraints zu erweitern. Die Constraints können, wie in dieser Arbeit gefordert, auch andere Formularfelder referenzieren. Der Nachfolger JWIG ist als allgemeines Web-Application Framework zu betrachten, ohne explizite Features einer DSL.
+Ein Ansatz für eine DSL zur Modellierung von Formularen, ist das Projekt Mawl der Bell Laboratories\cite{AtBa99}. Mawl ist eine DSL für ``Form-based services''mit der aus HTML-Templates und der Programmlogik in der DSL Webanwendungen entwickelt werden können. Die Applikation wird zu Skripts für die CGI Schnittstelle kompiliert. Als Nachfolger von Mawl gilt das Projekt Bigwig\footnote{http://www.brics.dk/bigwig/, 15.3.2012}, ein Framework zur ``Entwicklung von interaktiven Web Services''. Bigwig-Programme werden in C-Code, HTML und JavaScript umgewandelt. Das Framework bietet Komponenten für verschiedene Apekte wie dynamische Dokumente, Security, Datenbankanbindung und Validierung von Eingaben, PowerForms genannt. Der Ansatz von Powerforms\cite{BrMo00} ist eine deklarative DSL im XML-Format, um HTML-Formulare durch Constraints zu erweitern. Die Constraints können, wie in dieser Arbeit gefordert, auch andere Formularfelder referenzieren. Der Nachfolger JWIG ist als allgemeines Web-Application Framework zu betrachten, ohne explizite Features einer DSL.
 
 Ein weiterer Ansatz, der erweiterte Modellierungen von Webformularen ermöglicht, ist XFORMS. XFORMS ist ein W3C-Standard\cite{Xfor09}, der die detaillierte Modellierung von Formularen zum Ziel hat. Formulare können clientseitig durch diverse Constraints, Validierungen und Berechnungen erweitert werden. Durch das \texttt{calculate} Attribut werden Berechnungen mit Werten anderer Felder ermöglicht\cite{Chas07}. XFORMS wäre Teil des XHTML 2.0 Standards gewesen, der sich allerdings gegen HTML 5 nicht durchsetzen konnte.
 
@@ -453,6 +456,6 @@ WebEAV\cite{NaPr00} ist ein Framework zur Metadaten-gesteuerten Generierung von 
 
 Escott et al.\cite{Esco12} entwerfen einen Anzatz für die modellgetriebene Entwicklung, in dem UML-Modelle mit zusätzlichen Informationen angereichert werden. Drei Typen von Validierungen werden identifiziert: \emph{Single element}, \emph{Multiple element} und \emph{Entity association}. \emph{Single element} bezeichnet Validierungen, die sich auf das Element selbst beziehen, also beispielsweise Beschränkung der Werte auf minimale oder maximale Schranken. \emph{Multiple element} bezieht sich auf Felder, die von anderen Feldern abhängig sind. Diese Constraints werden dem Modell als OCL-Ausdrücke hinzugefügt. Der dritte Typ, \emph{Entity associations}, validiert die Multiplizitäten des UML-Modells.
 
-WebDSL\cite{Vis08} ist eine DSL für die Entwicklung von Webanwendungen. Die Elemente einer Applikation, etwa Datenmodell, User Interface, Benutzerinteraktionen und Zugriffskontrolle werden in einem sehr hohen Abstraktionsgrad beschrieben. Der DSL-Code wird in eine Java Webanwendung übersetzt und auf dem Servlet Container Tomcat deployed. Ein Teil der WebDSL ist die Integration der Datenvalidierung\cite{GrVi09} auf verschiedenen Ebenen: Überprüfen von Werten und Typen, Constraints des Models, Model-unabhängige Constraints, sowie Constraints beim Bearbeiten des Requests des Formulars. Für die letzten drei Ebenen können boolesche Ausdrücke erstellt werden, die auf Daten des Requests und des Models zugreifen können.
+WebDSL\cite{Vis08} ist eine DSL für die Entwicklung von Webanwendungen. Die Elemente einer Applikation, etwa Datenmodell, User Interface, Benutzerinteraktionen und Zugriffskontrolle werden in einem sehr hohen Abstraktionsgrad beschrieben. Der DSL-Code wird in eine Java Webanwendung übersetzt und auf dem Servlet Container Tomcat deployed. Ein Teil der WebDSL ist die Integration der Datenvalidierung\cite{GrVi09} auf verschiedenen Ebenen: Überprüfen von Werten und Typen, Constraints des Models, Model-unabhängige Constraints, sowie Constraints beim Bearbeiten eines Formular-Requests. Für die letzten drei Ebenen können boolesche Ausdrücke erstellt werden, die auf Daten des Requests und des Models zugreifen können.
 
 
