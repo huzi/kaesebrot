@@ -190,22 +190,22 @@ Die Statements der FXL werden bei der Modellierung des Formulars eingegeben. Hie
 
 \section{Sicherheit und Stabilität}
 
-Fehlerhafte Statements - Ausschluß von Endlosschleifen
+Beim Entwurf der FXL wurde darauf geachtet, die Stabilität der Anwendung, in der sie integriert wird nicht zu beeinflussen. Fehler wie Endlosschleifen können durch das Design der Sprache ausgeschlossen, da der nur einzelne Ausdrücke verwerten kann (vgl. Abschnitt \ref{section_java_scripting}). Da jedoch Funktionen via den Functionmanager Java-Methoden aufrufen, besteht die Möglichkeit von Fehlern im Java Code. -gibts da eine Möglichkeit das zu sandboxen? auch im hinblick auf Endlosrekursion - StackOverflowError
 
-Endlosrekursion - StackOverflowError
+Um die Stabilität der Ausführung gewährleisten, müssen die voneinander abhängigen Formeln eines Formulars auf Zkylenfreiheit überprüft werden um ``Endlosevaluierungen'' zu vermeiden. Diese Überprüfung wird in Abschnitt \ref{implementierung_zyklenueberpruefung} beschrieben. Um die Integrität der Daten zu sichern, müssen voneinander abhängige Felder in der korrekten Reihenfolge ausgeführt werden (Abschnitt \ref{implementierung_integration_reihenfolge}).
 
-Statische Analyse vor jeder Aus\-führ\-ung oder Beim Speichern
+Eine weitere Möglickeit, die Stabilität zu gefärden, ist das direkte Editieren der Scripts in der Datenbank. Wie in Abschnitt \ref{implementierung_datenmodell} erläutert, werden die Formeln und Constraints in der Datenbank zu dem jeweiligen Formularelement gespeichert. Wer Zugriff auf die Datenbak hat, kann demnach auch fehlerhafte Statements in ein Formular einschleusen. Eine weitere Fehlerquelle kann der Import von Formularen darstellen. Beim Import muss das Formular deshalb auf Zyklenfreiheit und inkorrekte Statements überprüft werden. In beiden Fällen muss allerdings den Benutzern mit entsprechenden Rechten vertraut werden.
 
-Probleme/Sicherheitsbedenken durch editieren der Scripts in der Datenbank bzw. Import beschädigter Formulare
 
-Evaluierung zu null????
+Vor jeder Ausführung eines Statements im Interpreter unterläuft dieses alle Analyseschritte einer Language Application (siehe \ref{theorie_language_applications}). Zuerst wird der Abstract Syntax Tree erstellt. Dieser Vorgang impliziert die lexikalische und syntaktischen Analyse. Danach wird ein Typecheck auf dem AST ausgeführt, was der semantischen Analyse entspricht. Erst danach wird das Statement interpretiert. Die ersten zwei Schritte werden natürlich für jedes Statement nur einmal ausgeführt, bei jedem weiteren Aufruf wird der bereits bestehende und überprüfte AST abgearbeitet. 
 
 
 
 
 \section{Än\-der\-ung\-en im Datenmodell}
+\label{implementierung_datenmodell}
 
-Die individuell zusammengestllten Formulare werden durch drei Klassen abgebildet, die per JPA in der Datenbank persistiert werden. Wie in Abbildung \ref{abb_uml_datenmodell} ersichtlich, besteht ein Formular aus einer oder mehreren Gruppen von Formelementen. Eine Gruppe wiederum besteht aus den Klassen der einzelnen Formelemente (Textfield, Checkbox etc.). Da die Variablen, Formeln und Constraints für die einzelnen Formularelemente ebenfalls ge-spei-chert werden müssen, wurde eine neue Klasse \texttt{DslAttribute} hinzugefügt.
+Die individuell zusammengestllten Formulare werden durch drei Klassen abgebildet, die per JPA in der Datenbank persistiert werden. Wie in Abbildung \ref{abb_uml_datenmodell} ersichtlich, besteht ein Formular aus einer oder mehreren Gruppen von Formelementen. Eine Gruppe wiederum besteht aus den Klassen der einzelnen Formelemente (Textfield, Checkbox etc.). Da die Variablen, Formeln und Constraints für die einzelnen Formularelemente ebenfalls ge\-spei\-chert werden müssen, wurde eine neue Klasse \texttt{DslAttribute} hinzugefügt.
 
 \begin{figure}[ht]
 \begin{center}
@@ -300,7 +300,7 @@ Ein essentieller Bestandteil der Validierung ist die Überprüfung auf zyklische
 
 Die Interpretation der Abhängigkeiten als gerichteter Graph hilft bei der Überprüfung auf Zyklen. Ein Zyklus (oder Kreis) ist ein Weg von einem Knoten zu sich selbst\cite{Schl08}. Es gibt zwei grund\-sätz\-liche Algorithmen die sich für die Überprüfung eignen: die Überprügung durch Tiefensuche oder Breitensuche.
 
-Die Tiefensuche ist ein Algorithmus, bei dem der Graph rekursiv abgearbeitet wird. Die bereits besuchten Knoten werden in einer globalen Liste abge-spei-chert. Wird ein Knoten besucht, der sich bereits in der Liste befindet, so liegt ein Zyklus vor. Durch Erweiterungen (merken der Wege) können so alle Zyklen eines Graphen identifiziert werden.
+Die Tiefensuche ist ein Algorithmus, bei dem der Graph rekursiv abgearbeitet wird. Die bereits besuchten Knoten werden in einer globalen Liste abge\-spei\-chert. Wird ein Knoten besucht, der sich bereits in der Liste befindet, so liegt ein Zyklus vor. Durch Erweiterungen (merken der Wege) können so alle Zyklen eines Graphen identifiziert werden.
 
 Ein weniger mächtiger Algorithmus ist die Breitensuche. Diese ist ausreichend, wenn nur festgestellt werden soll, ob sich ein Knoten in einem Zyklus befindet oder nicht. Im folgenden wird der Algorithmus zur Zyklenüberprüfung in der Implementierung (mittels Breitensuche) erläutert.
 
@@ -359,8 +359,6 @@ Webanwendungen bieten heutzutage dank Java\-Script die Möglichkeit, Berechnunge
 
 \subsubsection{Clientseitige Evaluierung}
 
-Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem man die DSL-Statements in Java\-Script übersetzt und im Browser ausführt. Die Übersetzung von FXL in Java\-Script ist möglich, da Java\-Script alle Sprachkonzepte, die FXL verwendet unterstützt\footnote{Tatsächlich das gleiche Verhalten wie Java\-Script zu erzeugen ist nicht ganz so einfach, da Java\-Script bei manchen Operatoren ein anderes Verhalten an den Tag legt.}. Wenn eine Formel den Wert eines Feldes verändert, so wird dieser neue Wert im ent\-sprech\-enden Formularfeld gesetzt. Erst beim Speichern eines Formulars werden die berechneten und eingegebenen Werte an den Server gesendet, wo diese validiert und persistiert werden (Abbildung \ref{abb_uml_seq_client}).
-
 \begin{figure}[th]
 \begin{center}
 \includegraphics[scale=0.55]{figures/uml_seq_client_neu}
@@ -370,6 +368,8 @@ Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem 
 \label{abb_uml_seq_client}
 \end{figure}
 
+
+Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem man die DSL-Statements in Java\-Script übersetzt und im Browser ausführt. Die Übersetzung von FXL in Java\-Script ist möglich, da Java\-Script alle Sprachkonzepte, die FXL verwendet unterstützt\footnote{Tatsächlich das gleiche Verhalten wie Java\-Script zu erzeugen ist nicht ganz so einfach, da Java\-Script bei manchen Operatoren ein anderes Verhalten an den Tag legt.}. Wenn eine Formel den Wert eines Feldes verändert, so wird dieser neue Wert im ent\-sprech\-enden Formularfeld gesetzt. Erst beim Speichern eines Formulars werden die berechneten und eingegebenen Werte an den Server gesendet, wo diese validiert und persistiert werden (Abbildung \ref{abb_uml_seq_client}).
 
 Ein Schwachpunkt dieser Lösung ist, dass die in Java programmierten Funktionen, die in FXL verwendet werden können, nicht so einfach in Java\-Script übersetzt werden können wie die DSL-Statements selbst. Es ist also eine eigens für den Browser entwickelte API not\-wen\-dig, die alle Funktionen enthält, die der DSL auch am Server zur Verfügung stehen. Die Variablen können einfach aus den betreffenden Formularfeldern ausgelesen werden.
 
@@ -411,7 +411,7 @@ Die Aus\-führ\-ungsreihenfolge ist essentiell für die korrekte Auswertung der 
 Der folgende Algorithmus geht davon aus, dass keine Zyklen vorliegen. Die Zyklenfreiheit muss bereits beim Erstellen des Formulars sichergestellt werden (Abschnitt \ref{implementierung_zyklenueberpruefung}).
 
 \begin{enumerate}
-	\item Suche alle Felder, die einen Variablennamen, aber keine Formel beinhalten. Schreibe alle Werte der Felder in die Map \texttt{calculated<String, 			Result>}, wobei der Key der Variablenname ist und der Value der Wert des Feldes in einem Result Objekt.
+	\item Suche alle Felder, die einen Variablennamen, aber keine Formel beinhalten. Schreibe alle Werte der Felder in die Map \texttt{calculated<String, 			Result>}, wobei der Key der Variablenname ist und der Value der Wert des Feldes in einem \texttt{Result} Objekt.
 	\item Erstelle eine Liste \texttt{formulas} aller Felder, die Formeln besitzen, sprich berechnet werden müssen.
 	\item Solange \texttt{formulas} nicht leer ist, für jede Formel:
 	
@@ -430,7 +430,7 @@ Der folgende Algorithmus geht davon aus, dass keine Zyklen vorliegen. Die Zyklen
 
 Der Algorithmus ist recht einfach: Zuerst werden alle Felder als berechnet angesehen, die selbst keine Formel beinhalten. Danach werden jene Felder berechnet, deren Formeln nur Variablen beinhalten, die auf bereits berechnete Felder verweisen. Durch die zugesicherte Zyklenfreiheit kann dieser Vorgang wiederholt werden, bis alle Felder berechnet sind.
 
-Im Beispiel des BMI-Rechners (Abbildung \ref{abb_cycle_bmi_tree}) werden zuerst die Felder \emph{Körpergrösse} \& \emph{Körpergewicht} als berechnet markiert, da diese nicht von anderen Feldern abhängig sind. Danach werden die Felder mit Formeln, hier \emph{Adipositas} bzw. \emph{BMI}, in eine Liste ge-spei-chert, die in einer Schleife abgearbeitet wird. Wird zuerst versucht, das \emph{Adipositas}-Feld zu berechnen, wird festgestellt, dass das Feld \emph{BMI} noch nicht berechnet wurde und der Versuch verworfen. Danach wird das Feld \emph{BMI} aus den Feldern \emph{Körpergrösse} \& \emph{Körpergewicht} berechnet und aus der Liste entfernt. Beim nächsten Schleifendurchlauf kann nun die Formel der \emph{Adipositas}-Checkbox ausgewertet und aus der Liste gelöscht werden.
+Im Beispiel des BMI-Rechners (Abbildung \ref{abb_cycle_bmi_tree}) werden zuerst die Felder \emph{Körpergrösse} \& \emph{Körpergewicht} als berechnet markiert, da diese nicht von anderen Feldern abhängig sind. Danach werden die Felder mit Formeln, hier \emph{Adipositas} bzw. \emph{BMI}, in eine Liste ge\-spei\-chert, die in einer Schleife abgearbeitet wird. Wird zuerst versucht, das \emph{Adipositas}-Feld zu berechnen, wird festgestellt, dass das Feld \emph{BMI} noch nicht berechnet wurde und der Versuch verworfen. Danach wird das Feld \emph{BMI} aus den Feldern \emph{Körpergrösse} \& \emph{Körpergewicht} berechnet und aus der Liste entfernt. Beim nächsten Schleifendurchlauf kann nun die Formel der \emph{Adipositas}-Checkbox ausgewertet und aus der Liste gelöscht werden.
 
 Bei der Aus\-führ\-ung wirft sich die Frage auf, wie vorgegangen werden soll, wenn ein Eingabefeld mit Variablenname noch nicht ausgefüllt wurde. In diesem Fall liefert die \texttt{lookup()}-Methode des \texttt{VariableProvider} ein \texttt{Result}-Objekt vom richtigen Datentyp, aber mit Wert \texttt{null} zurück. Die ganze Formel wird, wie im Abschnitt \ref{design_interpreter} beschrieben, zu einem \texttt{Result}-Objekt mit Wert \texttt{null} ausgewertet. Ist ein Feld also noch leer, werden auch die abhängigen Felder nicht mit einem Wert belegt. Wichtig ist jedoch, dass die Aus\-führ\-ung nicht unterbrochen wird und alle Felder, die nicht von einem nicht ausgewerteten Feld abhängen können, berechet werden.
 
@@ -449,30 +449,28 @@ In der Dokumentationssoftware können Fehler an zwei Stellen auftreten: Bei der 
 
 
 \begin{table}
-\begin{tabular}[ht]{|c | p{6cm} | p{2cm}| p{3cm} |}
+\begin{tabular}[ht]{|c | p{11cm}|}
 	\hline
-	\textbf{Code} & \textbf{Beschreibung} & \textbf{Beispiel} & \textbf{Argumente}\\
+	\textbf{Code} & \textbf{Beschreibung}\\
 	\hline
   	\hline
-  	4xx  & \multicolumn{3}{|l|}{\textsc{Implementierungsfehler}} \\
+  	4xx  & \multicolumn{1}{|l|}{\textsc{Implementierungsfehler}} \\
   	\hline
-  	400  & Allgemeiner/unbekannter Implementierungsfehler &  & \\
+  	400  & Allgemeiner/unbekannter Implementierungsfehler    \\
   	\hline
-  	411  & Ungültiger Variablenname & & \\
+  	411  & Ungültiger Variablenname    \\
   	\hline
-  	412  & Variablenname zu lang & & \\
+  	412  & Variablenname zu lang    \\
   	\hline
-  	413  & Variablenname bereits vorhanden & &\\
+  	413  & Variablenname bereits vorhanden   \\
   	\hline
-  	414  & Die Formel erzeugt zyklische Abhängigkeiten & & \\
+  	414  & Die Formel erzeugt zyklische Abhängigkeiten    \\
   	\hline
-  	415  & Die Formel enthält unbekannte Variablen & & \\
+  	415  & Die Formel enthält unbekannte Variablen    \\
   	\hline
-  	416  & Rückgabetyp der Formel stimmt nicht mit Datentyp des Formelements überein & & \\
+  	416  & Rückgabetyp der Formel stimmt nicht mit Datentyp des Formelements überein    \\
   	\hline
-  	417  & Rückgabetype eines Constraints ist nicht Boolean & & \\
-  	\hline
-  	4xx  & TODO: Tabelle schön machen & & \\
+  	417  & Rückgabetype eines Constraints ist nicht Boolean    \\
   	\hline
 \end{tabular}
 \caption{Fehlercodes für Implementierungsfehler}
@@ -484,7 +482,7 @@ Neu und spezifisch für den Einsatzbereich der DSL sind jene Fehler, die beim Er
 
 \subsection{Internationalisierung}
 
-Die Internationalisierung der Fehlermeldungen erfolgt mit ``Boardmitteln'' von Seam\footnote{ vgl. http://docs.jboss.org/seam/latest/reference/en-US/html/i18n.html, 21.12.2011}. Die Labels werden in Properties-Files für alle unterstützten Sprachen ge-spei-chert (Listing \ref{listing_error_de} bzw. \ref{listing_error_en}).
+Die Internationalisierung der Fehlermeldungen erfolgt mit ``Boardmitteln'' von Seam\footnote{ vgl. http://docs.jboss.org/seam/latest/reference/en-US/html/i18n.html, 21.12.2011}. Die Labels werden in Properties-Files für alle unterstützten Sprachen ge\-spei\-chert (Listing \ref{listing_error_de} bzw. \ref{listing_error_en}).
 
 \begin{lstlisting}[float = htbp,caption={Deutsche Fehlermeldungen },label=listing_error_de]
 error.dsl.202=Ungueltige Kombination von Typen fuer Operator {0}: {1}, {2}

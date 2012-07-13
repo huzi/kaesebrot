@@ -4,7 +4,7 @@ Doch genauso wie im Softwareengineering ist eine tatsächliche strikte Trennung 
 
 
 
-\chapter{Entscheidung}
+\chapter{Entscheidung für den Entwurf einer neuen DSL}
 \label{chapter_entscheidung}
 
 Vor dem Beginn der Entwicklung einer neuen DSL muss evaluiert werden, ob eine eigene DSL einerseits überhaupt machbar und andererseits sinnvoll ist. Die zur Verfügung stehenden Alternativen müssen in Betracht gezogen und ausgearbeitet werden, um abschätzen zu können, ob sich der durch die Entwicklung entstehende Mehraufwand lohnt. 
@@ -28,7 +28,7 @@ Listing \ref{listing_java_script_engine} enthält ein Beispiel für die Evaluier
 
 
 
-\begin{lstlisting}[caption={Descriptive Caption Text},label=listing_java_script_engine]
+\begin{lstlisting}[caption={Evaluierung eines Scripts per Java Scripting},label=listing_java_script_engine]
 // Load JavaScript engine
 ScriptEngineManager manager = new ScriptEngineManager();
 ScriptEngine engine = manager.getEngineByName("js");
@@ -49,7 +49,7 @@ System.out.println(engine.get("result"));
 
 \subsection{Vor- und Nachteile einer embedded Skriptsprache}
 
-Der größte Vorteil einer eigenen Scriptengine ist die volle Ausdrucksstärke einer "richtigen" Programmiersprache. Dadurch ist es möglich, durch bedingte Anweisungen und Schleifen eine hohe Flexibilität zu erreichen, welche noch durch eigene Funktionen erweitert werden kann. Weiters können Script\-en\-gi\-nes nicht nur auf Java-Objekte zugreifen, die der Engine explizit zu\-ge\-wie\-sen wurden, sondern auch auf alle Klassen der Java API. 
+Der größte Vorteil einer vorhandenen Scriptengine ist die volle Ausdrucksstärke einer ``richtigen'' Programmiersprache. Dadurch ist es möglich, durch bedingte Anweisungen und Schleifen eine hohe Flexibilität zu erreichen, welche noch durch eigene Funktionen erweitert werden kann. Weiters können Script\-en\-gi\-nes nicht nur auf Java-Objekte zugreifen, die der Engine explizit zu\-ge\-wie\-sen wurden, sondern auch auf alle Klassen der Java API. 
 
 Java Scripting birgt neben den Möglichkeiten und Vorteilen auch gewisse Risiken und Nachteile im Vergleich zu einer eigenen externen DSL (Tabelle \ref{tbl_vergleich_scriptengines}). Viele Eigenschaften, die einerseits als Vorteile erscheinen, können auch als Nachteile angesehen werden. 
 
@@ -106,7 +106,7 @@ Eine Möglichkeit, die Scriptengine abzusichern, ist das sogenannte Sandboxing. 
 
 \section{Java Unified Expression Language}
 
-Eine weitere Alternative ist die Einbindung der bereits in Kapitel \ref{related_work} erwähnten Unified Expression Language(UEL)\cite{UEL}. Die UEL ist eine Ausdruckssprache, die vorwiegend für die View-Technologien der Java Enterprise Plattform verwendet wird. Durch die ein\-ge\-schränk\-te Syntax kann die UEL selbst als domänenspezifische Sprache gesehen werden.
+Eine weitere Alternative ist die Einbindung der bereits in Kapitel \ref{related_work} erwähnten Unified Expression Language (UEL)\cite{UEL}. Die UEL ist eine Ausdruckssprache, die vorwiegend für die View-Technologien der Java Enterprise Plattform verwendet wird. Durch die ein\-ge\-schränk\-te Syntax kann die UEL selbst als domänenspezifische Sprache gesehen werden.
 
 Die UEL unterstützt die üblichen grundlegenden Operatoren sowie die Klammerung von Ausdrücken. Weiters werden die Verwendung von Variablen und Methoden in den Statements unterstützt. Ein weiteres Feature ist, dass die Sprache Java-Objekte direkt unterstützt und somit auf Attribute von Objekten direkt zugegriffen werden kann.
 
@@ -118,7 +118,7 @@ Eine offene Implementierung des Standards ist JUEL\footnote{vgl. http://juel.sou
 
 JUEL kann als Library in eigene Java-Applikationen eingebunden werden, um die Funktionalität auch außerhalb eines Servers zu verwenden.\\
 
-\begin{lstlisting}[caption={Descriptive Caption Text},label=listing_juel_example]
+\begin{lstlisting}[caption={Evaluierung eines UEL Statements mit JUEL},label=listing_juel_example]
  public class TestJuel {
 	public double calcuate() throws SecurityException,
 			NoSuchMethodException {
@@ -563,7 +563,7 @@ Syntaxfehler haben in FXL allgemein das Format 1xx, wobei nur ein einziger Fehle
 
 Semantische Fehler treten, wie der Name vermuten lässt, bei der semantischen Analyse auf. Diese wird in der FXL im Typechecker vorgenommen. Zu\-sätz\-lich zu den Typfehlern zählen auch Fehler, die die Variablen und Funktionen betreffen zu den semantischen Fehlern.
 
-Es gäbe auch die Möglichkeit, manche Fehler bei der semantischen Analyse nur als Warning zu verwenden, z.b. wenn eine Variable noch nicht definiert ist. Bei der nochmaligen Überprüfung vor der Aus\-führ\-ung müsste die Variable dann vorhanden sein. Diese Möglichkeit ist aber zu unsicher, der Anwender soll gezwungen sein, nur gültige Formeln in das System einzugeben.
+Es gäbe auch die Möglichkeit, manche Fehler bei der semantischen Analyse nur als Warning zu verwenden, z.B. wenn eine Variable noch nicht definiert ist. Bei der nochmaligen Überprüfung vor der Aus\-führ\-ung müsste die Variable dann vorhanden sein. Diese Möglichkeit ist aber zu unsicher, der Anwender soll gezwungen sein, nur gültige Formeln in das System einzugeben.
 
 \begin{center}
 \begin{tabular}[ht]{|c | p{6cm} | p{2cm}| p{3cm} |}
@@ -760,7 +760,7 @@ Für die Type-Checks wird nur der Rückgabetyp benötigt, da nur der Typ der Sta
 
 Der Typüberprüfer arbeitet den AST mit einem rekursiven depth-first Ansatz ab und überprüft die Gültigkeit der Datentypen für die Operatoren analog zu den semantischen Typregeln in Tabelle \ref{tbl_semantische_typregeln}. Im Gegensatz zum Interpreter können die Regeln für mehrere Operatoren zusammengefasst werden, da die Rückgabetypen für bestimmte Operatoren den gleichen Regeln unterliegen. 
 
-Beispielsweise können die binären booleschen Operatoren AND und OR nur Operanden des Typs BOOLEAN verarbeiten(Funktion \texttt{checkBinaryBoolean} in Listing \ref{listing_check_binary_boolean}). Liefert einer der Kindknoten einen anderen Typ zurück, wird eine Exception geworfen. Wenn beide Kindknoten gültige Werte liefern, wird wie erwartet der Datentyp BOOLEAN zurückgegeben.
+Beispielsweise können die binären booleschen Operatoren AND und OR nur Operanden des Typs BOOLEAN verarbeiten (Funktion \texttt{checkBinaryBoolean} in Listing \ref{listing_check_binary_boolean}). Liefert einer der Kindknoten einen anderen Typ zurück, wird eine Exception geworfen. Wenn beide Kindknoten gültige Werte liefern, wird wie erwartet der Datentyp BOOLEAN zurückgegeben.
 
 \begin{lstlisting}[float = htbp,caption={Typ\-über\-prü\-fung der binären booleschen Operatoren},label=listing_check_binary_boolean]
 private ResultType checkBinaryBoolean(Tree node)
@@ -838,9 +838,9 @@ Wenn der Methodenaufruf erfolgreich war, wird der Rückgabewert wieder in einen 
 \section{Interpreter}
 \label{design_interpreter}
 
-Wie der Typüberprüfer muss der Interpreter den AST abarbeiten um Statements zu evaluieren. Dazu wird ein depth-first Ansatz gewählt, der rekursiv zuerst den jeweiligen Unterausdruck eines AST-Knotens auswertet.
+Wie der Typüberprüfer muss der Interpreter den AST abarbeiten um Statements zu evaluieren. Dazu wird ein depth-first Ansatz gewählt, der rekursiv zuerst den jeweiligen Unterausdruck eines AST-Knotens auswertet. Der Wert des Wurzelelements wird dann als Resultat eines Statements zurückgegeben.
 
-Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes Formularelement noch nicht ausgefüllt wurde. Wenn der Interpreter beim abarbeiten eines AST auf ein \texttt{Result}-Objekt mit Wert \texttt{null} trifft, wird das gesamte Statement mit \texttt{null} evaluiert. Eine detaillierte Erklärung über den Ablauf der Evaluierung im Zusammenhang mit Formularen wird in Abschnitt \ref{implementierung_daten_eingabe} gegeben.
+Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes Formularelement noch nicht ausgefüllt wurde. Wenn der Interpreter beim Abarbeiten eines AST auf ein \texttt{Result}-Objekt mit Wert \texttt{null} trifft, wird das gesamte Statement mit \texttt{null} evaluiert. Ein noch nicht ausgefülltes Feld (mit entsprechendem Wert \texttt{null}) resultiert also nicht in einer Fehlermeldung, statdessen wird das Formularelement, dass die Formel enthält, leer gelassen. Eine detaillierte Erklärung über den Ablauf der Evaluierung im Zusammenhang mit Formularen wird in Abschnitt \ref{implementierung_daten_eingabe} gegeben.
 
 \section{Fehlerbehandlung}
 
@@ -853,7 +853,7 @@ Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes For
 \label{abb_exception_hierarchie}
 \end{figure}
 
-Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse FXLException definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
+Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse \texttt{FXLException} definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
 
 
 
@@ -872,7 +872,7 @@ In diesem Kapitel werden zuerst die theoretischen und methodischen Grundlagen au
 Das Testen von Software ist genau wie die entstehenden Produkte sehr facettenreich. Spillner und Linz definieren den Begriff Testen wie folgt:
 
 \begin{myquote}
-Unter dem Test von Software verstehen wir die stichprobenartige Aus\-führ\-ung eines Testobjekts, die zu dessen Überprüfung dienen soll. Dazu müssen die Randbedingungen für die Aus\-führ\-ung des tests festgelegt sein. Über einen Vergleich zwischen Soll- und Istverhalten wird bestimmt, ob das testobjekt die geforderten Eigenschaften erfüllt.\cite{SpLi10}
+Unter dem Test von Software verstehen wir die stichprobenartige Aus\-führ\-ung eines Testobjekts, die zu dessen Überprüfung dienen soll. Dazu müssen die Randbedingungen für die Aus\-führ\-ung des Tests festgelegt sein. Über einen Vergleich zwischen Soll- und Istverhalten wird bestimmt, ob das Testobjekt die geforderten Eigenschaften erfüllt.\cite{SpLi10}
 \end{myquote}
 
 \subsection{Grundsätzliche Einteilung von Tests}

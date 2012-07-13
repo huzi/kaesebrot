@@ -31,7 +31,7 @@
 \BOOKMARK [1][-]{section.5.1}{Sprachen zur Berechnung und Evaluierung von Werten}{chapter.5}
 \BOOKMARK [1][-]{section.5.2}{DSLs zur Modellierung von Formularen}{chapter.5}
 \BOOKMARK [-1][-]{part.2}{II Entwicklung der Form Expression Language - FXL}{}
-\BOOKMARK [0][-]{chapter.6}{Entscheidung}{part.2}
+\BOOKMARK [0][-]{chapter.6}{Entscheidung f\374r den Entwurf einer neuen DSL}{part.2}
 \BOOKMARK [1][-]{section.6.1}{Weitere Plugins}{chapter.6}
 \BOOKMARK [1][-]{section.6.2}{Java Scripting}{chapter.6}
 \BOOKMARK [2][-]{subsection.6.2.1}{Vor- und Nachteile einer embedded Skriptsprache}{section.6.2}

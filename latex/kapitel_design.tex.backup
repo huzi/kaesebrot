@@ -14,7 +14,7 @@ Im Folgenden werden mögliche Alternativen vorgestellt, wobei jeweils auf deren 
 
 \section{Weitere Plugins}
 
-Die Notwendigkeit für eine DSL zur Berechnung und Evaluierung von Formularelementen entstand durch den Wunsch der Anwender nach einem speziellen Formular, welches automatisch Berechnungen über mehrere Felder durchführt. Dieses Formular wurde als eigenes Plugin mit dementsprechendem Aufwand für das Kundensystem realisiert. Dieses Plugin ist allerdings nur für den einen ursprünglichen Zweck geeignet. Für ein Formular mit anderen Berechnungen wäre wiederum ein eigenes Plugin notwendig. Daraus ist die projektinterne Anforderung nach einer generischen Möglichkeit zur Berechnung und Evaluierung von Feldern im Bezug zu anderen Feldern entstanden. 
+Die Notwendigkeit für eine DSL zur Berechnung und Evaluierung von Formularelementen entstand durch den Wunsch der Anwender nach einem spe\-zi\-el\-len Formular, welches automatisch Berechnungen über mehrere Felder durchführt. Dieses Formular wurde als eigenes Plugin mit dement\-sprech\-endem Aufwand für das Kundensystem realisiert. Dieses Plugin ist allerdings nur für den einen ursprünglichen Zweck geeignet. Für ein Formular mit anderen Berechnungen wäre wiederum ein eigenes Plugin not\-wen\-dig. Daraus ist die projektinterne Anforderung nach einer generischen Möglichkeit zur Berechnung und Evaluierung von Feldern im Bezug zu anderen Feldern entstanden. 
 
 Die Entwicklung weiterer Plugins für neue dynamische Formulare ist also keine Option, sondern soll durch das Ergebnis dieser Arbeit vermieden werden.
 
@@ -24,7 +24,7 @@ Die Entwicklung weiterer Plugins für neue dynamische Formulare ist also keine O
 
 Wie in Kapitel \ref{related_work} bereits erwähnt, besteht die Möglichkeit, eine Scriptengine in Java einzubetten. Diese bietet den Vorteil, dass die Entwicklung einer eigenen Sprache obsolet wird, da eine bereits bestehende Sprache die Funktionalität übernehmen kann.
 
-Listing \ref{listing_java_script_engine} enthält ein Beispiel für die Evaluierung eines JavaScript-Statements mit Mitteln des JSR-233. \\
+Listing \ref{listing_java_script_engine} enthält ein Beispiel für die Evaluierung eines Java\-Script-Sta\-te\-ments mit Mitteln des JSR-233. \\
 
 
 
@@ -53,11 +53,11 @@ Der größte Vorteil einer eigenen Scriptengine ist die volle Ausdrucksstärke e
 
 Java Scripting birgt neben den Möglichkeiten und Vorteilen auch gewisse Risiken und Nachteile im Vergleich zu einer eigenen externen DSL (Tabelle \ref{tbl_vergleich_scriptengines}). Viele Eigenschaften, die einerseits als Vorteile erscheinen, können auch als Nachteile angesehen werden. 
 
-Mit der vollen Ausdrucksstärke einer GPL erhält man auch die volle syntaktische und semantische Komplexität. Das heißt, dass Programmierer, die in der Lage sind Skripte in der Programmiersprache zu erstellen, für die Erstellung der Formulare benötigt werden. Dazu kommt eine eingeschränkte Fehlerbehandlung, da die Korrektheit von Syntax und Semantik des Skripts nur durch Ausführung überprüft werden kann. Durch die dynamische Typisierung der Skriptsprache und die uneingeschränkte Komplexität der Statements ist eine statische Analyse nicht möglich.
+Mit der vollen Ausdrucksstärke einer GPL erhält man auch die volle syntaktische und semantische Komplexität. Das heißt, dass Programmierer, die in der Lage sind Skripte in der Programmiersprache zu erstellen, für die Erstellung der Formulare benötigt werden. Dazu kommt eine ein\-ge\-schränk\-te Fehlerbehandlung, da die Korrektheit von Syntax und Semantik des Skripts nur durch Aus\-führ\-ung überprüft werden kann. Durch die dynamische Typisierung der Skriptsprache und die unein\-ge\-schränk\-te Komplexität der Statements ist eine statische Analyse nicht möglich.
 
-Auch der uneingeschränkte Zugriff auf die Klassen der Java API können missbräuchlich verwendet werden. So kann beispielsweise unerlaubt auf das Dateisystem oder die Datenbank zugegriffen werden, oder über \texttt{System.exit()} die Applikation beendet werden. Auch das Starten von neuen Threads ist möglich. 
+Auch der unein\-ge\-schränk\-te Zugriff auf die Klassen der Java API können missbräuchlich verwendet werden. So kann beispielsweise unerlaubt auf das Dateisystem oder die Datenbank zugegriffen werden, oder über \texttt{System.exit()} die Applikation beendet werden. Auch das Starten von neuen Threads ist möglich. 
 
-Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler aufteten, die der Applikation schaden. Ein Beispiel dafür sind Endlosschleifen.
+Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler auf\-tre\-ten, die der Applikation schaden. Ein Beispiel dafür sind Endlosschleifen.
 
 
 \begin{table}
@@ -74,19 +74,21 @@ Abgesehen von bösartigen Angriffen können auch unabsichtliche Fehler aufteten,
 		 
 	$\bullet$ Verschiedene Skript-Sprachen vorhanden ( JavaScript, Groovy, Ruby, ...)	
 
-	$\bullet$ Kein Erlernen einer neuen Sprache notwendig
+	$\bullet$ Kein Erlernen einer neuen Sprache not\-wen\-dig
 
 	&
 	
-	$\bullet$ Programme statt Statements → Programmierer notwendig
+	$\bullet$ Programme statt Statements → Programmierer not\-wen\-dig
 	
-	$\bullet$ Eingeschränkte Fehlerbehandlung (Ausführung notwendig)
+	$\bullet$ Eingeschränkte Fehlerbehandlung (Aus\-führ\-ung not\-wen\-dig)
 	
 	$\bullet$ Voller Zugriff auf Ressourcen (Dateisystem, Datenbank, statische Klassen, ...)
 	
 	$\bullet$ Endlosschleifen, z.B. while(true) { ; }
 	
 	$\bullet$ System.exit()
+	
+	$\bullet$ Eingeschränkte Fehlerbehandlung
 
 	\\
 	\hline
@@ -104,7 +106,7 @@ Eine Möglichkeit, die Scriptengine abzusichern, ist das sogenannte Sandboxing. 
 
 \section{Java Unified Expression Language}
 
-Eine weitere Alternative ist die Einbindung der bereits in Kapitel \ref{related_work} erwähnten Unified Expression Language(UEL)\cite{UEL}. Die UEL ist eine Ausdruckssprache, die vorwiegend für die View-Technologien der Java Enterprise Plattform verwendet wird. Durch die eingeschränkte Syntax kann die UEL selbst als domänenspezifische Sprache gesehen werden.
+Eine weitere Alternative ist die Einbindung der bereits in Kapitel \ref{related_work} erwähnten Unified Expression Language(UEL)\cite{UEL}. Die UEL ist eine Ausdruckssprache, die vorwiegend für die View-Technologien der Java Enterprise Plattform verwendet wird. Durch die ein\-ge\-schränk\-te Syntax kann die UEL selbst als domänenspezifische Sprache gesehen werden.
 
 Die UEL unterstützt die üblichen grundlegenden Operatoren sowie die Klammerung von Ausdrücken. Weiters werden die Verwendung von Variablen und Methoden in den Statements unterstützt. Ein weiteres Feature ist, dass die Sprache Java-Objekte direkt unterstützt und somit auf Attribute von Objekten direkt zugegriffen werden kann.
 
@@ -153,9 +155,9 @@ Im Beispiel in Listing \ref{listing_juel_example} wird zuerst der Context und ei
 \subsection{Vor- und Nachteile der UEL}
 
 
-Ein großer Vorteil, gegenüber der Einbindung einer Skriptsprache, ist die eingeschränkte Syntax, die verhindert, dass beliebige Programme im Applicationserver zur Ausführung kommen. Stattdessen werden nur definierte Statements evaluiert, was einige Bedenken bezüglich der Stabilität abschwächt. Funktionen der Java API müssen, wie im Beispiel ersichtlich, explizit zur Verfügung gestellt werden. 
+Ein großer Vorteil, gegenüber der Einbindung einer Skriptsprache, ist die ein\-ge\-schränk\-te Syntax, die verhindert, dass beliebige Programme im Applicationserver zur Aus\-führ\-ung kommen. Stattdessen werden nur definierte Statements evaluiert, was einige Bedenken bezüglich der Stabilität ab\-schwä\-cht. Funktionen der Java API müssen, wie im Beispiel ersichtlich, explizit zur Verfügung gestellt werden. 
 
-Weitere nachteilige Eigenschaften der eingebetteten Scriptengine bleiben jedoch bestehen (Tabelle \ref{tbl_vergleich_uel}). Eine statische Überprüfung ist nicht möglich, das heißt die Funktionsfähigkeit der Statements kann nicht ohne Ausführung überprüft werden. Ein weiterer Nachteil ist die Fehlerbehandlung, die nicht auf den Einsatzzweck zugeschnitten ist. Stattdessen müssten die Fehlermeldungen der Exceptions der UEL-Implementierung auf irgendeine Art geparst und für die Integration übersetzt werden\footnote{Wird z.B. die Variable \texttt{x} in Listing \ref{listing_juel_example} nicht gesetzt, wird eine \texttt{javax.el.PropertyNotFoundException} geworfen. Um herauszufinden, welche Variable fehlt, müsste die Message ``Cannot find property x'' geparst werden, da die Exception keine weiteren Attribute zur Verfügung stellt.}.
+Weitere nachteilige Eigenschaften der eingebetteten Scriptengine bleiben jedoch bestehen (Tabelle \ref{tbl_vergleich_uel}). Eine statische Überprüfung ist nicht möglich, das heißt die Funktionsfähigkeit der Statements kann nicht ohne Aus\-führ\-ung überprüft werden. Ein weiterer Nachteil ist die Fehlerbehandlung, die nicht auf den Einsatzzweck zugeschnitten ist. Stattdessen müssten die Fehlermeldungen der Exceptions der UEL-Implementierung auf irgendeine Art geparst und für die Integration übersetzt werden\footnote{Wird z.B. die Variable \texttt{x} in Listing \ref{listing_juel_example} nicht gesetzt, wird eine \texttt{javax.el.PropertyNotFoundException} geworfen. Um herauszufinden, welche Variable fehlt, müsste die Message ``Cannot find property x'' geparst werden, da die Exception keine weiteren Attribute zur Verfügung stellt.}.
 
 
 \begin{table}
@@ -176,8 +178,8 @@ Weitere nachteilige Eigenschaften der eingebetteten Scriptengine bleiben jedoch 
 		$\bullet$  Eingeschränkte Syntax (=geringere Ausdrucksstärke)
 		
 		$\bullet$  Neue Funktionen erst bei Redeploy
-		
-		$\bullet$  Dynamische Typisierung
+	
+		$\bullet$ Eingeschränkte Fehlerbehandlung
 	
 	\\
 	\hline
@@ -200,7 +202,7 @@ Der Grundgedanke ist, dass es ähnlich zu Tabellenverarbeitungs\-werkzeugen Form
 =weight / (size * size)
 \end{verbatim}
 
-Die Variablen \texttt{weight} und \texttt{size} sind Verweise auf andere Felder, die die Werte von Gewicht und Körpergröße enthalten.
+Die Variablen \texttt{weight} und \texttt{size} sind Verweise auf andere Felder, die die Werte von Gewicht und Kör\-per\-grö\-ße enthalten.
 
 \paragraph*{Bedingungen}
 
@@ -223,7 +225,7 @@ In diesem Beispiel wird der Wert des Feldes, welches das Geburtsdatum enthält, 
 	
 		$\bullet$  Eingeschränkte Syntax (=leichter zu erlernen)
 		
-		$\bullet$  Prüfen auf Korrektheit der Statements ohne Ausführung
+		$\bullet$  Prüfen auf Korrektheit der Statements ohne Aus\-führ\-ung
 		
 		$\bullet$  Statische Typisierung (Typchecks)
 		
@@ -246,7 +248,7 @@ In diesem Beispiel wird der Wert des Feldes, welches das Geburtsdatum enthält, 
 
 Der schwerwiegendste Nachteil einer eigenen DSL ist, dass nicht auf eine Vorhandene Implementierung zurückgegriffen wird, sondern die Sprache neu entworfen und entwickelt werden muss.
 
-Der große Vorteil der Eigenentwicklung ist, ähnlich der UEL, die eingeschränkte Syntax, die genau auf den Anwendungsbereich zugeschnitten ist (Tabelle \ref{tbl_vergleich_eigene_dsl}). Die individuelle Enwicklung des Interpreters bietet weiters einige Möglichkeiten, die der Stabilität der Anwendung entgegenkommen. Durch die statische Typisierung können Statements auch ohne Ausführung derselben überprüft werden. Zusätzlich können dem Benutzer anwendungsspezifische Fehlermeldungen geliefert werden, da die Sprache nicht vom Fehlerhandling einer existierenden Implementierung abhängig ist. Ein weiterer Vorteil ist die einfache Adressierung von Formularfeldern, da diese nicht einer eingebetteten Laufzeitumgebung zur Verfügung gestellt werden müssen, sondern individuell vom Interpreter aus dem Speicher geladen werden. 
+Der große Vorteil der Eigenentwicklung ist, ähnlich der UEL, die ein\-ge\-schränk\-te Syntax, die genau auf den Anwendungsbereich zugeschnitten ist (Tabelle \ref{tbl_vergleich_eigene_dsl}). Die individuelle Enwicklung des Interpreters bietet weiters einige Möglichkeiten, die der Stabilität der Anwendung entgegenkommen. Durch die statische Typisierung können Statements auch ohne Aus\-führ\-ung derselben überprüft werden. Zu\-sätz\-lich können dem Benutzer an\-wen\-dungs\-spe\-zi\-fi\-sche Fehlermeldungen geliefert werden, da die Sprache nicht vom Feh\-ler\-hand\-ling einer existierenden Implementierung abhängig ist. Ein weiterer Vorteil ist die einfache Adressierung von Formularfeldern, da diese nicht einer eingebetteten Laufzeitumgebung zur Verfügung gestellt werden müssen, sondern individuell vom Interpreter aus dem Speicher geladen werden. 
 
 
 \section{Fazit}
@@ -262,9 +264,9 @@ Die Entscheidung für eine eigene DSL für die Aufgabenstellung begründet sich 
 Ziel der Analyse ist ein Modell, welches eine brauchbare Grundstruktur für einen technischen Entwurf liefert, die alle Anforderungen berücksichtigt und technisch umsetzbar ist. \cite{ZuGr04}
 \end{quote}
 
-Das Ziel der Analyse ist es also, Benutzeranforderungen in technische Anforderungen umzuwandeln. Zuerst wird evaluiert, welche Anforderungen vorhanden sind und woher diese kommen. Wenn notwendig wird der Hintergrund der Anforderung erklärt. Auf einige Anforderungen wird im Detail eingegangen.
+Das Ziel der Analyse ist es also, Benutzeranforderungen in technische Anforderungen umzuwandeln. Zuerst wird evaluiert, welche Anforderungen vorhanden sind und woher diese kommen. Wenn not\-wen\-dig wird der Hintergrund der Anforderung erklärt. Auf einige Anforderungen wird im Detail eingegangen.
 
-Am Anfang der Analyse steht die Definition der Domäne. Es ist wichtig zu wissen, in welcher Domäne man sich bewegt bzw. für welche Domäne die DSL entwickelt wird, weil einerseits dementsprechend domänenspezifische Abkürzungen und Notationen verwendet werden, andererseits die Anforderungen im Kontext der Domäne verstanden werden müssen.
+Am Anfang der Analyse steht die Definition der Domäne. Es ist wichtig zu wissen, in welcher Domäne man sich bewegt bzw. für welche Domäne die DSL entwickelt wird, weil einerseits dement\-sprech\-end domänenspezifische Abkürzungen und Notationen verwendet werden, andererseits die Anforderungen im Kontext der Domäne verstanden werden müssen.
 
 
 \section{Definition der Domäne}
@@ -283,7 +285,7 @@ Die endgültigen Anforderungen an die DSL, die als Grundlage dieser Arbeit geseh
 
 \label{par:ana-anf-formeln}
 \paragraph*{Formeln/Berechnungen}
-Es soll eine Möglichkeit geschaffen werden, die Werte von Formularfeldern automatisch zu berechnen. Diese Anforderung bedeutet, dass es ermöglicht werden muss, Ausdrücke einzugeben, diese auf syntaktische und semantische Fehler zu prüfen, sie auszuführen und das Resultat auszugeben.
+Es soll eine Möglichkeit geschaffen werden, die Werte von Formularfeldern automatisch zu berechnen. Diese Anforderung bedeutet, dass es er\-mög\-licht werden muss, Ausdrücke einzugeben, diese auf syntaktische und semantische Fehler zu prüfen, sie auszuführen und das Resultat auszugeben.
 
 \paragraph*{Bedingungen bzw. Beschränkungen}
 Die Werte von Formularfeldern auf logische bzw. gültige Werte einzuschränken, sollen flexible Bedingungen definiert werden können. Diese Bedingungen, in weiterer Folge auch Constraints genannt, sind Ausdrücke, die einen booleschen Wahrheitswert zurück geben, der besagt, ob der eingegebene Wert gültig ist.
@@ -298,10 +300,10 @@ Es soll die Möglichkeit geschaffen werden, sich in den Formeln und Bedingungen 
 Da die einzelnen Formularfelder verschiedene Datenformate repräsentieren, muss die DSL mit verschiedenen Datentypen umgehen. Die erforderlichen Typen sind Datumswerte, Ganz- und Kommazahlen und boolesche Werte.
 
 \paragraph*{Funktionsaufrufe}
-Um die Möglichkeiten der Sprache zu erweitern, sind Funktionsaufrufe notwendig. Die Funktionen werden nicht in der DSL selbst geschrieben, sondern extern als statische Methoden von Java Klassen erstellt. Die Implementierung der DSL muss eine Schnittstelle bieten, um diese statischen Methoden entgegen zu nehmen.
+Um die Möglichkeiten der Sprache zu erweitern, sind Funktionsaufrufe not\-wen\-dig. Die Funktionen werden nicht in der DSL selbst geschrieben, sondern extern als statische Methoden von Java Klassen erstellt. Die Implementierung der DSL muss eine Schnittstelle bieten, um diese statischen Methoden entgegen zu nehmen.
 
 \paragraph*{Fehlerbehandlung}
-Um dem Benutzer Feedback zu geben, ist es wichtig eindeutige und genaue Fehlermeldungen zu erstellen. Die Fehler können bei der Eingabe der DSL, bei der Ausführung, und aufgrund der Einbettung in ein anderes System auftreten (siehe Abschnitt \ref{section_analyse_fehlerbehandlung}).
+Um dem Benutzer Feedback zu geben, ist es wichtig eindeutige und genaue Fehlermeldungen zu erstellen. Die Fehler können bei der Eingabe der DSL, bei der Aus\-führ\-ung, und aufgrund der Einbettung in ein anderes System auf\-tre\-ten (siehe Abschnitt \ref{section_analyse_fehlerbehandlung}).
 
 
 %\section{Datentypen}
@@ -311,7 +313,7 @@ Um dem Benutzer Feedback zu geben, ist es wichtig eindeutige und genaue Fehlerme
 
 \section{Operatoren}
 \label{section_analyse_operatoren}
-Die Sprache benötigt drei verschiedene Arten von Operatoren: logische Operatoren, Vergleichsoperatoren und arithmetische Operatoren. Zusätzlich zu den drei Typen von Operatoren gibt es noch Funktionsaufrufe, welche insofern als Operatoren zu sehen sind, da sie sich durch Argumente (Operanden) und Rückgabewerte wie solche verhalten.
+Die Sprache benötigt drei verschiedene Arten von Operatoren: logische Operatoren, Vergleichsoperatoren und arithmetische Operatoren. Zu\-sätz\-lich zu den drei Typen von Operatoren gibt es noch Funktionsaufrufe, welche insofern als Operatoren zu sehen sind, da sie sich durch Argumente (Operanden) und Rückgabewerte wie solche verhalten.
 
 Für die Berechnung von booleschen Werten werden die aussagenlogischen Grundoperatoren  Negation (NOT), Konjunktion (AND), und Disjunktion (OR) definiert (Tabelle \ref{tbl_logische_operatoren}). Auf weitere mögliche Operatoren wie Implikation oder Exklusiv-Oder wird verzichtet, um die Komplexität der DSL niedrig zu halten. Werden diese benötigt, können äquivalente Berechnungen mit Hilfe der Grundoperatoren durchgeführt werden. Natürlich ist auch eine Erweiterung der Sprache um weitere Operatoren in nachfolgenden Arbeiten denkbar.
 
@@ -377,7 +379,7 @@ Ergänzend soll --obwohl es sich nicht um Operatoren in eigentlichen Sinne hande
 
 Referenzen auf andere Felder werden aus DSL-Sicht wie Variablen behandelt. Da in der Sprache selbst keine Variablen definiert werden, gibt es auch keine selbst verwaltete Symboltabelle. Dem Interpreter muss allerdings ein Interface zur Verfügung gestellt werden, das Variablennamen auf konkrete Werte abbildet. 
 
-Bei der Referenzierung auf andere Werte können verschiedene Probleme auftreten, die entsprechend behandelt werden müssen. So muss beispielsweie beachtet werden, dass der Wert einer Variable nicht vorhanden sein, oder nicht den erwarteten Typ besitzen könnte. Bei der Integration der Referenzierung muss beachtet werden, dass keine zyklischen Referenzen auftreten.
+Bei der Referenzierung auf andere Werte können verschiedene Probleme auf\-tre\-ten, die ent\-sprech\-end behandelt werden müssen. So muss beispielsweie beachtet werden, dass der Wert einer Variable nicht vorhanden sein, oder nicht den erwarteten Typ besitzen könnte. Bei der Integration der Referenzierung muss beachtet werden, dass keine zyklischen Referenzen auf\-tre\-ten.
 
 
 \section{Funktionsaufrufe}
@@ -389,7 +391,7 @@ Um die Möglichkeiten der DSL zu erweitern, müssen Funktionsaufrufe er\-mög\-l
 \section{Fehlerbehandlung}
 \label{section_analyse_fehlerbehandlung}
 
-Die Fehlerbehandlung ist ein wichtiger Teil einer Sprache, weil sie dazu dient dem User Feedback zu geben, wenn etwas nicht so funktioniert wie erwartet. Dabei ist es wichtig, die Quelle des Fehlers zu identifizieren, um diesen adäquat behandeln zu können. Im Fall der hier zu entwickelnden DSL können die Fehler in drei Bereichen auftreten: in der Syntax eines Statements, in der Semantik oder zur Laufzeit. 
+Die Fehlerbehandlung ist ein wichtiger Teil einer Sprache, weil sie dazu dient dem User Feedback zu geben, wenn etwas nicht so funktioniert wie erwartet. Dabei ist es wichtig, die Quelle des Fehlers zu identifizieren, um diesen adäquat behandeln zu können. Im Fall der hier zu entwickelnden DSL können die Fehler in drei Bereichen auf\-tre\-ten: in der Syntax eines Statements, in der Semantik oder zur Laufzeit. 
 
 \paragraph*{Syntaxfehler}
 Syntaxfehler treten auf, wenn die eingegebenen Statements der DSL nicht der korrekten Syntax entsprechen. 
@@ -400,7 +402,7 @@ Semantische Fehler treten vor allem als Typfehler in ungültigen Statements auf,
 
 \paragraph*{Laufzeitfehler}
 
-Laufzeitfehler treten während der Ausführung eines Statements auf und sind unerwartete Fehler, die nicht durch statische oder semantische Analyse gefunden werden können. Ein klassisches Beispiel ist die Division durch null. Weiters können Laufzeitfehler auch durch ungültige Rückgabewerte, Überschreitung der Wertgrenzen von Typen oder API-Änderungen (Veränderung einer Methode) entstehen.
+Laufzeitfehler treten während der Aus\-führ\-ung eines Statements auf und sind unerwartete Fehler, die nicht durch statische oder semantische Analyse gefunden werden können. Ein klassisches Beispiel ist die Division durch null. Weiters können Laufzeitfehler auch durch ungültige Rückgabewerte, Überschreitung der Wertgrenzen von Typen oder API-Än\-der\-ung\-en (Veränderung einer Methode) entstehen.
 
 
 
@@ -409,11 +411,11 @@ Laufzeitfehler treten während der Ausführung eines Statements auf und sind une
 
 In diesem Kapitel werden die technischen Eigenschaften festgelegt, also die Syntax und Semantik der einzelnen Sprachelemente definiert. Die abstrakten Anforderungen der Analyse werden in konkrete technische Spezifikationen umgewandelt.
 
-Weiters wird auch das Typsystem der Sprache definiert. Wie in Abschnitt \ref{theorie_language_applications} erläutert, setzt sich das Typsystem zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren. Das Typsystem der FXL kann nicht durch die Syntax alleine spezifiziert werden, weshalb ein Typchecker, quasi als Implementierung des Typsystems, notwendig ist.
+Weiters wird auch das Typsystem der Sprache definiert. Wie in Abschnitt \ref{theorie_language_applications} erläutert, setzt sich das Typsystem zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren. Das Typsystem der FXL kann nicht durch die Syntax alleine spezifiziert werden, weshalb ein Typchecker, quasi als Implementierung des Typsystems, not\-wen\-dig ist.
 
 \section{Datentypen}
 
-Die FXL ist statisch typisiert\footnote{Von statischer Typisierung (im Gegensatz zur dynamischen Typisierung) spricht man, wenn die Typüberprüfung bereits beim Übersetzen vorgenommen werden kann. Es kann also ohne Ausführung eines Programms entschieden werden, an welcher Stelle welcher Typ vorkommt.} und definiert vier verschiedene Datentypen:
+Die FXL ist statisch typisiert\footnote{Von statischer Typisierung (im Gegensatz zur dynamischen Typisierung) spricht man, wenn die Typ\-über\-prü\-fung bereits beim Übersetzen vorgenommen werden kann. Es kann also ohne Aus\-führ\-ung eines Programms entschieden werden, an welcher Stelle welcher Typ vorkommt.} und definiert vier verschiedene Datentypen:
 
 \paragraph{Integer}
 
@@ -436,7 +438,7 @@ Beispiele für gültige Werte: 0., 1.5, 2.432, -3.100, -23412., -0.001, ...
 
 Da sich die mit der Java-API mitgelieferten Klassen nicht gut für Datumsberechnungen eignen, wird die Klasse DateTime der Library Joda-Time\cite{wwwJodaTime} verwendet. Diese Bibliothek hat sich als Quasi-Standard in der Java-Welt etabliert.
 
-Datumswerte werden meistens aus den entsprechenden Feldern eines Formulars ausgelesen oder als Rückgabewert einer Funktion verarbeitet, da ein Hardcoding von Datumswerten wenig sinnvoll erscheint. Die DSL bietet natürlich trotzdem eine entsprechende Möglichkeit. Das Format ist \texttt{!YYYY-MM-DD}, wahlweise kann auch die Uhrzeit im Format \texttt{!YYYY-MM-DD-hh:mm:ss} angegeben werden, wobei die Angabe der Sekunden wiederum optional ist.
+Datumswerte werden meistens aus den ent\-sprech\-enden Feldern eines Formulars ausgelesen oder als Rückgabewert einer Funktion verarbeitet, da ein Hardcoding von Datumswerten wenig sinnvoll erscheint. Die DSL bietet natürlich trotzdem eine ent\-sprech\-ende Möglichkeit. Das Format ist \texttt{!YYYY-MM-DD}, wahlweise kann auch die Uhrzeit im Format \texttt{!YYYY-MM-DD-hh:mm:ss} angegeben werden, wobei die Angabe der Sekunden wiederum optional ist.
 
 Beispiele für gültige Werte: !1984-12-18, !2011-09-05-11:08, ...
 
@@ -451,7 +453,7 @@ Gültige Werte: \texttt{true}, \texttt{false}.
 
 \section{Operatoren \& semantische Typregeln}
 
-In Abschnitt \ref{section_analyse_operatoren} wurde festgelegt, welche Operatoren für die FXL notwendig sind. Da die Sprache statisch typisiert ist, können Statements ohne Ausführung auf Typsicherheit überprüft werden. Um diese Überprüfung zu ermöglichen, müssen die semantischen Typregeln für alle Operatoren definiert werden (siehe Tabelle \ref{tbl_semantische_typregeln}).
+In Abschnitt \ref{section_analyse_operatoren} wurde festgelegt, welche Operatoren für die FXL not\-wen\-dig sind. Da die Sprache statisch typisiert ist, können Statements ohne Aus\-führ\-ung auf Typsicherheit überprüft werden. Um diese Überprüfung zu ermöglichen, müssen die semantischen Typregeln für alle Operatoren definiert werden (siehe Tabelle \ref{tbl_semantische_typregeln}).
 
 Wie in Tabelle \ref{tbl_semantische_typregeln} ersichtlich, sind die meisten Operatoren überladen. Das bedeutet, dass ein Operator für verschiedene Datentypen definiert sein kann. Auch der aus der Operation resultierende Datentyp hängt von den Typen der Operanden ab. 
 
@@ -525,13 +527,13 @@ Bei einer Erweiterung der Sprache um den Typ String wäre auch eine Typumwandlun
 
 Wie oben erwähnt, können dem Interpreter Container-Klassen übergeben werden, die statische Methoden enthalten, welche mit einer Annotation als FXL-Funktion markiert werden. Mit Hilfe von Reflection\footnote{vgl. http://java.sun.com/developer/technicalArticles/ALT/Reflection/, 5.6.2012} werden die betreffenden Methoden extrahiert und in eine Map gespeichert, die vom Methodennamen auf die tatsächlie Funktion zeigt. 
 
-Beim Aufruf einer Funktion aus der DSL (aber auch bei der semantischen Analyse) wird die entsprechende Methode in der Map gesucht. Ist die Methode vorhanden, werden Anzahl und Typ der etwaigen Parameter überprüft. Stimmt die Signatur der Methode mit den Parametern der DSL überein wird die Methode aufgerufen und der Rückgabewert zurückgegeben.
+Beim Aufruf einer Funktion aus der DSL (aber auch bei der semantischen Analyse) wird die ent\-sprech\-ende Methode in der Map gesucht. Ist die Methode vorhanden, werden Anzahl und Typ der etwaigen Parameter überprüft. Stimmt die Signatur der Methode mit den Parametern der DSL überein wird die Methode aufgerufen und der Rückgabewert zurückgegeben.
 
 
 \section{Fehlerbehandlung}
 \label{section_design_fehlerbehandlung}
 
-Eine gute Fehlerbehandlung ist ein entscheidender Teil einer Sprachdefinition. Im Abschnitt \ref{section_analyse_fehlerbehandlung} im Kapitel Analyse wurden drei Typen von Fehlern identifiziert: syntaktische Fehler, semantische Fehler und Ausführungsfehler. Zusätzlich zu diesen Fehlern muss noch eine vierte Kategorie von Fehlern betrachtet werden: Fehler, die durch die Integration der DSL in ein anderes System auftreten. Diese Kategorie wird Implementierungsfehler benannt.
+Eine gute Fehlerbehandlung ist ein entscheidender Teil einer Sprachdefinition. Im Abschnitt \ref{section_analyse_fehlerbehandlung} im Kapitel Analyse wurden drei Typen von Fehlern identifiziert: syntaktische Fehler, semantische Fehler und Aus\-führ\-ungsfehler. Zu\-sätz\-lich zu diesen Fehlern muss noch eine vierte Kategorie von Fehlern betrachtet werden: Fehler, die durch die Integration der DSL in ein anderes System auf\-tre\-ten. Diese Kategorie wird Implementierungsfehler benannt.
 
 Um die Fehler identifizieren zu können, werden die Fehler  mit einem Code und einer Liste von Parametern versehen. Der Code gibt den Typ und den genauen Fehler an, die Parameter können zusätzliche Informationen liefern. Wird beispielsweise eine Variable nicht gefunden, wird eine Exception mit dem Fehlercode 211 geworfen. Als zusätzliche Information wird der Name der Variable mitgeliefert, um dem Benutzer mitzuteilen, welche Variable in dem Statement nicht gefunden wurde.
 
@@ -559,9 +561,9 @@ Syntaxfehler haben in FXL allgemein das Format 1xx, wobei nur ein einziger Fehle
 
 \paragraph{Semantische Fehler}
 
-Semantische Fehler treten, wie der Name vermuten lässt, bei der semantischen Analyse auf. Diese wird in der FXL im Typechecker vorgenommen. Zusätzlich zu den Typfehlern zählen auch Fehler, die die Variablen und Funktionen betreffen zu den semantischen Fehlern.
+Semantische Fehler treten, wie der Name vermuten lässt, bei der semantischen Analyse auf. Diese wird in der FXL im Typechecker vorgenommen. Zu\-sätz\-lich zu den Typfehlern zählen auch Fehler, die die Variablen und Funktionen betreffen zu den semantischen Fehlern.
 
-Es gäbe auch die Möglichkeit, manche Fehler bei der semantischen Analyse nur als Warning zu verwenden, z.b. wenn eine Variable noch nicht definiert ist. Bei der nochmaligen Überprüfung vor der Ausführung müsste die Variable dann vorhanden sein. Diese Möglichkeit ist aber zu unsicher, der Anwender soll gezwungen sein, nur gültige Formeln in das System einzugeben.
+Es gäbe auch die Möglichkeit, manche Fehler bei der semantischen Analyse nur als Warning zu verwenden, z.b. wenn eine Variable noch nicht definiert ist. Bei der nochmaligen Überprüfung vor der Aus\-führ\-ung müsste die Variable dann vorhanden sein. Diese Möglichkeit ist aber zu unsicher, der Anwender soll gezwungen sein, nur gültige Formeln in das System einzugeben.
 
 \begin{center}
 \begin{tabular}[ht]{|c | p{6cm} | p{2cm}| p{3cm} |}
@@ -595,9 +597,9 @@ Es gäbe auch die Möglichkeit, manche Fehler bei der semantischen Analyse nur a
 \end{center}
 
 
-\paragraph{Ausführungsfehler}
+\paragraph{Aus\-führ\-ungsfehler}
 
-Ausführungsfehler sind jene Fehler, die zur Laufzeit der DSL im Interpreter auftreten. Da der Typechecker unabhängig vom Interpreter arbeitet, muss auf verschiedene Fehler auch während der Ausführung Rücksicht genommen werden. So sind manche Fehler doppelt definiert, allerdings kann durch den Typ der Exception und dem Fehlercode genau festgestellt werden wann bzw. wo der Fehler auftritt.
+Aus\-führ\-ungsfehler sind jene Fehler, die zur Laufzeit der DSL im Interpreter auf\-tre\-ten. Da der Typechecker unabhängig vom Interpreter arbeitet, muss auf verschiedene Fehler auch während der Aus\-führ\-ung Rücksicht genommen werden. So sind manche Fehler doppelt definiert, allerdings kann durch den Typ der Exception und dem Fehlercode genau festgestellt werden wann bzw. wo der Fehler auftritt.
 
 \begin{table}
 \begin{tabular}[ht]{|c | p{6cm} | p{2cm}| p{3cm} |}
@@ -605,9 +607,9 @@ Ausführungsfehler sind jene Fehler, die zur Laufzeit der DSL im Interpreter auf
 	\textbf{Code} & \textbf{Beschreibung} & \textbf{Beispiel} & \textbf{Argumente}\\
 	\hline
   	\hline
-  	3xx  & \multicolumn{3}{|l|}{\textsc{Ausführungsfehler}} \\
+  	3xx  & \multicolumn{3}{|l|}{\textsc{Aus\-führ\-ungsfehler}} \\
   	\hline
-  	300  & Allgemeiner/unbekannter Ausführungsfehler &  & \\
+  	300  & Allgemeiner/unbekannter Aus\-führ\-ungsfehler &  & \\
   	\hline
  	301  & Division durch null & 4.5/0 & Der betreffende Ausdruck \\
   	\hline
@@ -622,15 +624,15 @@ Ausführungsfehler sind jene Fehler, die zur Laufzeit der DSL im Interpreter auf
   	322  & Fehler bei Funktionsaufruf &  & Funktionsname \\
   	\hline
 \end{tabular}
-\caption{Ausführungsfehler}
+\caption{Aus\-führ\-ungsfehler}
 \label{tbl_ausfuhrungsfehler}
 \end{table}
 
-Die Codes der Ausführungsfehler (Tabelle \ref{tbl_ausfuhrungsfehler}) haben das Format 3xx, wobei die Codes 30x Fehler bei der Auswertung betreffen, 31x Fehler mit dem Variable Provider und 32x Fehler beim Funktionsaufruf.
+Die Codes der Aus\-führ\-ungsfehler (Tabelle \ref{tbl_ausfuhrungsfehler}) haben das Format 3xx, wobei die Codes 30x Fehler bei der Auswertung betreffen, 31x Fehler mit dem Variable Provider und 32x Fehler beim Funktionsaufruf.
 
 \paragraph{Implementierungsfehler}
 
-Zusätzlich zu den obigen Fehlern, kann es auch Fehler in der Applikation geben, die die Integration der DSL betreffen. Diese Fehler fallen nicht in die Zuständigkeit der DSL, deshalb werden auch hier keine konkreten Fehler genannt. Es soll nur eine eigene Exceptionklasse zur Verfügung gestellt werden, die allerdings von der Software, in die die DSL im Endeffekt integriert wird nicht, verwendet werden muss. 
+Zu\-sätz\-lich zu den obigen Fehlern, kann es auch Fehler in der Applikation geben, die die Integration der DSL betreffen. Diese Fehler fallen nicht in die Zuständigkeit der DSL, deshalb werden auch hier keine konkreten Fehler genannt. Es soll nur eine eigene Exceptionklasse zur Verfügung gestellt werden, die allerdings von der Software, in die die DSL im Endeffekt integriert wird nicht, verwendet werden muss. 
 
 Diese Fehler betreffen beispielsweise zyklische Abhängigkeiten, Fehler bei der Eingabe etc. (vgl. Abschnitt \ref{integration_fehlerbehandlung} \nameref{integration_fehlerbehandlung}).
 
@@ -662,7 +664,7 @@ Die Grammatik bestimmt auch die Auswertungsreihenfolge in Ausdrücken. Um Klamme
 \captionof{table}{Rangfolge der Operatoren}
 \end{center}
 
-Die ersten drei Klassen betreffen nur die numerischen Tyen Integer und Decimal. Zuerst wird der unäre Minusoperator ausgewertet, dann folgt die bekannte Regel ``Punkt- vor Strichrechnung''. Danach folgen die Vergleichsoperatoren, die auch für den Datumstyp definiert sind (bzw. = und != sind auch für boolesche Werte gültig). Für Date, Integer und Decimal ist wichtig, dass die Ausdrücke links und rechts des Vergleichsoperators zuerst ausgewertet werden. Für die folgenden booleschen Operatoren verhält sich dies genau umgekehrt\footnote{z.B. sollen in der Formel \texttt{= 1+3 $<=$ 2+2} zuerst die Teilformeln neben dem Vergleichsoperator \texttt{(1+3)} bzw. \texttt{(2+2)} ausgewertet werden, danach soll das Ergebnis dieser Formeln verglichen werden: \texttt{1+3} $\rightarrow$ \texttt{4}, \texttt{2+2} $\rightarrow$ \texttt{4}, \texttt{4 $<=$ 4} $\rightarrow$ \texttt{true} . Für boolesche Operatoren dreht sich dies genau um: so soll bei der Formel \texttt{= true=true AND false=false} zuerst die Ausdrücke um den Vergleichsoperator ausgeführt werden: \texttt{true = true} $\rightarrow$ \texttt{true}, \texttt{false = false} $\rightarrow$ \texttt{true}, \texttt{true AND true} $\rightarrow$ \texttt{true}. Möchte man dies verhindern, wäre eine entsprechende Klammerung notwendig: \texttt{= true = (( true AND false) = false)}}. Die Ausführungsreihenfolge hängt also nicht nur von den Operatoren, sondern auch vom Datentyp ab.
+Die ersten drei Klassen betreffen nur die numerischen Tyen Integer und Decimal. Zuerst wird der unäre Minusoperator ausgewertet, dann folgt die bekannte Regel ``Punkt- vor Strichrechnung''. Danach folgen die Vergleichsoperatoren, die auch für den Datumstyp definiert sind (bzw. = und != sind auch für boolesche Werte gültig). Für Date, Integer und Decimal ist wichtig, dass die Ausdrücke links und rechts des Vergleichsoperators zuerst ausgewertet werden. Für die folgenden booleschen Operatoren verhält sich dies genau umgekehrt\footnote{z.B. sollen in der Formel \texttt{= 1+3 $<=$ 2+2} zuerst die Teilformeln neben dem Vergleichsoperator \texttt{(1+3)} bzw. \texttt{(2+2)} ausgewertet werden, danach soll das Ergebnis dieser Formeln verglichen werden: \texttt{1+3} $\rightarrow$ \texttt{4}, \texttt{2+2} $\rightarrow$ \texttt{4}, \texttt{4 $<=$ 4} $\rightarrow$ \texttt{true} . Für boolesche Operatoren dreht sich dies genau um: so soll bei der Formel \texttt{= true=true AND false=false} zuerst die Ausdrücke um den Vergleichsoperator ausgeführt werden: \texttt{true = true} $\rightarrow$ \texttt{true}, \texttt{false = false} $\rightarrow$ \texttt{true}, \texttt{true AND true} $\rightarrow$ \texttt{true}. Möchte man dies verhindern, wäre eine ent\-sprech\-ende Klammerung not\-wen\-dig: \texttt{= true = (( true AND false) = false)}}. Die Aus\-führ\-ungsreihenfolge hängt also nicht nur von den Operatoren, sondern auch vom Datentyp ab.
 
 In der Grammatik werden nicht nur die syntaktischen Regeln für den Parser festgelegt, sondern auch die lexikalischen Regeln. Diese werden in einer den regulären Ausdrücken ähnlichen Notation angegeben.
 
@@ -733,17 +735,21 @@ functionCall
 
 
 
-\section{Typüberprüfung}
+\section{Typ\-über\-prü\-fung}
 
-Da die DSL statisch typisiert ist, ist es möglich, die Typechecks ohne Ausführung eines Statements zu implementieren. In der Implementierung der DSL zeigt sich, das es so möglich ist, die Statements der DSL bei der Eingabe zu analysieren und, falls Fehler auftreten, entsprechend Feedback zu geben\footnote{vgl. Abschnitt \ref{implementierung_dsl_eingabe}}. Die Typüberprüfung tritt in diesem Fall an die Stelle der semantischen Analyse (vgl. Abbildung \ref{abb_language_application_klassisch}). Es findet also neben der reinen Typüberprüfung noch andere semantische Überprüfungen statt (Analyse der Variablen bzw. Funktionen, vgl. Abschnitt \ref{section_implementierung_variablen_und_funktionen}).
+Da die DSL statisch typisiert ist, ist es möglich, die Typechecks ohne Aus\-führ\-ung eines Statements zu implementieren. In der Implementierung der DSL zeigt sich, das es so möglich ist, die Statements der DSL bei der Eingabe zu analysieren und, falls Fehler auf\-tre\-ten, ent\-sprech\-end Feedback zu geben\footnote{vgl. Abschnitt \ref{implementierung_dsl_eingabe}}. Die Typ\-über\-prü\-fung tritt in diesem Fall an die Stelle der semantischen Analyse (vgl. Abbildung \ref{abb_language_application_klassisch}). Es findet also neben der reinen Typ\-über\-prü\-fung noch andere semantische Überprüfungen statt (Analyse der Variablen bzw. Funktionen, vgl. Abschnitt \ref{section_implementierung_variablen_und_funktionen}).
 
 \subsection{Typen im Interpreter}
 
 Intern arbeitet der Interpreter mit Wrapper-Objekten (Abbildung \ref{figure_result_wrapper}), die das Ergebnis einer Operation oder eines Ausdrucks beinhalten. Die Wrapper bestehen aus einem Typ und dem Wert des Ergebnisses. Der Typ ist als Java Aufzählungstyp \texttt{enum} definiert und enthält die Werte \texttt{DECIMAL}, \texttt{INTEGER}, \texttt{DATE} und \texttt{BOOLEAN}.
 
 \begin{figure}[h]
-\includegraphics[scale=0.7]{figures/uml_result_classes}
+\begin{center}
+\includegraphics[scale=0.5]{figures/uml_result_classes_neu}
+\end{center}
+
 \caption{Wrapping der Rückgabewerte}
+
 \label{figure_result_wrapper}
 \end{figure}
 
@@ -756,7 +762,7 @@ Der Typüberprüfer arbeitet den AST mit einem rekursiven depth-first Ansatz ab 
 
 Beispielsweise können die binären booleschen Operatoren AND und OR nur Operanden des Typs BOOLEAN verarbeiten(Funktion \texttt{checkBinaryBoolean} in Listing \ref{listing_check_binary_boolean}). Liefert einer der Kindknoten einen anderen Typ zurück, wird eine Exception geworfen. Wenn beide Kindknoten gültige Werte liefern, wird wie erwartet der Datentyp BOOLEAN zurückgegeben.
 
-\begin{lstlisting}[float = htbp,caption={Typüberprüfung der binären booleschen Operatoren},label=listing_check_binary_boolean]
+\begin{lstlisting}[float = htbp,caption={Typ\-über\-prü\-fung der binären booleschen Operatoren},label=listing_check_binary_boolean]
 private ResultType checkBinaryBoolean(Tree node)
                                  throws FXLException {
 	ResultType leftType = check(node.getChild(0));
@@ -774,7 +780,7 @@ private ResultType checkBinaryBoolean(Tree node)
 }
 \end{lstlisting}	
 
-Wie in Tabelle \ref{tbl_semantische_typregeln} ersichtlich, kann der Typ des Rückgabewertes auch von den Typen der Operanden abhängen. Auch die Typen von Variablen und Funktionen werden vom Typüberprüfer evaluiert. Variablenprovider und der Functionmanager bieten dafür entsprechende Methoden an (Abschnitt \ref{section_implementierung_variablen_und_funktionen}).
+Wie in Tabelle \ref{tbl_semantische_typregeln} ersichtlich, kann der Typ des Rückgabewertes auch von den Typen der Operanden abhängen. Auch die Typen von Variablen und Funktionen werden vom Typüberprüfer evaluiert. Variablenprovider und der Functionmanager bieten dafür ent\-sprech\-ende Methoden an (Abschnitt \ref{section_implementierung_variablen_und_funktionen}).
 
 Normalerweise wäre es von Vorteil, wenn der Typüberprüfer die Überprüfung nach einem gefundenen Fehler fortsetzt, um mehrere Fehler in einem Durchgang melden zu können. In diesem Fall wird darauf verzichtet, da davon ausgegangen wird, das der Anwender kein geübter Programmierer ist, der mit mehreren Fehlermeldungen gleichzeitig umgehen kann.
 
@@ -784,7 +790,12 @@ Normalerweise wäre es von Vorteil, wenn der Typüberprüfer die Überprüfung n
 Variablen und Funktionen sind in FXL Konzepte, die nicht innerhalb der Sprache definiert werden, sondern in eigenen Komponenten, auf die der Interpreter bzw. Typüberprüfer zugreifen kann (Abbildung \ref{figure_dsl_overview}). 
 
 \begin{figure}[h]
-\includegraphics[scale=0.7]{figures/uml_dsl_overview}
+\begin{center}
+ 
+\includegraphics[scale=0.5]{figures/uml_dsl_overview_neu}
+
+\end{center}
+
 \caption{Abhängigkeiten der DSL Implementierung}
 \label{figure_dsl_overview}
 \end{figure}
@@ -793,7 +804,7 @@ Variablen und Funktionen sind in FXL Konzepte, die nicht innerhalb der Sprache d
 
 \subsection{Variable Provider}
 
-Der Variable Provider ist eine optionale Komponente, der nur dann notwendig ist, wenn der Interpreter versucht, Ausdrücke mit Variablen zu evaluieren. Wie der Name nahelegt, ist dieser für das Lookup der Variablen bzw. deren Typ zuständig. Der Variable Provider ist als einfaches Interface mit zwei Methoden definiert, das abhängig von tatsächlichen Einsatzzweck der DSL implementiert werden kann.
+Der Variable Provider ist eine optionale Komponente, der nur dann not\-wen\-dig ist, wenn der Interpreter versucht, Ausdrücke mit Variablen zu evaluieren. Wie der Name nahelegt, ist dieser für das Lookup der Variablen bzw. deren Typ zuständig. Der Variable Provider ist als einfaches Interface mit zwei Methoden definiert, das abhängig von tatsächlichen Einsatzzweck der DSL implementiert werden kann.
 
 Das Interface definiert zwei Methoden:
 
@@ -809,20 +820,20 @@ Je nach Einsatzgebiet und Implementierung kann das Interface dazu verwendet werd
 
 \subsection{Functionmanager}
 
-Der Functionmanager ist im Gegensatz zum Variable Provider fest in FXL integriert. Um Funktionen hinzuzufügen, können Java-Klassen, die entsprechend annotierte Methoden enthalten, erstellt werden. Der Interpreter enthält Methoden zum Hinzufügen und Entfernen socher Containerklassen. 
+Der Functionmanager ist im Gegensatz zum Variable Provider fest in FXL integriert. Um Funktionen hinzuzufügen, können Java-Klassen, die ent\-sprech\-end annotierte Methoden enthalten, erstellt werden. Der Interpreter enthält Methoden zum Hinzufügen und Entfernen socher Containerklassen. 
 
-Beim ersten Methodenaufruf oder Typcheck werden alle Functioncontainer auf entsprechend annotierte Methoden gescannt, die dann in einer Hashmap gespeichert werden.
+Beim ersten Methodenaufruf oder Typcheck werden alle Functioncontainer auf ent\-sprech\-end annotierte Methoden gescannt, die dann in einer Hashmap gespeichert werden.
 
-\subsubsection{Typüberprüfung}
+\subsubsection{Typ\-über\-prü\-fung}
 
-Bei der Typüberprüfung während der semantischen Analyse muss überprüft werden, ob der Rückgabetyp sowie die Typen der Argumente im DSL-Statement auch den tatsächlich definierten Typen entsprechen oder mit diesen Kompatibel sind. Um dies im Typüberprüfer erledigen zu können, wird die Signatur der Methode abgefragt. Die Signatur einer Funktion besteht aus dem Namen, dem Rückgabetyp und den Typen der Argumente in der korrekten Reihenfolge\footnote{vgl. auch die Problemstellung der Impliziten Typumwandlung, Abschnitt \ref{section_design_funktionen} }.
+Bei der Typ\-über\-prü\-fung während der semantischen Analyse muss überprüft werden, ob der Rückgabetyp sowie die Typen der Argumente im DSL-Statement auch den tatsächlich definierten Typen entsprechen oder mit diesen Kompatibel sind. Um dies im Typüberprüfer erledigen zu können, wird die Signatur der Methode abgefragt. Die Signatur einer Funktion besteht aus dem Namen, dem Rückgabetyp und den Typen der Argumente in der korrekten Reihenfolge\footnote{vgl. auch die Problemstellung der Impliziten Typumwandlung, Abschnitt \ref{section_design_funktionen} }.
 
 
 \subsubsection{Methodenaufruf}
 
 Beim Aufruf einer Funktion in der FXL wird deren Name sowie, wenn vorhanden, die Argumente an den Functionmanager übergeben. Dieser liest die tatsächlichen Werte aus den übergebenen Wrapper-Objekten aus und versucht, die Java-Methode, die der FXL-Funktion zugeordnet ist, mit den ausgelesenen Wertenaufzurufen.
 
-Wenn der Methodenaufruf erfolgreich war, wird der Rückgabewert wieder in einen \texttt{Result}-Untertyp gewrappt und an den Interpreter zurückgegeben. Wenn der Methodenaufruf nicht erfolgreich war, wird eine entsprechende Exception geworfen\footnote{vgl. Fehlercodes in Tabelle \ref{tbl_ausfuhrungsfehler} \nameref{tbl_ausfuhrungsfehler}}.
+Wenn der Methodenaufruf erfolgreich war, wird der Rückgabewert wieder in einen \texttt{Result}-Untertyp gewrappt und an den Interpreter zurückgegeben. Wenn der Methodenaufruf nicht erfolgreich war, wird eine ent\-sprech\-ende Exception geworfen\footnote{vgl. Fehlercodes in Tabelle \ref{tbl_ausfuhrungsfehler} \nameref{tbl_ausfuhrungsfehler}}.
 
 \section{Interpreter}
 \label{design_interpreter}
@@ -833,13 +844,18 @@ Eine Besonderheit sind null-Werte. Diese treten auf, wenn ein referenziertes For
 
 \section{Fehlerbehandlung}
 
-Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse FXLException definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
-
 \begin{figure}[ht]
-\includegraphics[scale=0.7]{figures/uml_exception_hierarchy}
+\begin{center}
+\includegraphics[scale=0.5]{figures/uml_exception_hierarchy_neu}
+\end{center}
+
 \caption{Exception Hierarchie}
 \label{abb_exception_hierarchie}
 \end{figure}
+
+Die Fehlerbehandlung erfolgt wie in Java üblich über Exceptions. Als Grundtyp wird die abstrakte Klasse FXLException definiert. Von ihr leiten sich die konkreten Exceptionklassen \texttt{FXLSyntaxException}, \texttt{FXLSemanticException}, \texttt{FXLRuntimeException} und \texttt{FXLImplementationException} ab, die den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Arten von Fehlern entsprechen. Die Fehlerklassen sind, im Gegensatz zu den anderen Klassen der DSL, mit dem Prefix `FXL' versehen, um eine Verwechslung mit vorhandenen Java-Klassen (z.B. \texttt{java.\-lang.\-Runtime\-Exception}) zu verhindern. Eine Exception enthält einen Fehlercode, eine textuelle Fehlermessage und optional ein oder mehrere Objekte, die zusätzliche Informationen zum Fehler beinhalten (vgl. Abbildung \ref{abb_exception_hierarchie}).
+
+
 
 
 \chapter{Test}
@@ -856,7 +872,7 @@ In diesem Kapitel werden zuerst die theoretischen und methodischen Grundlagen au
 Das Testen von Software ist genau wie die entstehenden Produkte sehr facettenreich. Spillner und Linz definieren den Begriff Testen wie folgt:
 
 \begin{myquote}
-Unter dem Test von Software verstehen wir die stichprobenartige Ausführung eines Testobjekts, die zu dessen Überprüfung dienen soll. Dazu müssen die Randbedingungen für die Ausführung des tests festgelegt sein. Über einen Vergleich zwischen Soll- und Istverhalten wird bestimmt, ob das testobjekt die geforderten Eigenschaften erfüllt.\cite{SpLi10}
+Unter dem Test von Software verstehen wir die stichprobenartige Aus\-führ\-ung eines Testobjekts, die zu dessen Überprüfung dienen soll. Dazu müssen die Randbedingungen für die Aus\-führ\-ung des tests festgelegt sein. Über einen Vergleich zwischen Soll- und Istverhalten wird bestimmt, ob das testobjekt die geforderten Eigenschaften erfüllt.\cite{SpLi10}
 \end{myquote}
 
 \subsection{Grundsätzliche Einteilung von Tests}
@@ -873,18 +889,18 @@ Tests können auf verschiedenen Ebenen durchgeführt werden. Je nach Literatur w
   \item Systemtest: Testet das Verhalten eines kompletten Systems und sollte deshalb auch in einer dem Produktivsystem ähnlichen oder gleichen Umgebung durchgeführt werden.
 \end{itemize}
 
-Zusätzlich können noch weitere Arten wie Akzeptanztests, Abnahmetests, Regressionstests etc. identifiziert werden.
+Zu\-sätz\-lich können noch weitere Arten wie Akzeptanztests, Abnahmetests, Regressionstests etc. identifiziert werden.
 
 In diesem Teil der Arbeit ist vor allem der Komponententest von Bedeutung. Komponententests können wiederum in White- und Blackbox Tests eingeteilt werden. Bei Whitebox-Tests werden die Tests aufgrund der bekannten inneren Struktur einer Komponente designt. Blackbox-Tests testen eine Komponente auf ein spezifiziertes Verhalten.
 
 
 \subsubsection{Arten von Tests}
 
-Softwaretests können nach diversen Kriterien eingeteilt werden. Eine grundsätzliche Einteilung ist jene in \emph{Funktionale} und \emph{Nichtfunktionale Tests}. Funktionale Tests überprüfen ``was'' die Software macht. Das heißt, ob die Funktionen den spezifizierten Anforderungen entsprechen. Nichtfunktionale Tests untersuchen ``wie'' die Software arbeitet. Das beinhaltet diverse Qualitätskriterien wie Performance, Wartbarkeit, Portierbarkeit, Sicherheit, Usability etc.
+Softwaretests können nach diversen Kriterien eingeteilt werden. Eine grund\-sätz\-liche Einteilung ist jene in \emph{Funktionale} und \emph{Nichtfunktionale Tests}. Funktionale Tests überprüfen ``was'' die Software macht. Das heißt, ob die Funktionen den spezifizierten Anforderungen entsprechen. Nichtfunktionale Tests untersuchen ``wie'' die Software arbeitet. Das beinhaltet diverse Qua\-li\-täts\-kri\-ter\-ien wie Performance, Wartbarkeit, Portierbarkeit, Sicherheit, Usability etc.
 
 Tests können auch nach dem Grad der Automatisierung eingeteilt werden. Hier wird zwischen manuellen und automatisierten Tests unterschieden. Manuelles Testing ist vor allem für graphische User Interfaces und Software auf mobilen Endgeräten relevant.
 
-Weiters können Tests auch durch die Ausführung der Software unterschieden werden. Tests, bei denen die Software nicht zur Ausführung kommt, werden \emph{statische Tests} genannt. Statische Methoden sind vor allem Code Reviews, die manuell von Entwicklern durchgeführt werden, und Tools zur Codeanalyse. Wenn die Software beim Testing zur Ausführung kommt, spricht man von \emph{dynamischen Tests}.
+Weiters können Tests auch durch die Aus\-führ\-ung der Software unterschieden werden. Tests, bei denen die Software nicht zur Aus\-führ\-ung kommt, werden \emph{statische Tests} genannt. Statische Methoden sind vor allem Code Reviews, die manuell von Entwicklern durchgeführt werden, und Tools zur Codeanalyse. Wenn die Software beim Testing zur Aus\-führ\-ung kommt, spricht man von \emph{dynamischen Tests}.
 
 
 
@@ -910,7 +926,7 @@ Das Erstellen von Testfällen für die FXL erweist sich als sehr umfangreich, we
  \item und Kombinationen der obigen mit Klammerausdrücken
 \end{itemize}
 
-abdecken. Zusätzlich muss beachtet werden, dass einige Operatoren überladen sind und daher mit verschiedenen Kombinationen von Datentypen getestet werden (siehe Beispiel in Listing \ref{listing_example_test_case}). Auch verschiedene Eigenschaften der Sprache wie Kommutativ- oder Assoziativgesetz sowie die Rangfolge der Operatoren werden getestet.
+abdecken. Zu\-sätz\-lich muss beachtet werden, dass einige Operatoren überladen sind und daher mit verschiedenen Kombinationen von Datentypen getestet werden (siehe Beispiel in Listing \ref{listing_example_test_case}). Auch verschiedene Eigenschaften der Sprache wie Kommutativ- oder Assoziativgesetz sowie die Rangfolge der Operatoren werden getestet.
 
 Weiters müssen Testfälle mit fehlerhaften Statements erstellt werden, um das korrekte Verhalten der Sprache in Hinsicht auf Fehlermeldungen zu prüfen.\\
 
@@ -947,17 +963,17 @@ public void testSimpleMult() throws FXLException {
 
 \subsection{Testdaten}
 
-Um sinvolle Tests zu erstellen, ist es notwendig gute Testdaten zu finden, mit denen die Tests ausgeführt werden. Es gibt verschiedene Verfahren, um Testdaten für Testfälle zu bestimen.
+Um sinvolle Tests zu erstellen, ist es not\-wen\-dig gute Testdaten zu finden, mit denen die Tests ausgeführt werden. Es gibt verschiedene Verfahren, um Testdaten für Testfälle zu bestimen.
 
 Für System-, Integrations- und Abnahmetests eignen sich definierte Anwendungsfälle, die im Test in Hinsicht auf funktionale und nichtfunktionale Kriterien ausgeführt werden können.
 
-Auf Komponentenebene sind die klassischen Verfahren die Äquivalenzklassenbildung und Grenzwertanalyse. Die Äquivalenzklassenbildung versucht, Klassen von Testwerten zu bestimmen, die ein bestimmtes Verhalten hervorrufen. Mit Hilfe der Grenzwertanalyse werden Werte ermittelt, die die Fallunterscheidungen an den Grenzen der Äquivalenzklassen untersuchen sollen. Die Grenzwertanalyse kann also als Erweiterung der Äquivalenzklassenbildung gesehen werden.
+Auf Komponentenebene sind die klassischen Verfahren die Äqui\-va\-lenz\-klas\-sen\-bil\-dung und Grenzwertanalyse. Die Äqui\-va\-lenz\-klas\-sen\-bil\-dung versucht, Klassen von Testwerten zu bestimmen, die ein bestimmtes Verhalten hervorrufen. Mit Hilfe der Grenzwertanalyse werden Werte ermittelt, die die Fallunterscheidungen an den Grenzen der Äqui\-va\-lenz\-klas\-sen untersuchen sollen. Die Grenzwertanalyse kann also als Erweiterung der Äqui\-va\-lenz\-klas\-sen\-bil\-dung gesehen werden.
 
-
+Für den Test der FXL wurden diverse Statements erstellt, die die oben erwähnten Testfälle abdecken. Äqui\-va\-lenz\-klas\-sen sind in Listing \ref{listing_example_test_case} die verschiedenen Datentypen. Das Statement \texttt{=0.5*0.5} steht hierbei für die Multiplikation zweier Zahlen der Äqui\-va\-lenz\-klas\-se ``Gleitkommazahlen''. Es wir getestet, ob der Multiplikations-Operator mit Gleitkommazahlen funktioniert. Grenzwerte -- im Sinne des Softwaretests -- für Gleitkommazahlen sind die positiven und negativen Wertgrenzen der Datentypen, Werte nahe Null bzw. Null, oder Werte mit einer gewissen Anzahl von Nachkommazahlen.
 
 \subsection{Testdriven Development}
 
-Die Technik des Testdriven Development (TDD) erfordert vom Entwickler, automatisierte Tests bereits vor der Implementierung zu erstellen\cite{Beck03}. Dies führt dazu, dass manche Aspekte, die während der Programmierung unter Umständen nicht beachtet werden, bereits durch Testfälle abgedeckt werden. Ein weiterer Vorteil ist, dass die Software von vorn herein ein testbares Design erhält, das umständliche Änderungen für Tests im Nachhinein vermeidet.
+Die Technik des Testdriven Development (TDD) erfordert vom Entwickler, automatisierte Tests bereits vor der Implementierung zu erstellen\cite{Beck03}. Dies führt dazu, dass manche Aspekte, die während der Programmierung unter Umständen nicht beachtet werden, bereits durch Testfälle abgedeckt werden. Ein weiterer Vorteil ist, dass die Software von vorn herein ein testbares Design erhält, das umständliche Än\-der\-ung\-en für Tests im Nachhinein vermeidet.
 
 Die Aufgabenstellung der DSL eignet sich hervorragend für die Testgetriebene Entwicklung durch Unit-Tests. Die Statements, die vom Interpreter verarbeitet werden sollen, liegen von vornhinein fest. Die Statements bestehen aus diversen Kombinationen von Operatoren mit Werten verschiedener Datentypen. Diese Kombinationen sollen teilweise durch Klammerung verändert werden und in ihrer Länge variieren.
 

@@ -3,7 +3,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Klassischer Aufbau einer Language Application: Compiler (linker Zweig) und Interpreter (rechter Zweig)}}{15}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Vergleich der Parse Tree Formate a) Concrete Syntax Tree(CST) und b) Abstract Syntax Tree(AST) f\IeC {\"u}r den Ausdruck x=(a+b)*c}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Concrete Syntax Tree (CST). Der CST ist ein Baum, der die Ableitungsregeln der Grammatik wiederspiegelt.}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Abstract Syntax Tree (AST). Der AST ist ein Baum, der die f\IeC {\"u}r den Interpreter notwendigen Knoten enth\IeC {\"a}lt.}}{17}{figure.3.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Workflow eines Parser Generators (blau).}}{23}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces a) Aufbau des AST bei Inline-Notation. b) Aufbau des AST bei Rewrite-Notation}}{27}{figure.4.2}
@@ -15,21 +16,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Wrapping der R\IeC {\"u}ckgabewerte}}{61}{figure.9.1}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Abh\IeC {\"a}ngigkeiten der DSL Implementierung}}{62}{figure.9.2}
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Exception Hierarchie}}{64}{figure.9.3}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Wrapping der R\IeC {\"u}ckgabewerte}}{62}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Abh\IeC {\"a}ngigkeiten der DSL Implementierung}}{63}{figure.9.2}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Exception Hierarchie}}{65}{figure.9.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Erstellen eines neuen Formulars}}{75}{figure.11.1}
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Ausf\IeC {\"u}llen des neuen Formulars}}{76}{figure.11.2}
-\contentsline {figure}{\numberline {11.3}{\ignorespaces \IeC {\"U}bersicht \IeC {\"u}ber die 3-Tier Architektur}}{77}{figure.11.3}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Erstellen eines neuen Formulars}}{76}{figure.11.1}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Ausf\IeC {\"u}llen des neuen Formulars}}{77}{figure.11.2}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces \IeC {\"U}bersicht \IeC {\"u}ber die 3-Tier Architektur}}{78}{figure.11.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Datenmodell der Formulare}}{82}{figure.12.1}
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Eingabe der DSL im Formulareditor}}{84}{figure.12.2}
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Baum der Abh\IeC {\"a}ngigkeiten im BMI-Formular}}{86}{figure.12.3}
-\contentsline {figure}{\numberline {12.4}{\ignorespaces Clientseitige L\IeC {\"o}sung}}{89}{figure.12.4}
-\contentsline {figure}{\numberline {12.5}{\ignorespaces Client- und serverseitige Hybridl\IeC {\"o}sung}}{90}{figure.12.5}
-\contentsline {figure}{\numberline {12.6}{\ignorespaces Aus\discretionary {-}{}{}f\IeC {\"u}hr\discretionary {-}{}{}ung am Server}}{91}{figure.12.6}
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Datenmodell der Formulare}}{84}{figure.12.1}
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Eingabe der DSL im Formulareditor}}{86}{figure.12.2}
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Baum der Abh\IeC {\"a}ngigkeiten im BMI-Formular}}{88}{figure.12.3}
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Clientseitige L\IeC {\"o}sung}}{90}{figure.12.4}
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Client- und serverseitige Hybridl\IeC {\"o}sung}}{91}{figure.12.5}
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Aus\discretionary {-}{}{}f\IeC {\"u}hr\discretionary {-}{}{}ung am Server}}{92}{figure.12.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

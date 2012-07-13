@@ -18,20 +18,20 @@ Dieser Abschnitt beschreibt, was eine DSL ist, vergleicht die Vor-, Nachteile un
 
 Dem Begriff Domain Specific Language steht der der General Purpose Language gegenüber. Mit GPLs lassen sich viele unterschiedliche Problemstellungen lösen, die nicht auf eine Branche oder einen Einsatzbereich beschränkt sind. Bekannte Programmiersprachen, die der Kategorie der GPLs zugerechnet werden, sind beispielsweise Java, C/++/\#, Python etc. GPLs sind also allgemeine Programmiersprachen, die nicht auf eine bestimmte Domäne beschränkt sind. Mit Domäne, oder auch Anwendungsdomäne wird ein abgegrenzter Einsatzbereich bezeichnet, der für diesen charakteristische, bzw. eben domänenspezifische, Anforderungen an ein System stellt.
 
-Eine genaue Definition für den Begriff DSL zu finden ist nicht einfach, da die Bezeichnung in der wissenschaftlichen Community im Moment sehr inflationär gebraucht wird\footnote{Bevor sich der Begriff DSL etablierte, wurden domänenspezifische Sprachen oft als ``little languages'' bezeichnet., \cite{VaDe00}}. Eine kompakte Definition einer DSL gibt Martin Fowler in \cite{Fowl05}:
+Eine genaue Definition für den Begriff DSL zu finden ist nicht einfach, da die Bezeichnung in der wissenschaftlichen Community im Moment sehr inflationär gebraucht wird\footnote{Bevor sich der Begriff DSL etablierte, wurden domänenspezifische Sprachen oft als ``little languages'' bezeichnet., \cite{VaDe00}}. Eine kompakte Definition einer DSL gibt Martin Fowler:
 
 \begin{myquote}
-Domain-specific language (noun): a computer programming language of limited expressiveness focused on a particular domain.
+Domain-specific language (noun): a computer programming language of limited expressiveness focused on a particular domain. \cite{Fowl05}
 \end{myquote}
 
-Eine sehr ähnliche, aber detailliertere Definition kommt von Mernik et al. \cite{MeHe05}:
+Eine sehr ähnliche, aber detailliertere Definition kommt von Mernik et al.:
 
 \begin{myquote}
-Domain-specific languages (DSLs) are languages tailored to a specific application domain. They offer substantial gains in expressiveness and ease of use compared with general-purpose programming languages in their domain of application.
+Domain-specific languages (DSLs) are languages tailored to a specific application domain. They offer substantial gains in expressiveness and ease of use compared with general-purpose programming languages in their domain of application. \cite{MeHe05}
 \end{myquote}
 
 
-Ein Unterschied, der ins Auge sticht, ist, dass Fowler die eingeschränkte Ausdrucksstärke ("limited expressiveness") betont, Mernik et al. aber den erheblichen Gewinn an Ausdrucksstärke ("'substantial gains in expressiveness"). Fowler meint damit, dass man durch die Fokussierung auf eine Domain eine Einschränkung des Einsatzbereiches erzwingt. Mernik et al. sehen den Gewinn an Ausdrucksstärke darin, dass mit einem einzelnen Statement in einer DSL mehr ausgesagt werden kann, als mit einem Statement einer GPL, das DSL-Statement ist also ausdrucksstärker.
+Ein Unterschied, der ins Auge sticht, ist, dass Fowler die eingeschränkte Ausdrucksstärke (``limited expressiveness'') betont, Mernik et al. aber den erheblichen Gewinn an Ausdrucksstärke (``substantial gains in expressiveness''). Fowler meint damit, dass man durch die Fokussierung auf eine Domain eine Einschränkung des Einsatzbereiches erzwingt. Mernik et al. sehen den Gewinn an Ausdrucksstärke darin, dass mit einem einzelnen Statement in einer DSL mehr ausgesagt werden kann, als mit einem Statement einer GPL, das DSL-Statement ist also ausdrucksstärker.
 
 Die zweite Definition geht im Unterschied zur ersten auf zwei essentielle Eigenschaften ein: Erstens muss eine DSL genau auf eine bestimmte Domain zugeschnitten sein und zweitens muss sie im Gegensatz zu einer GPL im spezifischen Einsatzbereich einfacher anzuwenden sein.
 
@@ -39,7 +39,7 @@ Ein Grund, warum Fowler in seiner Definition auf die Einfachheit im Gegensatz zu
 
 \subsection{Interne DSL}
 
-Interne DSLs benutzen die Syntax und die Laufzeitumbgebung einer GPL. Oft wird unter der Bezeichnung interner (bzw. embedded) DSL eine ent\-spre\-chen\-de API für eine spezifische Domäne verstanden\footnote{Oft wird in diesem Zusammenhang Bjarne Stroustrup, der Entwickler von C++, zitiert: "Library design is language design"'}.
+Interne DSLs benutzen die Syntax und die Laufzeitumbgebung einer GPL. Oft wird unter der Bezeichnung interner (bzw. embedded) DSL eine ent\-spre\-chen\-de API für eine spezifische Domäne verstanden\footnote{Oft wird in diesem Zusammenhang Bjarne Stroustrup, der Entwickler von C++, zitiert: ``Library design is language design''}.
 Das Problem ist das Mapping des domainspezifischen Problems auf eine GPL. Eine sehr beliebte Möglichkeit, APIs eine gewisse ``sprachähnlichkeit'' zu verabreichen, ist das sogenannte Method Chaining
 \cite{RuBa08}.
 Bei dieser Technik wird das Objekt, auf dem eine Methode aufgerufen wird, von ebendieser Methode wieder zurückgegeben. So können Methodenaufrufe verkettet werden, was sehr intuitive Statements zur Folge haben kann.
@@ -52,7 +52,7 @@ In manchen Sprachen können Sprachfeatures verwendet werden, um die Sprache zu e
 });
 \end{lstlisting}
 
-Eine weitere Möglichkeit, eine interne DSL zu verwenden, bietet die Einbindung einer Laufzeitumgebung einer allgemeinen Programmiersprache in ein Softwaresystem. Eine Methode bietet die Java Plattform mit der Einbettung von verschiedenen Script-Engines(vgl. Abschnitt \ref{section_java_scripting}).
+Eine weitere Möglichkeit, eine interne DSL zu verwenden, bietet die Einbindung einer Laufzeitumgebung einer allgemeinen Programmiersprache in ein Softwaresystem. Eine Methode bietet die Java Plattform mit der Einbettung von verschiedenen Script-Engines (vgl. Abschnitt \ref{section_java_scripting}).
 
 \subsection{Externe DSL} 
 
@@ -74,7 +74,7 @@ Vergleichsmatrix findet sich unter http://www.languageworkbenches.net/index.php?
 
 \section{Vorteile und Nachteile}
 
-Wie bereits erwähnt, können domänenspezifische Sprachen einen erheblichen Gewinn an Produktivität und Wartbarkeit mit sich bringen\cite{VaDe98}. DSLs sind für den Endbenutzer besser zu handhaben. Durch die domänenspezifische Notation und der damit einhergehenden besseren Les- und Schreibbarkeit ist es für Domänenexperten leichter, die Sprache zu verwenden. 
+Domänenspezifische Sprachen können einen erheblichen Gewinn an Produktivität und Wartbarkeit mit sich bringen\cite{VaDe98}. DSLs sind für den Endbenutzer besser zu handhaben. Durch die domänenspezifische Notation und der damit einhergehenden besseren Les- und Schreibbarkeit ist es für Domänenexperten leichter, die Sprache zu verwenden. 
 
 Ein weiterer großer Vorteil ist die Validierung und Optimierung der Sprache auf Domain-Level. Das bedeutet, dass dem Benutzer viel detaillierter Feedback über die eingegebenen Programme und eventuell auftretende Fehler gegeben werden kann, als es eine allgemeine Programmiersprache könnte\cite{VaDe00}.
 
@@ -125,7 +125,7 @@ In diesem Kapitel werden die theoretischen Grundlagen, die zum Verständnis der 
 
 Terence Parr definiert Language Applications nicht nur als Implementierung einer Sprache, sondern ``any program that processes, analyzes, or translates an input file''\cite{Parr10}. Diese allgemeine Definition ist vor allem für DSLs interessant, da diese of mehr  einer Konfigurationssprache als einer richtigen Programmiersprache ähnlich sind. Für das Auswerten von derart ein\-ge\-schränk\-ten Sprachen ist somit auch nicht unbedingt der volle Umfang eines Parsers, Interpreters oder Übersetzers im klassischen Sinne not\-wen\-dig. Im Kontext dieser Arbeit wird nur ein Teil dieser Definition betrachtet, nämlich die Interpretation (im Sinne von Auswertung) von Ausdrücken, in Hinsicht auf erweiterte Konzepte von allgemeinen Language Applications. Darunter fallen in erster Hinsicht Variablen, Funktionen und Datentypen, die in der DSL verwendet werden sollen.
 
-Der klassische Aufbau einer Language Application, wie er auch in diversen Lehrbüchern und Skripten zum Thema Compilerbau beschrieben ist, besteht aus den 4 Phasen lexikalische Analyse, syntaktische Analyse, semantische Analyse, Codeerzeugung, wobei im Falle einer interpretierten Sprache an Stelle der Codeerzeugung ein Laufzeitsystem tritt(Abbildung \ref{abb_language_application_klassisch})\footnote{Bei manchen interpretierten Sprachen wird zuerst Zwischencode erzeugt, der dann vom Interpreter abgearbeitet wird. Auch der AST (Abbildung \ref{abb_ast_vs_cst}) kann als Zwischencode betrachtet werden.}.
+Der klassische Aufbau einer Language Application, wie er auch in diversen Lehrbüchern und Skripten zum Thema Compilerbau beschrieben ist, besteht aus den 4 Phasen lexikalische Analyse, syntaktische Analyse, semantische Analyse, Codeerzeugung, wobei im Falle einer interpretierten Sprache an Stelle der Codeerzeugung ein Laufzeitsystem tritt (Abbildung \ref{abb_language_application_klassisch})\footnote{Bei manchen interpretierten Sprachen wird zuerst Zwischencode erzeugt, der dann vom Interpreter abgearbeitet wird. Auch der AST (Abbildung \ref{abb_beispiel_ast}) kann als Zwischencode betrachtet werden.}.
 
 
 \begin{figure}[h]
@@ -138,12 +138,21 @@ In der Lexikalischen Analyse wird das Programm eingelesen und in Tokens\footnote
 
 Beim Parsing (Syntaktische Analyse) wird versucht, die Tokenfolge den Regeln der zugrundeliegenden Grammatik unterzuordnen. So kann überprüft werden, ob die Eingabe der Syntax der Sprache entspricht. Verschiedene Strategien des Parsens werden in Abschnitt \ref{theorie_parsing_strategien} beschrieben. 
 
-Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den Formaten Concrete Syntax Tree(CST) und Abstract Syntax Tree(AST) unterschieden (Abbildung \ref{abb_ast_vs_cst}). Der CST gibt die der Syntax der Sprache ent\-sprech\-ende Hierarchie der Tokens, die bei der Lexikalischen Analyse identifiziert werden, wieder. Für die Darstellung des AST weren jene Tokens eleminiert, die durch die Struktur des Baumes ihre Bedeutung verlieren\footnote{Im Beispiel in der Abbildung werden etwa die Klammern vor und nach der Addition obsolet, da diese in einem eigenen Subtree dargestellt wird.}.  
+Das Ergebnis der Syntaktischen Analyse kann in einem Parse Tree dargestellt werden. Dabei wird zwischen den Formaten Concrete Syntax Tree (CST) und Abstract Syntax Tree (AST) unterschieden (CST in Abbildung \ref{abb_beispiel_cst}, AST in Abbildung \ref{abb_beispiel_ast}). Der CST gibt die der Grammatik der Sprache und deren Ableitungsregeln ent\-sprech\-ende Hierarchie der Tokens, die bei der Lexikalischen Analyse identifiziert werden, wieder. Für die Darstellung des AST weren jene Tokens eleminiert, die durch die Struktur des Baumes ihre Bedeutung verlieren\footnote{Im Beispiel in der Abbildung werden etwa die Klammern vor und nach der Addition obsolet, da diese in einem eigenen Subtree dargestellt wird. Zusätzlich werden Ableitungsregeln eliminiert, die nur auf die nächste zeigen und keine semantisch relevanten Verknüpfungen beinhalten}.  
 
 \begin{figure}[h]
-\includegraphics[width=\textwidth,scale=0.5]{figures/ast_vs_cst.png}
-\caption{Vergleich der Parse Tree Formate a) Concrete Syntax Tree(CST) und b) Abstract Syntax Tree(AST) für den Ausdruck x=(a+b)*c}
-\label{abb_ast_vs_cst}
+\includegraphics[width=\textwidth,scale=0.2]{figures/cst_beispiel.png}
+\caption{Concrete Syntax Tree (CST). Der CST ist ein Baum, der die Ableitungsregeln der Grammatik wiederspiegelt.}
+\label{abb_beispiel_cst}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{figures/ast_beispiel.png}
+\begin{center}
+\caption{Abstract Syntax Tree (AST). Der AST ist ein Baum, der die für den Interpreter notwendigen Knoten enthält.}
+\end{center}
+
+\label{abb_beispiel_ast}
 \end{figure}
 
 Die Semantische Analyse überprüft Anforderungen an das Programm, die nicht durch die Syntax abgedeckt werden können. Das betrifft vor allem die Überprüfung, ob ein Programm dem Typsystem entspricht. Das Typsystem setzt sich zusammen aus der Definition der vorhandenen Datentypen und den Regeln zur Zuweisung der Typen zu Operatoren (vgl. \cite[S. 426]{AhSe86}). In vielen Programmiersprachen sind einige Operatoren überladen, d.h. sie können mit verschiedenen Datentypen verwendet werden. In der Phase der semantischen Analyse werden die Rückgabetypen aus dem Kontext abgeleitet. Die Typen von Variablen und Funktionen können aus einer Symboltabelle ausgelesen werden, in der Deklarationen derselben gesammelt werden.
@@ -433,7 +442,7 @@ In diesem Kapitel wird eine Über\-sicht über das wissenschaftliche Umfeld dies
 
 Eine Sprache, die sich in wissenschaftlichen Arbeiten oft wiederfindet, ist die Object Constraint Language (OCL)\cite{RiGo98}.Die Object Constraint Language (OCL) ist ein Teil der UML - Spezifikation und wurde ursprünglich für die Modellierung von Klassen- und Sequenzdiagrammen angedacht. Ein weiterer Einsatzort ist die Modellgetriebene Entwicklung. Dort wird OCL etwa im Bereich Transformation von (Meta-) Modellen und Modelchecking verwendet\footnote{vgl. http://www.eclipse.org/modeling/mdt/?project=ocl, 21.3.2012}. Escott et al.\cite{Esco12} setzen die OCL zur Validierung von Webformlaren ein (siehe unten).
 
-Eine weitere Sprache, die einfache Berechnungen und Validierungen er\-mög\-licht, ist die Unified Expression Language (UEL). Diese ist aus den sehr ähnlichen Expression Languages für JavaServer Pages(JSP) und JavaServer Faces(JSF) entstanden. Die UEL kann auf Java-Objekte zugreifen, Werte setzen be\-zieh\-ungs\-wei\-se abfragen und Methoden aufrufen. Eine freie Implementierung ist JUEL\footnote{http://juel.sourceforge.net/, 21.3.2012}. JUEL hat den Vorteil, dass sie außerhalb des Java Server Kontexts für beliebige Anwendungsgebiete verwendet werden kann.
+Eine weitere Sprache, die einfache Berechnungen und Validierungen er\-mög\-licht, ist die Unified Expression Language (UEL). Diese ist aus den sehr ähnlichen Expression Languages für JavaServer Pages(JSP) und JavaServer Faces(JSF) entstanden. Die UEL kann auf Java-Objekte zugreifen, Werte setzen bzw. abfragen und Methoden aufrufen. Eine freie Implementierung ist JUEL\footnote{http://juel.sourceforge.net/, 21.3.2012}. JUEL hat den Vorteil, dass sie außerhalb des Java Server Kontexts für beliebige Anwendungsgebiete verwendet werden kann.
 
 Auf der Java-Plattform entstanden verschiedene Implementierungen von Skriptsprachen, die innerhalb der Anwendung ausgeführt werden können. Zwei der bekanntesten Projekte sind Mozillas Java\-Script-Engine Rhino\cite{wwwRhino} und die Python und Ruby Portierungen Jython bzw. JRuby. Der Java Specification Request JSR-233 definiert eine standardisierte API \cite{JSR-223}, um Skripte in einer Java Anwendung auszuführen und Java-Objekte an die Engine zu binden\footnote{vgl. Abschnitt \ref{section_java_scripting}}.  Seit Java 1.6 stehen einige Scriptengines out-of-the-box zur Verfügung, u.a. Java\-Script, Groovy und Ruby. Programme in Form von Skripts können zur Runtime erstellt und verändert werden. Es können Variablen an die Engine übergeben und im ausführenden Skript verwendet werden. Zu\-sätz\-lich kann auf die gesamte Java API zugegriffen werden. Nach der Aus\-führ\-ung kann wiederum auf die Variablen zugegriffen werden. 
 
