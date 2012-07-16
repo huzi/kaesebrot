@@ -338,9 +338,9 @@ Als Vergleichsoperatoren (Tabelle \ref{tbl_vergleichsoperatoren}) werden `ist gl
   	\hline
   	Operator & Bezeichnung & Beispiel &Ergebnis\\
   	\hline\hline
-  	$ =  $ & ist gleich      & !2011-06-27 = !2011-06-27 & = true \\
+  	$ =  $ & ist gleich      & 2011-06-27 = 2011-06-27 & = true \\
   	$ != $ & ungleich        & 1 != 2                    & = true \\
-  	$ >  $ & größer als    & !2011-06-27 $ >  $ !1998-06-30 & = false \\
+  	$ >  $ & größer als    & 2011-06-27 $ >  $ 1998-06-30 & = false \\
   	$ >= $ & größer gleich & 120.25 $ >=  $ 120.25           & = true \\
   	$ <  $ & kleiner als     & -10 $ < $ 0                   & = true \\
 	$ <= $ & kleiner gleich  & 100 $ <= $ 10.5               & = false \\
@@ -438,9 +438,9 @@ Beispiele für gültige Werte: 0., 1.5, 2.432, -3.100, -23412., -0.001, ...
 
 Da sich die mit der Java-API mitgelieferten Klassen nicht gut für Datumsberechnungen eignen, wird die Klasse DateTime der Library Joda-Time\cite{wwwJodaTime} verwendet. Diese Bibliothek hat sich als Quasi-Standard in der Java-Welt etabliert.
 
-Datumswerte werden meistens aus den ent\-sprech\-enden Feldern eines Formulars ausgelesen oder als Rückgabewert einer Funktion verarbeitet, da ein Hardcoding von Datumswerten wenig sinnvoll erscheint. Die DSL bietet natürlich trotzdem eine ent\-sprech\-ende Möglichkeit. Das Format ist \texttt{!YYYY-MM-DD}, wahlweise kann auch die Uhrzeit im Format \texttt{!YYYY-MM-DD-hh:mm:ss} angegeben werden, wobei die Angabe der Sekunden wiederum optional ist.
+Datumswerte werden meistens aus den ent\-sprech\-enden Feldern eines Formulars ausgelesen oder als Rückgabewert einer Funktion verarbeitet, da ein Hardcoding von Datumswerten wenig sinnvoll erscheint. Die DSL bietet natürlich trotzdem eine ent\-sprech\-ende Möglichkeit. Das Format ist \texttt{YYYY-MM-DD}, wahlweise kann auch die Uhrzeit im Format \texttt{YYYY-MM-DD-hh:mm:ss} angegeben werden, wobei die Angabe der Sekunden wiederum optional ist.
 
-Beispiele für gültige Werte: !1984-12-18, !2011-09-05-11:08, ...
+Beispiele für gültige Werte: 1984-12-18, 2011-09-05-11:08, ...
 
 
 \paragraph*{Boolean}
