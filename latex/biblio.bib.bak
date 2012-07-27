@@ -85,6 +85,16 @@
   note = {http://joda-time.sourceforge.net/}
 }
 
+@MISC{JSR-310,
+  author = {Stephen Colebourne},
+  title = {JSR-000310 Date and Time API (Close of Early Draft Review: 28 March
+	2010)},
+  month = Mar,
+  year = {2010},
+  note = {http://jcp.org/en/jsr/detail?id=310},
+  url = {http://jcp.org/en/jsr/detail?id=310}
+}
+
 @ARTICLE{VaDe98,
   author = {Arie van Deursen and Paul Klint},
   title = {Little languages: little maintenance},

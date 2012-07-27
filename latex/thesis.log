@@ -1,11 +1,12 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.11)  13 JUL 2012 16:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.25)  27 JUL 2012 12:05
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, ngerman, german, german-x-2009-06-19, ngerman-x-2009-06-19, loaded.
+
 (/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
@@ -35,15 +36,10 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `ngerman'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@ngerman = a dialect from \language0
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
-)) (/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+))
+(/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
 Package: ucs 2004/10/17 UCS: Unicode input support
 
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
@@ -59,217 +55,8 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(/usr/share/texmf-texlive/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-)
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/capt-of.sty)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
@@ -433,6 +220,18 @@ LaTeX Font Info:    Try loading font information for U+eur on input line 839.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2009/06/22 v3.00 Euler Roman
 ))
+(/usr/share/texmf-texlive/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2009/05/18 v2.2 Customized lists
+\enit@toks=\toks25
+\labelindent=\skip43
+\enit@outerparindent=\dimen160
+\enitdp@desc=\count103
+)
+(/usr/share/texmf-texlive/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box31
+\fn@width=\dimen161
+)
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -457,14 +256,12 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen160
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\@linkdim=\dimen162
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
@@ -521,10 +318,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count105
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
-\Field@toks=\toks25
+\Fld@menulength=\count106
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+\Field@toks=\toks26
 Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
@@ -536,14 +333,14 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count106
-\c@Item=\count107
-\c@Hfootnote=\count108
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
 )
 *hyperref using driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count109
+\Fld@listcount=\count110
 )
 
 LaTeX Warning: Unused global option(s):
@@ -552,91 +349,70 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux (./frontmatter.aux) (./appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
-
-Package ucs Warning: ***************************
-(ucs)                You seem to have loaded inputencoding utf8
-(ucs)                (LaTeX kernel UTF-8) instead of utf8x (ucs.sty UTF-8).
-(ucs)                Probably you are compiling a document written for a
-(ucs)                pre-august-2004 ucs.sty.
-(ucs)                ***************************
-(ucs)                Please use \usepackage[utf8x]{inputenc} instead of
-(ucs)                \usepackage[utf8]{inputenc}.
-(ucs)                ***************************
-(ucs)                If you should really want to use ucs.sty and kernel's
-(ucs)                utf8.def together, use \usepackage[utf8x,utf8]{inputenc}
-(ucs)                to disable compatibility mode
-(ucs)                ***************************
-(ucs)                Activating compatibility mode.
-(ucs)                ***************************
-(ucs)                 on input line 55.
-
-(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen163
-\scratchbox=\box31
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen164
-\MPnumerator=\count114
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count111
+\scratchdimen=\dimen165
+\scratchbox=\box32
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen166
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks28
 )
-\c@lstlisting=\count115
-Package hyperref Info: Link coloring OFF on input line 55.
+\c@lstlisting=\count116
+Package hyperref Info: Link coloring OFF on input line 58.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count116
+\c@section@level=\count117
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
  (./thesis.out)
 (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box33
 \openout2 = `frontmatter.aux'.
 
  (./frontmatter.tex
-<figures/inso-farbe.pdf, id=411, 260.4721pt x 260.47313pt>
+<figures/inso-farbe.pdf, id=415, 260.4721pt x 260.47313pt>
 File: figures/inso-farbe.pdf Graphic file (type pdf)
 
 <use figures/inso-farbe.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/info-farbe.pdf): PDF inclusio
 n: found PDF version <1.6>, but at most version <1.4> allowed
-<figures/info-farbe.pdf, id=413, 69.63516pt x 69.63516pt>
+<figures/info-farbe.pdf, id=417, 69.63516pt x 69.63516pt>
 File: figures/info-farbe.pdf Graphic file (type pdf)
 
 <use figures/info-farbe.pdf>
-<figures/tu-dt-teil-schw-pos.pdf, id=415, 68.3624pt x 68.37546pt>
+<figures/tu-dt-teil-schw-pos.pdf, id=419, 68.3624pt x 68.37546pt>
 File: figures/tu-dt-teil-schw-pos.pdf Graphic file (type pdf)
 
 <use figures/tu-dt-teil-schw-pos.pdf> [1
@@ -652,682 +428,501 @@ File: figures/tu-dt-teil-schw-pos.pdf Graphic file (type pdf)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.86 \chapter
-             *{Abstract} [1] [2
-
-]
+ [4]
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
-)
-(./kapitel_einleitung.tex [3
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 \chapter
+              *{Kurzfassung} [1
+
+] (./kapitel_einleitung.tex [2
 
 ]
 Kapitel 1.
-[4
+[3
 
 ] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
-) [5]) [6] [7
+) [4]) [5] [6
 
 ]
-(./kapitel_grundlagen.tex [8]
+(./kapitel_grundlagen.tex [7]
 Kapitel 2.
-[9
+[8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
- [10]
-Underfull \hbox (badness 3407) in paragraph at lines 71--71
-\OT1/cmr/m/n/9 sicht []uber Lan-guage Work-bench-es und eine Ver-gle-ichs-ma-tr
-ix find-et sich unter
+ [9]
+Underfull \hbox (badness 3407) in paragraph at lines 70--70
+\OT1/cmr/m/n/9 sicht []uber Lan-gua-ge Work-ben-ches und ei-ne Ver-gleichs-ma-t
+rix fin-det sich un-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 \OT1/cmr/m/n/9 http://www.languageworkbenches.net/index.php?title=LWC2011[]Comp
 arison[]Matrix,
  []
 
-[11]
-Underfull \hbox (badness 2913) in paragraph at lines 81--82
-[]\OT1/cmr/m/n/10.95 DSLs haben nicht nur Vorteile, son-dern auch Nachteile und
- Ein-
+[10]
+Underfull \hbox (badness 2913) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/10.95 DSLs ha-ben nicht nur Vor-tei-le, son-dern auch Nach-tei-l
+e und Ein-
  []
 
-
-Underfull \hbox (badness 1308) in paragraph at lines 85--86
-[]\OT1/cmr/m/n/10.95 Einen weit-eren Nachteil kann der Ver-lust von Per-for-man
-ce und Ef-
- []
-
-[12] [13]
+[11] [12]
 Kapitel 3.
-[14
+[13
 
 ]
-<figures/language_application_klassisch.png, id=723, 513.92pt x 426.59375pt>
+<figures/language_application_klassisch.png, id=728, 513.92pt x 426.59375pt>
 File: figures/language_application_klassisch.png Graphic file (type png)
 
-<use figures/language_application_klassisch.png>
-Underfull \hbox (badness 2662) in paragraph at lines 139--140
-[]\OT1/cmr/m/n/10.95 Beim Pars-ing (Syn-tak-tis-che Anal-yse) wird ver-sucht, d
-ie To-ken-folge
- []
-
-
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 15
- []
-
-[15 <./figures/language_application_klassisch.png>]
-Underfull \hbox (badness 1546) in paragraph at lines 141--142
-[]\OT1/cmr/m/n/10.95 Das Ergeb-nis der Syn-tak-tis-chen Anal-yse kann in einem 
-Parse Tree
- []
-
-<figures/cst_beispiel.png, id=742, 677.53125pt x 473.77pt>
+<use figures/language_application_klassisch.png> [14 <./figures/language_applic
+ation_klassisch.png>]
+<figures/cst_beispiel.png, id=747, 677.53125pt x 473.77pt>
 File: figures/cst_beispiel.png Graphic file (type png)
 
 <use figures/cst_beispiel.png>
-<figures/ast_beispiel.png, id=743, 565.11125pt x 308.15125pt>
+<figures/ast_beispiel.png, id=748, 565.11125pt x 308.15125pt>
 File: figures/ast_beispiel.png Graphic file (type png)
 
 <use figures/ast_beispiel.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 16
- []
-
-[16 <./figures/cst_beispiel.png>]
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 17
- []
-
-[17 <./figures/ast_beispiel.png>]
+[15 <./figures/cst_beispiel.png>] [16 <./figures/ast_beispiel.png>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
-
-Underfull \hbox (badness 1147) in paragraph at lines 190--191
-[]\OT1/cmr/m/n/10.95 Je nach Parsin-gal-go-rith-mus un-ter-liegen die Gram-mati
-ken bes-timmten
- []
-
-
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 18
- []
-
-[18]
-Underfull \hbox (badness 1226) in paragraph at lines 219--220
-\OT1/cmr/m/n/10.95 Memoization ist eine all-ge-meine Op-ti-mierung-stech-nik, u
-m zu ver-wei-
- []
-
-
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 19
- []
-
-[19]
-Overfull \hbox (71.45485pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 3.  THEORETISCHE GRUNDLAGEN ZUM VERST[]ANDNIS DER A
-RBEIT \OT1/cmr/m/n/10.95 20
- []
-
-[20]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+ [17]
+[18] [19]
 Kapitel 4.
-[21
+[20
 
-] <figures/parser_generator_workflow.png, id=792, 657.45625pt x 307.1475pt>
+] <figures/parser_generator_workflow.png, id=797, 657.45625pt x 307.1475pt>
 File: figures/parser_generator_workflow.png Graphic file (type png)
 
 <use figures/parser_generator_workflow.png>
-Overfull \hbox (34.47679pt too wide) in paragraph at lines 269--270
+Overfull \hbox (34.47679pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 2818) in paragraph at lines 279--281
-\OT1/cmr/m/n/10.95 (Con-crete/Ab-stract) Syn-tax Tree-Visualisierung), Doku-men
--ta-tion und
+[21] [22 <./figures/parser_generator_workflow.png>] [23]
+Underfull \hbox (badness 5331) in paragraph at lines 335--335
+[][][]\OT1/cmr/m/n/9 StringTemplate ist ei-ne Tem-pla-te En-gi-ne f[]ur ver-sch
+ie-de-ne Ein-satz-be-rei-che.
  []
 
-[22] [23 <./figures/parser_generator_workflow.png>] [24]
-Underfull \hbox (badness 1210) in paragraph at lines 318--319
-\OT1/cmr/m/n/10.95 sind alle angef[]uhrten Tools grund-s[]atz-lich f[]ur die DS
-L geeignet. Die
- []
-
-
-Underfull \hbox (badness 5331) in paragraph at lines 336--336
-[][][]\OT1/cmr/m/n/9 StringTemplate ist eine Tem-plate En-gine f[]ur ver-schied
-ene Ein-satzbere-iche.
- []
-
-[25]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 359.
+[24]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 358.
 
  (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 359.
- [26]
-<figures/ast_beispiele.png, id=854, 778.91pt x 246.9225pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 358.
+ [25]
+<figures/ast_beispiele.png, id=859, 778.91pt x 246.9225pt>
 File: figures/ast_beispiele.png Graphic file (type png)
 
 <use figures/ast_beispiele.png>
-Overfull \hbox (29.45406pt too wide) in paragraph at lines 377--378
+Overfull \hbox (29.45406pt too wide) in paragraph at lines 376--377
 [][] 
  []
 
-[27 <./figures/ast_beispiele.png>]
-<figures/antlrworks_syntax_diagram.png, id=869, 1019.81pt x 663.47874pt>
+[26 <./figures/ast_beispiele.png>]
+<figures/antlrworks_syntax_diagram.png, id=874, 1019.81pt x 663.47874pt>
 File: figures/antlrworks_syntax_diagram.png Graphic file (type png)
 
-<use figures/antlrworks_syntax_diagram.png>
-<figures/antlrworks_interpreter.png, id=871, 1019.81pt x 663.47874pt>
+<use figures/antlrworks_syntax_diagram.png> [27 <./figures/antlrworks_syntax_di
+agram.png (PNG copy)>]
+<figures/antlrworks_interpreter.png, id=883, 1019.81pt x 663.47874pt>
 File: figures/antlrworks_interpreter.png Graphic file (type png)
 
 <use figures/antlrworks_interpreter.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28 <./figures/antlrworks_syntax_diagram.png (PNG copy)>]
-<figures/antlrworks_debugger.png, id=880, 1132.23pt x 775.89874pt>
+<figures/antlrworks_debugger.png, id=885, 1132.23pt x 775.89874pt>
 File: figures/antlrworks_debugger.png Graphic file (type png)
 
 <use figures/antlrworks_debugger.png>
-Overfull \hbox (36.28644pt too wide) in paragraph at lines 412--413
+Overfull \hbox (36.28644pt too wide) in paragraph at lines 411--412
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 1466) in paragraph at lines 426--426
-[][][]\OT1/cmr/m/n/9 Eine ak-tuelle []Uber-sicht []uber die Plu-g-ins f[]ur di-
-verse IDEs find-et sich unter
+[28 <./figures/antlrworks_interpreter.png (PNG copy)>]
+Underfull \hbox (badness 1466) in paragraph at lines 425--425
+[][][]\OT1/cmr/m/n/9 Eine ak-tu-el-le []Uber-sicht []uber die Plug-ins f[]ur di
+-ver-se IDEs fin-det sich un-ter
  []
 
 
-Overfull \hbox (20.47163pt too wide) in paragraph at lines 426--426
+Overfull \hbox (20.47163pt too wide) in paragraph at lines 425--425
 \OT1/cmr/m/n/9 http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Develo
 pment+Environments| 
  []
 
-[29 <./figures/antlrworks_interpreter.png (PNG copy)>] [30 <./figures/antlrwork
-s_debugger.png (PNG copy)>]
-Overfull \hbox (4.94539pt too wide) in paragraph at lines 432--432
+[29 <./figures/antlrworks_debugger.png (PNG copy)>]
+Overfull \hbox (4.94539pt too wide) in paragraph at lines 431--431
 [][][]\OT1/cmr/m/n/9 vgl. http://www.antlr.org/wiki/display/ANTLR3/How+to+use+a
 nt+with+ANTLR3
  []
 
-[31]
+[30]
 Kapitel 5.
-[32
+[31
 
-] [33] [34]) [35] [36
+] [32] [33]) [34] [35
 
-] (./kapitel_design.tex [37]
+] (./kapitel_design.tex [36]
 Kapitel 6.
-[38
+[37
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 39
- []
-
-[39]
-Underfull \hbox (badness 1783) in paragraph at lines 58--59
-\OT1/cmr/m/n/10.95 das Dateisys-tem oder die Daten-bank zuge-grif-f-en wer-den,
- oder []uber
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Ver-schiedene Skript-Sprachen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/cmr/m/n/10.95 vorhan-den ( JavaScript, Groovy,
+[38]
+Underfull \hbox (badness 1783) in paragraph at lines 60--61
+\OT1/cmr/m/n/10.95 das Datei-sys-tem oder die Da-ten-bank zu-ge-grif-fen wer-de
+n, oder []uber
  []
 
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2004/10/17 UCS: Unicode data U+2100..U+21FF
 )
-Underfull \hbox (badness 1383) in paragraph at lines 81--82
-[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Pro-gramme statt State-ments $\O
-MS/cmsy/m/n/10.95 !$
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 83--84
-[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Eingeschr[]ankte Fehler-be-hand-
-lung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-[]$\OMS/cmsy/m/n/10.95 ^^O$ \OT1/cmr/m/n/10.95 Voller Zu-griff auf Ressourcen
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 85--86
-\OT1/cmr/m/n/10.95 (Dateisys-tem, Daten-bank, statis-che
- []
-
-
-Overfull \hbox (24.0pt too wide) in paragraph at lines 64--97
+Overfull \hbox (24.0pt too wide) in paragraph at lines 66--106
 [][] 
  []
 
 
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 40
+Overfull \hbox (9.21074pt too wide) in paragraph at lines 113--113
+[][][]\OT1/cmr/m/n/9 vgl. http://docs.oracle.com/javase/7/docs/technotes/guides
+/security/permissions.html,
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[][][]\OT1/cmr/m/n/9 Wird z.B. die Va-ria-ble \OT1/cmtt/m/n/9 x \OT1/cmr/m/n/9 
+in Lis-ting []6.2[] nicht ge-setzt, wird ei-ne
  []
 
 
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 41
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[][][]\OT1/cmr/m/n/9 Wird z.B. die Vari-able \OT1/cmtt/m/n/9 x \OT1/cmr/m/n/9 i
-n List-ing []6.2[] nicht geset-zt, wird eine
+Underfull \hbox (badness 4981) in paragraph at lines 169--169
+\OT1/cmtt/m/n/9 javax.el.PropertyNotFoundException \OT1/cmr/m/n/9 ge-wor-fen. U
+m her-aus-zu-fin-den, wel-che Va-
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 160--160
-\OT1/cmtt/m/n/9 javax.el.PropertyNotFoundException \OT1/cmr/m/n/9 gewor-fen. Um
- her-auszufind-en, welche Vari-
- []
-
-
-Overfull \hbox (24.0pt too wide) in paragraph at lines 164--188
+Overfull \hbox (24.0pt too wide) in paragraph at lines 173--205
 [][] 
  []
 
-
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 42
- []
-
-[42]
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 43
- []
-
-[43]
-Overfull \hbox (24.0pt too wide) in paragraph at lines 221--245
+[41] [42]
+Overfull \hbox (24.0pt too wide) in paragraph at lines 238--267
 [][] 
  []
 
-
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 44
- []
-
-[44]
-Overfull \hbox (23.92755pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 KAPITEL 6.  ENTSCHEIDUNG F[]UR DEN ENTWURF EINER NEUEN DSL 
-\OT1/cmr/m/n/10.95 45
- []
-
-[45]
+[43] [44]
 Kapitel 7.
-[46
+[45
 
-] [47] [48] [49] [50] [51]
+] [46] [47] [48] [49] [50]
 Kapitel 8.
-[52
+[51
 
 ]
-Underfull \hbox (badness 1515) in paragraph at lines 441--442
+Underfull \hbox (badness 1515) in paragraph at lines 464--465
 []\OT1/cmr/m/n/10.95 Datumswerte wer-den meis-tens aus den ent-sprech-enden Fel
-dern eines
+-dern ei-nes
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 441--442
-\OT1/cmr/m/n/10.95 mat ist \OT1/cmtt/m/n/10.95 YYYY-MM-DD\OT1/cmr/m/n/10.95 , w
-ahlweise kann auch die Uhrzeit im For-mat
+Underfull \hbox (badness 1810) in paragraph at lines 464--465
+\OT1/cmr/m/n/10.95 tet, da ein Hard-co-ding von Da-tums-wer-ten we-nig sinn-vol
+l er-scheint.
  []
 
-
-Underfull \hbox (badness 1448) in paragraph at lines 496--496
-[]\OT1/cmr/m/n/10.95 Tabelle 8.1: []Semantische Typregeln: Op-er-a-toren mit Da
--ten-typen der
- []
-
-[53] [54] [55]
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 547--557
+[52] [53] [54]
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 570--580
  [] 
  []
 
-[56]
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 569--595
+[55]
+Underfull \hbox (badness 2894) in paragraph at lines 614--614
+[]\OT1/cmr/m/n/10.95 Anzahl ge-for-der-
+ []
+
+
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 593--619
  [] 
  []
 
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
-[]\OT1/cmr/m/n/10.95 Der be-tr-e-f-fende
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
+[]\OT1/cmr/m/n/10.95 Der be-tref-fen-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
 []\OT1/cmr/m/n/10.95 Der ung[]ultige
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--618
-[]\OT1/cmr/m/n/10.95 Variable Provider nicht ge-fun-
- []
-
-
-Overfull \hbox (29.48811pt too wide) in paragraph at lines 605--627
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 633--655
 [][] 
  []
 
-[58]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 683
+[56] [57]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 711
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 683.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 711.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 683.
+(Font)              for symbol `textbackslash' on input line 711.
 
-[59]
+[58]
 Kapitel 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 728--728
-[]\OT1/cmr/m/n/10.95 Funktionsaufruf; An-zahl der Kinder
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+[]\OT1/cmr/m/n/10.95 Funktionsaufruf; An-zahl der Kin-der
  []
 
 
-Overfull \hbox (9.12532pt too wide) in paragraph at lines 707--731
+Overfull \hbox (9.12532pt too wide) in paragraph at lines 735--759
 [][] 
  []
 
-[60
+[59
 
-] <figures/uml_result_classes_neu.png, id=1223, 647.41875pt x 286.06876pt>
+] <figures/uml_result_classes_neu.png, id=1237, 647.41875pt x 286.06876pt>
 File: figures/uml_result_classes_neu.png Graphic file (type png)
 
 <use figures/uml_result_classes_neu.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61]
-Underfull \hbox (badness 2073) in paragraph at lines 763--764
-[]\OT1/cmr/m/n/10.95 Beispielsweise k[]onnen die bin[]aren boo-leschen Op-er-a-
-toren AND und
+[60]
+Underfull \hbox (badness 2073) in paragraph at lines 791--792
+[]\OT1/cmr/m/n/10.95 Beispielsweise k[]onnen die bin[]aren boo-le-schen Ope-ra-
+to-ren AND und
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 763--764
-\OT1/cmr/m/n/10.95 OR nur Operan-den des Typs BOOLEAN ve-r-ar-beit-en (Funk-tio
-n
+Underfull \hbox (badness 7256) in paragraph at lines 791--792
+\OT1/cmr/m/n/10.95 OR nur Ope-ran-den des Typs BOO-LEAN ver-ar-bei-ten (Funk-ti
+-on
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 785--786
-[]\OT1/cmr/m/n/10.95 Normalerweise w[]are es von Vorteil, wenn der Typ[]uberpr[
-]ufer die
+Underfull \hbox (badness 4872) in paragraph at lines 813--814
+[]\OT1/cmr/m/n/10.95 Normalerweise w[]are es von Vor-teil, wenn der Typ[]uberpr
+[]ufer die
  []
 
-[62 <./figures/uml_result_classes_neu.png (PNG copy)>]
-<figures/uml_dsl_overview_neu.png, id=1241, 547.04375pt x 175.65625pt>
+[61 <./figures/uml_result_classes_neu.png (PNG copy)>]
+<figures/uml_dsl_overview_neu.png, id=1255, 547.04375pt x 175.65625pt>
 File: figures/uml_dsl_overview_neu.png Graphic file (type png)
 
-<use figures/uml_dsl_overview_neu.png> [63 <./figures/uml_dsl_overview_neu.png 
-(PNG copy)>] [64]
-<figures/uml_exception_hierarchy_neu.png, id=1277, 808.01875pt x 276.03125pt>
+<use figures/uml_dsl_overview_neu.png> [62 <./figures/uml_dsl_overview_neu.png 
+(PNG copy)>] [63]
+<figures/uml_exception_hierarchy_neu.png, id=1291, 808.01875pt x 276.03125pt>
 File: figures/uml_exception_hierarchy_neu.png Graphic file (type png)
 
 <use figures/uml_exception_hierarchy_neu.png>
-Overfull \hbox (44.00839pt too wide) in paragraph at lines 849--850
+Overfull \hbox (44.00839pt too wide) in paragraph at lines 879--880
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
-[]\OT1/cmr/m/n/10.95 Die Fehler-be-hand-lung er-fol-gt wie in Ja-va []ublich []
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+[]\OT1/cmr/m/n/10.95 Die Feh-ler-be-hand-lung er-folgt wie in Ja-va []ublich []
 uber Ex-cep-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
-\OT1/cmr/m/n/10.95 tions. Als Grund-typ wird die ab-strak-te Klasse \OT1/cmtt/m
-/n/10.95 FXLException
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmr/m/n/10.95 ti-ons. Als Grund-typ wird die ab-strak-te Klas-se \OT1/cmtt
+/m/n/10.95 FXLException
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
-\OT1/cmr/m/n/10.95 definiert. Von ihr leit-en sich die konkreten Ex-cep-tion-kl
-assen
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmr/m/n/10.95 de-fi-niert. Von ihr lei-ten sich die kon-kre-ten Ex-cep-tio
+n-klas-sen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
 \OT1/cmtt/m/n/10.95 FXLSyntaxException\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 
 FXLSemanticException\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 FXLRuntimeExceptio
 n
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 856--857
-\OT1/cmtt/m/n/10.95 Exception\OT1/cmr/m/n/10.95 ) zu ver-hin-dern. Eine Ex-cep-
-tion enth[]alt einen Fehler-code,
+Underfull \hbox (badness 1454) in paragraph at lines 886--887
+\OT1/cmtt/m/n/10.95 Exception\OT1/cmr/m/n/10.95 ) zu ver-hin-dern. Ei-ne Ex-cep
+-ti-on enth[]alt einen Feh-ler-co-de,
  []
 
-[65 <./figures/uml_exception_hierarchy_neu.png (PNG copy)>] [66]
+[64 <./figures/uml_exception_hierarchy_neu.png (PNG copy)>] [65]
 Kapitel 10.
+[66
 
-Underfull \hbox (badness 1014) in paragraph at lines 864--865
-\OT1/cmr/m/n/10.95 Auch wenn die Phase Test in dieser Ar-beit am Ende des En-tw
-ick-
- []
-
-[67
-
-] [68]
-Underfull \hbox (badness 2285) in paragraph at lines 929--930
-[]\OT1/cmr/m/n/10.95 abdecken. Zu-s[]atz-lich muss beachtet wer-den, dass einig
-e Op-er-a-toren
+] [67]
+Underfull \hbox (badness 2285) in paragraph at lines 959--960
+[]\OT1/cmr/m/n/10.95 abdecken. Zu-s[]atz-lich muss be-ach-tet wer-den, dass ei-
+ni-ge Ope-ra-to-ren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--932
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
 
  []
 
-[69] [70]) [71] [72
+[68] [69]) [70] [71
 
-] (./kapitel_implementierung.tex [73]
+] (./kapitel_implementierung.tex [72]
 Kapitel 11.
-[74
+[73
 
-] [75]
-<figures/workflow_neues_formular.png, id=1379, 511.9125pt x 317.185pt>
+] [74]
+<figures/workflow_neues_formular.png, id=1393, 511.9125pt x 317.185pt>
 File: figures/workflow_neues_formular.png Graphic file (type png)
 
-<use figures/workflow_neues_formular.png> [76 <./figures/workflow_neues_formula
+<use figures/workflow_neues_formular.png> [75 <./figures/workflow_neues_formula
 r.png (PNG copy)>]
-<figures/workflow_formular_ausfuellen.png, id=1387, 885.3075pt x 357.335pt>
+<figures/workflow_formular_ausfuellen.png, id=1401, 885.3075pt x 357.335pt>
 File: figures/workflow_formular_ausfuellen.png Graphic file (type png)
 
 <use figures/workflow_formular_ausfuellen.png>
-Overfull \hbox (82.65266pt too wide) in paragraph at lines 75--76
+Overfull \hbox (82.65266pt too wide) in paragraph at lines 77--78
  [] 
  []
 
-[77 <./figures/workflow_formular_ausfuellen.png (PNG copy)>]
-<figures/spics_architektur_neu.png, id=1400, 958.58125pt x 739.76375pt>
+[76 <./figures/workflow_formular_ausfuellen.png (PNG copy)>]
+<figures/spics_architektur_neu.png, id=1414, 958.58125pt x 739.76375pt>
 File: figures/spics_architektur_neu.png Graphic file (type png)
 
 <use figures/spics_architektur_neu.png>
-Overfull \hbox (23.4257pt too wide) in paragraph at lines 97--98
+Overfull \hbox (23.4257pt too wide) in paragraph at lines 99--100
  [] 
  []
 
-[78 <./figures/spics_architektur_neu.png>] [79]
+[77 <./figures/spics_architektur_neu.png>] [78]
 Kapitel 12.
-[80
+[79
 
-] [81]
-Underfull \hbox (badness 5667) in paragraph at lines 175--176
-\OT1/cmr/m/n/10.95 zus[]atzlich muss diese Formel einen boo-leschen Wahrheitswe
-rt als
+] [80]
+Underfull \hbox (badness 1472) in paragraph at lines 177--178
+[]\OT1/cmr/m/n/10.95 Es muss al-so ei-ne For-mel de-fi-niert wer-den, die den C
+ons-traint be-
  []
 
-[82] <figures/uml_datenmodell_neu.png, id=1446, 436.63126pt x 366.36874pt>
+[81] [82]
+<figures/uml_datenmodell_neu.png, id=1470, 436.63126pt x 366.36874pt>
 File: figures/uml_datenmodell_neu.png Graphic file (type png)
 
-<use figures/uml_datenmodell_neu.png> [83] [84 <./figures/uml_datenmodell_neu.p
-ng (PNG copy)>]
-<figures/screenshot_spics_eingabe_neu.png, id=1459, 676.5275pt x 664.4825pt>
+<use figures/uml_datenmodell_neu.png> [83 <./figures/uml_datenmodell_neu.png>]
+[84]
+<figures/screenshot_spics_eingabe_neu.png, id=1501, 676.5275pt x 664.4825pt>
 File: figures/screenshot_spics_eingabe_neu.png Graphic file (type png)
 
-<use figures/screenshot_spics_eingabe_neu.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[85] [86 <./figures/screenshot_spics_eingabe_neu.png>]
-<figures/cycle_bmi_tree.png, id=1492, 480.79625pt x 328.22626pt>
+<use figures/screenshot_spics_eingabe_neu.png> [85 <./figures/screenshot_spics_
+eingabe_neu.png>] [86]
+<figures/cycle_bmi_tree.png, id=1519, 480.79625pt x 328.22626pt>
 File: figures/cycle_bmi_tree.png Graphic file (type png)
 
-<use figures/cycle_bmi_tree.png>
-Underfull \hbox (badness 1412) in paragraph at lines 305--306
-\OT1/cmr/m/n/10.95 Zyk-lus befind-et oder nicht. Im fol-gen-den wird der Al-go-
-rith-mus zur
- []
-
-[87] [88 <./figures/cycle_bmi_tree.png>] [89]
-Underfull \hbox (badness 1178) in paragraph at lines 358--359
-\OT1/cmr/m/n/10.95 Webanwendungen bi-eten heutzu-tage dank Java-Script die M[]o
-glichkeit,
- []
-
-<figures/uml_seq_client_neu.png, id=1522, 593.21625pt x 352.31625pt>
+<use figures/cycle_bmi_tree.png> [87 <./figures/cycle_bmi_tree.png>] [88]
+<figures/uml_seq_client_neu.png, id=1542, 593.21625pt x 352.31625pt>
 File: figures/uml_seq_client_neu.png Graphic file (type png)
 
-<use figures/uml_seq_client_neu.png> [90 <./figures/uml_seq_client_neu.png>]
-<figures/uml_seq_client_hybrid_neu.png, id=1533, 673.51625pt x 433.62pt>
+<use figures/uml_seq_client_neu.png> [89]
+<figures/uml_seq_client_hybrid_neu.png, id=1551, 673.51625pt x 433.62pt>
 File: figures/uml_seq_client_hybrid_neu.png Graphic file (type png)
 
 <use figures/uml_seq_client_hybrid_neu.png>
-Overfull \hbox (10.43507pt too wide) in paragraph at lines 380--381
+Overfull \hbox (10.43507pt too wide) in paragraph at lines 387--388
  [] 
  []
 
-[91 <./figures/uml_seq_client_hybrid_neu.png>]
-<figures/uml_seq_server_neu.png, id=1543, 654.445pt x 368.37625pt>
+[90 <./figures/uml_seq_client_neu.png>]
+<figures/uml_seq_server_neu.png, id=1563, 654.445pt x 368.37625pt>
 File: figures/uml_seq_server_neu.png Graphic file (type png)
 
-<use figures/uml_seq_server_neu.png> [92 <./figures/uml_seq_server_neu.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
-[]\OT1/cmr/m/n/10.95 Suche alle Felder, die einen Vari-ablenna-men, aber keine
+<use figures/uml_seq_server_neu.png> [91 <./figures/uml_seq_client_hybrid_neu.p
+ng>] [92 <./figures/uml_seq_server_neu.png>]
+Underfull \hbox (badness 2486) in paragraph at lines 421--422
+[]\OT1/cmr/m/n/10.95 Suche al-le Fel-der, die einen Va-ria-blen-na-men, aber ke
+i-ne For-
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 414--415
-\OT1/cmr/m/n/10.95 Formel bein-hal-ten. Schreibe alle Werte der Felder in die M
-ap
+Underfull \hbox (badness 3735) in paragraph at lines 421--422
+\OT1/cmr/m/n/10.95 mel bein-hal-ten. Schrei-be al-le Wer-te der Fel-der in die 
+Map
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 423--424
-[]\OT1/cmr/m/n/10.95 Wenn das Formele-ment der Formel einen Vari-ablenna-
+Underfull \hbox (badness 1478) in paragraph at lines 430--431
+[]\OT1/cmr/m/n/10.95 Wenn das For-m-ele-ment der For-mel einen Va-ria-blen-na-
  []
 
-[93] [94]
-Overfull \hbox (5.48813pt too wide) in paragraph at lines 452--476
+[93]
+Overfull \hbox (5.48813pt too wide) in paragraph at lines 459--483
 [][] 
  []
 
-) [95] [96] [97
+[94]) [95] [96
 
 ] (./kapitel_ergebnis.tex
 Kapitel 13.
+[97
+
+]
+Kapitel 14.
 [98
 
 ] [99]
-Kapitel 14.
+Kapitel 15.
 [100
 
 ]) (./thesis.bbl [101] [102
 
-] [103] [104]) [105] (./thesis.lot
-Underfull \hbox (badness 1152) in paragraph at lines 16--16
- [][] [][]\OT1/cmr/m/n/10.95 Semantische Typregeln: Op-er-a-toren mit Da-ten-ty
-pen der 
- []
-
-)
+] [103] [104]) [105] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
  [106
 
-] (./thesis.lof [107
+]
+(./thesis.lof [107
 
 ])
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [108] (./thesis.lol
-Underfull \hbox (badness 1776) in paragraph at lines 11--11
- \OT1/cmr/m/n/10.95 Zuerst wird ein State-ment mit Ganz-zahlen aus-gef[]uhrt, 
- []
-
-)
+ [108] (./thesis.lol)
 \tf@lol=\write7
 \openout7 = `thesis.lol'.
 
@@ -1347,13 +942,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9674 strings out of 495061
- 131856 string characters out of 1182621
- 436647 words of memory out of 3000000
- 11929 multiletter control sequences out of 15000+50000
+ 9700 strings out of 495021
+ 133797 string characters out of 1181035
+ 438972 words of memory out of 3000000
+ 11967 multiletter control sequences out of 15000+50000
  20070 words of font info for 76 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,11n,44p,1517b,1897s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,16n,44p,1528b,1833s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
@@ -1372,9 +967,9 @@ onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on thesis.pdf (116 pages, 1283971 bytes).
+Output written on thesis.pdf (117 pages, 1290036 bytes).
 PDF statistics:
- 2072 PDF objects out of 2073 (max. 8388607)
- 692 named destinations out of 1000 (max. 500000)
- 950 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2099 PDF objects out of 2487 (max. 8388607)
+ 700 named destinations out of 1000 (max. 500000)
+ 958 words of extra memory for PDF output out of 10000 (max. 10000000)
 

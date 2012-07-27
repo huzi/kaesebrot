@@ -44,6 +44,12 @@ Stephen Colebourne.
 \newblock Joda time - java date and time api.
 \newblock http://joda-time.sourceforge.net/.
 
+\bibitem{JSR-310}
+Stephen Colebourne.
+\newblock Jsr-000310 date and time api (close of early draft review: 28 march
+  2010), March 2010.
+\newblock http://jcp.org/en/jsr/detail?id=310.
+
 \bibitem{Esco12}
 Eban Escott, Paul Strooper, Paul King, and Ian Hayes.
 \newblock Model-driven web form validation with uml and ocl.

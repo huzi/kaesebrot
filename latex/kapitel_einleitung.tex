@@ -1,6 +1,6 @@
 \chapter{Einleitung}
 
-Die voriegende Arbeit bewegt sich im Umfeld einer medizinischen Dokumentationssoftware, die zur Eingabe und
+Die vorliegende Arbeit bewegt sich im Umfeld einer medizinischen Dokumentationssoftware, die zur Eingabe und
 Verwaltung von medizinischen Daten verwendet wird. Die Software ist eine Webanwendung, die
 Krankenhäusern, Ärzten und anderen Spezialisten den gemeinsamen Zugriff auf Daten für medizinische
 Studien ermöglicht. Dabei ist jedoch die Anonymität der Studienteilnehmer gesichert, da medizinische Daten
@@ -20,7 +20,7 @@ ist begründet durch das Bedürfnis der Benutzer nach Formularen, die automatisc
 mehrere Formulare durchführen. Solche Formulare wurden bisher als eigenes Plugin realisiert, das statt dem Formular 
 angezeigt wird. Das Plugin ist somit genau auf den konkreten Anwendungsfall zugeschnitten. Der Nachteil dieser
 Lösung ist allerdings, dass für jede Änderung der Sourcecode des Plugins bearbeitet, und die Anwendung 
-neu deployed werden muss. Ein weiterer Nachteil ist, das für jeden weiteren Anwendungsfall mit anderen Berechnungen
+neu deployed werden muss. Ein weiterer Nachteil ist, dass für jeden weiteren Anwendungsfall mit anderen Berechnungen
 ein weiteres Plugin notwendig ist.
 
 Daraus ist die Anforderung nach einer allgemeineren und flexibleren Lösung zur individuellen Modellierung von 
@@ -29,7 +29,7 @@ Berechnungen in Formularen entstanden.
 
 \section{Problemstellung}
 
-Um eine flexible Modellierung von Berechnungen in Formularen zu erreichen, ist es notwendig, einzelne Felder
+Um eine flexible Modellierung von Berechnungen in Formularen zu er\-rei\-chen, ist es notwendig, einzelne Felder
 automatisch durch arithmetische Operationen mit Werten aus anderen Feldern zu berechnen, wie dies aus diversen
 Tabellenkalkulationsprogrammen bekannt ist. Dazu sind zwei verschiedene Arten von Statements notwendig:
 Formeln, die einem Feld einen Wert zuweisen und Bedingungen, die den Wert eines Formularfeldes
@@ -47,7 +47,7 @@ maßgeblich zu verändern.
 
 \section{Zielsetzung}
 
-Das Ziel der Diplomarbeit ist, eine Domain Specific Language (DSL) zu entwickeln. Dazu ist es notwendig, zu definieren, was eine DSL
+Das Ziel der Diplomarbeit ist, eine Domain Specific Language (DSL) zu ent\-wick\-eln. Dazu ist es notwendig, zu definieren, was eine DSL
 ist und was in diesem konkreten Anwendungsfall die Domäne darstellt. Die DSL soll es ermöglichen,
 Beziehungen zwischen Formularfeldern herzustellen. Dabei ist darauf zu achten, dass die Syntax einfach
 und konsistent ist. Die DSL soll in ihrer Syntax der Schreibweise von bekannten Systemen (Taschenrechner,
@@ -62,11 +62,11 @@ jedoch in Konzeption und Design berücksichtigt werden.
 Ein Schwerpunkt der Arbeit ist die Integration der DSL in die bestehende Webanwendung. Dabei wird darauf
 geachtet, dass die Referenzierung der verschiedenen Formularfelder für Formeln, die Werte aus
 mehreren Feldern benötigen, für den Endbenutzer einfach und nachvollziehbar erfolgt. Weiters wird eine
-Möglichkeit geschaffen, die Statements der DSL direkt in der Webanwendung zu den
+Möglichkeit geschaffen, die Statements der DSL direkt in der Web\-an\-wen\-dung zu den
 entsprechenden Formularfeldern einzugeben. Schließlich wird die Ausführung der DSL in die Applikation
 integriert, das heißt, wenn Daten eingegeben werden, müssen die angegeben Formeln berechnet, bzw.
 Bedingungen überprüft werden. Inwieweit die Ausführung client- oder serverseitig geschieht, wird auch im
-Hinblick auf Usability und Antwortzeiten zu betrachtet.
+Hinblick auf Usability und Antwortzeiten betrachtet.
 
 
 
@@ -77,11 +77,11 @@ Die vorliegende Arbeit ist in vier Teile gegliedert.
 
 Der erste Teil, \emph{\nameref{part_grundlagen}}, beschäftigt sich mit der Aufbereitung der für das Verständnis der Arbeit notwendigen fachlichen Themen. Zuerst wird versucht, eine passende Definition des Begriffs `Domain Specific Languages' zu finden (Kapitel \ref{chapter_dsl} \nameref{chapter_dsl}). Kapitel \ref{chapter_theoretische_grundlagen} gibt eine Übersicht über die theoretischen Grundlagen, die zum Verständnis der Arbeit beitragen. In Kapitel \ref{chapter_tools} werden verschiedene Werkzeuge für die Entwicklung vor\-ge\-stel\-lt und insbesondere auf den Parsergenerator ANTLR eingegangen. Ab\-schlie\-ßend wird in Kapitel \ref{related_work} das wissenschaftliche Umfeld aufbereitet.
 
-Im zweiten Teil der Arbeit, \emph{\nameref{part_entwicklung}}, werden die Entwicklungsschritte der aus dieser Arbeit resultierenden DSL beschrieben. Zuerst wird in Kapitel \ref{chapter_entscheidung} die Entscheidung für die Entwicklung einer eigenen Sprache begründet und die Alternativen besprochen. Danach werden in der Analyse die Anforderungen an die Sprache erhoben (Kapitel \ref{chapter_analyse}). In Kapitel \ref{chapter_entwurf} wird die DSL beschrieben. Datentypen, semantische Regeln und weitere Features werden genau spezifiziert. Kapitel \ref{chapter_implementierung} beschreibt die Implementierungsdetails der entwickelten Sprache. Kapitel \ref{chapter_test} widmet sich dem Testing in Hinsicht auf die Implementierung.
+Im zweiten Teil der Arbeit, \emph{\nameref{part_entwicklung}}, werden die Entwicklungsschritte der aus dieser Arbeit resultierenden DSL beschrieben. Zuerst wird in Kapitel \ref{chapter_entscheidung} die Entscheidung für die Entwicklung einer eigenen Sprache begründet und im Hinblick auf die Alternativen besprochen. Danach werden in der Analyse die Anforderungen an die Sprache erhoben (Kapitel \ref{chapter_analyse}). In Kapitel \ref{chapter_entwurf} wird die DSL beschrieben. Datentypen, semantische Regeln und weitere Features werden genau spezifiziert. Kapitel \ref{chapter_implementierung} beschreibt die Implementierungsdetails der entwickelten Sprache. Kapitel \ref{chapter_test} widmet sich dem Testing in Hinsicht auf die Implementierung.
 
 Der dritte Teil widmet sich der \emph{\nameref{part_integration}}. In Kapitel \ref{chapter_systembeschreibung} wird das medizinische Studiensystem beschrieben, in das die DSL integriert wird. Dazu wird der Workflow erklärt, um dem Leser den Nutzen der DSL im Kontext des Zielsystems zu erläutern. Zusätzlich wird die Architektur sowie der verwendete Technologie-Stack des Zielsystems beschrieben.
 
-Der vierte Teil, \emph{\nameref{part_ergebnis}}, widmet sich in Kapitel \ref{chapter_ausblick} einem Ausblick auf weitere Themen, die über den Umfang dieser Arbeit hinausgehen und Raum für weitere Arbeiten geben. Zuletzt wird die Arbeit in Kapitel \ref{chapter_zusammenfassung} zusammengefasst.
+Der vierte Teil, \emph{\nameref{part_ergebnis}}, enthält eine Zusammenfassung der Arbeit (Kapitel \ref{chapter_zusammenfassung}). Kapitel \ref{chapter_ausblick} gibt einen Ausblick auf weitere Themen, die über den Umfang dieser Arbeit hinausgehen und Raum für weitere Arbeiten geben.
 
 
 

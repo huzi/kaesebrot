@@ -26,9 +26,9 @@ SPICS enthält ein umfassendes Rollen- und Berechtigungssystem. Die für diese A
 \label{subsection_workflow_beispiel}
 
 
-Um den typischen Ablauf zu verdeutlichen, werden die maßgeblichen Anwendungsfälle für ein beispielhaftes Formular angeführt. Im darauf folgenden Abschnitt wird eruiert, wo die FXL in diesen Ablauf eingreift um den Endanwender bei der Eingabe der medizinischen Daten zu unterstützen.
+Um den typischen Ablauf zu verdeutlichen, werden die maßgeblichen Anwendungsfälle für ein beispielhaftes Formular angeführt. Im darauf folgenden Abschnitt wird eruiert, wo die FXL in diesen Ablauf eingreift, um den Endanwender bei der Eingabe der medizinischen Daten zu unterstützen.
 
-Natürlich enthält ein so aufwändiges System wie SPICS neben dem hier vorgestellten auch zahlreiche weitere Workflows, etwa für Datenexport und -import, Benutzerverwaltung, Konfiguration und Terminverwaltung. Auf diese soll hier jedoch nicht eingegangen werden, um den Focus auf das Thema der Arbeit nicht zu verlieren.
+Natürlich enthält ein so aufwändiges System wie SPICS neben dem \mbox{hier} vorgestellten auch zahlreiche weitere Workflows, etwa für Datenexport und -import, Benutzerverwaltung, Konfiguration und Terminverwaltung. Auf diese soll hier jedoch nicht eingegangen werden, um den Focus auf das Thema der Arbeit nicht zu verlieren.
 
 Der Workflow soll am Beispiel eines Formulars gurchgegangen werden, in dem die Veränderung des Body-Mass-Index (BMI) eines Patienten dokumentiert wird. Ein Arzt (bzw. aus Software-Sicht: der Endanwender) soll also in der Lage sein, den BMI eines Patienten an verschiedenen Tagen zu dokumentieren. Abbildung \ref{abb_workflow_formular_ausfuellen} auf Seite \pageref{abb_workflow_formular_ausfuellen} zeigt das fertige Formular, in das die Daten eingegeben werden können.
 
@@ -55,9 +55,9 @@ Das Ergebnis dieses Schrittes ist ein leeres Formular, das nun mit einer beliebi
 
 \subsubsection{Editieren eines Formulars}
 
-Wenn ein Formular neu erstellt wurde (bzw. wenn es bereits existiert oder importiert wurde) kann es editiert werden. Darunter versteht man das Anlegen, Verändern und Löschen von Formularelementen. Zu\-sätz\-lich werden Formularelemente in Gruppen zusammengefasst, um eine übersichtliche Struktur zu schaffen.
+Wenn ein Formular neu erstellt wurde (bzw. wenn es bereits existiert oder importiert wurde) kann es editiert werden. Darunter wird das Anlegen, Verändern und Löschen von Formularelementen verstanden. Zu\-sätz\-lich werden Formularelemente in Gruppen zusammengefasst, um eine übersichtliche Struktur zu schaffen.
 
-Manche Formularelemente können mit einfachen Constraints belegt werden. So kann bei einem Datumsfeld der Datumsbereich (von-bis) ausgewählt werden. Bei Textfeldern kann der Datentyp insofern festgelegt werden, als dass zwischen \emph{Text}, \emph{Ganzzahl} und \emph{Kommazahl} unterschieden wird. Bei den beiden letzteren ist wiederum ein Constraint möglich, der den Wertebereich einschränkt. Außerdem kann für jedes Formularelement festgelegt werden, ob es ein Pflichtfeld ist.
+Manche Formularelemente können mit einfachen Constraints belegt werden. So kann bei einem Datumsfeld der Datumsbereich (von-bis) ausgewählt werden. Bei Textfeldern kann der Datentyp insofern festgelegt werden, als dass zwischen \emph{Text}, \emph{Ganzzahl} und \emph{Kommazahl} unterschieden wird. Bei den beiden lezteren ist wiederum ein Constraint möglich, der den Wertebereich einschränkt. Außerdem kann für jedes Formularelement festgelegt werden, ob es ein Pflichtfeld ist.
 
 Für das Beispielformular wird zuerst eine Gruppe mit dem Namen `BMI-Rechner` erstellt. In dieser Gruppe werden nun drei Textfelder
 für das Kör\-per\-ge\-wicht, die Kör\-per\-grö\-ße und den BMI angelegt. Zu\-sätz\-lich wird noch eine Checkbox mit dem Titel `Adipositas` hinzugefügt.
@@ -83,14 +83,14 @@ Wurde auf der Übersichtsseite eines Patienten das Formular `BMI-Rechner` ausgew
 
 
 
-\section{Architektur \& Technologien}
+\section{Architektur und Technologien}
 
 Dieser Abschnitt enthält einen Überblick über die Softwarearchitektur und die verwendeten Technologien, um die Integration der Form Expression Language aus technischer Sicht nachvollziehen zu können.
 
 
 \subsection{Architektur}
 
-Die Architektur von SPICS ist als klassische 3-Tier Applikation mit graphischer Benutzeroberfläche, Programmlogik und Datenzugriffsschicht ausgeführt (Abbildung \ref{abb_spics_architektur}). 
+Die Architektur von SPICS ist als klassische 3-Tier Applikation mit gra\-phisch\-er Benutzeroberfläche, Programmlogik und Datenzugriffsschicht ausgeführt (Abbildung \ref{abb_spics_architektur}). 
 
 \begin{figure}[h]
 \begin{center}
@@ -139,7 +139,7 @@ Wie der Titel der Arbeit aussagt, soll die Modellierung der Formulare durch die 
 
 \subsection{Anwendungsfälle}
 
-In der aktuellen Version sind die einzelnen Eingabefelder eines Formulars unabhängig voneinander. Eine Eingabe in einem Feld, kann den Wert eines anderen Feldes nicht beeinflussen. Der Endanwender muss dafür Sorge tragen, dass die Felder zueinander sinnvolle Werte beinhalten. Wenn der berechnete BMI im Beispielformular größer als 30 ist, sollte der Bearbeiter des Formulars die Adipositas-Checkbox anckecken. Es gibt allerdings in der aktuellen Version des Systems, abgesehen von speziellen Plugins, keine Möglichkeit zu überprüfen, ob die Ckeckbox korrekt gesetzt wurde.
+In der aktuellen Version sind die einzelnen Eingabefelder eines For\-mu\-lars unabhängig voneinander. Eine Eingabe in einem Feld kann den Wert eines anderen Feldes nicht beeinflussen. Der Endanwender muss dafür Sorge tragen, dass die Felder zueinander sinnvolle Werte beinhalten. Wenn der berechnete BMI im Beispielformular größer als 30 ist, sollte der Bearbeiter des Formulars die Adipositas-Checkbox anckecken. Es gibt allerdings in der aktuellen Version des Systems, abgesehen von speziellen Plugins, keine Möglichkeit zu überprüfen, ob die Checkbox korrekt gesetzt wurde.
 
 Es kristallieren sich die folgenden zwei Anwendungsfälle heraus:
 
@@ -168,9 +168,9 @@ Allgemein kann also gesagt werden, dass Formeln verwendet werden, um den Wert ei
 
 \paragraph{Constraints}
 
-Im Beispielformular gibt es auch Einschränkungen, was die Gültigkeit bzw. Sinnhaftigkeit der Eingabegrößen betrifft. Sowohl die Kör\-per\-grö\-ße, als auch das Körpergewicht muss großer als null sein, da negative Werte natürlich nicht sinnvoll sind. Ein weiterer Constraint kann sein, dass ein Feld ausgefüllt sein muss und daher als Pflichtfeld definiert wird. Diese Einschränkungen hängen allerdings nicht von anderen Formularelementen ab und werden auch, wie in Abschnitt \ref{subsection_workflow_beispiel} erwähnt, vom momentanen System unterstützt.
+Im Beispielformular gibt es auch Einschränkungen, was die Gültigkeit bzw. Sinnhaftigkeit der Eingabegrößen betrifft. Sowohl die Kör\-per\-grö\-ße, als auch das Körpergewicht muss größer als null sein, da negative Werte natürlich nicht sinnvoll sind. Ein weiterer Constraint kann sein, dass ein Feld ausgefüllt sein muss und daher als Pflichtfeld definiert wird. Diese Einschränkungen hängen allerdings nicht von anderen Formularelementen ab und werden auch, wie in Abschnitt \ref{subsection_workflow_beispiel} erwähnt, vom momentanen System unterstützt.
 
-Eine Erweiterung der Überprüfung wäre, wenn andere Formularfelder in die Überprüfung mit einbezogen werden könnten. Angenommen man möchte die Nachbehandlung einer Operation dokumentieren und erstellt ein Formular, in das zusätzlich zu den medizinischen Daten der Operationstermin, sowie der Termin der Nachbehandlung eingetragen wird. In diesem Fall ist es not\-wen\-dig, dass der Termin der Nachbehandlung erst nach dem Operationstermin stattfindet. Es handelt sich also um eine Bedingung, die vom Wert eines anderen Formularfeldes abhängig ist.
+Eine Erweiterung der Überprüfung wäre, wenn andere Formularfelder in die Überprüfung mit einbezogen werden könnten. Angenommen eine Studie möchte die Nachbehandlung einer Operation dokumentieren und erstellt ein Formular, in das zusätzlich zu den medizinischen Daten der Operationstermin, sowie der Termin der Nachbehandlung eingetragen wird. In diesem Fall ist es not\-wen\-dig, dass der Termin der Nachbehandlung erst nach dem Operationstermin stattfindet. Es handelt sich also um eine Bedingung, die vom Wert eines anderen Formularfeldes abhängig ist.
 
 Es muss also eine Formel definiert werden, die den Constraint beschreibt. zusätzlich muss diese Formel einen booleschen Wahrheitswert als Rückgabetyp haben, da ja überprüft werden soll, ob der Wert eines Feldes gültig ist (true) oder nicht (false). Für das obige Beispiel könnte die Formel wie folgt aussehen:
 
@@ -190,21 +190,17 @@ Die Statements der FXL werden bei der Modellierung des Formulars eingegeben. Hie
 
 \section{Sicherheit und Stabilität}
 
-Beim Entwurf der FXL wurde darauf geachtet, die Stabilität der Anwendung, in der sie integriert wird nicht zu beeinflussen. Fehler wie Endlosschleifen können durch das Design der Sprache ausgeschlossen, da der nur einzelne Ausdrücke verwerten kann (vgl. Abschnitt \ref{section_java_scripting}). Da jedoch Funktionen via den Functionmanager Java-Methoden aufrufen, besteht die Möglichkeit von Fehlern im Java Code. -gibts da eine Möglichkeit das zu sandboxen? auch im hinblick auf Endlosrekursion - StackOverflowError
+In diesem Abschnitt soll auf einige Fragen der Sicherheit und Stabilität der FXL, sowie deren Integration in SPICS eingegangen werden. Unter Stabilität wird die Fähigkeit des Systems verstanden, auf unvorhergesehene Eingaben angemessen, also nicht durch Systemabsturz sondern entsprechende Fehlermeldungen, zu reagieren. 
 
-Eine weitere Möglickeit, die Stabilität zu gefärden, ist das direkte Editieren der Scripts in der Datenbank. Wie in Abschnitt \ref{}
-
-Probleme/Sicherheitsbedenken durch editieren der Scripts in der Datenbank bzw. Import beschädigter Formulare
-
-Vor jeder Ausführung eines Statements im Interpreter unterläuft dieses alle Analyseschritte einer Language Application (siehe \ref{theorie_language_applications}). Zuerst wird der Abstract Syntax Tree erstellt. Dieser Vorgang impliziert die lexikalische und syntaktischen Analyse. Danach wird ein Typecheck auf dem AST ausgeführt, was der semantischen Analyse entspricht. Erst danach wird das Statement interpretiert. Die ersten zwei Schritte werden natürlich für jedes Statement nur einmal ausgeführt, bei jedem weiteren Aufruf wird der bereits bestehende und überprüfte AST abgearbeitet. 
-
-Um die Stabilität der Ausführung gewährleisten, müssen die voneinander abhängigen Formeln eines Formulars auf Zkylenfreiheit überprüft werden um ``Endlosevaluierungen'' zu vermeiden. Diese Überprüfung wird in Abschnitt \ref{implementierung_zyklenueberpruefung} beschrieben. Um die Integrität der Daten zu sichern, müssen voneinander abhängige Felder in der korrekten Reihenfolge ausgeführt werden (Abschnitt \ref{implementierung_integration_reihenfolge}).
-
-Statische Analyse vor jeder Aus\-führ\-ung oder Beim Speichern, Zyklenfreiheit
+Beim Entwurf der FXL wurde darauf geachtet, die Stabilität der Anwendung, in der diese integriert wird, nicht zu beeinflussen. Fehlerhafte Scripts, die z.B. Endlosschleifen enthalten, können durch das Design der Sprache ausgeschlossen werden, da der Interpreter nur einzelne, in der Syntax der Sprache definierte, Ausdrücke verwerten kann (vgl. Abschnitt \ref{section_java_scripting}). Da jedoch Funktionen über den Functionmanager Java-Methoden aufrufen\footnote{vgl. Abschnitt \ref{design_implementierung_functionmanager}}, be\-steht die Möglichkeit von Fehlern im Java Code. Diese Java-Methoden müssen jedoch der FXL explizit zur Verfügung gestellt werden, beliebige Methodenaufrufe sind nicht möglich. Da es keine angemessene Möglichkeit zur absoluten Absicherung von Methodenaufrufen, etwa in Hinblick auf Endlosschleifen, gibt\footnote{Methodenufrufe in einer Art ``Sandbox'' auszuführen, ist innerhalb einer Java Virtual Machine (JVM) nicht möglich, da man das Schließern von Threads nicht sauber erzwingen kann. Eine Möglichkeit, diese Einschränkung zu umgehen, könnte das Starten einer zusätzlichen JVM in einem separaten Prozess darstellen.}, muss den Methoden, die dem Functionmanager zur Verfügung gestellt werden, vertraut werden. Viele Fehler, wie etwa Endlosrekursion, können mit in der FXL Implementierung abgefangen und auf entsprechende \texttt{FXLException}s gemappt werden.
 
 
+Um die Stabilität der Ausführung gewährleisten, müssen die voneinander abhängigen Formeln eines Formulars auf Zyklenfreiheit überprüft werden um ``Endlosevaluierungen'' zu vermeiden. Diese Überprüfung wird in Abschnitt \ref{implementierung_zyklenueberpruefung} beschrieben. Um die Integrität der Daten zu sichern, müssen voneinander abhängige Felder in der korrekten Reihenfolge ausgeführt werden (Abschnitt \ref{implementierung_integration_reihenfolge}).
 
-Evaluierung zu null????
+Eine weitere Möglichkeit, die Sicherheit und Stabilität zu gefährden, ist das direkte Editieren der Scripts in der Datenbank. Wie in Abschnitt \ref{implementierung_datenmodell} erläutert, werden die Formeln und Constraints in der Datenbank zu dem jeweiligen Formularelement gespeichert. Wer Zugriff auf die Datenbak hat, kann demnach auch fehlerhafte Statements in ein Formular einschleusen. Eine weitere Fehlerquelle kann der Import von Formularen darstellen. Beim Import wird das Formular deshalb auf Zyklenfreiheit und inkorrekte Statements überprüft. In beiden Fällen muss allerdings den Benutzern mit entsprechenden Rechten, vertraut werden.
+
+
+Vor jeder Ausführung eines Statements im Interpreter durchläuft dieses alle Analyseschritte einer Language Application (siehe \ref{theorie_language_applications}). Zuerst wird der Abstract Syntax Tree erstellt. Dieser Vorgang impliziert die lexikalische und syntaktischen Analyse. Danach wird ein Typecheck auf dem AST ausgeführt, was der semantischen Analyse entspricht. Erst danach wird das Statement interpretiert. Treten in einer Phase Fehler auf, wird eine entsprechende Fehlermeldung zurückgegeben (siehe Abschnitt \ref{section_design_fehlerbehandlung}). Die ersten zwei Schritte werden natürlich für jedes Statement nur einmal ausgeführt, bei jedem weiteren Aufruf wird der bereits bestehende und überprüfte AST abgearbeitet. 
 
 
 
@@ -220,7 +216,7 @@ Die individuell zusammengestllten Formulare werden durch drei Klassen abgebildet
 \includegraphics[scale=0.7]{figures/uml_datenmodell_neu}
 \end{center}
 
-\caption{Datenmodell der Formulare}
+\caption{Datenmodell der Formulare. Die grün gefärbten Bereiche sind jene, die im Zuge der Integration verändert wurden.}
 \label{abb_uml_datenmodell}
 \end{figure}
 
@@ -250,7 +246,7 @@ public class DslAttribute {
 \end{lstlisting}
 
 
-Listing \ref{listing_dslattribute} enthält einen Auszug aus der neu erstellten Klasse, ohne Getter bzw. Setter und den Methoden toSting(), hashCode() und equals().
+Listing \ref{listing_dslattribute} enthält einen Auszug aus der neu erstellten Klasse, ohne Getter bzw. Setter und den Methoden toString(), hashCode() und equals().
 
 \section{DSL Eingabe}
 \label{implementierung_dsl_eingabe}
@@ -266,7 +262,7 @@ Die Eingabe des Variablennamens, der Formel und des Constraints erfolgt in der E
 \label{abb_screenshot_spics_eingabe}
 \end{figure}
 
-Hier wirft sich die Frage auf, ob es sinnvoll ist, die Angabe eines Constraints zu einem Feld, das durch eine Formel berechnet wird, zuzulassen. Meistens ist der Wert eines durch eine Formel berechneten Feldes ohnehin von anderen Feldern abhängig. Es erscheint also sinnvoll, die Validierung durch Constraints dort durchzuführen, um der Formel gültige Werte zu liefern. Andererseits muss eine Formel nicht von anderen Feldern abhängig sein\footnote{{Es kann durch Funktionen beispielsweise eine Formel erstellt werden, die einen Datumswert aus dem aktuellen Datum berechnet. Hier könnte ein Constraint der, z.B. vom Datum eines anderen Feldes abhängt, durchaus Sinn machen.}}. In der ersten Implementierung, die im Zuge dieser Arbeit durchgeführt wird, soll von dieser Einschränkung abgesehen werden. Es bleibt zu evaluieren, inwieweit so eine Einschränkung, auch in Hinsicht auf eine Vereinfachung des User Interfaces und der damit eingehenden Verbesserung der Usability, sinvoll ist.
+Hier wirft sich die Frage auf, ob es sinnvoll ist, die Angabe eines Constraints zu einem Feld, das durch eine Formel berechnet wird, zuzulassen. Meistens ist der Wert eines durch eine Formel berechneten Feldes ohnehin von anderen Feldern abhängig. Es erscheint also sinnvoll, die Validierung durch Constraints dort durchzuführen, um der Formel gültige Werte zu liefern. Andererseits muss eine Formel nicht von anderen Feldern abhängig sein\footnote{{Es kann durch Funktionen beispielsweise eine Formel erstellt werden, die einen Datumswert aus dem aktuellen Datum berechnet. Hier könnte ein Constraint der, z.B. vom Datum eines anderen Feldes abhängt, durchaus Sinn machen.}}. In der ersten Implementierung, die im Zuge dieser Arbeit durchgeführt wird, soll die Möglichkeit, ein Feld mit einer Formel und einem Constraint geichzeitig zu belegen, bestehen bleiben. Es bleibt zu evaluieren, inwieweit so eine Einschränkung, auch in Hinsicht auf eine Vereinfachung des User Interfaces und der damit eingehenden Verbesserung der Usability, sinvoll ist.
 
 Beim Speichern wird ein Validator aufgerufen, der jedes der drei Felder gesondert validiert. Im Validator findet die Zyklenüberprüfung und die Überprüfung von Abhängigkeiten statt. Beim Speichern eines Formularelements sind mehrere Aspekte betreffend der DSL zu beachten:
 
@@ -288,7 +284,7 @@ Beim Speichern wird ein Validator aufgerufen, der jedes der drei Felder gesonder
 \paragraph{Constraint}
 \begin{itemize}
 	\item Ein Constraint muss als Rückgabetyp Boolean haben, da er über die Gültigkeit der Eingaben entscheidet.
-	\item Im Gegensatz zur Formel, darf sich ein Constraint auf den Wert des eigenen Feldes, sprich den eigenen Variablennamen beziehen. Dies ist not\-wen\-dig, um das eigene Feld zu Validieren.
+	\item Im Gegensatz zur Formel, darf sich ein Constraint auf den Wert des eigenen Feldes, sprich den eigenen Variablennamen beziehen. Dies ist not\-wen\-dig, um das eigene Feld zu validieren.
 	
 \end{itemize}
 
@@ -305,16 +301,16 @@ Ein essentieller Bestandteil der Validierung ist die Überprüfung auf zyklische
 \label{abb_cycle_bmi_tree}
 \end{figure}
 
-Die Interpretation der Abhängigkeiten als gerichteter Graph hilft bei der Überprüfung auf Zyklen. Ein Zyklus (oder Kreis) ist ein Weg von einem Knoten zu sich selbst\cite{Schl08}. Es gibt zwei grund\-sätz\-liche Algorithmen die sich für die Überprüfung eignen: die Überprügung durch Tiefensuche oder Breitensuche.
+Die Interpretation der Abhängigkeiten als gerichteter Graph hilft bei der Überprüfung auf Zyklen. Ein Zyklus (oder Kreis) ist ein Weg von einem Knoten zu sich selbst \cite{Schl08}. Es gibt zwei grund\-sätz\-liche Algorithmen, die sich für die Überprüfung eignen: die Überprüfung durch Tiefensuche oder Breit\-en\-su\-che.
 
-Die Tiefensuche ist ein Algorithmus, bei dem der Graph rekursiv abgearbeitet wird. Die bereits besuchten Knoten werden in einer globalen Liste abge\-spei\-chert. Wird ein Knoten besucht, der sich bereits in der Liste befindet, so liegt ein Zyklus vor. Durch Erweiterungen (merken der Wege) können so alle Zyklen eines Graphen identifiziert werden.
+Die Tiefensuche ist ein Algorithmus, bei dem der Graph rekursiv abgearbeitet wird. Die bereits besuchten Knoten werden in einer globalen Liste abge\-spei\-chert. Wird ein Knoten besucht, der sich bereits in der Liste befindet, so liegt ein Zyklus vor. Durch Erweiterungen (Merken der Wege) können so alle Zyklen eines Graphen identifiziert werden.
 
-Ein weniger mächtiger Algorithmus ist die Breitensuche. Diese ist ausreichend, wenn nur festgestellt werden soll, ob sich ein Knoten in einem Zyklus befindet oder nicht. Im folgenden wird der Algorithmus zur Zyklenüberprüfung in der Implementierung (mittels Breitensuche) erläutert.
+Ein weniger mächtiger Algorithmus ist die Breitensuche. Diese ist ausreichend, wenn nur festgestellt werden soll, ob sich ein Knoten in einem Zyklus befindet oder nicht. Im Folgenden wird der Algorithmus zur Zyklenüberprüfung in der Implementierung (mittels Breitensuche) erläutert.
 
 Die Eingabe ist das aktuelle Feld, das überprüft werden soll. Wenn keine Zyklen vorliegen, terminiert der Algorithmus. Wenn ein Zyklus gefunden wird, wird eine Exception geworfen. Ein Feld ist von einem anderen abhängig, wenn der Variablenname des Feldes in der Formel des anderen Feldes vorkommt.
 
 \begin{enumerate}
-  \item Überprüfe das aktuelle Feld ob ein Variablenname und eine Formel vorhanden ist. Ist dies nicht der Fall kann es nicht Teil eines Zyklus sein und die Überprüfung wird ohne Fehler beendet.
+  \item Überprüfe das aktuelle Feld, ob ein Variablenname und eine Formel vorhanden ist. Ist dies nicht der Fall, kann es nicht Teil eines Zyklus sein und die Überprüfung wird ohne Fehler beendet.
   
   \item Initialisiere die Menge \texttt{visited}. Sie enthält jene Felder, die bereits besucht wurden. 
 
@@ -351,10 +347,10 @@ Ein Aspekt der Dateneingabe ist die Frage, wann die Formeln des Formulars ausgef
 
 	Die Möglichkeit der zusätzlichen wiederholten Berechnung nach dem Speichern bleibt allerdings bestehen.
 
-	\item Auf Knopfdruck/Wunsch des Users: Die Werte der Felder werden nicht automatisch nach der Eingabe, sonden nur auf expliziten Wunsch des Users an den Server gesendet und dort berechet. Zu\-sätz\-lich werden die Felder beim Speichern berechnet. Diese Lösung hätte den Vorteil, dass der Benutzer mehr Kontrolle über das Formular hat. Zu\-sätz\-lich werden etwaige Verzögerungen, die bei der `Echtzeit'-Lösung aufteten könnten vermieden.
+	\item Auf Knopfdruck/Wunsch des Users: Die Werte der Felder werden nicht automatisch nach der Eingabe, sondern nur auf expliziten Wunsch des Users an den Server gesendet und dort berechnet. Zu\-sätz\-lich werden die Felder beim Speichern berechnet. Diese Lösung hätte den Vorteil, dass der Benutzer mehr Kontrolle über das Formular hat. Zu\-sätz\-lich werden etwaige Verzögerungen, die bei der `Echtzeit'-Lösung aufteten könnten vermieden.
 \end{itemize}
 
-In der Implementierung wurde der zweite Weg gewählt. Die Daten werden in Echtzeit an den Server gesendet und dort ausgewertet. Zu\-sätz\-lich werden die Felder nocheinmal beim Speichern berechnet.
+In der Implementierung wurde der zweite Weg gewählt. Die Daten werden in Echtzeit an den Server gesendet und dort ausgewertet. Zu\-sätz\-lich werden die Felder noch einmal beim Speichern berechnet.
 
 Die Frage der Auswertung stellt sich auch bei jenen Feldern, die mit Constraints belegt sind. Entweder werden die Constraints bereits beim Ausfüllen, oder erst beim Abspeichern evaluiert. Auch hier wurde eine Lösung aus beiden Möglichkeiten implementiert. 
 
@@ -376,7 +372,7 @@ Webanwendungen bieten heutzutage dank Java\-Script die Möglichkeit, Berechnunge
 \end{figure}
 
 
-Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem man die DSL-Statements in Java\-Script übersetzt und im Browser ausführt. Die Übersetzung von FXL in Java\-Script ist möglich, da Java\-Script alle Sprachkonzepte, die FXL verwendet unterstützt\footnote{Tatsächlich das gleiche Verhalten wie Java\-Script zu erzeugen ist nicht ganz so einfach, da Java\-Script bei manchen Operatoren ein anderes Verhalten an den Tag legt.}. Wenn eine Formel den Wert eines Feldes verändert, so wird dieser neue Wert im ent\-sprech\-enden Formularfeld gesetzt. Erst beim Speichern eines Formulars werden die berechneten und eingegebenen Werte an den Server gesendet, wo diese validiert und persistiert werden (Abbildung \ref{abb_uml_seq_client}).
+Grundsätzlich wäre eine clientseitige Evaluierung der Formeln möglich, indem man die DSL-Statements in Java\-Script übersetzt und im Browser ausführt. Die Übersetzung von FXL in Java\-Script ist möglich, da Java\-Script alle Sprachkonzepte, die FXL verwendet unterstützt\footnote{Tatsächlich das gleiche Verhalten wie Java\-Script zu erzeugen, ist nicht ganz so einfach, da Java\-Script bei manchen Operatoren ein anderes Verhalten an den Tag legt.}. Wenn eine Formel den Wert eines Feldes verändert, so wird dieser neue Wert im ent\-sprech\-enden Formularfeld gesetzt. Erst beim Speichern eines Formulars werden die berechneten und eingegebenen Werte an den Server gesendet, wo diese validiert und persistiert werden (Abbildung \ref{abb_uml_seq_client}).
 
 Ein Schwachpunkt dieser Lösung ist, dass die in Java programmierten Funktionen, die in FXL verwendet werden können, nicht so einfach in Java\-Script übersetzt werden können wie die DSL-Statements selbst. Es ist also eine eigens für den Browser entwickelte API not\-wen\-dig, die alle Funktionen enthält, die der DSL auch am Server zur Verfügung stehen. Die Variablen können einfach aus den betreffenden Formularfeldern ausgelesen werden.
 
@@ -407,7 +403,7 @@ Das \texttt{onblur}- bzw. \texttt{onchange}-Event des Formularelements löst per
 
 Tritt bei der Aus\-führ\-ung der DSL-Statements ein Fehler auf, so wird eine ent\-sprech\-ende \texttt{FXLException} geworfen und über die Komponenten bis zum DslValidator weitergeleitet, wo diese abgefangen wird. Mithilfe des Fehlercodes wird eine FacesMessage erstellt und an den Context der Applikation übergeben. Diese Fehlermeldung wird im Browser beim betreffenden Formelement angezeigt.
 
-Die serverseitige Lösung ist die einfachere Lösung, da die Aus\-führ\-ung einfach mittels FXL funkioniert. Auch das Fehlerhandling erfolgt über die dafür vorgesehenen Exceptions, die dem Benutzer detailliertes Feedback geben. Ob die Verzögerung durch den Ajax-Call eine unzumutbare Verzögerung für den Benutzer darstellt, kann in einer weiteren Arbeit evaluiert werden. 
+Die serverseitige Lösung ist die einfachere Lösung, da die Aus\-führ\-ung einfach mittels FXL vorgenommen werden kann. Auch das Fehlerhandling erfolgt über die dafür vorgesehenen Exceptions, die dem Benutzer detailliertes Feedback geben. Bei der Integration im Zuge der praktischen Arbeit hat sich herausgestellt, dass die Antwortzeiten bei dieser Methode sehr gering sind. Ob die Verzögerung durch den Ajax-Call bei sehr komplexen Formularen eine unangenehme Verzögerung für den Benutzer darstellt, kann in einer weiteren Arbeit evaluiert werden. 
 
 
 \subsection{Aus\-führ\-ungsreihenfolge}
@@ -418,7 +414,7 @@ Die Aus\-führ\-ungsreihenfolge ist essentiell für die korrekte Auswertung der 
 Der folgende Algorithmus geht davon aus, dass keine Zyklen vorliegen. Die Zyklenfreiheit muss bereits beim Erstellen des Formulars sichergestellt werden (Abschnitt \ref{implementierung_zyklenueberpruefung}).
 
 \begin{enumerate}
-	\item Suche alle Felder, die einen Variablennamen, aber keine Formel beinhalten. Schreibe alle Werte der Felder in die Map \texttt{calculated<String, 			Result>}, wobei der Key der Variablenname ist und der Value der Wert des Feldes in einem Result Objekt.
+	\item Suche alle Felder, die einen Variablennamen, aber keine Formel beinhalten. Schreibe alle Werte der Felder in die Map \texttt{calculated<String, 			Result>}, wobei der Key der Variablenname ist und der Value der Wert des Feldes in einem \texttt{Result} Objekt.
 	\item Erstelle eine Liste \texttt{formulas} aller Felder, die Formeln besitzen, sprich berechnet werden müssen.
 	\item Solange \texttt{formulas} nicht leer ist, für jede Formel:
 	
@@ -437,49 +433,47 @@ Der folgende Algorithmus geht davon aus, dass keine Zyklen vorliegen. Die Zyklen
 
 Der Algorithmus ist recht einfach: Zuerst werden alle Felder als berechnet angesehen, die selbst keine Formel beinhalten. Danach werden jene Felder berechnet, deren Formeln nur Variablen beinhalten, die auf bereits berechnete Felder verweisen. Durch die zugesicherte Zyklenfreiheit kann dieser Vorgang wiederholt werden, bis alle Felder berechnet sind.
 
-Im Beispiel des BMI-Rechners (Abbildung \ref{abb_cycle_bmi_tree}) werden zuerst die Felder \emph{Körpergrösse} \& \emph{Körpergewicht} als berechnet markiert, da diese nicht von anderen Feldern abhängig sind. Danach werden die Felder mit Formeln, hier \emph{Adipositas} bzw. \emph{BMI}, in eine Liste ge\-spei\-chert, die in einer Schleife abgearbeitet wird. Wird zuerst versucht, das \emph{Adipositas}-Feld zu berechnen, wird festgestellt, dass das Feld \emph{BMI} noch nicht berechnet wurde und der Versuch verworfen. Danach wird das Feld \emph{BMI} aus den Feldern \emph{Körpergrösse} \& \emph{Körpergewicht} berechnet und aus der Liste entfernt. Beim nächsten Schleifendurchlauf kann nun die Formel der \emph{Adipositas}-Checkbox ausgewertet und aus der Liste gelöscht werden.
+Im Beispiel des BMI-Rechners (Abbildung \ref{abb_cycle_bmi_tree}) werden zuerst die Felder \emph{Körpergröße} und \emph{Körpergewicht} als berechnet markiert, da diese nicht von anderen Feldern abhängig sind. Danach werden die Felder mit Formeln, hier \emph{Adipositas} bzw. \emph{BMI}, in eine Liste ge\-spei\-chert, die in einer Schleife abgearbeitet wird. Wird zuerst versucht, das \emph{Adipositas}-Feld zu berechnen, wird festgestellt, dass das Feld \emph{BMI} noch nicht berechnet wurde und der Versuch verworfen. Danach wird das Feld \emph{BMI} aus den Feldern \emph{Körpergröße} und \emph{Körpergewicht} berechnet und aus der Liste entfernt. Beim nächsten Schleifendurchlauf kann nun die Formel der \emph{Adipositas}-Checkbox ausgewertet und aus der Liste gelöscht werden.
 
-Bei der Aus\-führ\-ung wirft sich die Frage auf, wie vorgegangen werden soll, wenn ein Eingabefeld mit Variablenname noch nicht ausgefüllt wurde. In diesem Fall liefert die \texttt{lookup()}-Methode des \texttt{VariableProvider} ein \texttt{Result}-Objekt vom richtigen Datentyp, aber mit Wert \texttt{null} zurück. Die ganze Formel wird, wie im Abschnitt \ref{design_interpreter} beschrieben, zu einem \texttt{Result}-Objekt mit Wert \texttt{null} ausgewertet. Ist ein Feld also noch leer, werden auch die abhängigen Felder nicht mit einem Wert belegt. Wichtig ist jedoch, dass die Aus\-führ\-ung nicht unterbrochen wird und alle Felder, die nicht von einem nicht ausgewerteten Feld abhängen können, berechet werden.
+Bei der Aus\-führ\-ung wirft sich die Frage auf, wie vorgegangen werden soll, wenn ein Eingabefeld mit Variablenname noch nicht ausgefüllt wurde. In diesem Fall liefert die \texttt{lookup()}-Methode des \texttt{VariableProvider} ein \texttt{Result}-Objekt vom richtigen Datentyp, aber mit Wert \texttt{null} zurück. Die ganze Formel wird, wie im Abschnitt \ref{design_interpreter} beschrieben, zu einem \texttt{Result}-Objekt mit Wert \texttt{null} ausgewertet. Ist ein Feld also noch leer, werden auch die abhängigen Felder nicht mit einem Wert belegt. Wichtig ist jedoch, dass die Aus\-führ\-ung nicht unterbrochen wird und alle Felder, die nicht von einem nicht ausgewerteten Feld abhängen können, berechnet werden.
 
 
 
 \section{Fehlerbehandlung}
 \label{integration_fehlerbehandlung}
 
-Durch die sehr detailierten Fehlermeldungen der DSL-Implementierung ist es möglich, dem Benutzer ein genaues Feedback zu geben, wenn Probleme auftreten. Zu\-sätz\-lich zu den vorgegebenen Fehlern ist es sinnvoll, auch implementierungsspezifische Fehlermeldungen zu definieren.
+Durch die sehr detaillierten Fehlermeldungen der DSL-Implementierung ist es möglich, dem Benutzer ein genaues Feedback zu geben, wenn Probleme auftreten. Zu\-sätz\-lich zu den vorgegebenen Fehlern ist es sinnvoll, auch implementierungsspezifische Fehlermeldungen zu definieren.
 
-Wenn Exceptions bei der statischen Analyse oder der Aus\-führ\-ung eines Statements auftreten, so müssen diese intelligent weitergeleitet und an der richtigen Stelle im System abgefangen werden, um einen reibungslosen Ablauf des Workflows zu ermöglichen, aber vor allem den ordnungsgemäßen Betrieb des Systems nicht zu gefährden.
+Wenn Exceptions bei der statischen Analyse oder der Aus\-führ\-ung eines Statements auftreten, so müssen diese intelligent weitergeleitet und an der richtigen Stelle im System abgefangen werden, um einen reibungslosen Ablauf des Workflows zu ermöglichen, aber vor allem um den ordnungsgemäßen Betrieb des Systems nicht zu gefährden.
 
 \subsection{Implementierungsfehler}
 
-In der Dokumentationssoftware können Fehler an zwei Stellen auftreten: Bei der Modellierung eines Formulars und bei der Aus\-führ\-ung der Formeln und Constraints beim Ausfüllen eines Formulars. Jene Fehler, die beim Ausfüllen auftreten, wie etwa eine Division durch null, werden bereits von den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Implementierungsfehlern abgedeckt. Wenn eine ent\-sprech\-ende \texttt{FXLException} geworfen wird, wird diese am Server abgefangen. Abhand des Fehlercodes wird die ent\-sprech\-ende internationalisierte Nachricht erstellt (siehe unten). 
+In der Dokumentationssoftware können Fehler an zwei Stellen auftreten: Bei der Modellierung eines Formulars und bei der Aus\-führ\-ung der Formeln und Constraints beim Ausfüllen eines Formulars. Jene Fehler, die beim Ausfüllen auftreten, wie etwa eine Division durch null, werden bereits von den in Abschnitt \ref{section_design_fehlerbehandlung} definierten Implementierungsfehlern abgedeckt. Wenn eine ent\-sprech\-ende \texttt{FXLException} geworfen wird, wird diese am Server abgefangen. Anhand des Fehlercodes wird die ent\-sprech\-ende internationalisierte Nachricht erstellt (siehe unten). 
 
 
 \begin{table}
-\begin{tabular}[ht]{|c | p{6cm} | p{2cm}| p{3cm} |}
+\begin{tabular}[ht]{|c | p{11cm}|}
 	\hline
-	\textbf{Code} & \textbf{Beschreibung} & \textbf{Beispiel} & \textbf{Argumente}\\
+	\textbf{Code} & \textbf{Beschreibung}\\
 	\hline
   	\hline
-  	4xx  & \multicolumn{3}{|l|}{\textsc{Implementierungsfehler}} \\
+  	4xx  & \multicolumn{1}{|l|}{\textsc{Implementierungsfehler}} \\
   	\hline
-  	400  & Allgemeiner/unbekannter Implementierungsfehler &  & \\
+  	400  & Allgemeiner/unbekannter Implementierungsfehler    \\
   	\hline
-  	411  & Ungültiger Variablenname & & \\
+  	411  & Ungültiger Variablenname    \\
   	\hline
-  	412  & Variablenname zu lang & & \\
+  	412  & Variablenname zu lang    \\
   	\hline
-  	413  & Variablenname bereits vorhanden & &\\
+  	413  & Variablenname bereits vorhanden   \\
   	\hline
-  	414  & Die Formel erzeugt zyklische Abhängigkeiten & & \\
+  	414  & Die Formel erzeugt zyklische Abhängigkeiten    \\
   	\hline
-  	415  & Die Formel enthält unbekannte Variablen & & \\
+  	415  & Die Formel enthält unbekannte Variablen    \\
   	\hline
-  	416  & Rückgabetyp der Formel stimmt nicht mit Datentyp des Formelements überein & & \\
+  	416  & Rückgabetyp der Formel stimmt nicht mit Datentyp des Formelements überein    \\
   	\hline
-  	417  & Rückgabetype eines Constraints ist nicht Boolean & & \\
-  	\hline
-  	4xx  & TODO: Tabelle schön machen & & \\
+  	417  & Rückgabetype eines Constraints ist nicht Boolean    \\
   	\hline
 \end{tabular}
 \caption{Fehlercodes für Implementierungsfehler}

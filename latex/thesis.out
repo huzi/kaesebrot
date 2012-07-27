@@ -10,7 +10,7 @@
 \BOOKMARK [2][-]{subsection.2.1.2}{Externe DSL}{section.2.1}
 \BOOKMARK [1][-]{section.2.2}{Vorteile und Nachteile}{chapter.2}
 \BOOKMARK [1][-]{section.2.3}{Beispiele}{chapter.2}
-\BOOKMARK [0][-]{chapter.3}{Theoretische Grundlagen zum Verst\344ndnis der Arbeit}{part.1}
+\BOOKMARK [0][-]{chapter.3}{Theoretische Grundlagen}{part.1}
 \BOOKMARK [1][-]{section.3.1}{Language Applications}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Grammatiken}{chapter.3}
 \BOOKMARK [1][-]{section.3.3}{Parsing Strategien}{chapter.3}
@@ -31,7 +31,7 @@
 \BOOKMARK [1][-]{section.5.1}{Sprachen zur Berechnung und Evaluierung von Werten}{chapter.5}
 \BOOKMARK [1][-]{section.5.2}{DSLs zur Modellierung von Formularen}{chapter.5}
 \BOOKMARK [-1][-]{part.2}{II Entwicklung der Form Expression Language - FXL}{}
-\BOOKMARK [0][-]{chapter.6}{Entscheidung f\374r den Entwurf einer neuen DSL}{part.2}
+\BOOKMARK [0][-]{chapter.6}{Entscheidung}{part.2}
 \BOOKMARK [1][-]{section.6.1}{Weitere Plugins}{chapter.6}
 \BOOKMARK [1][-]{section.6.2}{Java Scripting}{chapter.6}
 \BOOKMARK [2][-]{subsection.6.2.1}{Vor- und Nachteile einer embedded Skriptsprache}{section.6.2}
@@ -51,12 +51,12 @@
 \BOOKMARK [1][-]{section.7.6}{Fehlerbehandlung}{chapter.7}
 \BOOKMARK [0][-]{chapter.8}{Entwurf}{part.2}
 \BOOKMARK [1][-]{section.8.1}{Datentypen}{chapter.8}
-\BOOKMARK [1][-]{section.8.2}{Operatoren \046 semantische Typregeln}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{Operatoren und semantische Typregeln}{chapter.8}
 \BOOKMARK [1][-]{section.8.3}{Funktionen}{chapter.8}
 \BOOKMARK [1][-]{section.8.4}{Fehlerbehandlung}{chapter.8}
 \BOOKMARK [1][-]{section.8.5}{Grammatik}{chapter.8}
 \BOOKMARK [0][-]{chapter.9}{Implementierung}{part.2}
-\BOOKMARK [1][-]{section.9.1}{Lexer \046 Parser}{chapter.9}
+\BOOKMARK [1][-]{section.9.1}{Lexer und Parser}{chapter.9}
 \BOOKMARK [1][-]{section.9.2}{Typ\374berpr\374fung}{chapter.9}
 \BOOKMARK [2][-]{subsection.9.2.1}{Typen im Interpreter}{section.9.2}
 \BOOKMARK [2][-]{subsection.9.2.2}{Aufbau}{section.9.2}
@@ -78,7 +78,7 @@
 \BOOKMARK [1][-]{section.11.2}{Workflow}{chapter.11}
 \BOOKMARK [2][-]{subsection.11.2.1}{Workflow anhand eines Beispiels}{section.11.2}
 \BOOKMARK [2][-]{subsection.11.2.2}{Use Cases}{section.11.2}
-\BOOKMARK [1][-]{section.11.3}{Architektur \046 Technologien}{chapter.11}
+\BOOKMARK [1][-]{section.11.3}{Architektur und Technologien}{chapter.11}
 \BOOKMARK [2][-]{subsection.11.3.1}{Architektur}{section.11.3}
 \BOOKMARK [2][-]{subsection.11.3.2}{Technology Mapping}{section.11.3}
 \BOOKMARK [0][-]{chapter.12}{Integration}{part.3}
@@ -97,6 +97,7 @@
 \BOOKMARK [2][-]{subsection.12.7.1}{Implementierungsfehler}{section.12.7}
 \BOOKMARK [2][-]{subsection.12.7.2}{Internationalisierung}{section.12.7}
 \BOOKMARK [-1][-]{part.4}{IV Ergebnis}{}
-\BOOKMARK [0][-]{chapter.13}{Zusammenfassung}{part.4}
+\BOOKMARK [0][-]{chapter.13}{Ergebnis}{part.4}
 \BOOKMARK [0][-]{chapter.14}{Ausblick}{part.4}
+\BOOKMARK [0][-]{chapter.15}{Zusammenfassung}{part.4}
 \BOOKMARK [0][-]{appendix.A}{Grammatik}{part.4}

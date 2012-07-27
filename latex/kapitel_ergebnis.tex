@@ -1,5 +1,42 @@
 
+\chapter{Ergebnis}
+\label{chapter_ergebnis}
 
+
+Java-Bibliothek FXL
+
+Operatoren, Datentypen, wohldefinierte Funktionen
+
+Fehlerbehandlung
+
+Testing
+
+Integrationsbeispiel SPICS
+
+Gedanken übers datenmodell
+
+Gedanken über die Integration in den Workflow
+
+Ausführungszeitpunkt und ort
+
+Ausführungsreihenfolge bei mehreren verketteten Statements
+
+Fehlerbehandlung und Feedback an den Benutzer
+
+\chapter{Ausblick}
+\label{chapter_ausblick}
+
+Im Verlauf der Arbeit haben sich einige Gedanken herauskristallisiert, die sich für weitere Arbeiten, über den Umfang dieser Diplomarbeit hinaus, anbieten. Diese  Themen werden im Folgenden kurz beschrieben. 
+
+In der Implementierung wurde die Integration der Form Expression Language in SPICS nur für drei verschiedene Formelemente vorgenommen, die ausreichen, um die vier unterstützten Datentypen zu repräsentieren: Textfelder für die numerischen Typen, sowie Checkboxen für boolesche Werte und Datepicker für Datumswerte. Für die Verwendung von weiteren Formelementen wie Listen, Drop-Downs und Radiobuttons können Überlegungen angestellt werden, wie Werte dieser Elemente mit der FXL verarbeitet werden können.
+
+Referenzierungen in den Formeln der FXL lassen sich momentan nur auf Formularfelder innerhalb eines Formulars vornehmen. Da für einen Patienten in SPICS unterschiedliche Formulare angelegt werden können, kann die Referenzierung von Feldern aus anderen Formularen eine weitere Anforderung darstellen. Dafür kann die Implementierung der Variable Provider dahingehend geändert werden, dass ein Lookup von Variablen auch Werte bereits persistierter Formulare berücksichtigt. 
+
+Eine weitere Form von Abhängigkeiten zwischen Formularfeldern könnten eingabeabhängige Berechnungen darstellen. Damit sind Abhängigkeiten zwischen Feldern gemeint, die Werte je nach vorhandener Eingabe berechnen. Im Beispiel des Body Mass Index (BMI) Rechners, der aus Körpergröße und Körpergewicht den BMI berechnet, könnte eine solche eingabeabhängige Berechnungwie folgt aussehen. Aus zwei beliebigen Feldern wird der dritte Wert automatisch berechnet. Werden also zuerst das Gewicht und der BMI eingegeben, wird automatisch die Körpergröße ermittelt. Inwieweit das durch Umformen von Statements der FXL möglich ist, ist zu evaluieren.
+
+Auch die Form Expression Language selbst lässt Raum für Erweiterungen in mancherlei Hinsicht. Für eine formularübergreifende Referenzierung könnte etwa die Syntax für Variablennamen modifiziert werden. Eine weitere mögliche Erweiterung stellt die Einführung eines Datentyps für Zeichenketten, mit entsprechen Auswirkungen auf die Syntax der Sprache sowie die Semantik der Operatoren, dar. Eine zusätzliche Möglichkeit stellt die Definition weiterer Operatoren dar. In der Implementierung dieser Arbeit kann der ganzzahlige Rest einer Division (Modulo) nur durch eine eigene Funktion berechnet werden. Für diese Berechnung könnte, wie in anderen Sprachen üblich, der Operater \texttt{\%} eingeführt werden. Auch eigene logische Operatoren für exklusives Oder und Implikation sind denkbar. Diese logischen Operatoren müssen momentan durch die vorhandenen Grundoperatoren ausgedrückt werden.
+
+Ein weiteres Thema sind die nichtfunktionalen Eigenschaften der Integration im Studiensystem. Vor allem in Hinsicht Usability kann die Implementierung einer Evaluierung unterzogen werden. Die Akzeptanz beim Endanwender kann durch User-Tests bestätigt oder widerlegt werden. Auch die Eingabe der Statements lässt Raum für Verbesserungen im User Interface. Eine Möglichkeit wäre beispielsweise Syntax Highlighting oder Code Completion anzubieten, um die Eingabe angenehmer zu gestalten und Fehler zu vermeiden. Auch in Hinblick auf die Performance der Sprache, sowie die Integration in das Studiensystem, können Untersuchungen vorgenommen werden. Vor allem die Möglichkeiten einer teilweisen clientseitigen Berechnung, wie in Abschnitt \ref{integration_ausfuehrungsort} dargelegt, können Thema einer weiteren Untersuchung sein.
 
 \chapter{Zusammenfassung}
 \label{chapter_zusammenfassung}
@@ -14,17 +51,7 @@ Der dritte Teil behandelt die Integration der Sprache in ein existierendes mediz
 
 Der vierte Teil gibt einen Ausblick auf weitere Themen und Möglichkeiten, die im Zuge der Arbeit aufgetan haben und bietet eine zusammenfassende Übersicht über die Themen der Arbeit.
 
-Ein Schwerpunkt der Arbeit war die praktische Implementierung der FXL, sowie die Integration in das medizinische Studiensystem. Die Arbeitsschritte entsprechen im Grunde den in der Arbeit dargestellten Schritten, mit dem Unterschied, dass die praktische Umsetzung natürlich ein iterativer Prozess war. Zuerst wurden die Anforderungen und das Zielsystem analysiert und eine Übersicht über das wissenschaftliche Feld erstellt. Danach wurden diverse Tools und Möglichkeiten zur Umsetzung der Sprache in Hinsicht auf die Anforderungen evaluiert. Im nächsten Schritt erfolgte die testgetriebene Implementierung der Fxl, in der die Anforderungen iterativ überarbeitet und immer detailierter spezifiziert wurden. Eine besondere Herausforderung war die Integration in das vorhandene Studiensystem, da auf die Besonderheiten des Systems, wie die Technologien oder das Datenmodell, eingegangen werden musste. Das Ergebnis der praktischen Arbeit ist eine funktionierende Implementierung gemäß der Problemstellung der schriftlichen Arbeit.
+Ein Schwerpunkt der Arbeit war die praktische Implementierung der FXL, sowie die Integration in das medizinische Studiensystem. Die Arbeitsschritte entsprechen im Grunde den in der Arbeit dargestellten Schritten, mit dem Unterschied, dass die praktische Umsetzung natürlich ein iterativer Prozess war. Zuerst wurden die Anforderungen und das Zielsystem analysiert und eine Übersicht über das wissenschaftliche Feld erstellt. Danach wurden diverse Tools und Möglichkeiten zur Umsetzung der Sprache in Hinsicht auf die Anforderungen evaluiert. Im nächsten Schritt erfolgte die testgetriebene Implementierung der Fxl, in der die Anforderungen iterativ überarbeitet und immer detaillierter spezifiziert wurden. Eine besondere Herausforderung war die Integration in das vorhandene Studiensystem, da auf die Besonderheiten des Systems, wie die Technologien oder das Datenmodell, eingegangen werden musste. Das Ergebnis der praktischen Arbeit ist eine funktionierende Implementierung gemäß der Problemstellung der schriftlichen Arbeit.
 
 
 
-\chapter{Ausblick}
-\label{chapter_ausblick}
-
-Im Verlauf der Arbeit haben sich einige Themen herauskristallisiert, die sich für weitere Arbeiten, über den Umfang dieser Diplomarbeit hinaus, anbieten. In der Implementierung wurde die Integration der Form Expression Language in SPICS nur für drei verschiedene Formelemente vorgenommen, die ausreichen um die vier unterstützten Datentypen zu repräsentieren: Textfelder für die numerischen Typen, sowie Checkboxen für boolesche Werte und Datepicker für Datumswerte. Für die Verwendung von weiteren Formelementen wie Listen, Drop-Downs und Radiobuttons können Überlegungen angestellt werden, wie Werte dieser Elemente mit der FXL verarbeitet werden können.
-
-Referenzierungen in den Formeln der FXL lassen sich momentan nur auf Formularfelder innerhalb eines Formulars vornehmen. Da für einen Patienten in SPICS unterschiedliche Formulare angelegt werden können, kann die Referenzierung von Feldern aus anderen Formularen eine weitere Anforderung darstellen. Dafür kann die Implementierung der Variable Provider dahingehend geändert werden, dass ein Lookup von Variablen auch Werte bereits persistierter Formulare berücksichtigt. 
-
-Auch die Form Expression Language selbst lässt Raum für Erweiterungen in mancherlei Hinsicht. Für eine formularübergreifende Referenzierung könnte etwa die Syntax für Variablennamen modifiziert werden. Eine weitere mögliche Erweiterung stellt die Einführung eines Datentyps für Zeichenketten, mit entsprechen Auswirkungen auf die Syntax der Sprache sowie die Semantik der Operatoren, dar. Eine zusätzliche Möglickeit stellt die Definition weiterer Operatoren dar. In der Implementierung dieser Arbeit kann der ganzzahlige Rest einer Division (Modulo) nur durch eine eigene Funktion berechnet werden. Für diese Berechnung könnte, wie in anderen Sprachen üblich, der Operater \texttt{\%} eingeführt werden. Auch eigene logische Operatoren für exklusives Oder und Implikation sind denkbar. Diese Logischen Operatoren müssen momentan durch die vorhandenen Grundoperatoren ausgedrückt werden.
-
-Ein weiteres Thema sind die nichtfunktionalen Eigenschaften der Integration im Studiensystem. Vor allem in Hinsicht Usability kann die Implementierung einer Evaluierung unterzogen werden. Die Akzeptanz beim Endanwender kann durch User-Tests bestätigt oder widerlegt werden. Auch die Eingabe der Statements lässt Raum für Verbesserungen im User Interface. Eine Möglichkeit wäre beispielsweise Syntax Highlighting oder Code Completion anzubieten, um die Eingabe angenehmer zu gestalten und Fehler zu vermeiden. Auch in Hinblick auf die Performance der Sprache, sowie die Integration in das Studiensystem, können Untersuchungen vorgenommen werden. Vor allem die Möglichkeiten einer teilweisen clientseitigen Berechnung, wie in Abschnitt \ref{integration_ausfuehrungsort} dargelegt, können Thema einer weiteren Untersuchung sein.
