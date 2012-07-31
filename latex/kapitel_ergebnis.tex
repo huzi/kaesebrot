@@ -2,26 +2,27 @@
 \chapter{Ergebnis}
 \label{chapter_ergebnis}
 
+Im Zuge der vorliegenden Arbeit wurde eine Domain Specific Language (DSL) entwickelt und in ein existierendes Studiensystem integriert.
 
-Java-Bibliothek FXL
+Die entwickelte DSL, die Form Expression Language (FXL), wurde als eigenständige Java-Bibliothek entworfen. Als solche ist diese unabhängig vom konkreten Einsatzsystem. Über die entwickelten Schnittstellen ist die Bibliothek somit in beliebige Java-Anwenundgen integrierbar.
 
-Operatoren, Datentypen, wohldefinierte Funktionen
+Beim Entwurf der FXL wurde auf eine einfache Syntax, die sich an bekannten Anwendungen wie Tabellenkalkulationssoftware oder Taschenrechner orientiert, Wert gelegt. Die Sprache definiert einzelne Statements, die durch logische Operatoren, arithmetische Operatoren und Vergleichsoperatoren, sowie Klammerungen, definiert werden. Ferner enthält die Syntax auch Variablen, die als Referenzen auf Werte  in die Statements eingebunden werden können. Über eine Schnittstelle kann eine externe Implementierung einer Symboltabelle eingebunden werden, die Variablennamen in konkrete Werte auflöst. Zusätzlich können in Java entwickelte, wohldefinierte Funktionen in die Sprache integriert werden. Die FXL unterstützt vier Datentypen: Ganzzahlen, Gleitkommazahlen, Datumswerte und boolesche Werte.
 
-Fehlerbehandlung
+Um dem Benutzer Feedback über die eingegebenen Statements geben zu können, existiert eine detaillierte Fehlerbehandlung über eine Hierarchie von eigens definierten Exceptions. Diese Exceptions bilden Fehler in den Phasen syntaktische Analyse, semantische Analyse, sowie Laufzeit ab. Jede dieser Fehlerkategorien definiert wiederum detaillierte Fehlercodes und Parameter, um die Ursache eines Fehlers einfach nachvollziehbar darzustellen.
 
-Testing
+Bei der Entwicklung der FXL wurde auf einen testgetriebenen Entwicklungsablauf achtgegeben. Für jedes neue Feature (diverse Operatoren, Variablen, Funktionen, Fehler etc.) wurden vor der Implementierung Testfälle definiert, die das korrekte Verhalten der Sprache abbilden. Dadurch konnte eine effiziente Entwicklung und ein testbares Design erreicht werden.
 
-Integrationsbeispiel SPICS
+Bei der Integration der FXL in eine bestehende Anwendung sind unterschiedliche Aspekte zu beachten. Als Integrationsbeispiel wird die Einbettung der DSL in die medizinische Studiensoftware SPICS vorgenommen.
 
-Gedanken übers datenmodell
+Zuerst muss der Workflow des Zielsystems analysiert werden. Dies ist notwendig, um die Anknüpfungspunkte für die Eingabe der Ausdrücke sowie die Ausführung des Interpreters zu ermitteln. Der nächste Schritt sind die Änderungen im Datenmodell, um die Statements im System zu persistieren.
 
-Gedanken über die Integration in den Workflow
+Bei der Integration in eine Webanwendung wie SPICS, sind Gedanken über den Ort und die Zeit der Ausführung unerlässlich. Durch die Trennung in Client und Server, bieten sich mehrere Möglichkeiten mit unterschiedlichen Stärken und Schwächen. Für die Integration in diese Arbeit wurde eine serverseitige Lösung gewählt. Die Statements werden allerdings in Echtzeit, bereits bei der Eingabe der Daten, per Ajax-Calls an den Server übertragen und dort ausgewertet.
 
-Ausführungszeitpunkt und ort
+Da Variablen in den FXL-Statements im Studiensystem auf andere Formularfelder im selben Formular zeigen, muss gewährleistet werden, dass sich diese in abhängigen Formularfeldern nicht gegenseitig referenzieren. Dazu wird ein Baum von Abhängigkeiten der Formularfelder gebildet, der auf Zyklenfreiheit untersucht wird. Dieser Baum gibt auch die Ausführungsreihenfolge der Statements vor. Vor der Auswertung eines Statements, müssen zuerst die von diesem referenzierten Felder ausgewertet werden.
 
-Ausführungsreihenfolge bei mehreren verketteten Statements
+Zuletzt müssen auch die Fehler, die bei Eingabe der Statements bzw. bei deren Ausführung auftreten können, behandelt werden. Da die semantische Analyse und die Ausführung am Server vorgenommen wird, können die in der FXL definierten Fehler abgefangen, und an den Client zurückgegeben werden. Dabei erfolgt über die Fehlercodes eine Umwandlung der Fehler in applikationsabhängige, internationalisierte Fehlermeldungen.
 
-Fehlerbehandlung und Feedback an den Benutzer
+
 
 \chapter{Ausblick}
 \label{chapter_ausblick}
@@ -49,9 +50,9 @@ Im zweiten Teil wird der Entwicklungsprozess der Form Expression Language (FXL),
 
 Der dritte Teil behandelt die Integration der Sprache in ein existierendes medizinisches Studiensystem. Zuerst wurde das Studiensystem SPICS kurz vorgestellt und die Architektur sowie die verwendeten Technologien beschrieben. Danach wurden die verschiedenen Aspekte der Integration der Sprache in SPICS veranschaulicht.
 
-Der vierte Teil gibt einen Ausblick auf weitere Themen und Möglichkeiten, die im Zuge der Arbeit aufgetan haben und bietet eine zusammenfassende Übersicht über die Themen der Arbeit.
+Der vierte Teil gibt einen Ausblick auf weitere Themen und Möglichkeiten, die sich im Zuge der Arbeit aufgetan haben und bietet eine zusammenfassende Übersicht über die Themen der Arbeit.
 
-Ein Schwerpunkt der Arbeit war die praktische Implementierung der FXL, sowie die Integration in das medizinische Studiensystem. Die Arbeitsschritte entsprechen im Grunde den in der Arbeit dargestellten Schritten, mit dem Unterschied, dass die praktische Umsetzung natürlich ein iterativer Prozess war. Zuerst wurden die Anforderungen und das Zielsystem analysiert und eine Übersicht über das wissenschaftliche Feld erstellt. Danach wurden diverse Tools und Möglichkeiten zur Umsetzung der Sprache in Hinsicht auf die Anforderungen evaluiert. Im nächsten Schritt erfolgte die testgetriebene Implementierung der Fxl, in der die Anforderungen iterativ überarbeitet und immer detaillierter spezifiziert wurden. Eine besondere Herausforderung war die Integration in das vorhandene Studiensystem, da auf die Besonderheiten des Systems, wie die Technologien oder das Datenmodell, eingegangen werden musste. Das Ergebnis der praktischen Arbeit ist eine funktionierende Implementierung gemäß der Problemstellung der schriftlichen Arbeit.
+Ein Schwerpunkt der Arbeit war die praktische Implementierung der FXL, sowie die Integration in das medizinische Studiensystem. Die Arbeitsschritte entsprechen im Grunde den in der Arbeit dargestellten Schritten, mit dem Unterschied, dass die praktische Umsetzung natürlich ein iterativer Prozess war. Zuerst wurden die Anforderungen und das Zielsystem analysiert und eine Übersicht über das wissenschaftliche Feld erstellt. Danach wurden diverse Tools und Möglichkeiten zur Umsetzung der Sprache in Hinsicht auf die Anforderungen evaluiert. Im nächsten Schritt erfolgte die testgetriebene Implementierung der FXL, in der die Anforderungen iterativ überarbeitet und immer detaillierter spezifiziert wurden. Eine besondere Herausforderung war die Integration in das vorhandene Studiensystem, da auf die Besonderheiten des Systems, wie die Technologien oder das Datenmodell, eingegangen werden musste. Das Ergebnis der praktischen Arbeit ist eine funktionierende Implementierung gemäß der Problemstellung der schriftlichen Arbeit.
 
 
 

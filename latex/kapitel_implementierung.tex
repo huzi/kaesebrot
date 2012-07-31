@@ -59,7 +59,7 @@ Das Ergebnis dieses Schrittes ist ein leeres Formular, das nun mit einer beliebi
 
 Wenn ein Formular neu erstellt wurde (bzw. wenn es bereits existiert oder importiert wurde) kann es editiert werden. Darunter wird das Anlegen, Verändern und Löschen von Formularelementen verstanden. Zu\-sätz\-lich werden Formularelemente in Gruppen zusammengefasst, um eine übersichtliche Struktur zu schaffen.
 
-Manche Formularelemente können mit einfachen Constraints belegt werden. So kann bei einem Datumsfeld der Datumsbereich (von-bis) ausgewählt werden. Bei Textfeldern kann der Datentyp insofern festgelegt werden, als dass zwischen \emph{Text}, \emph{Ganzzahl} und \emph{Kommazahl} unterschieden wird. Bei den beiden lezteren ist wiederum ein Constraint möglich, der den Wertebereich einschränkt. Außerdem kann für jedes Formularelement festgelegt werden, ob es ein Pflichtfeld ist.
+Manche Formularelemente können mit einfachen Constraints belegt werden. So kann bei einem Datumsfeld der Datumsbereich (von-bis) ausgewählt werden. Bei Textfeldern kann der Datentyp insofern festgelegt werden, als dass zwischen \emph{Text}, \emph{Ganzzahl} und \emph{Kommazahl} unterschieden wird. Bei den beiden Letzteren ist wiederum ein Constraint möglich, der den Wertebereich einschränkt. Außerdem kann für jedes Formularelement festgelegt werden, ob es ein Pflichtfeld ist.
 
 Für das Beispielformular wird zuerst eine Gruppe mit dem Namen `BMI-Rechner` erstellt. In dieser Gruppe werden nun drei Textfelder
 für das Kör\-per\-ge\-wicht, die Kör\-per\-grö\-ße und den BMI angelegt. Zu\-sätz\-lich wird noch eine Checkbox mit dem Titel `Adipositas` hinzugefügt.
@@ -172,7 +172,7 @@ Allgemein kann also gesagt werden, dass Formeln verwendet werden, um den Wert ei
 
 Im Beispielformular gibt es auch Einschränkungen, was die Gültigkeit bzw. Sinnhaftigkeit der Eingabegrößen betrifft. Sowohl die Kör\-per\-grö\-ße, als auch das Körpergewicht muss größer als null sein, da negative Werte natürlich nicht sinnvoll sind. Ein weiterer Constraint kann sein, dass ein Feld ausgefüllt sein muss und daher als Pflichtfeld definiert wird. Diese Einschränkungen hängen allerdings nicht von anderen Formularelementen ab und werden auch, wie in Abschnitt \ref{subsection_workflow_beispiel} erwähnt, vom momentanen System unterstützt.
 
-Eine Erweiterung der Überprüfung wäre, wenn andere Formularfelder in die Überprüfung mit einbezogen werden könnten. Angenommen eine Studie möchte die Nachbehandlung einer Operation dokumentieren und erstellt ein Formular, in das zusätzlich zu den medizinischen Daten der Operationstermin, sowie der Termin der Nachbehandlung eingetragen wird. In diesem Fall ist es not\-wen\-dig, dass der Termin der Nachbehandlung erst nach dem Operationstermin stattfindet. Es handelt sich also um eine Bedingung, die vom Wert eines anderen Formularfeldes abhängig ist. 
+Eine Erweiterung der Überprüfung wäre, wenn andere Formularfelder in die Überprüfung mit einbezogen werden könnten. Angenommen eine Studie dokumentiert die Nachbehandlung einer Operation und erstellt ein Formular, in das zusätzlich zu den medizinischen Daten der Operationstermin, sowie der Termin der Nachbehandlung eingetragen wird. In diesem Fall ist es not\-wen\-dig, dass der Termin der Nachbehandlung erst nach dem Operationstermin stattfindet. Es handelt sich also um eine Bedingung, die vom Wert eines anderen Formularfeldes abhängig ist. 
 
 Es muss also eine Formel definiert werden, die den Constraint beschreibt. zusätzlich muss diese Formel einen booleschen Wahrheitswert als Rückgabetyp haben, da ja überprüft werden soll, ob der Wert eines Feldes gültig ist (true) oder nicht (false). Für das obige Beispiel könnte die Formel wie folgt aussehen:
 
@@ -212,7 +212,7 @@ Vor jeder Ausführung eines Statements im Interpreter durchläuft dieses alle An
 \section{Än\-der\-ung\-en im Datenmodell}
 \label{implementierung_datenmodell}
 
-Die individuell zusammengestllten Formulare werden durch drei Klassen abgebildet, die per JPA in der Datenbank persistiert werden. Wie in Abbildung \ref{abb_uml_datenmodell} ersichtlich, besteht ein Formular aus einer oder mehreren Gruppen von Formelementen. Eine Gruppe wiederum besteht aus den Klassen der einzelnen Formelemente (Textfield, Checkbox etc.). Da die Variablen, Formeln und Constraints für die einzelnen Formularelemente ebenfalls ge\-spei\-chert werden müssen, wurde eine neue Klasse \texttt{DslAttribute} hinzugefügt.
+Die individuell zusammengestellten Formulare werden durch drei Klassen abgebildet, die per JPA in der Datenbank persistiert werden. Wie in Abbildung \ref{abb_uml_datenmodell} ersichtlich, besteht ein Formular aus einer oder mehreren Gruppen von Formelementen. Eine Gruppe wiederum besteht aus den Klassen der einzelnen Formelemente (Textfield, Checkbox etc.). Da die Variablen, Formeln und Constraints für die einzelnen Formularelemente ebenfalls ge\-spei\-chert werden müssen, wurde eine neue Klasse \texttt{DslAttribute} hinzugefügt.
 
 \begin{figure}[ht]
 \begin{center}

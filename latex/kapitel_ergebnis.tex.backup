@@ -2,6 +2,29 @@
 \chapter{Ergebnis}
 \label{chapter_ergebnis}
 
+Im Zuge der vorliegenden Arbeit wurde eine Domain Specific Language (DSL) entwickelt und in ein existierendes Studiensystem integriert.
+
+Die entwickelte DSL, die Form Expression Language (FXL), wurde als eigenständige Java-Bibliothek entwickelt. Als solche ist diese unabhängig vom konkreten Einsatzsystem. Über die entwickelten Schnittstellen ist sie in beliebige Java-Anwenundgen integrierbar.
+
+Beim Entwurf der FXL wurde auf eine einfache Syntax, die sich an bekannten Anwendungen wie Tabellenkalkulationssoftware oder Taschenrechner orientiert, Wert gelegt. Die Sprache definiert einzelne Statements, die durch diverse Vergleichsoperatoren, sowie logische und arithmetische Operatoren und Klammerungen definiert werden. Die Syntax definiert auch Variablen, die als Referenzen auf Werte  in die Statements eingebunden werden können. Über eine Schnittstelle kann eine externe Implementierung einer Symboltabelle eingebunden werden, die Variablennamen in konkrete Werte auflöst. Zusätzlich können in Java entwickelte, wohldefinierte Funktionen in die Statements eingebunden werden. Die Sprache unterstützt vier Datentypen: Ganzzahlen, Gleitkommazahlen, Datumswerte und boolesche Werte.
+
+Um dem Benutzer Feedback über die eingegebenen Statements geben zu können, existiert eine detaillierte Fehlerbehandlung über eine Hierarchie von eigens definierten Exceptions. Diese Exceptions bilden Fehler in den Phasen syntaktische Analyse, semantische Analyse, sowie Laufzeit ab. Jede dieser Fehlerkategorien definiert wiederum detaillierte Fehlercodes, um die Ursache eines Fehlers einfach nachvollziehbar darzustellen.
+
+Bei der Entwicklung der FXL wurde auf einen testgetriebenen Entwicklungsablauf achtgegeben. Für jedes neue Feature (diverse Operatoren, Variablen, Funktionen, Fehler etc.) wurden vor der Implementierung Testfälle definiert, die das korrekte Verhalten der Sprache abbilden. Dadurch konnte eine effizient Entwicklung und ein testbares Design erreicht werden.
+
+Bei der Integration der FXL in eine bestehende Anwendung sind unterschiedliche Aspekte zu beachten. Als Integrationsbeispiel wird die Einbettung der DSL in die medizinische Studiensoftware SPICS vorgenommen.
+
+Zuerst muss der Workflow des Zielsystems analysiert werden. Dies ist notwendig, um die Anknüpfungspunkte für die Eingabe der Ausdrücke sowie die Ausführung des Interpreters zu ermitteln. Der nächste Schritt sind die Änderungen im Datenmodell, um die Statements im System zu persistieren.
+
+Bei der Integration in eine Webanwendung wie SPICS, sind Gedanken über den Ort und die Zeit der Ausführung unerlässlich. Durch die Trennung in Client und Server, bieten sich mehrere Möglichkeiten mit unterschiedlichen Stärken und Schwächen. Für die Integration in diese Arbeit wurde eine serverseitige Lösung gewählt. Die Statements werden allerdings in Echtzeit, bereits bei der Eingabe der Daten, per Ajax-Calls an den Server übertragen und dort ausgewertet.
+
+Da Variablen in den FXL-Statements im Studiensystem auf andere Formularfelder im selben Formular zeigen, muss gewährleistet werden, dass sich Statements in abhängigen Formularfeldern nicht gegenseitig referenzieren. Dazu wird ein Baum von Abhängigkeiten der Formularfelder gebildet, der auf Zyklenfreiheit untersucht wird. Dieser Baum gibt auch die Ausführungsreihenfolge der Statements vor, da vor Auswertung eines Statements die von diesem referenzierten Felder ausgewertet werden müssen.
+
+
+Ausführungsreihenfolge bei mehreren verketteten Statements
+
+Fehlerbehandlung und Feedback an den Benutzer
+
 \chapter{Ausblick}
 \label{chapter_ausblick}
 
@@ -10,6 +33,8 @@ Im Verlauf der Arbeit haben sich einige Gedanken herauskristallisiert, die sich 
 In der Implementierung wurde die Integration der Form Expression Language in SPICS nur für drei verschiedene Formelemente vorgenommen, die ausreichen, um die vier unterstützten Datentypen zu repräsentieren: Textfelder für die numerischen Typen, sowie Checkboxen für boolesche Werte und Datepicker für Datumswerte. Für die Verwendung von weiteren Formelementen wie Listen, Drop-Downs und Radiobuttons können Überlegungen angestellt werden, wie Werte dieser Elemente mit der FXL verarbeitet werden können.
 
 Referenzierungen in den Formeln der FXL lassen sich momentan nur auf Formularfelder innerhalb eines Formulars vornehmen. Da für einen Patienten in SPICS unterschiedliche Formulare angelegt werden können, kann die Referenzierung von Feldern aus anderen Formularen eine weitere Anforderung darstellen. Dafür kann die Implementierung der Variable Provider dahingehend geändert werden, dass ein Lookup von Variablen auch Werte bereits persistierter Formulare berücksichtigt. 
+
+Eine weitere Form von Abhängigkeiten zwischen Formularfeldern könnten eingabeabhängige Berechnungen darstellen. Damit sind Abhängigkeiten zwischen Feldern gemeint, die Werte je nach vorhandener Eingabe berechnen. Im Beispiel des Body Mass Index (BMI) Rechners, der aus Körpergröße und Körpergewicht den BMI berechnet, könnte eine solche eingabeabhängige Berechnungwie folgt aussehen. Aus zwei beliebigen Feldern wird der dritte Wert automatisch berechnet. Werden also zuerst das Gewicht und der BMI eingegeben, wird automatisch die Körpergröße ermittelt. Inwieweit das durch Umformen von Statements der FXL möglich ist, ist zu evaluieren.
 
 Auch die Form Expression Language selbst lässt Raum für Erweiterungen in mancherlei Hinsicht. Für eine formularübergreifende Referenzierung könnte etwa die Syntax für Variablennamen modifiziert werden. Eine weitere mögliche Erweiterung stellt die Einführung eines Datentyps für Zeichenketten, mit entsprechen Auswirkungen auf die Syntax der Sprache sowie die Semantik der Operatoren, dar. Eine zusätzliche Möglichkeit stellt die Definition weiterer Operatoren dar. In der Implementierung dieser Arbeit kann der ganzzahlige Rest einer Division (Modulo) nur durch eine eigene Funktion berechnet werden. Für diese Berechnung könnte, wie in anderen Sprachen üblich, der Operater \texttt{\%} eingeführt werden. Auch eigene logische Operatoren für exklusives Oder und Implikation sind denkbar. Diese logischen Operatoren müssen momentan durch die vorhandenen Grundoperatoren ausgedrückt werden.
 

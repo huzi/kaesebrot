@@ -6,7 +6,7 @@ Alfred~V. Aho, Ravi Sethi, and Jeffrey~D. Ullman.
 \newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1986.
 
 \bibitem{AtBa99}
-D~Atkins, T~Ball, G~Bruns, and K~Cox.
+D.~Atkins, T.~Ball, G.~Bruns, and K.~Cox.
 \newblock Mawl: A domain-specific language for form-based services.
 \newblock {\em IEEE Transactions on Software Engineering}, 25(3):334--346,
   1999.
@@ -29,10 +29,11 @@ Claus Brabrand, Anders Moller, Mikkel Ricky, and Michael~I Schwartzbach.
 \bibitem{Chas07}
 Nicholas Chase.
 \newblock Xforms tip: Using calculations - a standard way to include
-  calculations in forms using xforms, Jänner 2007.
+  calculations in forms using xforms.
 \newblock
   http://www.ibm.com/developerworks/xml/library/x-xformstipcalculations/index.%
-html.
+html, Jänner 2007.
+\newblock zuletzt abgerufen am 25.08.2011.
 
 \bibitem{Chom59}
 Noam Chomsky.
@@ -43,12 +44,14 @@ Noam Chomsky.
 Stephen Colebourne.
 \newblock Joda time - java date and time api.
 \newblock http://joda-time.sourceforge.net/.
+\newblock zuletzt abgerufen am 25.08.2011.
 
 \bibitem{JSR-310}
 Stephen Colebourne.
 \newblock Jsr-000310 date and time api (close of early draft review: 28 march
-  2010), March 2010.
-\newblock http://jcp.org/en/jsr/detail?id=310.
+  2010).
+\newblock http://jcp.org/en/jsr/detail?id=310, März 2010.
+\newblock zuletzt abgerufen am 25.08.2011.
 
 \bibitem{Esco12}
 Eban Escott, Paul Strooper, Paul King, and Ian Hayes.
@@ -59,9 +62,9 @@ Eban Escott, Paul Strooper, Paul King, and Ian Hayes.
 
 \bibitem{Fowl05}
 Martin Fowler.
-\newblock Language workbenches: The killer-app for domain specific languages?,
-  June 2005.
-\newblock http://martinfowler.com/articles/languageWorkbench.html.
+\newblock Language workbenches: The killer-app for domain specific languages?
+\newblock http://martinfowler.com/articles/languageWorkbench.html, 2005.
+\newblock zuletzt abgerufen am 25.08.2011.
 
 \bibitem{FoPa10}
 Martin Fowler and Rebecca Parsons.
@@ -80,14 +83,16 @@ Danny~M. Groenewegen and Eelco Visser.
 
 \bibitem{JSR-223}
 Mike Grogan.
-\newblock Jsr-000223 scripting for the javatm platform (final release),
+\newblock Jsr-000223 scripting for the java(tm) platform (final release),
   December 2006.
-\newblock http://jcp.org/aboutJava/communityprocess/final/jsr223/index.html.
+\newblock http://jcp.org/aboutJava/communityprocess/final/jsr223/index.html,
+  zuletzt abgerufen am 25.08.2011.
 
 \bibitem{wwwSandboxRhino}
 Jani Hartikainen.
 \newblock Sandboxing rhino in java.
-\newblock http://codeutopia.net/blog/2009/01/02/sandboxing-rhino-in-java/.
+\newblock http://codeutopia.net/blog/2009/01/02/sandboxing-rhino-in-java/,
+  zuletzt abgerufen am 15.11.2011.
 
 \bibitem{KlSt10}
 Paul Klint, Tijs van~der Storm, and Jurgen Vinju.
@@ -106,12 +111,7 @@ B.~Langlois, C.~E. Jitia, and E.~Jouenne.
 \bibitem{MeHe05}
 Marjan Mernik, Jan Heering, and Anthony~M. Sloane.
 \newblock When and how to develop domain-specific languages.
-\newblock {\em ACM Comput. Surv.}, 37:316--344, December 2005.
-
-\bibitem{HaMo90}
-H.~Mossenbock.
-\newblock A generator for production quality compilers.
-\newblock Technical report, 1990.
+\newblock {\em ACM Comput. Surv.}, 37:316--344, Dezember 2005.
 
 \bibitem{wwwRhino}
 {Mozilla Foundation}.
@@ -122,12 +122,18 @@ H.~Mossenbock.
 \bibitem{ISTQB1}
 Thomas M{\"u}ller, Armin Beer, Martin Klonk, and Rahul Verma.
 \newblock Certified tester - foundation level syllabus.
-\newblock March 2010.
+\newblock März 2010.
+
+\bibitem{HaMo90}
+H.~Mössenböck.
+\newblock A generator for production quality compilers.
+\newblock Technical report, 1990.
 
 \bibitem{Moes11}
 Hanspeter Mössenböck.
 \newblock How to build abstract syntax trees with coco/r, September 2011.
-\newblock http://ssw.jku.at/coco/Doc/AST.pdf.
+\newblock http://ssw.jku.at/coco/Doc/AST.pdf, , zuletzt abgerufen am
+  25.10.2011.
 
 \bibitem{NaPr00}
 Prakash~M Nadkarni, Cynthia~M Brandt, and Luis Marenco.
@@ -139,7 +145,7 @@ Prakash~M Nadkarni, Cynthia~M Brandt, and Luis Marenco.
 \bibitem{Who00}
 WHO~Consultation on~Obesity and World~Health Organization.
 \newblock {\em Obesity : preventing and managing the global epidemic}.
-\newblock World Health Organization, Geneva :, 2000.
+\newblock World Health Organization, Geneva, 2000.
 
 \bibitem{Parr07}
 Terence Parr.
@@ -162,14 +168,16 @@ Mark Richters and Martin Gogolla.
 
 \bibitem{RuBa08}
 Alex Ruiz and Jeff Bay.
-\newblock An approach to internal domain-specific languages in java, February
+\newblock An approach to internal domain-specific languages in java, Februar
   2008.
-\newblock http://www.infoq.com/articles/internal-dsls-java.
+\newblock http://www.infoq.com/articles/internal-dsls-java, zuletzt abgerufen
+  am 10.3.2012.
 
 \bibitem{UEL}
 Jennifer~Ball Ryan~Lubke and Pierre Delisle.
 \newblock Unified expression language, August 2005.
-\newblock http://java.sun.com/products/jsp/reference/techart/unifiedEL.html.
+\newblock http://java.sun.com/products/jsp/reference/techart/unifiedEL.html,
+  zuletzt abgerufen am 17.6.2012.
 
 \bibitem{Schl08}
 Holger Schlingloff.
@@ -187,12 +195,12 @@ A.~Spillner and T.~Linz.
 \bibitem{VaDe98}
 Arie van Deursen and Paul Klint.
 \newblock Little languages: little maintenance.
-\newblock {\em Journal of Software Maintenance}, 10:75--92, March 1998.
+\newblock {\em Journal of Software Maintenance}, 10:75--92, März 1998.
 
 \bibitem{VaDe00}
 Arie van Deursen, Paul Klint, and Joost Visser.
 \newblock Domain-specific languages: an annotated bibliography.
-\newblock {\em SIGPLAN Not.}, 35:26--36, June 2000.
+\newblock {\em SIGPLAN Not.}, 35:26--36, Juni 2000.
 
 \bibitem{Vis08}
 Eelco Visser.

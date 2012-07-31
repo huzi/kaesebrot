@@ -63,7 +63,7 @@ escapeinside={\%}{)}          % if you want to add a comment within your code
 
 \include{frontmatter}
 \noindent
-\emph{Samma felxibl.}
+\emph{Samma flexibl.}
 \begin{flushright}
 Klaus Feichtinger
 \end{flushright}
@@ -88,26 +88,26 @@ Klaus Feichtinger
 \renewcommand{\baselinestretch}{1.0}\normalsize
 
 \chapter*{Abstract}
-Die vorliegende Arbeit beschäftigt sich mit der Modellierung von Ab\-hän\-gig\-kei\-ten in einem medizinischen Studiensystem. 
 
-The fields of a web-form, as well as the underlying data, shall be put in relation using formulas and constraints. When entering data to a field, computations that set the values of dependent fields will be triggered.
+The topic of this thesis is the modelling of relations in form-based data.
+The fields of a web-form as well as its underlying data shall be put in relation to each other using formulas and constraints. Through entering data into a field, computations that set the values of dependent fields will be triggered.
 
-The approach used in this master thesis is to design and develop a new expression language called Form Expression Language (FXL). The FXL is a domain-specific language (DSL) in the Domain ``relations in form-based data''. Similar to other expression languages, like formulas in spreadsheed software, FXL-statements are able to use variables to reference other fields and functions to extend the functionality of the language.
+The approach used in this master thesis is the design and development of a new expression language called Form Expression Language (FXL). FXL is a domain-specific language (DSL) in the domain ``Relations in form-based data''. Similar to other expression languages like formulas in spreadsheed software, FXL-statements use variables to reference other fields and functions in order to extend the functionality of the language.
 
-The first part discusses the technical and theoretical fundamentals, needed for the understanding of this thesis. An analysis of therms and definition is followed by an overview of the scientific field of relations in webforms. The second part is dedicated to the design process of the language. First the motivation for the development of a new language and its advantages over existing solutions is argued. After that the phases of the software development process, analysis, design, implementation and test, get described. During this process the language and its interfaces have been developed from the requirements.
-The third part is about the integration of the FXL in an existing system for medical studies. It describes the system and its workflow to illustrate the use of the FXL in the system. Diverse topics have to be considered: execution time and location, execution order and detection of cyclic dependencies.
+The first part of the thesis discusses the technical and theoretical fundamentals relevant for a wider understanding of this thesis. An analysis of terms and definitions is followed by an overview of the scientific field of relations in webforms. The second part is dedicated to the design process of the language. First, the motivation for the development of a new language and its advantages over existing solutions is explained. After that the phases of the software development process, analysis, design, implementation and test, are further elaborated. During this process the language and its interfaces emerge from the requirements.
+The third part concentrates on the integration of the FXL in an existing system for medical studies. It analyses the system and its workflow in depth to illustrate the use of the FXL in the system. Diverse topics are considered: execution time and location, execution order and detection of cyclic dependencies.
 
 
 \pagenumbering{arabic}
 
 \chapter*{Kurzfassung}
-Die vorliegende Arbeit beschäftigt sich mit der Modellierung von Ab\-hän\-gig\-kei\-ten in einem medizinischen Studiensystem. Die Formularfelder eines Web-Formulars sowie die dahinter liegenden Daten, sollen durch Formeln und Bedingungen miteinander in Beziehung gesetzt werden. Durch Eingabe von Werten in einzelne Felder werden Berechnungen ausgelöst, die wiederum den Wert anderer Felder bestimmen.
+Die vorliegende Arbeit beschäftigt sich mit der Modellierung von Ab\-hän\-gig\-kei\-ten in einem medizinischen Studiensystem. Die Formularfelder eines Web-Formulars, sowie die dahinter liegenden Daten, sollen durch Formeln und Bedingungen miteinander in Beziehung gesetzt werden. Durch Eingabe von Werten in einzelne Felder werden Berechnungen ausgelöst, die wiederum den Wert anderer Felder bestimmen.
 
 Der Ansatz, mit dem diesem Problem begegnet wird, ist der Entwurf und die Entwicklung der Ausdruckssprache Form Expression Language (FXL). Diese ist eine Domain Specific Language (DSL) in der Domäne ``Modellierung von Formulardaten''. Ähnlich zu bekannten Ausdruckssprachen, wie etwa den Formel-Ausdrücken aus Tabellenkalkulationssoftware, ist die FXL in der Lage, Statements mit Variablen (zum Referenzieren anderer For\-mu\-lar\-fel\-der) und Funktionen (zur Erweiterung der Funktionalität) zu evaluieren.
 
 Der erste Teil erörtert die zum Verständnis der Arbeit notwendigen technischen und theoretischen Grundlagen. Es werden die Begriffe definiert und eine Über\-sicht über das wissenschaftliche Umfeld der Modellierung von Webformularen geboten.
-Der zweite Teil widmet sich dem Entwicklungsprozess der Sprache. Zuerst wird der Aufwand der Entwicklung einer neuen Sprache begründet, indem die Vor- und Nachteile der Alternativen abgewogen werden. Danach werden die Entwicklungsphasen Analyse, Entwurf, Implementierung und Test beschrieben. Im Zuge dieser Phasen wird aus den Anforderungen die Sprache und deren Schnittstellen entwickelt.
-Der dritte Teil behandelt die Integration der in dieser Arbeit entwickelten DSL in das medizinische Studiensystem. Nach einer Beschreibung des Zielsystems werden diverse Themen wie Zyklenfreiheit, Ausführungsreihenfolge, Ausführungszeit- und Ort, behandelt, die bei der Integration beachtet werden müssen.
+Der zweite Teil widmet sich dem Entwicklungsprozess der Sprache. Zuerst wird der Aufwand der Entwicklung einer neuen Sprache begründet, indem die Vor- und Nachteile der Alternativen abgewogen werden. Danach werden die Entwicklungsphasen Analyse, Entwurf, Implementierung und Test beschrieben. Im Zuge dieser Phasen werden aus den Anforderungen die Sprache und deren Schnittstellen entwickelt.
+Der dritte Teil behandelt die Integration der in dieser Arbeit entwickelten DSL in das medizinische Studiensystem. Nach einer Beschreibung des Zielsystems werden diverse Themen wie Zyklenfreiheit, Ausführungsreihenfolge, Ausführungszeit und -ort behandelt, die bei der Integration beachtet werden müssen.
 
 
 
