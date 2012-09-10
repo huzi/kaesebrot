@@ -1,0 +1,929 @@
+Thu Jul 12 12:31:26 2012 OpenVPN 2.2.0 i686-linux-gnu [SSL] [LZO2] [EPOLL] [PKCS11] [eurephia] [MH] [PF_INET6] [IPv6 payload 20110424-2 (2.2RC2)] built on Jul  4 2011
+Thu Jul 12 12:31:26 2012 WARNING: file '/usr/local/bin/openvpn_inso_user_pass' is group or others accessible
+Thu Jul 12 12:31:26 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Thu Jul 12 12:31:26 2012 LZO compression initialized
+Thu Jul 12 12:31:26 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Thu Jul 12 12:31:26 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Thu Jul 12 12:31:26 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Thu Jul 12 12:31:26 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Thu Jul 12 12:31:26 2012 Local Options hash (VER=V4): 'caff5189'
+Thu Jul 12 12:31:26 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Thu Jul 12 12:31:26 2012 NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay
+Thu Jul 12 12:31:26 2012 UDPv4 link local: [undef]
+Thu Jul 12 12:31:26 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Thu Jul 12 12:31:26 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=7c201077 3f148342
+Thu Jul 12 12:31:26 2012 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Thu Jul 12 12:31:26 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 12:31:26 2012 Validating certificate key usage
+Thu Jul 12 12:31:26 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 12:31:26 2012 VERIFY KU OK
+Thu Jul 12 12:31:26 2012 Validating certificate extended key usage
+Thu Jul 12 12:31:26 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 12:31:26 2012 VERIFY EKU OK
+Thu Jul 12 12:31:26 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 12:31:27 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 12:31:27 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 12:31:27 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 12:31:27 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 12:31:27 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 12:31:27 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Thu Jul 12 12:31:29 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Thu Jul 12 12:31:29 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Thu Jul 12 12:31:29 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Thu Jul 12 12:31:29 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Thu Jul 12 12:31:29 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Thu Jul 12 12:31:29 2012 OPTIONS IMPORT: route options modified
+Thu Jul 12 12:31:29 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu Jul 12 12:31:29 2012 ROUTE default_gateway=192.168.0.1
+Thu Jul 12 12:31:29 2012 TUN/TAP device tun0 opened
+Thu Jul 12 12:31:29 2012 TUN/TAP TX queue length set to 100
+Thu Jul 12 12:31:29 2012 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Thu Jul 12 12:31:29 2012 /sbin/ifconfig tun0 10.8.5.110 pointopoint 10.8.5.109 mtu 1500
+Thu Jul 12 12:31:29 2012 /etc/openvpn/update-resolv-conf tun0 1500 1562 10.8.5.110 10.8.5.109 init
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 192.168.4.0 netmask 255.255.255.0 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 192.168.10.0 netmask 255.255.255.0 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 192.168.20.0 netmask 255.255.255.0 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 128.130.59.0 netmask 255.255.255.128 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.226 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.227 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.229 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.230 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.231 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.232 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.233 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.234 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.236 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.237 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 88.116.105.238 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.114 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.117 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.118 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.119 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.120 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.121 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.122 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.123 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 188.21.99.126 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 128.130.32.0 netmask 255.255.255.128 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 193.171.99.163 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 193.171.99.164 netmask 255.255.255.255 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 /sbin/route add -net 10.8.5.0 netmask 255.255.255.0 gw 10.8.5.109
+Thu Jul 12 12:31:29 2012 GID set to nogroup
+Thu Jul 12 12:31:29 2012 UID set to nobody
+Thu Jul 12 12:31:29 2012 Initialization Sequence Completed
+Thu Jul 12 13:31:27 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 13:31:27 2012 Validating certificate key usage
+Thu Jul 12 13:31:27 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 13:31:27 2012 VERIFY KU OK
+Thu Jul 12 13:31:27 2012 Validating certificate extended key usage
+Thu Jul 12 13:31:27 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 13:31:27 2012 VERIFY EKU OK
+Thu Jul 12 13:31:27 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 13:31:27 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 13:31:27 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 13:31:27 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 13:31:27 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 13:31:27 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 14:31:27 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 14:31:27 2012 Validating certificate key usage
+Thu Jul 12 14:31:27 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 14:31:27 2012 VERIFY KU OK
+Thu Jul 12 14:31:27 2012 Validating certificate extended key usage
+Thu Jul 12 14:31:27 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 14:31:27 2012 VERIFY EKU OK
+Thu Jul 12 14:31:27 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 14:31:27 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 14:31:27 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 14:31:27 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 14:31:27 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 14:31:27 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 14:37:31 2012 write UDPv4 []: Network is unreachable (code=101)
+Thu Jul 12 15:12:57 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Thu Jul 12 15:12:57 2012 TCP/UDP: Closing socket
+Thu Jul 12 15:12:57 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Thu Jul 12 15:12:57 2012 Restart pause, 2 second(s)
+Thu Jul 12 15:12:59 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Thu Jul 12 15:12:59 2012 Re-using SSL/TLS context
+Thu Jul 12 15:12:59 2012 LZO compression initialized
+Thu Jul 12 15:12:59 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Thu Jul 12 15:12:59 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Thu Jul 12 15:12:59 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 15:12:59 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Thu Jul 12 15:12:59 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Thu Jul 12 15:12:59 2012 Local Options hash (VER=V4): 'caff5189'
+Thu Jul 12 15:12:59 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Thu Jul 12 15:12:59 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 15:13:04 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 15:13:09 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 15:13:14 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 15:13:19 2012 UDPv4 link local: [undef]
+Thu Jul 12 15:13:19 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Thu Jul 12 15:13:19 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=3df49a5e b123b3ae
+Thu Jul 12 15:13:20 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 15:13:20 2012 Validating certificate key usage
+Thu Jul 12 15:13:20 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 15:13:20 2012 VERIFY KU OK
+Thu Jul 12 15:13:20 2012 Validating certificate extended key usage
+Thu Jul 12 15:13:20 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 15:13:20 2012 VERIFY EKU OK
+Thu Jul 12 15:13:20 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 15:13:20 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 15:13:20 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 15:13:20 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 15:13:20 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 15:13:20 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 15:13:20 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Thu Jul 12 15:13:22 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Thu Jul 12 15:13:22 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Thu Jul 12 15:13:22 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Thu Jul 12 15:13:22 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Thu Jul 12 15:13:22 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Thu Jul 12 15:13:22 2012 OPTIONS IMPORT: route options modified
+Thu Jul 12 15:13:22 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu Jul 12 15:13:22 2012 Preserving previous TUN/TAP instance: tun0
+Thu Jul 12 15:13:22 2012 Initialization Sequence Completed
+Thu Jul 12 16:13:20 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 16:13:20 2012 Validating certificate key usage
+Thu Jul 12 16:13:20 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 16:13:20 2012 VERIFY KU OK
+Thu Jul 12 16:13:20 2012 Validating certificate extended key usage
+Thu Jul 12 16:13:20 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 16:13:20 2012 VERIFY EKU OK
+Thu Jul 12 16:13:20 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 16:13:20 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 16:13:20 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 16:13:20 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 16:13:20 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 16:13:20 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 17:13:20 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 17:13:20 2012 Validating certificate key usage
+Thu Jul 12 17:13:20 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 17:13:20 2012 VERIFY KU OK
+Thu Jul 12 17:13:20 2012 Validating certificate extended key usage
+Thu Jul 12 17:13:20 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 17:13:20 2012 VERIFY EKU OK
+Thu Jul 12 17:13:20 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 17:13:20 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 17:13:20 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 17:13:20 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 17:13:20 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 17:13:20 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 18:13:21 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 18:13:21 2012 Validating certificate key usage
+Thu Jul 12 18:13:21 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 18:13:21 2012 VERIFY KU OK
+Thu Jul 12 18:13:21 2012 Validating certificate extended key usage
+Thu Jul 12 18:13:21 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 18:13:21 2012 VERIFY EKU OK
+Thu Jul 12 18:13:21 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 18:13:21 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 18:13:21 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 18:13:21 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 18:13:21 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 18:13:21 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 19:13:20 2012 TLS: tls_process: killed expiring key
+Thu Jul 12 19:13:21 2012 TLS: soft reset sec=0 bytes=263436/0 pkts=1986/0
+Thu Jul 12 19:13:21 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 19:13:21 2012 Validating certificate key usage
+Thu Jul 12 19:13:21 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 19:13:21 2012 VERIFY KU OK
+Thu Jul 12 19:13:21 2012 Validating certificate extended key usage
+Thu Jul 12 19:13:21 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 19:13:21 2012 VERIFY EKU OK
+Thu Jul 12 19:13:21 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 19:13:21 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 19:13:21 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 19:13:21 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 19:13:21 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 19:13:21 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 20:13:21 2012 TLS: soft reset sec=0 bytes=285675/0 pkts=2095/0
+Thu Jul 12 20:13:21 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 20:13:21 2012 Validating certificate key usage
+Thu Jul 12 20:13:21 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 20:13:21 2012 VERIFY KU OK
+Thu Jul 12 20:13:21 2012 Validating certificate extended key usage
+Thu Jul 12 20:13:21 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 20:13:21 2012 VERIFY EKU OK
+Thu Jul 12 20:13:21 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 20:13:21 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 20:13:21 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 20:13:21 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 20:13:21 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 20:13:21 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 23:35:10 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Thu Jul 12 23:35:10 2012 TCP/UDP: Closing socket
+Thu Jul 12 23:35:10 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Thu Jul 12 23:35:10 2012 Restart pause, 2 second(s)
+Thu Jul 12 23:35:12 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Thu Jul 12 23:35:12 2012 Re-using SSL/TLS context
+Thu Jul 12 23:35:12 2012 LZO compression initialized
+Thu Jul 12 23:35:12 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Thu Jul 12 23:35:12 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Thu Jul 12 23:35:12 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 23:35:12 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Thu Jul 12 23:35:12 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Thu Jul 12 23:35:12 2012 Local Options hash (VER=V4): 'caff5189'
+Thu Jul 12 23:35:12 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Thu Jul 12 23:35:12 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 23:35:17 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Thu Jul 12 23:35:22 2012 UDPv4 link local: [undef]
+Thu Jul 12 23:35:22 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Thu Jul 12 23:35:22 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=178bdafe 232c438c
+Thu Jul 12 23:35:23 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Thu Jul 12 23:35:23 2012 Validating certificate key usage
+Thu Jul 12 23:35:23 2012 ++ Certificate has key usage  00a0, expects 00a0
+Thu Jul 12 23:35:23 2012 VERIFY KU OK
+Thu Jul 12 23:35:23 2012 Validating certificate extended key usage
+Thu Jul 12 23:35:23 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu Jul 12 23:35:23 2012 VERIFY EKU OK
+Thu Jul 12 23:35:23 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Thu Jul 12 23:35:23 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 23:35:23 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 23:35:23 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Thu Jul 12 23:35:23 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Jul 12 23:35:23 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Jul 12 23:35:23 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Thu Jul 12 23:35:25 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Thu Jul 12 23:35:25 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Thu Jul 12 23:35:25 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Thu Jul 12 23:35:25 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Thu Jul 12 23:35:25 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Thu Jul 12 23:35:25 2012 OPTIONS IMPORT: route options modified
+Thu Jul 12 23:35:25 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu Jul 12 23:35:25 2012 Preserving previous TUN/TAP instance: tun0
+Thu Jul 12 23:35:25 2012 Initialization Sequence Completed
+Fri Jul 13 00:35:23 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 00:35:23 2012 Validating certificate key usage
+Fri Jul 13 00:35:23 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 00:35:23 2012 VERIFY KU OK
+Fri Jul 13 00:35:23 2012 Validating certificate extended key usage
+Fri Jul 13 00:35:23 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 00:35:23 2012 VERIFY EKU OK
+Fri Jul 13 00:35:23 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 00:35:24 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 00:35:24 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 00:35:24 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 00:35:24 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 00:35:24 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 00:42:42 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:20:24 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 10:20:24 2012 TCP/UDP: Closing socket
+Fri Jul 13 10:20:24 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 10:20:24 2012 Restart pause, 2 second(s)
+Fri Jul 13 10:20:26 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 10:20:26 2012 Re-using SSL/TLS context
+Fri Jul 13 10:20:26 2012 LZO compression initialized
+Fri Jul 13 10:20:26 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 10:20:26 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 10:20:26 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:26 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 10:20:26 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 10:20:26 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 10:20:26 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 10:20:26 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:31 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:36 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:41 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:46 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:51 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 10:20:56 2012 UDPv4 link local: [undef]
+Fri Jul 13 10:20:56 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 10:20:56 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=4b627869 c4338119
+Fri Jul 13 10:20:56 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 10:20:56 2012 Validating certificate key usage
+Fri Jul 13 10:20:56 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 10:20:56 2012 VERIFY KU OK
+Fri Jul 13 10:20:56 2012 Validating certificate extended key usage
+Fri Jul 13 10:20:56 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 10:20:56 2012 VERIFY EKU OK
+Fri Jul 13 10:20:56 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 10:20:56 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 10:20:56 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 10:20:56 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 10:20:56 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 10:20:56 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 10:20:56 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 10:20:58 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 10:20:58 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 10:20:58 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 10:20:58 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 10:20:58 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 10:20:58 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 10:20:58 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 10:20:58 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 10:20:58 2012 Initialization Sequence Completed
+Fri Jul 13 10:32:52 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:33:02 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:33:12 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:33:27 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:33:37 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 10:33:42 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 10:33:42 2012 TCP/UDP: Closing socket
+Fri Jul 13 10:33:42 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 10:33:42 2012 Restart pause, 2 second(s)
+Fri Jul 13 10:33:44 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 10:33:44 2012 Re-using SSL/TLS context
+Fri Jul 13 10:33:44 2012 LZO compression initialized
+Fri Jul 13 10:33:44 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 10:33:44 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 10:33:44 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 10:33:44 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 10:33:44 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 10:33:44 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 10:33:44 2012 UDPv4 link local: [undef]
+Fri Jul 13 10:33:44 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 10:33:44 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=6ae0dccb 3f00914c
+Fri Jul 13 10:33:44 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 10:33:44 2012 Validating certificate key usage
+Fri Jul 13 10:33:44 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 10:33:44 2012 VERIFY KU OK
+Fri Jul 13 10:33:44 2012 Validating certificate extended key usage
+Fri Jul 13 10:33:44 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 10:33:44 2012 VERIFY EKU OK
+Fri Jul 13 10:33:44 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 10:33:44 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 10:33:44 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 10:33:44 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 10:33:44 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 10:33:44 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 10:33:44 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 10:33:46 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 10:33:46 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 10:33:46 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 10:33:46 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 10:33:46 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 10:33:46 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 10:33:46 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 10:33:46 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 10:33:46 2012 Initialization Sequence Completed
+Fri Jul 13 11:30:58 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 11:43:12 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 11:43:12 2012 TCP/UDP: Closing socket
+Fri Jul 13 11:43:12 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 11:43:12 2012 Restart pause, 2 second(s)
+Fri Jul 13 11:43:14 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 11:43:14 2012 Re-using SSL/TLS context
+Fri Jul 13 11:43:14 2012 LZO compression initialized
+Fri Jul 13 11:43:14 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 11:43:14 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 11:43:14 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 11:43:14 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 11:43:14 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 11:43:14 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 11:43:14 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 11:43:14 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 11:43:19 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 11:43:24 2012 UDPv4 link local: [undef]
+Fri Jul 13 11:43:24 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 11:43:24 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=7a625eb6 3d06fc4a
+Fri Jul 13 11:43:24 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 11:43:24 2012 Validating certificate key usage
+Fri Jul 13 11:43:24 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 11:43:24 2012 VERIFY KU OK
+Fri Jul 13 11:43:24 2012 Validating certificate extended key usage
+Fri Jul 13 11:43:24 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 11:43:24 2012 VERIFY EKU OK
+Fri Jul 13 11:43:24 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 11:43:25 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 11:43:25 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 11:43:25 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 11:43:25 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 11:43:25 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 11:43:25 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 11:43:28 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 11:43:28 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 11:43:28 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 11:43:28 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 11:43:28 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 11:43:28 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 11:43:28 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 11:43:28 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 11:43:28 2012 Initialization Sequence Completed
+Fri Jul 13 12:43:24 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 12:43:24 2012 Validating certificate key usage
+Fri Jul 13 12:43:24 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 12:43:24 2012 VERIFY KU OK
+Fri Jul 13 12:43:24 2012 Validating certificate extended key usage
+Fri Jul 13 12:43:24 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 12:43:24 2012 VERIFY EKU OK
+Fri Jul 13 12:43:24 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 12:43:24 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 12:43:24 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 12:43:24 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 12:43:24 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 12:43:24 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 13:14:11 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 13:59:34 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 13:59:34 2012 TCP/UDP: Closing socket
+Fri Jul 13 13:59:34 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 13:59:34 2012 Restart pause, 2 second(s)
+Fri Jul 13 13:59:36 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 13:59:36 2012 Re-using SSL/TLS context
+Fri Jul 13 13:59:36 2012 LZO compression initialized
+Fri Jul 13 13:59:36 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 13:59:36 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 13:59:36 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 13:59:36 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 13:59:36 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 13:59:36 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 13:59:36 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 13:59:36 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 13:59:41 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 13:59:46 2012 UDPv4 link local: [undef]
+Fri Jul 13 13:59:46 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 13:59:46 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=cd4fb06c 4b98cdbd
+Fri Jul 13 13:59:46 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 13:59:46 2012 Validating certificate key usage
+Fri Jul 13 13:59:46 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 13:59:46 2012 VERIFY KU OK
+Fri Jul 13 13:59:46 2012 Validating certificate extended key usage
+Fri Jul 13 13:59:46 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 13:59:46 2012 VERIFY EKU OK
+Fri Jul 13 13:59:46 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 13:59:47 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 13:59:47 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 13:59:47 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 13:59:47 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 13:59:47 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 13:59:47 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 13:59:49 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 13:59:49 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 13:59:49 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 13:59:49 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 13:59:49 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 13:59:49 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 13:59:49 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 13:59:49 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 13:59:49 2012 Initialization Sequence Completed
+Fri Jul 13 14:13:42 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 14:13:52 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 14:14:02 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 14:14:12 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 14:14:31 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 14:14:31 2012 TCP/UDP: Closing socket
+Fri Jul 13 14:14:31 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 14:14:31 2012 Restart pause, 2 second(s)
+Fri Jul 13 14:14:33 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 14:14:33 2012 Re-using SSL/TLS context
+Fri Jul 13 14:14:33 2012 LZO compression initialized
+Fri Jul 13 14:14:33 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 14:14:33 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 14:14:33 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:33 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 14:14:33 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 14:14:33 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 14:14:33 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 14:14:33 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:38 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:43 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:48 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:53 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:14:58 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 14:15:03 2012 UDPv4 link local: [undef]
+Fri Jul 13 14:15:03 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 14:15:03 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=f1cb8c6b 7285e8da
+Fri Jul 13 14:15:03 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 14:15:03 2012 Validating certificate key usage
+Fri Jul 13 14:15:03 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 14:15:03 2012 VERIFY KU OK
+Fri Jul 13 14:15:03 2012 Validating certificate extended key usage
+Fri Jul 13 14:15:03 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 14:15:03 2012 VERIFY EKU OK
+Fri Jul 13 14:15:03 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 14:15:03 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 14:15:03 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 14:15:03 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 14:15:03 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 14:15:03 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 14:15:03 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 14:15:05 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 14:15:05 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 14:15:05 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 14:15:05 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 14:15:05 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 14:15:05 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 14:15:05 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 14:15:05 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 14:15:05 2012 Initialization Sequence Completed
+Fri Jul 13 15:00:01 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 15:13:14 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 15:13:14 2012 TCP/UDP: Closing socket
+Fri Jul 13 15:13:14 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 15:13:14 2012 Restart pause, 2 second(s)
+Fri Jul 13 15:13:16 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 15:13:16 2012 Re-using SSL/TLS context
+Fri Jul 13 15:13:16 2012 LZO compression initialized
+Fri Jul 13 15:13:16 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 15:13:16 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 15:13:16 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:16 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 15:13:16 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 15:13:16 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 15:13:16 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 15:13:16 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:21 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:26 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:31 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:36 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 15:13:41 2012 UDPv4 link local: [undef]
+Fri Jul 13 15:13:41 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 15:13:41 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=ab7b65e2 cb1258e2
+Fri Jul 13 15:13:41 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 15:13:41 2012 Validating certificate key usage
+Fri Jul 13 15:13:41 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 15:13:41 2012 VERIFY KU OK
+Fri Jul 13 15:13:41 2012 Validating certificate extended key usage
+Fri Jul 13 15:13:41 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 15:13:41 2012 VERIFY EKU OK
+Fri Jul 13 15:13:41 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 15:13:41 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 15:13:41 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 15:13:41 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 15:13:41 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 15:13:41 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 15:13:41 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 15:13:44 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 15:13:44 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 15:13:44 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 15:13:44 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 15:13:44 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 15:13:44 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 15:13:44 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 15:13:44 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 15:13:44 2012 Initialization Sequence Completed
+Fri Jul 13 16:13:41 2012 TLS: soft reset sec=0 bytes=126473/0 pkts=1137/0
+Fri Jul 13 16:13:41 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 16:13:41 2012 Validating certificate key usage
+Fri Jul 13 16:13:41 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 16:13:41 2012 VERIFY KU OK
+Fri Jul 13 16:13:41 2012 Validating certificate extended key usage
+Fri Jul 13 16:13:41 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 16:13:41 2012 VERIFY EKU OK
+Fri Jul 13 16:13:41 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 16:13:42 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 16:13:42 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 16:13:42 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 16:13:42 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 16:13:42 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 17:06:41 2012 write UDPv4 []: Network is unreachable (code=101)
+Fri Jul 13 17:42:30 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Fri Jul 13 17:42:30 2012 TCP/UDP: Closing socket
+Fri Jul 13 17:42:30 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Fri Jul 13 17:42:30 2012 Restart pause, 2 second(s)
+Fri Jul 13 17:42:32 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Fri Jul 13 17:42:32 2012 Re-using SSL/TLS context
+Fri Jul 13 17:42:32 2012 LZO compression initialized
+Fri Jul 13 17:42:32 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Fri Jul 13 17:42:32 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Fri Jul 13 17:42:32 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 17:42:32 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Fri Jul 13 17:42:32 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Fri Jul 13 17:42:32 2012 Local Options hash (VER=V4): 'caff5189'
+Fri Jul 13 17:42:32 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Fri Jul 13 17:42:32 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 17:42:37 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Fri Jul 13 17:42:43 2012 UDPv4 link local: [undef]
+Fri Jul 13 17:42:43 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Fri Jul 13 17:42:43 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=d635b4dd 6833817e
+Fri Jul 13 17:42:43 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Fri Jul 13 17:42:43 2012 Validating certificate key usage
+Fri Jul 13 17:42:43 2012 ++ Certificate has key usage  00a0, expects 00a0
+Fri Jul 13 17:42:43 2012 VERIFY KU OK
+Fri Jul 13 17:42:43 2012 Validating certificate extended key usage
+Fri Jul 13 17:42:43 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Fri Jul 13 17:42:43 2012 VERIFY EKU OK
+Fri Jul 13 17:42:43 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Fri Jul 13 17:42:43 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 17:42:43 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 17:42:43 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Fri Jul 13 17:42:43 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Fri Jul 13 17:42:43 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Fri Jul 13 17:42:43 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Fri Jul 13 17:42:45 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Fri Jul 13 17:42:45 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Fri Jul 13 17:42:45 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Fri Jul 13 17:42:45 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Fri Jul 13 17:42:45 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Fri Jul 13 17:42:45 2012 OPTIONS IMPORT: route options modified
+Fri Jul 13 17:42:45 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Fri Jul 13 17:42:45 2012 Preserving previous TUN/TAP instance: tun0
+Fri Jul 13 17:42:45 2012 Initialization Sequence Completed
+Fri Jul 13 17:54:52 2012 write UDPv4 []: Network is unreachable (code=101)
+Sat Jul 14 11:59:28 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Sat Jul 14 11:59:28 2012 TCP/UDP: Closing socket
+Sat Jul 14 11:59:28 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Sat Jul 14 11:59:28 2012 Restart pause, 2 second(s)
+Sat Jul 14 11:59:30 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Jul 14 11:59:30 2012 Re-using SSL/TLS context
+Sat Jul 14 11:59:30 2012 LZO compression initialized
+Sat Jul 14 11:59:30 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Sat Jul 14 11:59:30 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Sat Jul 14 11:59:30 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:30 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Sat Jul 14 11:59:30 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Sat Jul 14 11:59:30 2012 Local Options hash (VER=V4): 'caff5189'
+Sat Jul 14 11:59:30 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Sat Jul 14 11:59:30 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:35 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:40 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:45 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:50 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 11:59:55 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 12:00:00 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 12:00:05 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 12:00:10 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 12:00:15 2012 UDPv4 link local: [undef]
+Sat Jul 14 12:00:15 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Sat Jul 14 12:00:15 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=dab1d868 a8a470a6
+Sat Jul 14 12:00:15 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Sat Jul 14 12:00:15 2012 Validating certificate key usage
+Sat Jul 14 12:00:15 2012 ++ Certificate has key usage  00a0, expects 00a0
+Sat Jul 14 12:00:15 2012 VERIFY KU OK
+Sat Jul 14 12:00:15 2012 Validating certificate extended key usage
+Sat Jul 14 12:00:15 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Sat Jul 14 12:00:15 2012 VERIFY EKU OK
+Sat Jul 14 12:00:15 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Sat Jul 14 12:00:15 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sat Jul 14 12:00:15 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Jul 14 12:00:15 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sat Jul 14 12:00:15 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Jul 14 12:00:17 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Sat Jul 14 12:00:17 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Sat Jul 14 12:00:21 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Sat Jul 14 12:00:23 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Sat Jul 14 12:00:23 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Sat Jul 14 12:00:23 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Sat Jul 14 12:00:23 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Sat Jul 14 12:00:23 2012 OPTIONS IMPORT: route options modified
+Sat Jul 14 12:00:23 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Sat Jul 14 12:00:23 2012 Preserving previous TUN/TAP instance: tun0
+Sat Jul 14 12:00:23 2012 Initialization Sequence Completed
+Sat Jul 14 12:16:01 2012 write UDPv4 []: Network is unreachable (code=101)
+Sat Jul 14 14:46:32 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Sat Jul 14 14:46:32 2012 TCP/UDP: Closing socket
+Sat Jul 14 14:46:32 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Sat Jul 14 14:46:32 2012 Restart pause, 2 second(s)
+Sat Jul 14 14:46:34 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Jul 14 14:46:34 2012 Re-using SSL/TLS context
+Sat Jul 14 14:46:34 2012 LZO compression initialized
+Sat Jul 14 14:46:34 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Sat Jul 14 14:46:34 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Sat Jul 14 14:46:34 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 14:46:34 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Sat Jul 14 14:46:34 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Sat Jul 14 14:46:34 2012 Local Options hash (VER=V4): 'caff5189'
+Sat Jul 14 14:46:34 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Sat Jul 14 14:46:34 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 14:46:39 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sat Jul 14 14:46:44 2012 UDPv4 link local: [undef]
+Sat Jul 14 14:46:44 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Sat Jul 14 14:46:44 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=039e44ee 8f9b0711
+Sat Jul 14 14:46:44 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Sat Jul 14 14:46:44 2012 Validating certificate key usage
+Sat Jul 14 14:46:44 2012 ++ Certificate has key usage  00a0, expects 00a0
+Sat Jul 14 14:46:44 2012 VERIFY KU OK
+Sat Jul 14 14:46:44 2012 Validating certificate extended key usage
+Sat Jul 14 14:46:44 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Sat Jul 14 14:46:44 2012 VERIFY EKU OK
+Sat Jul 14 14:46:44 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Sat Jul 14 14:46:45 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sat Jul 14 14:46:45 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Jul 14 14:46:45 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sat Jul 14 14:46:45 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Jul 14 14:46:45 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Sat Jul 14 14:46:45 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Sat Jul 14 14:46:47 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Sat Jul 14 14:46:47 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Sat Jul 14 14:46:47 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Sat Jul 14 14:46:47 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Sat Jul 14 14:46:47 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Sat Jul 14 14:46:47 2012 OPTIONS IMPORT: route options modified
+Sat Jul 14 14:46:47 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Sat Jul 14 14:46:47 2012 Preserving previous TUN/TAP instance: tun0
+Sat Jul 14 14:46:47 2012 Initialization Sequence Completed
+Sun Jul 15 19:14:27 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Sun Jul 15 19:14:27 2012 TCP/UDP: Closing socket
+Sun Jul 15 19:14:27 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Sun Jul 15 19:14:27 2012 Restart pause, 2 second(s)
+Sun Jul 15 19:14:29 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Jul 15 19:14:29 2012 Re-using SSL/TLS context
+Sun Jul 15 19:14:29 2012 LZO compression initialized
+Sun Jul 15 19:14:29 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Sun Jul 15 19:14:29 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Sun Jul 15 19:14:29 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:29 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Sun Jul 15 19:14:29 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Sun Jul 15 19:14:29 2012 Local Options hash (VER=V4): 'caff5189'
+Sun Jul 15 19:14:29 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Sun Jul 15 19:14:29 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:34 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:39 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:44 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:49 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 19:14:54 2012 UDPv4 link local: [undef]
+Sun Jul 15 19:14:54 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Sun Jul 15 19:14:54 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=47f23854 0e3c568f
+Sun Jul 15 19:14:54 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Sun Jul 15 19:14:54 2012 Validating certificate key usage
+Sun Jul 15 19:14:54 2012 ++ Certificate has key usage  00a0, expects 00a0
+Sun Jul 15 19:14:54 2012 VERIFY KU OK
+Sun Jul 15 19:14:54 2012 Validating certificate extended key usage
+Sun Jul 15 19:14:54 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Sun Jul 15 19:14:54 2012 VERIFY EKU OK
+Sun Jul 15 19:14:54 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Sun Jul 15 19:14:55 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sun Jul 15 19:14:55 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Jul 15 19:14:55 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sun Jul 15 19:14:55 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Jul 15 19:14:55 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Sun Jul 15 19:14:55 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Sun Jul 15 19:14:57 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Sun Jul 15 19:14:57 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Sun Jul 15 19:14:57 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Sun Jul 15 19:14:57 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Sun Jul 15 19:14:57 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Sun Jul 15 19:14:57 2012 OPTIONS IMPORT: route options modified
+Sun Jul 15 19:14:57 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Sun Jul 15 19:14:57 2012 Preserving previous TUN/TAP instance: tun0
+Sun Jul 15 19:14:57 2012 Initialization Sequence Completed
+Sun Jul 15 22:52:13 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Sun Jul 15 22:52:13 2012 TCP/UDP: Closing socket
+Sun Jul 15 22:52:13 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Sun Jul 15 22:52:13 2012 Restart pause, 2 second(s)
+Sun Jul 15 22:52:15 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Jul 15 22:52:15 2012 Re-using SSL/TLS context
+Sun Jul 15 22:52:15 2012 LZO compression initialized
+Sun Jul 15 22:52:15 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Sun Jul 15 22:52:15 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Sun Jul 15 22:52:15 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 22:52:15 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Sun Jul 15 22:52:15 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Sun Jul 15 22:52:15 2012 Local Options hash (VER=V4): 'caff5189'
+Sun Jul 15 22:52:15 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Sun Jul 15 22:52:15 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 22:52:20 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Sun Jul 15 22:52:25 2012 UDPv4 link local: [undef]
+Sun Jul 15 22:52:25 2012 UDPv4 link remote: [AF_INET]88.116.105.228:20000
+Sun Jul 15 22:52:25 2012 TLS: Initial packet from [AF_INET]88.116.105.228:20000, sid=e430ff1e 19792713
+Sun Jul 15 22:52:26 2012 VERIFY OK: depth=1, /C=AT/ST=Wien/L=Wien/O=RISE/OU=RISE/CN=whvpn
+Sun Jul 15 22:52:26 2012 Validating certificate key usage
+Sun Jul 15 22:52:26 2012 ++ Certificate has key usage  00a0, expects 00a0
+Sun Jul 15 22:52:26 2012 VERIFY KU OK
+Sun Jul 15 22:52:26 2012 Validating certificate extended key usage
+Sun Jul 15 22:52:26 2012 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Sun Jul 15 22:52:26 2012 VERIFY EKU OK
+Sun Jul 15 22:52:26 2012 VERIFY OK: depth=0, /C=AT/ST=Wien/L=Wien/O=RISE/CN=whvpn
+Sun Jul 15 22:52:26 2012 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sun Jul 15 22:52:26 2012 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Jul 15 22:52:26 2012 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Sun Jul 15 22:52:26 2012 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Jul 15 22:52:26 2012 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Sun Jul 15 22:52:26 2012 [whvpn] Peer Connection Initiated with [AF_INET]88.116.105.228:20000
+Sun Jul 15 22:52:28 2012 SENT CONTROL [whvpn]: 'PUSH_REQUEST' (status=1)
+Sun Jul 15 22:52:28 2012 PUSH: Received control message: 'PUSH_REPLY,route 192.168.4.0 255.255.255.0,route 192.168.10.0 255.255.255.0,route 192.168.20.0 255.255.255.0,route 128.130.59.0 255.255.255.128,route 88.116.105.226 255.255.255.255,route 88.116.105.227 255.255.255.255,route 88.116.105.229 255.255.255.255,route 88.116.105.230 255.255.255.255,route 88.116.105.231 255.255.255.255,route 88.116.105.232 255.255.255.255,route 88.116.105.233 255.255.255.255,route 88.116.105.234 255.255.255.255,route 88.116.105.236 255.255.255.255,route 88.116.105.237 255.255.255.255,route 88.116.105.238 255.255.255.255,route 188.21.99.114 255.255.255.255,route 188.21.99.117 255.255.255.255,route 188.21.99.118 255.255.255.255,route 188.21.99.119 255.255.255.255,route 188.21.99.120 255.255.255.255,route 188.21.99.121 255.255.255.255,route 188.21.99.122 255.255.255.255,route 188.21.99.123 255.255.255.255,route 188.21.99.126 255.255.255.255,route 128.130.32.0 255.255.255.128,route 193.171.99.163 255.255.255.255,push-continuation 2'
+Sun Jul 15 22:52:28 2012 PUSH: Received control message: 'PUSH_REPLY,route 193.171.99.164 255.255.255.255,dhcp-option DOMAIN rise-w.com,dhcp-option DNS 192.168.10.1,route 10.8.5.0 255.255.255.0,topology net30,ping 10,ping-restart 60,ifconfig 10.8.5.110 10.8.5.109,push-continuation 1'
+Sun Jul 15 22:52:28 2012 OPTIONS IMPORT: timers and/or timeouts modified
+Sun Jul 15 22:52:28 2012 OPTIONS IMPORT: --ifconfig/up options modified
+Sun Jul 15 22:52:28 2012 OPTIONS IMPORT: route options modified
+Sun Jul 15 22:52:28 2012 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Sun Jul 15 22:52:28 2012 Preserving previous TUN/TAP instance: tun0
+Sun Jul 15 22:52:28 2012 Initialization Sequence Completed
+Sun Jul 15 23:23:32 2012 write UDPv4 []: Network is unreachable (code=101)
+Mon Jul 16 09:25:15 2012 [whvpn] Inactivity timeout (--ping-restart), restarting
+Mon Jul 16 09:25:15 2012 TCP/UDP: Closing socket
+Mon Jul 16 09:25:15 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Mon Jul 16 09:25:15 2012 Restart pause, 2 second(s)
+Mon Jul 16 09:25:17 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Jul 16 09:25:17 2012 Re-using SSL/TLS context
+Mon Jul 16 09:25:17 2012 LZO compression initialized
+Mon Jul 16 09:25:17 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Mon Jul 16 09:25:17 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Mon Jul 16 09:25:17 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Mon Jul 16 09:25:17 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Mon Jul 16 09:25:17 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Mon Jul 16 09:25:17 2012 Local Options hash (VER=V4): 'caff5189'
+Mon Jul 16 09:25:17 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Mon Jul 16 09:25:17 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Mon Jul 16 09:25:22 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Mon Jul 16 09:25:27 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Mon Jul 16 09:25:32 2012 RESOLVE: Cannot resolve host address: fwwh01.rise-w.com: [HOST_NOT_FOUND] The specified host is unknown.
+Mon Jul 16 09:25:37 2012 UDPv4 link local: [undef]
+Mon Jul 16 09:25:37 2012 UDPv4 link remote: [AF_INET]192.168.0.1:20000
+Mon Jul 16 09:25:37 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:25:40 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:25:44 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:25:52 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:26:08 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:26:37 2012 [UNDEF] Inactivity timeout (--ping-restart), restarting
+Mon Jul 16 09:26:37 2012 TCP/UDP: Closing socket
+Mon Jul 16 09:26:37 2012 SIGUSR1[soft,ping-restart] received, process restarting
+Mon Jul 16 09:26:37 2012 Restart pause, 2 second(s)
+Mon Jul 16 09:26:39 2012 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Jul 16 09:26:39 2012 Re-using SSL/TLS context
+Mon Jul 16 09:26:39 2012 LZO compression initialized
+Mon Jul 16 09:26:39 2012 Control Channel MTU parms [ L:1562 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Mon Jul 16 09:26:39 2012 Socket Buffers: R=[114688->131072] S=[114688->131072]
+Mon Jul 16 09:26:39 2012 Data Channel MTU parms [ L:1562 D:1300 EF:62 EB:135 ET:0 EL:0 AF:3/1 ]
+Mon Jul 16 09:26:39 2012 Fragmentation MTU parms [ L:1562 D:1300 EF:61 EB:135 ET:1 EL:0 AF:3/1 ]
+Mon Jul 16 09:26:39 2012 Local Options hash (VER=V4): 'caff5189'
+Mon Jul 16 09:26:39 2012 Expected Remote Options hash (VER=V4): '43a81564'
+Mon Jul 16 09:26:39 2012 UDPv4 link local: [undef]
+Mon Jul 16 09:26:39 2012 UDPv4 link remote: [AF_INET]192.168.0.1:20000
+Mon Jul 16 09:26:39 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:26:41 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:26:45 2012 read UDPv4 [ECONNREFUSED]: Connection refused (code=111)
+Mon Jul 16 09:26:53 2012 write UDPv4 []: Network is unreachable (code=101)
+Mon Jul 16 09:27:37 2012 event_wait : Interrupted system call (code=4)
+Mon Jul 16 09:27:37 2012 SIGTERM received, sending exit notification to peer
+Mon Jul 16 09:27:38 2012 TCP/UDP: Closing socket
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 10.8.5.0 netmask 255.255.255.0
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 193.171.99.164 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 193.171.99.163 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 128.130.32.0 netmask 255.255.255.128
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.126 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.123 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.122 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.121 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.120 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.119 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.118 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.117 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 188.21.99.114 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.238 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.237 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.236 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.234 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.233 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.232 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.231 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.230 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.229 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.227 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 88.116.105.226 netmask 255.255.255.255
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 128.130.59.0 netmask 255.255.255.128
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 192.168.20.0 netmask 255.255.255.0
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 192.168.10.0 netmask 255.255.255.0
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 /sbin/route del -net 192.168.4.0 netmask 255.255.255.0
+SIOCDELRT: Operation not permitted
+Mon Jul 16 09:27:38 2012 ERROR: Linux route delete command failed: external program exited with error status: 7
+Mon Jul 16 09:27:38 2012 Closing TUN/TAP interface
+Mon Jul 16 09:27:38 2012 /sbin/ifconfig tun0 0.0.0.0
+SIOCSIFADDR: Permission denied
+SIOCSIFFLAGS: Permission denied
+Mon Jul 16 09:27:38 2012 Linux ip addr del failed: external program exited with error status: 255
+Mon Jul 16 09:27:38 2012 /etc/openvpn/update-resolv-conf tun0 1500 1562 10.8.5.110 10.8.5.109 init
+Mon Jul 16 09:27:38 2012 SIGTERM[soft,exit-with-notification] received, process exiting

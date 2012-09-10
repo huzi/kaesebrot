@@ -1,0 +1,103 @@
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Problemstellung}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Zielsetzung}{chapter.1}
+\BOOKMARK [1][-]{section.1.4}{Struktur}{chapter.1}
+\BOOKMARK [-1][-]{part.1}{I Grundlagen}{}
+\BOOKMARK [0][-]{chapter.2}{Domain Specific Languages}{part.1}
+\BOOKMARK [1][-]{section.2.1}{Definitionen}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{Interne DSL}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{Externe DSL}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{Vorteile und Nachteile}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Beispiele}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Theoretische Grundlagen}{part.1}
+\BOOKMARK [1][-]{section.3.1}{Language Applications}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Grammatiken}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Parsing Strategien}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Top-Down Analyse}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Bottom-Up Analyse}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Erweiterte Konzepte und Optimierungen}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Typisierung}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Werkzeugunterst\374tzung}{part.1}
+\BOOKMARK [1][-]{section.4.1}{\334bersicht}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Vergleich}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{ANTLR}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Coco/R}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{JavaCC}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{ANTLR}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Grammatik}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Tools}{section.4.3}
+\BOOKMARK [0][-]{chapter.5}{Related Work}{part.1}
+\BOOKMARK [1][-]{section.5.1}{Sprachen zur Berechnung und Evaluierung von Werten}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{DSLs zur Modellierung von Formularen}{chapter.5}
+\BOOKMARK [-1][-]{part.2}{II Entwicklung der Form Expression Language - FXL}{}
+\BOOKMARK [0][-]{chapter.6}{Entscheidung}{part.2}
+\BOOKMARK [1][-]{section.6.1}{Weitere Plugins}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Java Scripting}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.2.1}{Vor- und Nachteile einer embedded Skriptsprache}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.2}{Sandboxing}{section.6.2}
+\BOOKMARK [1][-]{section.6.3}{Java Unified Expression Language}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{JUEL als offene UEL Implementierung}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.2}{Vor- und Nachteile der UEL}{section.6.3}
+\BOOKMARK [1][-]{section.6.4}{Eigene DSL}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.4.1}{Vor- und Nachteile einer Eigenentwicklung}{section.6.4}
+\BOOKMARK [1][-]{section.6.5}{Fazit}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Analyse}{part.2}
+\BOOKMARK [1][-]{section.7.1}{Definition der Dom\344ne}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{Anforderungen}{chapter.7}
+\BOOKMARK [1][-]{section.7.3}{Operatoren}{chapter.7}
+\BOOKMARK [1][-]{section.7.4}{Referenzen}{chapter.7}
+\BOOKMARK [1][-]{section.7.5}{Funktionsaufrufe}{chapter.7}
+\BOOKMARK [1][-]{section.7.6}{Fehlerbehandlung}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{Entwurf}{part.2}
+\BOOKMARK [1][-]{section.8.1}{Datentypen}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{Operatoren und semantische Typregeln}{chapter.8}
+\BOOKMARK [1][-]{section.8.3}{Funktionen}{chapter.8}
+\BOOKMARK [1][-]{section.8.4}{Fehlerbehandlung}{chapter.8}
+\BOOKMARK [1][-]{section.8.5}{Grammatik}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{Implementierung}{part.2}
+\BOOKMARK [1][-]{section.9.1}{Lexer und Parser}{chapter.9}
+\BOOKMARK [1][-]{section.9.2}{Typ\374berpr\374fung}{chapter.9}
+\BOOKMARK [2][-]{subsection.9.2.1}{Typen im Interpreter}{section.9.2}
+\BOOKMARK [2][-]{subsection.9.2.2}{Aufbau}{section.9.2}
+\BOOKMARK [1][-]{section.9.3}{Variablen und Funktionen}{chapter.9}
+\BOOKMARK [2][-]{subsection.9.3.1}{Variable Provider}{section.9.3}
+\BOOKMARK [2][-]{subsection.9.3.2}{Functionmanager}{section.9.3}
+\BOOKMARK [1][-]{section.9.4}{Interpreter}{chapter.9}
+\BOOKMARK [1][-]{section.9.5}{Fehlerbehandlung}{chapter.9}
+\BOOKMARK [0][-]{chapter.10}{Test}{part.2}
+\BOOKMARK [1][-]{section.10.1}{Grundlagen}{chapter.10}
+\BOOKMARK [2][-]{subsection.10.1.1}{Grunds\344tzliche Einteilung von Tests}{section.10.1}
+\BOOKMARK [1][-]{section.10.2}{Test der DSL}{chapter.10}
+\BOOKMARK [2][-]{subsection.10.2.1}{Testf\344lle}{section.10.2}
+\BOOKMARK [2][-]{subsection.10.2.2}{Testdaten}{section.10.2}
+\BOOKMARK [2][-]{subsection.10.2.3}{Testdriven Development}{section.10.2}
+\BOOKMARK [-1][-]{part.3}{III Integration in ein existierendes System}{}
+\BOOKMARK [0][-]{chapter.11}{Systembeschreibung}{part.3}
+\BOOKMARK [1][-]{section.11.1}{SPICS}{chapter.11}
+\BOOKMARK [1][-]{section.11.2}{Workflow}{chapter.11}
+\BOOKMARK [2][-]{subsection.11.2.1}{Workflow anhand eines Beispiels}{section.11.2}
+\BOOKMARK [2][-]{subsection.11.2.2}{Use Cases}{section.11.2}
+\BOOKMARK [1][-]{section.11.3}{Architektur und Technologien}{chapter.11}
+\BOOKMARK [2][-]{subsection.11.3.1}{Architektur}{section.11.3}
+\BOOKMARK [2][-]{subsection.11.3.2}{Technology Mapping}{section.11.3}
+\BOOKMARK [0][-]{chapter.12}{Integration}{part.3}
+\BOOKMARK [1][-]{section.12.1}{Die FXL in SPICS}{chapter.12}
+\BOOKMARK [2][-]{subsection.12.1.1}{Anwendungsf\344lle}{section.12.1}
+\BOOKMARK [2][-]{subsection.12.1.2}{Ankn\374pfungspunkte}{section.12.1}
+\BOOKMARK [1][-]{section.12.2}{Sicherheit und Stabilit\344t}{chapter.12}
+\BOOKMARK [1][-]{section.12.3}{\304nderungen im Datenmodell}{chapter.12}
+\BOOKMARK [1][-]{section.12.4}{DSL Eingabe}{chapter.12}
+\BOOKMARK [1][-]{section.12.5}{Zyklen\374berpr\374fung}{chapter.12}
+\BOOKMARK [1][-]{section.12.6}{Dateneingabe}{chapter.12}
+\BOOKMARK [2][-]{subsection.12.6.1}{Ausf\374hrungszeitpunkt}{section.12.6}
+\BOOKMARK [2][-]{subsection.12.6.2}{Ausf\374hrungsort}{section.12.6}
+\BOOKMARK [2][-]{subsection.12.6.3}{Ausf\374hrungsreihenfolge}{section.12.6}
+\BOOKMARK [1][-]{section.12.7}{Fehlerbehandlung}{chapter.12}
+\BOOKMARK [2][-]{subsection.12.7.1}{Implementierungsfehler}{section.12.7}
+\BOOKMARK [2][-]{subsection.12.7.2}{Internationalisierung}{section.12.7}
+\BOOKMARK [-1][-]{part.4}{IV Ergebnis}{}
+\BOOKMARK [0][-]{chapter.13}{Ergebnis}{part.4}
+\BOOKMARK [0][-]{chapter.14}{Ausblick}{part.4}
+\BOOKMARK [0][-]{chapter.15}{Zusammenfassung}{part.4}
+\BOOKMARK [0][-]{appendix.A}{Grammatik}{part.4}

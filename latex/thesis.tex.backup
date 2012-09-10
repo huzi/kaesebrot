@@ -1,0 +1,158 @@
+\documentclass [11pt,smallheadings, a4paper]{report}
+\pagestyle{headings}
+
+\usepackage[ngerman]{babel}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{capt-of} 
+%\usepackage[style=numeric-comp]{biblatex}
+
+%\usepackage{nomencl}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{listings}
+
+\usepackage{algorithm}
+%\usepackage{algorithmic} 
+\usepackage{program}
+
+\usepackage{enumitem}
+\usepackage{footnote} 
+
+\lstset{language=Java,                % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,   		% adds a frame around the code
+tabsize=2,  		% sets default tabsize to 2 spaces
+captionpos=b,   		% sets the caption-position to bottom
+breaklines=true,    	% sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+escapeinside={\%}{)}          % if you want to add a comment within your code
+}
+  \lstdefinelanguage{JavaScript}{
+     keywords={attributes, class, classend, do, empty, endif, endwhile, fail, function, functionend, if, implements, in, inherit, inout, not, of, operations, out, return, set, then, types, while, use},
+     ndkeywords={},
+     sensitive=false,
+     comment=[l]{//}
+  }
+
+
+\usepackage[pdftex,pdfborder={0 0 0}]{hyperref}
+
+%\usepackage[left=3.5cm,right=3.5cm,top=2cm,bottom=2cm,includeheadfoot]{geometry}
+%
+
+
+\begin{document}
+
+\newenvironment{myquote}%
+{\begin{quote}\small}%
+{\end{quote}}%
+
+\include{frontmatter}
+\noindent
+\emph{Samma felxibl.}
+\begin{flushright}
+Klaus Feichtinger
+\end{flushright}
+% *************** Table of contents ***************
+\pagenumbering{roman}
+\pagestyle{headings}
+\renewcommand{\baselinestretch}{0.9}\normalsize
+\tableofcontents
+
+% *************** End of front matter ***************
+
+\pagestyle{headings}
+
+
+
+\parindent0em
+\parskip0.5em
+
+%Zeilenumbrüche vermeiden
+\sloppy 
+
+\renewcommand{\baselinestretch}{1.0}\normalsize
+
+\chapter*{Abstract}
+Die vorliegende Arbeit beschäftigt sich mit der Modellierung von Ab\-hän\-gig\-kei\-ten in einem medizinischen Studiensystem. 
+
+The fields of a web-form, as well as the underlying data, shall be put in relation using formulas and constraints. When entering data to a field, computations that set the values of dependent fields will be triggered.
+
+The approach used in this master thesis is to design and develop a new expression language called Form Expression Language (FXL). The FXL is a domain-specific language (DSL) in the Domain ``relations in form-based data''. Similar to other expression languages, like formulas in spreadsheed software, FXL-statements are able to use variables to reference other fields and functions to extend the functionality of the language.
+
+The first part discusses the technical and theoretical fundamentals, needed for the understanding of this thesis. A analysis of therms and definition is followed by an overview of the scientific field of relations in webforms. The second part is dedicated to the design process of the language. First the motivation for the development of a new language and its advantages over existing solutions is argued.
+
+
+\pagenumbering{arabic}
+
+\chapter*{Kurzfassung}
+Die vorliegende Arbeit beschäftigt sich mit der Modellierung von Ab\-hän\-gig\-kei\-ten in einem medizinischen Studiensystem. Die Formularfelder eines Web-Formulars sowie die dahinter liegenden Daten, sollen durch Formeln und Bedingungen miteinander in Beziehung gesetzt werden. Durch Eingabe von Werten in einzelne Felder werden Berechnungen ausgelöst, die wiederum den Wert anderer Felder bestimmen.
+
+Der Ansatz, mit dem diesem Problem begegnet wird, ist der Entwurf und die Entwicklung der Ausdruckssprache Form Expression Language (FXL). Diese ist eine Domain Specific Language (DSL) in der Domäne ``Modellierung von Formulardaten''. Ähnlich zu bekannten Ausdruckssprachen, wie etwa den Formel-Ausdrücken aus Tabellenkalkulationssoftware, ist die FXL in der Lage, Statements mit Variablen (zum Referenzieren anderer For\-mu\-lar\-fel\-der) und Funktionen (zur Erweiterung der Funktionalität) zu evaluieren.
+
+Der erste Teil erörtert die zum Verständnis der Arbeit notwendigen technischen und theoretischen Grundlagen. Es werden die Begriffe definiert und eine Über\-sicht über das wissenschaftliche Umfeld der Modellierung von Webformularen geboten.
+Der zweite Teil widmet sich dem Entwicklungsprozess der Sprache. Zuerst wird der Aufwand der Entwicklung einer neuen Sprache begründet, indem die Vor- und Nachteile der Alternativen abgewogen werden. Danach werden die Entwicklungsphasen Analyse, Entwurf, Implementierung und Test beschrieben. Im Zuge dieser Phasen wird aus den Anforderungen die Sprache und deren Schnittstellen entwickelt.
+Der dritte Teil behandelt die Integration der in dieser Arbeit entwickelten DSL in das medizinische Studiensystem. Nach einer Beschreibung des Zielsystems werden diverse Themen wie Zyklenfreiheit, Ausführungsreihenfolge, Ausführungszeit- und Ort, behandelt, die bei der Integration beachtet werden müssen.
+
+
+
+% include chapters here
+
+\input{kapitel_einleitung}
+
+
+\part{Grundlagen}
+\label{part_grundlagen}
+\input{kapitel_grundlagen}
+
+\part{Entwicklung der Form Expression Language - FXL}
+\label{part_entwicklung}
+\input{kapitel_design}
+
+\part{Integration in ein existierendes System}
+\label{part_integration}
+\input{kapitel_implementierung}
+
+\part{Ergebnis}
+\label{part_ergebnis}
+\input{kapitel_ergebnis}
+
+
+
+%\chapter{Terms and abbreviations}
+%\input{glossary}
+
+
+
+\begin{flushleft}
+\bibliographystyle{plain}
+\bibliography{biblio}
+\end{flushleft}
+
+
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+\appendix
+% include appendexes here
+\include{appendix}
+
+
+\end{document}
+
+

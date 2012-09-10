@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: frontmatter.aux
+The style file: plain.bst
+A level-1 auxiliary file: appendix.aux
+Database file #1: biblio.bib
+Warning--string name "juni" is undefined
+--line 160 of file biblio.bib
+Name 1 in "Ryan Lubke,Jennifer Ball, and Pierre Delisle" has a comma at the end for entry UEL
+while executing---line 1049 of file plain.bst
+Name 1 in "WHO Consultation on Obesity, and World Health Organization." has a comma at the end for entry Who00
+while executing---line 1049 of file plain.bst
+Warning--empty journal in ISTQB1
+Warning--empty institution in HaMo90
+Name 1 in "WHO Consultation on Obesity, and World Health Organization." has a comma at the end for entry Who00
+while executing---line 1090 of file plain.bst
+Name 1 in "Ryan Lubke,Jennifer Ball, and Pierre Delisle" has a comma at the end for entry UEL
+while executing---line 1090 of file plain.bst
+You've used 37 entries,
+            2118 wiz_defined-function locations,
+            747 strings with 10106 characters,
+and the built_in function-call counts, 10941 in all, are:
+= -- 1058
+> -- 492
+< -- 6
++ -- 194
+- -- 154
+* -- 660
+:= -- 1834
+add.period$ -- 125
+call.type$ -- 37
+change.case$ -- 178
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 430
+empty$ -- 934
+format.name$ -- 154
+if$ -- 2332
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 34
+newline$ -- 194
+num.names$ -- 82
+pop$ -- 263
+preamble$ -- 1
+purify$ -- 146
+quote$ -- 0
+skip$ -- 296
+stack$ -- 0
+substring$ -- 492
+swap$ -- 78
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 130
+warning$ -- 2
+while$ -- 103
+width$ -- 39
+write$ -- 411
+(There were 4 error messages)

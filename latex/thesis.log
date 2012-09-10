@@ -1,0 +1,982 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.25)  31 JUL 2012 15:31
+entering extended mode
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, ngerman, german, german-x-2009-06-19, ngerman-x-2009-06-19, loaded.
+
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/ngermanb.ldf
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 92.
+))
+(/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count89
+\uc@combtoks=\toks14
+\uc@combtoksb=\toks15
+\uc@temptokena=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/capt-of.sty)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box26
+\lst@token=\toks21
+\lst@length=\count92
+\lst@currlwidth=\dimen106
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen109
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box27
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks24
+\c@algorithm=\count100
+)
+(/usr/share/texmf-texlive/tex/latex/program/program.sty
+\@gtempa=\dimen110
+\@gtempa=\dimen111
+\@gtempa=\dimen112
+\@gtempa=\dimen113
+\@gtempa=\dimen114
+\@gtempa=\dimen115
+\@gtempa=\dimen116
+\@gtempa=\dimen117
+\@gtempa=\dimen118
+\@gtempa=\dimen119
+\@gtempa=\dimen120
+\@gtempa=\dimen121
+\@gtempa=\dimen122
+\@gtempa=\dimen123
+\@gtempa=\dimen124
+\@gtempa=\dimen125
+\@gtempa=\dimen126
+\@gtempa=\dimen127
+\@gtempa=\dimen128
+\@gtempa=\dimen129
+\@gtempa=\dimen130
+\@gtempa=\dimen131
+\@gtempa=\dimen132
+\@gtempa=\dimen133
+\@gtempa=\dimen134
+\@gtempa=\dimen135
+\@gtempa=\dimen136
+\@gtempa=\dimen137
+\@gtempa=\dimen138
+\@gtempa=\dimen139
+\@gtempa=\dimen140
+\@gtempa=\dimen141
+\@gtempa=\dimen142
+\@gtempa=\dimen143
+\@gtempa=\dimen144
+\@gtempa=\dimen145
+\@gtempa=\dimen146
+\@gtempa=\dimen147
+\@gtempa=\dimen148
+\@gtempa=\dimen149
+\@gtempa=\dimen150
+\@gtempa=\dimen151
+\@gtempa=\dimen152
+\@gtempa=\dimen153
+\@gtempa=\dimen154
+\@gtempa=\dimen155
+\@gtempa=\dimen156
+\@gtempa=\dimen157
+\@gtempa=\dimen158
+\@gtempa=\dimen159
+\c@programline=\count101
+\old@nxttabmar=\count102
+\symeulerletters=\mathgroup6
+\powersetbox=\box30
+LaTeX Font Info:    Try loading font information for U+msa on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+eur on input line 839.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2009/06/22 v3.00 Euler Roman
+))
+(/usr/share/texmf-texlive/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2009/05/18 v2.2 Customized lists
+\enit@toks=\toks25
+\labelindent=\skip43
+\enit@outerparindent=\dimen160
+\enitdp@desc=\count103
+)
+(/usr/share/texmf-texlive/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box31
+\fn@width=\dimen161
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen162
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count106
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+\Field@toks=\toks26
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+)
+
+LaTeX Warning: Unused global option(s):
+    [smallheadings].
+
+(./thesis.aux (./frontmatter.aux) (./appendix.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+
+(/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen165
+\scratchbox=\box32
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen166
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks28
+)
+\c@lstlisting=\count116
+Package hyperref Info: Link coloring OFF on input line 58.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count117
+)
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write3
+\openout3 = `thesis.out'.
+
+\AtBeginShipoutBox=\box33
+\openout2 = `frontmatter.aux'.
+
+ (./frontmatter.tex
+<figures/inso-farbe.pdf, id=415, 260.4721pt x 260.47313pt>
+File: figures/inso-farbe.pdf Graphic file (type pdf)
+
+<use figures/inso-farbe.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/info-farbe.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.4> allowed
+<figures/info-farbe.pdf, id=417, 69.63516pt x 69.63516pt>
+File: figures/info-farbe.pdf Graphic file (type pdf)
+
+<use figures/info-farbe.pdf>
+<figures/tu-dt-teil-schw-pos.pdf, id=419, 68.3624pt x 68.37546pt>
+File: figures/tu-dt-teil-schw-pos.pdf Graphic file (type pdf)
+
+<use figures/tu-dt-teil-schw-pos.pdf> [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/inso-farbe.pdf> 
+<./figures/info-farbe.pdf> <./figures/tu-dt-teil-schw-pos.pdf>]) [1
+
+
+] (./thesis.toc [2
+
+] [3])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 \chapter
+              *{Kurzfassung} [1
+
+]
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+)
+(./kapitel_einleitung.tex [2
+
+]
+Kapitel 1.
+[3
+
+] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+) [4]) [5] [6
+
+]
+(./kapitel_grundlagen.tex [7]
+Kapitel 2.
+[8
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [9]
+Underfull \hbox (badness 3407) in paragraph at lines 70--70
+\OT1/cmr/m/n/9 sicht []uber Lan-gua-ge Work-ben-ches und ei-ne Ver-gleichs-ma-t
+rix fin-det sich un-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\OT1/cmr/m/n/9 http://www.languageworkbenches.net/index.php?title=LWC2011[]Comp
+arison[]Matrix,
+ []
+
+[10]
+Underfull \hbox (badness 2913) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/10.95 DSLs ha-ben nicht nur Vor-tei-le, son-dern auch Nach-tei-l
+e und Ein-
+ []
+
+[11] [12]
+Kapitel 3.
+[13
+
+]
+<figures/language_application_klassisch.png, id=728, 513.92pt x 426.59375pt>
+File: figures/language_application_klassisch.png Graphic file (type png)
+
+<use figures/language_application_klassisch.png> [14 <./figures/language_applic
+ation_klassisch.png>]
+<figures/cst_beispiel.png, id=747, 677.53125pt x 473.77pt>
+File: figures/cst_beispiel.png Graphic file (type png)
+
+<use figures/cst_beispiel.png>
+<figures/ast_beispiel.png, id=748, 565.11125pt x 308.15125pt>
+File: figures/ast_beispiel.png Graphic file (type png)
+
+<use figures/ast_beispiel.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./figures/cst_beispiel.png>] [16 <./figures/ast_beispiel.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+ [17]
+[18] [19]
+Kapitel 4.
+[20
+
+] <figures/parser_generator_workflow.png, id=797, 657.45625pt x 307.1475pt>
+File: figures/parser_generator_workflow.png Graphic file (type png)
+
+<use figures/parser_generator_workflow.png>
+Overfull \hbox (34.47679pt too wide) in paragraph at lines 268--269
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] [22 <./figures/parser_generator_workflow.png>] [23]
+Underfull \hbox (badness 5331) in paragraph at lines 335--335
+[][][]\OT1/cmr/m/n/9 StringTemplate ist ei-ne Tem-pla-te En-gi-ne f[]ur ver-sch
+ie-de-ne Ein-satz-be-rei-che.
+ []
+
+[24]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 358.
+
+ (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 358.
+ [25]
+<figures/ast_beispiele.png, id=859, 778.91pt x 246.9225pt>
+File: figures/ast_beispiele.png Graphic file (type png)
+
+<use figures/ast_beispiele.png>
+Overfull \hbox (29.45406pt too wide) in paragraph at lines 376--377
+[][] 
+ []
+
+[26 <./figures/ast_beispiele.png>]
+<figures/antlrworks_syntax_diagram.png, id=874, 1019.81pt x 663.47874pt>
+File: figures/antlrworks_syntax_diagram.png Graphic file (type png)
+
+<use figures/antlrworks_syntax_diagram.png> [27 <./figures/antlrworks_syntax_di
+agram.png (PNG copy)>]
+<figures/antlrworks_interpreter.png, id=883, 1019.81pt x 663.47874pt>
+File: figures/antlrworks_interpreter.png Graphic file (type png)
+
+<use figures/antlrworks_interpreter.png>
+<figures/antlrworks_debugger.png, id=885, 1132.23pt x 775.89874pt>
+File: figures/antlrworks_debugger.png Graphic file (type png)
+
+<use figures/antlrworks_debugger.png>
+Overfull \hbox (36.28644pt too wide) in paragraph at lines 411--412
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./figures/antlrworks_interpreter.png (PNG copy)>]
+Underfull \hbox (badness 1466) in paragraph at lines 425--425
+[][][]\OT1/cmr/m/n/9 Eine ak-tu-el-le []Uber-sicht []uber die Plug-ins f[]ur di
+-ver-se IDEs fin-det sich un-ter
+ []
+
+
+Overfull \hbox (20.47163pt too wide) in paragraph at lines 425--425
+\OT1/cmr/m/n/9 http://www.antlr.org/wiki/display/ANTLR3/Integration+with+Develo
+pment+Environments| 
+ []
+
+[29 <./figures/antlrworks_debugger.png (PNG copy)>]
+Overfull \hbox (4.94539pt too wide) in paragraph at lines 431--431
+[][][]\OT1/cmr/m/n/9 vgl. http://www.antlr.org/wiki/display/ANTLR3/How+to+use+a
+nt+with+ANTLR3
+ []
+
+[30]
+Kapitel 5.
+[31
+
+] [32] [33]) [34] [35
+
+] (./kapitel_design.tex [36]
+Kapitel 6.
+[37
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+[38]
+Underfull \hbox (badness 1783) in paragraph at lines 60--61
+\OT1/cmr/m/n/10.95 das Datei-sys-tem oder die Da-ten-bank zu-ge-grif-fen wer-de
+n, oder []uber
+ []
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2004/10/17 UCS: Unicode data U+2100..U+21FF
+)
+Overfull \hbox (24.0pt too wide) in paragraph at lines 66--106
+[][] 
+ []
+
+
+Overfull \hbox (9.21074pt too wide) in paragraph at lines 113--113
+[][][]\OT1/cmr/m/n/9 vgl. http://docs.oracle.com/javase/7/docs/technotes/guides
+/security/permissions.html,
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[][][]\OT1/cmr/m/n/9 Wird z.B. die Va-ria-ble \OT1/cmtt/m/n/9 x \OT1/cmr/m/n/9 
+in Lis-ting []6.2[] nicht ge-setzt, wird ei-ne
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 169--169
+\OT1/cmtt/m/n/9 javax.el.PropertyNotFoundException \OT1/cmr/m/n/9 ge-wor-fen. U
+m her-aus-zu-fin-den, wel-che Va-
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 173--205
+[][] 
+ []
+
+[41] [42]
+Overfull \hbox (24.0pt too wide) in paragraph at lines 238--267
+[][] 
+ []
+
+[43] [44]
+Kapitel 7.
+[45
+
+] [46] [47] [48] [49] [50]
+Kapitel 8.
+[51
+
+]
+Underfull \hbox (badness 1515) in paragraph at lines 464--465
+[]\OT1/cmr/m/n/10.95 Datumswerte wer-den meis-tens aus den ent-sprech-enden Fel
+-dern ei-nes
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 464--465
+\OT1/cmr/m/n/10.95 tet, da ein Hard-co-ding von Da-tums-wer-ten we-nig sinn-vol
+l er-scheint.
+ []
+
+[52] [53] [54]
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 570--580
+ [] 
+ []
+
+[55]
+Underfull \hbox (badness 2894) in paragraph at lines 614--614
+[]\OT1/cmr/m/n/10.95 Anzahl ge-for-der-
+ []
+
+
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 593--619
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
+[]\OT1/cmr/m/n/10.95 Der be-tref-fen-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+[]\OT1/cmr/m/n/10.95 Der ung[]ultige
+ []
+
+
+Overfull \hbox (29.48811pt too wide) in paragraph at lines 633--655
+[][] 
+ []
+
+[56] [57]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 711
+.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 711.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 711.
+
+[58]
+Kapitel 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+[]\OT1/cmr/m/n/10.95 Funktionsaufruf; An-zahl der Kin-der
+ []
+
+
+Overfull \hbox (9.12532pt too wide) in paragraph at lines 735--759
+[][] 
+ []
+
+[59
+
+] <figures/uml_result_classes_neu.png, id=1237, 647.41875pt x 286.06876pt>
+File: figures/uml_result_classes_neu.png Graphic file (type png)
+
+<use figures/uml_result_classes_neu.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60]
+Underfull \hbox (badness 2073) in paragraph at lines 791--792
+[]\OT1/cmr/m/n/10.95 Beispielsweise k[]onnen die bin[]aren boo-le-schen Ope-ra-
+to-ren AND und
+ []
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 791--792
+\OT1/cmr/m/n/10.95 OR nur Ope-ran-den des Typs BOO-LEAN ver-ar-bei-ten (Funk-ti
+-on
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 813--814
+[]\OT1/cmr/m/n/10.95 Normalerweise w[]are es von Vor-teil, wenn der Typ[]uberpr
+[]ufer die
+ []
+
+[61 <./figures/uml_result_classes_neu.png (PNG copy)>]
+<figures/uml_dsl_overview_neu.png, id=1255, 547.04375pt x 175.65625pt>
+File: figures/uml_dsl_overview_neu.png Graphic file (type png)
+
+<use figures/uml_dsl_overview_neu.png> [62 <./figures/uml_dsl_overview_neu.png 
+(PNG copy)>] [63]
+<figures/uml_exception_hierarchy_neu.png, id=1291, 808.01875pt x 276.03125pt>
+File: figures/uml_exception_hierarchy_neu.png Graphic file (type png)
+
+<use figures/uml_exception_hierarchy_neu.png>
+Overfull \hbox (44.00839pt too wide) in paragraph at lines 879--880
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+[]\OT1/cmr/m/n/10.95 Die Feh-ler-be-hand-lung er-folgt wie in Ja-va []ublich []
+uber Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmr/m/n/10.95 ti-ons. Als Grund-typ wird die ab-strak-te Klas-se \OT1/cmtt
+/m/n/10.95 FXLException
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmr/m/n/10.95 de-fi-niert. Von ihr lei-ten sich die kon-kre-ten Ex-cep-tio
+n-klas-sen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmtt/m/n/10.95 FXLSyntaxException\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 
+FXLSemanticException\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 FXLRuntimeExceptio
+n
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 886--887
+\OT1/cmtt/m/n/10.95 Exception\OT1/cmr/m/n/10.95 ) zu ver-hin-dern. Ei-ne Ex-cep
+-ti-on enth[]alt einen Feh-ler-co-de,
+ []
+
+[64 <./figures/uml_exception_hierarchy_neu.png (PNG copy)>] [65]
+Kapitel 10.
+[66
+
+] [67]
+Underfull \hbox (badness 2285) in paragraph at lines 959--960
+[]\OT1/cmr/m/n/10.95 abdecken. Zu-s[]atz-lich muss be-ach-tet wer-den, dass ei-
+ni-ge Ope-ra-to-ren
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+
+ []
+
+[68] [69]) [70] [71
+
+] (./kapitel_implementierung.tex [72]
+Kapitel 11.
+[73
+
+] [74]
+<figures/workflow_neues_formular.png, id=1393, 511.9125pt x 317.185pt>
+File: figures/workflow_neues_formular.png Graphic file (type png)
+
+<use figures/workflow_neues_formular.png> [75 <./figures/workflow_neues_formula
+r.png (PNG copy)>]
+<figures/workflow_formular_ausfuellen.png, id=1401, 885.3075pt x 357.335pt>
+File: figures/workflow_formular_ausfuellen.png Graphic file (type png)
+
+<use figures/workflow_formular_ausfuellen.png>
+Overfull \hbox (82.65266pt too wide) in paragraph at lines 77--78
+ [] 
+ []
+
+[76 <./figures/workflow_formular_ausfuellen.png (PNG copy)>]
+<figures/spics_architektur_neu.png, id=1414, 958.58125pt x 739.76375pt>
+File: figures/spics_architektur_neu.png Graphic file (type png)
+
+<use figures/spics_architektur_neu.png>
+Overfull \hbox (23.4257pt too wide) in paragraph at lines 99--100
+ [] 
+ []
+
+[77 <./figures/spics_architektur_neu.png>] [78]
+Kapitel 12.
+[79
+
+] [80]
+Underfull \hbox (badness 1472) in paragraph at lines 177--178
+[]\OT1/cmr/m/n/10.95 Es muss al-so ei-ne For-mel de-fi-niert wer-den, die den C
+ons-traint be-
+ []
+
+[81] [82]
+<figures/uml_datenmodell_neu.png, id=1470, 436.63126pt x 366.36874pt>
+File: figures/uml_datenmodell_neu.png Graphic file (type png)
+
+<use figures/uml_datenmodell_neu.png> [83 <./figures/uml_datenmodell_neu.png>]
+[84]
+<figures/screenshot_spics_eingabe_neu.png, id=1501, 676.5275pt x 664.4825pt>
+File: figures/screenshot_spics_eingabe_neu.png Graphic file (type png)
+
+<use figures/screenshot_spics_eingabe_neu.png> [85 <./figures/screenshot_spics_
+eingabe_neu.png>] [86]
+<figures/cycle_bmi_tree.png, id=1519, 480.79625pt x 328.22626pt>
+File: figures/cycle_bmi_tree.png Graphic file (type png)
+
+<use figures/cycle_bmi_tree.png> [87 <./figures/cycle_bmi_tree.png>] [88]
+<figures/uml_seq_client_neu.png, id=1542, 593.21625pt x 352.31625pt>
+File: figures/uml_seq_client_neu.png Graphic file (type png)
+
+<use figures/uml_seq_client_neu.png> [89]
+<figures/uml_seq_client_hybrid_neu.png, id=1551, 673.51625pt x 433.62pt>
+File: figures/uml_seq_client_hybrid_neu.png Graphic file (type png)
+
+<use figures/uml_seq_client_hybrid_neu.png>
+Overfull \hbox (10.43507pt too wide) in paragraph at lines 387--388
+ [] 
+ []
+
+[90 <./figures/uml_seq_client_neu.png>]
+<figures/uml_seq_server_neu.png, id=1563, 654.445pt x 368.37625pt>
+File: figures/uml_seq_server_neu.png Graphic file (type png)
+
+<use figures/uml_seq_server_neu.png> [91 <./figures/uml_seq_client_hybrid_neu.p
+ng>] [92 <./figures/uml_seq_server_neu.png>]
+Underfull \hbox (badness 2486) in paragraph at lines 421--422
+[]\OT1/cmr/m/n/10.95 Suche al-le Fel-der, die einen Va-ria-blen-na-men, aber ke
+i-ne For-
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 421--422
+\OT1/cmr/m/n/10.95 mel bein-hal-ten. Schrei-be al-le Wer-te der Fel-der in die 
+Map
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 430--431
+[]\OT1/cmr/m/n/10.95 Wenn das For-m-ele-ment der For-mel einen Va-ria-blen-na-
+ []
+
+[93]
+Overfull \hbox (5.48813pt too wide) in paragraph at lines 459--483
+[][] 
+ []
+
+[94]) [95] [96
+
+] (./kapitel_ergebnis.tex
+Kapitel 13.
+[97
+
+]
+Underfull \hbox (badness 1189) in paragraph at lines 21--22
+\OT1/cmr/m/n/10.95 sich die-se in abh[]angigen For-mu-lar-fel-dern nicht ge-gen
+-sei-tig re-fe-ren-zie-
+ []
+
+[98]
+Kapitel 14.
+[99
+
+] [100]
+Kapitel 15.
+[101
+
+]) (./thesis.bbl [102] [103
+
+] [104] [105]) [106] (./thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ [107
+
+]
+(./thesis.lof [108
+
+])
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [109] (./thesis.lol)
+\tf@lol=\write7
+\openout7 = `thesis.lol'.
+
+ [110
+
+]
+\openout2 = `appendix.aux'.
+
+ (./appendix.tex
+Anhang A.
+[111
+
+
+] [112]) [113] (./thesis.aux (./frontmatter.aux) (./appendix.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9701 strings out of 495021
+ 133805 string characters out of 1181035
+ 438972 words of memory out of 3000000
+ 11967 multiletter control sequences out of 15000+50000
+ 20070 words of font info for 76 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,16n,44p,1528b,1833s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb>
+Output written on thesis.pdf (118 pages, 1294489 bytes).
+PDF statistics:
+ 2103 PDF objects out of 2487 (max. 8388607)
+ 701 named destinations out of 1000 (max. 500000)
+ 958 words of extra memory for PDF output out of 10000 (max. 10000000)
+

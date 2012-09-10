@@ -1,0 +1,66 @@
+\documentclass [11pt, a4paper]{report}
+\pagestyle{headings}
+\usepackage{nomencl}
+\usepackage{graphicx}
+\usepackage{url}
+
+%\usepackage[latin1]{inputenc} 
+\usepackage[german]{babel}
+
+
+\usepackage[pdftex]{hyperref}
+\begin{document}
+
+\newenvironment{myquote}%
+{\begin{quote}\small}%
+{\end{quote}}%
+
+
+% *************** Table of contents ***************
+\pagenumbering{roman}
+\pagestyle{headings}
+\tableofcontents
+
+% *************** End of front matter ***************
+
+\pagestyle{headings}
+
+\pagenumbering{arabic}
+
+
+% include chapters here
+
+\input{kapitel1_einleitung}
+
+\chapter{Grundlagen/Forschungsstand}
+\input{kapitel2_grundlagen}
+
+\chapter{Entwicklung einer DSL}
+\label{cha:entwicklung-einer-dsl}
+\input{kapitel3_design}
+
+\chapter{Deployment in einem existierenden System}
+\input{kapitel4_implementierung}
+
+\chapter{Ergebnis/Ausblick}
+\input{kapitel5_ergebnis}
+
+
+
+
+
+
+
+
+
+
+% \appendix
+% include appendexes here
+
+
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+\end{document}
+
+
